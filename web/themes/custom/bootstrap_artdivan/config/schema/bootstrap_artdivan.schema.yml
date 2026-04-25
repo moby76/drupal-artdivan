@@ -1,0 +1,29 @@
+bootstrap_artdivan.settings:
+  type: ui_suite_bootstrap.settings
+  label: 'bootstrap_artdivan settings'
+  # type: config_object
+  mapping:
+    logo_style:
+      type: string
+      label: 'Image style for logo'
+    logo_path:
+      type: string
+      label: 'Logo path'
+    logo_alt:
+      type: string
+      label: 'Logo alt text'
+    logo_title:
+      type: string
+      label: 'Logo title attribute'
+    logo_loading:
+      type: string
+      label: 'Logo loading attribute'
+    logo_fetchpriority:
+      type: string
+      label: 'Logo fetchpriority attribute'
+    logo_decoding:
+      type: string
+      label: 'Logo decoding attribute'
+    debug_enabled:
+      type: boolean
+      label: 'Debug enabled'
