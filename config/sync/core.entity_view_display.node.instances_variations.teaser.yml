@@ -1,0 +1,38 @@
+uuid: 34992522-a841-456b-88dd-713b29d6adfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.instances_variations.body
+    - field.field.node.instances_variations.field_fabric_price_category
+    - field.field.node.instances_variations.field_instance_dimension
+    - field.field.node.instances_variations.field_parent_instance
+    - field.field.node.instances_variations.field_variation_price
+    - node.type.instances_variations
+  module:
+    - text
+    - user
+id: node.instances_variations.teaser
+targetEntityType: node
+bundle: instances_variations
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_fabric_price_category: true
+  field_instance_dimension: true
+  field_parent_instance: true
+  field_variation_price: true

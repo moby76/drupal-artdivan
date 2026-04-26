@@ -1,0 +1,23 @@
+uuid: 5f41f09c-62b7-4541-a7b9-bd1a2c01e4ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_summa_oplaty
+    - paragraphs.paragraphs_type.payment
+id: paragraph.payment.field_summa_oplaty
+field_name: field_summa_oplaty
+entity_type: paragraph
+bundle: payment
+label: 'Сумма оплаты'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

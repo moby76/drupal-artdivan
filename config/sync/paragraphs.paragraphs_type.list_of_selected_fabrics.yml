@@ -1,0 +1,10 @@
+uuid: ca522aa0-9e9f-4403-aaa8-c9fdbbda4dd8
+langcode: en
+status: true
+dependencies: {  }
+id: list_of_selected_fabrics
+label: 'Список выбранных тканей'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

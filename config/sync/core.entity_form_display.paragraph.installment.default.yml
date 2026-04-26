@@ -1,0 +1,71 @@
+uuid: be5ba02f-eca1-44f4-abe6-26b23f4f35b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.installment.field_payment_date
+    - field.field.paragraph.installment.field_payment_state
+    - field.field.paragraph.installment.field_summa
+    - field.field.paragraph.installment.field_variant_oplaty
+    - paragraphs.paragraphs_type.installment
+  module:
+    - datetime
+    - field_group
+third_party_settings:
+  field_group:
+    group_zapolnenie:
+      children:
+        - field_payment_date
+        - field_summa
+        - field_variant_oplaty
+      label: Заполнение
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: flex-group-row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+id: paragraph.installment.default
+targetEntityType: paragraph
+bundle: installment
+mode: default
+content:
+  field_payment_date:
+    type: datetime_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_payment_state:
+    type: options_buttons
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_summa:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_variant_oplaty:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

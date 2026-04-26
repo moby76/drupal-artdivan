@@ -1,0 +1,10 @@
+uuid: 2d6f70a2-de56-4fd1-a8cb-b9cacc3b59b2
+langcode: en
+status: true
+dependencies: {  }
+id: separate_set_of_upholstered_furn
+label: 'Отдельный комплект мягкой мебели'
+icon_uuid: null
+icon_default: null
+description: 'Создание элемента для добавления в список  комплектов мягкой мебели в Заявку: Экземпляр мебели, его ценовая вариация, подбор тканей, срок изготовления комплекта'
+behavior_plugins: {  }

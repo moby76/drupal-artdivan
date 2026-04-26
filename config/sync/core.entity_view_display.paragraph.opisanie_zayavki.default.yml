@@ -1,0 +1,43 @@
+uuid: ae83a547-627c-4754-bae4-52bd354b182a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.opisanie_zayavki.field_shop
+    - paragraphs.paragraphs_type.opisanie_zayavki
+  module:
+    - display_builder
+    - options
+    - ui_patterns
+    - ui_patterns_field_formatters
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:opisanie_zayavki:field_shop'
+          'field:paragraph:opisanie_zayavki:field_shop':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:opisanie_zayavki:field_shop'
+                  source:
+                    type: list_default
+                    settings: {  }
+                    third_party_settings: {  }
+        node_id: d2348741b47e6c98
+id: paragraph.opisanie_zayavki.default
+targetEntityType: paragraph
+bundle: opisanie_zayavki
+mode: default
+content:
+  field_shop:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

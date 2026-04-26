@@ -1,0 +1,11 @@
+uuid: 7497cc55-1b65-4b10-bbd0-5c08db5c6fa3
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.order_fill_mode_form
+label: 'Форма для заполнения заявки'
+description: null
+targetEntityType: paragraph
+cache: true

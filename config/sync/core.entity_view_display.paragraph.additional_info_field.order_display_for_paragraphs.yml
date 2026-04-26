@@ -1,0 +1,168 @@
+uuid: 402701a2-cc99-4215-a665-4463e1508cbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.additional_info_field.field_additional
+    - paragraphs.paragraphs_type.additional_info_field
+  module:
+    - display_builder
+    - layout_builder
+    - text
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: gx-2
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              row_cols:
+                source_id: select
+                source:
+                  value: auto
+              col_xs:
+                source_id: select
+                source:
+                  value: ''
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: icon_renderable
+                    source:
+                      value:
+                        target_id: 'bootstrap:info-circle'
+                        settings:
+                          bootstrap:
+                            size: 22px
+                            color: ''
+                            alt: ''
+                        icon_id: 'bootstrap:info-circle'
+                        icon_settings:
+                          bootstrap:
+                            size: 22px
+                            color: ''
+                            alt: ''
+                      saved_values:
+                        size: 22px
+                        color: ''
+                        alt: ''
+                    node_id: d14db805015cb084
+                    third_party_settings:
+                      styles:
+                        selected:
+                          colors_color: text-info-emphasis
+                        extra: ''
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:additional_info_field:field_additional'
+                      'field:paragraph:additional_info_field:field_additional':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:additional_info_field:field_additional'
+                              source:
+                                type: text_default
+                                label: above
+                                settings: {  }
+                                third_party_settings: {  }
+                                weight: 0
+                                region: content
+                    node_id: 23693c3220e5f45c
+            third_party_settings: ''
+            node_id: ''
+        node_id: 3300da5add5c5397
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-info
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-3
+              spacing_margin: m-1
+              spacing_padding: p-2
+            extra: ''
+id: paragraph.additional_info_field.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: additional_info_field
+mode: order_display_for_paragraphs
+content:
+  field_additional:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

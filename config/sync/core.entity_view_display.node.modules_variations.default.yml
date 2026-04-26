@@ -1,0 +1,57 @@
+uuid: 7f534481-a6bb-47f9-9e88-863bec35b50b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.modules_variations.field_fabric_price_category
+    - field.field.node.modules_variations.field_module_dimension
+    - field.field.node.modules_variations.field_parent_module
+    - field.field.node.modules_variations.field_variation_price
+    - node.type.modules_variations
+  module:
+    - user
+id: node.modules_variations.default
+targetEntityType: node
+bundle: modules_variations
+mode: default
+content:
+  field_fabric_price_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_module_dimension:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_parent_module:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_variation_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_link_display: true

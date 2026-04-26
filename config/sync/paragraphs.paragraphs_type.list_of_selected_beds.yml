@@ -1,0 +1,10 @@
+uuid: 7b617f60-0388-4c6b-9195-cc955989fc11
+langcode: en
+status: true
+dependencies: {  }
+id: list_of_selected_beds
+label: 'Выбрать кровати'
+icon_uuid: null
+icon_default: null
+description: 'Параграф содержащий в себе список выбранных Кроватей. Включает в себя параграф "Выбор отдельной кровати" (separate_set_of_bed). И сам в свою очередь включён в тип контента "Заявка" (order)'
+behavior_plugins: {  }

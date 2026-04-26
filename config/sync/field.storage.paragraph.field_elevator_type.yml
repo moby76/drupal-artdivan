@@ -1,0 +1,27 @@
+uuid: e0ec470a-2b9a-4a1b-a9f1-8768c11a9c2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_elevator_type
+field_name: field_elevator_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: gruzovoy
+      label: Грузовой
+    -
+      value: passazhirskiy
+      label: Пассажирский
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,425 @@
+uuid: 6f449eaa-2209-4d6b-a768-afdcb1855a2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.organization_details_block
+    - field.field.block_content.organization_details_block.field_emblemma
+    - field.field.block_content.organization_details_block.field_inn_organizacii
+    - field.field.block_content.organization_details_block.field_nazvanie_organizacii
+    - field.field.block_content.organization_details_block.field_osnovnoy_telefon
+  module:
+    - display_builder
+    - layout_builder
+    - media
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_2'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '9'
+                    - '3'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="d-flex flex-column align-items-center justify-content-center"'
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:block_content:organization_details_block:field_nazvanie_organizacii'
+                                  'field:block_content:organization_details_block:field_nazvanie_organizacii':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:block_content:organization_details_block:field_nazvanie_organizacii'
+                                          source:
+                                            type: string
+                                            settings:
+                                              link_to_entity: false
+                                            third_party_settings: {  }
+                                node_id: 1839f4fe70e250e7
+                    node_id: b91423bd435a33cc
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: '12'
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          col_1_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:block_content:organization_details_block:field_inn_organizacii'
+                                  'field:block_content:organization_details_block:field_inn_organizacii':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:block_content:organization_details_block:field_inn_organizacii'
+                                          source:
+                                            type: string
+                                            settings:
+                                              link_to_entity: false
+                                            third_party_settings: {  }
+                                node_id: 4520093193a1695c
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: dc6fa648f09cfe85
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: gx-2
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          row_cols:
+                            source_id: select
+                            source:
+                              value: auto
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: icon_renderable
+                                source:
+                                  value:
+                                    target_id: 'bootstrap:phone-vibrate'
+                                    settings:
+                                      bootstrap:
+                                        size: 20px
+                                        color: ''
+                                        alt: ''
+                                    icon_id: 'bootstrap:phone-vibrate'
+                                    icon_settings:
+                                      bootstrap:
+                                        size: 20px
+                                        color: ''
+                                        alt: ''
+                                  saved_values:
+                                    size: 20px
+                                    color: ''
+                                    alt: ''
+                                node_id: 99e9ac89dc52575a
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:block_content:organization_details_block:field_osnovnoy_telefon'
+                                  'field:block_content:organization_details_block:field_osnovnoy_telefon':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:block_content:organization_details_block:field_osnovnoy_telefon'
+                                          source:
+                                            type: string
+                                            settings:
+                                              link_to_entity: false
+                                            third_party_settings: {  }
+                                node_id: df844327b533fbd3
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 355e8ce9944a6f33
+              col_2_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:block_content:organization_details_block:field_emblemma'
+                      'field:block_content:organization_details_block:field_emblemma':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:block_content:organization_details_block:field_emblemma'
+                              source:
+                                type: media_thumbnail
+                                settings:
+                                  image_style: thumbnail_70_70
+                                  image_link: ''
+                                  image_loading:
+                                    attribute: lazy
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 47df6fb0ea1427af
+                    third_party_settings:
+                      styles:
+                        selected: {  }
+                        extra: ''
+            third_party_settings: ''
+            node_id: ''
+        node_id: 822fb40b752f19a1
+        third_party_settings:
+          styles:
+            selected:
+              colors_background_color: bg-body-secondary
+              spacing_padding: p-2
+            extra: my-1
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: block_content.organization_details_block.default
+targetEntityType: block_content
+bundle: organization_details_block
+mode: default
+content:
+  field_emblemma:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_inn_organizacii:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_nazvanie_organizacii:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_osnovnoy_telefon:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  entity_link_display: true

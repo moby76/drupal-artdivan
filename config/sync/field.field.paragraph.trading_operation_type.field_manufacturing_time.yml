@@ -1,0 +1,23 @@
+uuid: ba9781f9-0bb0-4019-b4f7-3216ed5fe332
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_manufacturing_time
+    - paragraphs.paragraphs_type.trading_operation_type
+id: paragraph.trading_operation_type.field_manufacturing_time
+field_name: field_manufacturing_time
+entity_type: paragraph
+bundle: trading_operation_type
+label: 'Срок изготовления'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' рабочих дней'
+field_type: integer

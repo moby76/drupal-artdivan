@@ -1,0 +1,18 @@
+uuid: 61e99f33-93cb-4f09-b2aa-d96cf566d19c
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_assembly_is_required
+field_name: field_assembly_is_required
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+status: 1
+pattern: '[node:field_fabric_article] | [node:field_fabric_price_category]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.fabrics
+new_content_behavior: 0

@@ -1,0 +1,20 @@
+uuid: 1d37f93e-5d11-4102-9672-530df3265449
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_oplata_ostatka
+field_name: field_oplata_ostatka
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,190 @@
+uuid: ec34cf44-0f2f-4733-bdf8-e9228e0a3edc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.separate_set_of_module.field_modul
+    - field.field.paragraph.separate_set_of_module.field_modul_price
+    - field.field.paragraph.separate_set_of_module.field_modules_arrangement
+    - field.field.paragraph.separate_set_of_module.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_module
+  module:
+    - display_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_2'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - '9'
+                    - '4'
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '10'
+                    - '2'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - '10'
+                    - '2'
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - '10'
+                    - '2'
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:separate_set_of_module:field_variation'
+                      'field:paragraph:separate_set_of_module:field_variation':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:separate_set_of_module:field_variation'
+                              source:
+                                type: entity_reference_entity_view
+                                settings:
+                                  view_mode: order_display
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: '1'
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: a7bc4819ff341767
+              col_2_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:separate_set_of_module:field_modules_arrangement'
+                      'field:paragraph:separate_set_of_module:field_modules_arrangement':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:separate_set_of_module:field_modules_arrangement'
+                              source:
+                                type: entity_reference_label
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                                settings:
+                                  link: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: a8e2ab6876bdfee5
+                    third_party_settings:
+                      styles:
+                        selected:
+                          text_font_italics: fst-italic
+                        extra: ''
+            third_party_settings: ''
+            node_id: ''
+        node_id: 8db6e85d6685507c
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border-bottom
+              borders_border_width: border-1
+              borders_border_color: border-secondary-subtle
+            extra: mb-1
+id: paragraph.separate_set_of_module.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: separate_set_of_module
+mode: order_display_for_paragraphs
+content: {  }
+hidden:
+  field_modul: true
+  field_modul_price: true
+  field_modules_arrangement: true
+  field_variation: true

@@ -1,0 +1,21 @@
+uuid: d86d6536-e673-446d-a437-8677ad7d471b
+langcode: en
+status: true
+dependencies: {  }
+name: scale_crop_200_200
+label: 'scale & crop 200*200'
+effects:
+  f3bc1d59-3251-4aff-8512-7a9c87cd96a6:
+    uuid: f3bc1d59-3251-4aff-8512-7a9c87cd96a6
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 200
+      upscale: false
+  b990eeac-1c96-471c-9b98-33c8baf1fca1:
+    uuid: b990eeac-1c96-471c-9b98-33c8baf1fca1
+    id: image_convert_avif
+    weight: 3
+    data:
+      extension: webp

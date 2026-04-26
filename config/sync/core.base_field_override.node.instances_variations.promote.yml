@@ -1,0 +1,22 @@
+uuid: 792d1ca5-b168-4fc7-aa42-ef3188bbb5b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.instances_variations
+id: node.instances_variations.promote
+field_name: promote
+entity_type: node
+bundle: instances_variations
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,22 @@
+uuid: c103e44c-f683-49da-8c1d-da9231712852
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: dlya_realizaciy_komplektov
+label: 'для реализаций комплектов'
+type: 'canonical_entities:node'
+pattern: 'sale-complects/[node:nid]'
+selection_criteria:
+  dad95311-5b40-46ca-b1b2-b0dfbb094fb0:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: dad95311-5b40-46ca-b1b2-b0dfbb094fb0
+    context_mapping:
+      node: node
+    bundles:
+      sale_complects: sale_complects
+selection_logic: and
+weight: -5
+relationships: {  }

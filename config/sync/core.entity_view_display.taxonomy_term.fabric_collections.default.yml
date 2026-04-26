@@ -1,0 +1,33 @@
+uuid: 119ae873-46cb-49f9-a33a-5402621cd4b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.fabric_collections.field_fabric_article
+    - taxonomy.vocabulary.fabric_collections
+  module:
+    - text
+id: taxonomy_term.fabric_collections.default
+targetEntityType: taxonomy_term
+bundle: fabric_collections
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_fabric_article:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

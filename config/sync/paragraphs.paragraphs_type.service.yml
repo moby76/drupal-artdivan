@@ -1,0 +1,10 @@
+uuid: 03130917-127f-4915-9c27-6c79d8314056
+langcode: en
+status: true
+dependencies: {  }
+id: service
+label: Сервис
+icon_uuid: null
+icon_default: null
+description: 'Сервис: Состоит из типов параграфов "Доставка" и "Сборка". + общая стоимость услуг'
+behavior_plugins: {  }

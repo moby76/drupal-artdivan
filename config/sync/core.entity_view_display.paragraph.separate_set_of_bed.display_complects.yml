@@ -1,0 +1,49 @@
+uuid: eb0f8bec-a429-410e-9ed3-c2ccb6256c23
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.display_complects
+    - field.field.paragraph.separate_set_of_bed.field_additional_information
+    - field.field.paragraph.separate_set_of_bed.field_assembly
+    - field.field.paragraph.separate_set_of_bed.field_execution_time
+    - field.field.paragraph.separate_set_of_bed.field_fabric_list
+    - field.field.paragraph.separate_set_of_bed.field_instance
+    - field.field.paragraph.separate_set_of_bed.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_bed
+  module:
+    - entity_reference_revisions
+id: paragraph.separate_set_of_bed.display_complects
+targetEntityType: paragraph
+bundle: separate_set_of_bed
+mode: display_complects
+content:
+  field_execution_time:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_variation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_additional_information: true
+  field_assembly: true
+  field_fabric_list: true

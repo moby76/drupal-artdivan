@@ -1,0 +1,211 @@
+uuid: 86ef00cf-4975-4b00-b50a-f0d7d4f85272
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.payment.field_full_payment
+    - field.field.paragraph.payment.field_installment
+    - field.field.paragraph.payment.field_is_remaining_payment_full
+    - field.field.paragraph.payment.field_oplata_ostatka
+    - field.field.paragraph.payment.field_payments_variants
+    - field.field.paragraph.payment.field_remaining_payment
+    - field.field.paragraph.payment.field_summa_oplaty
+    - paragraphs.paragraphs_type.payment
+  module:
+    - conditional_fields
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_formirovanie_oplaty:
+      children:
+        - field_full_payment
+        - field_payments_variants
+      label: 'формирование оплаты'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: flex-group-row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+    group_rassrochka:
+      children:
+        - field_installment
+      label: рассрочка
+      region: content
+      parent_name: ''
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: flex-group-row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+    group_summa_oplaty:
+      children:
+        - field_summa_oplaty
+        - field_remaining_payment
+      label: 'Сумма оплаты'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: flex-group-row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+    group_polnaya_oplata_ostatka_ili:
+      children:
+        - field_is_remaining_payment_full
+      label: 'Полная оплата остатка или рассрочка'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: flex-group-row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+    group_variant_oplaty_ostatka_pri:
+      children:
+        - field_oplata_ostatka
+      label: 'вариант оплаты остатка при одном платеже'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: flex-group-row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+id: paragraph.payment.default
+targetEntityType: paragraph
+bundle: payment
+mode: default
+content:
+  field_full_payment:
+    type: options_buttons
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_installment:
+    type: paragraphs
+    weight: 7
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: installment
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: '0'
+    third_party_settings: {  }
+  field_is_remaining_payment_full:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_oplata_ostatka:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_payments_variants:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_remaining_payment:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_summa_oplaty:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        850762f5-96e0-44e7-bd30-d93b94d10a59:
+          entity_type: paragraph
+          bundle: payment
+          dependee: field_full_payment
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '0'
+            effect: show
+            effect_options: {  }
+            selector: ''
+hidden:
+  created: true
+  status: true

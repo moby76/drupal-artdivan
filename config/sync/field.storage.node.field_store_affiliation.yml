@@ -1,0 +1,27 @@
+uuid: 619b1de3-6864-4b32-8db0-9dc6822734f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_store_affiliation
+field_name: field_store_affiliation
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: nashi_magaziny
+      label: 'Наши магазины'
+    -
+      value: magazin_posrednikov
+      label: 'Магазин посредников'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

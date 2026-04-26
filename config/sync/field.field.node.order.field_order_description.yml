@@ -1,0 +1,37 @@
+uuid: 3f8cee45-ae80-4547-9a61-1b85b065beeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_order_description
+    - node.type.order
+    - paragraphs.paragraphs_type.opisanie_zayavki
+  module:
+    - entity_reference_revisions
+id: node.order.field_order_description
+field_name: field_order_description
+entity_type: node
+bundle: order
+label: 'Описание заявки'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      opisanie_zayavki: opisanie_zayavki
+    negate: 0
+    target_bundles_drag_drop:
+      choise_of_instance:
+        weight: 5
+        enabled: false
+      opisanie_zayavki:
+        weight: 4
+        enabled: true
+      variacii:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

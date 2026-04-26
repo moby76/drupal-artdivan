@@ -1,0 +1,88 @@
+uuid: 04bb4951-b4a7-46ba-85b0-2fec77f3e73b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_execution_time
+    - paragraphs.paragraphs_type.list_of_selected_moduls
+    - paragraphs.paragraphs_type.trading_operation_type
+  module:
+    - entity_reference_revisions
+id: paragraph.list_of_selected_moduls.field_execution_time
+field_name: field_execution_time
+entity_type: paragraph
+bundle: list_of_selected_moduls
+label: 'Срок изготовления'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      trading_operation_type: trading_operation_type
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info:
+        weight: 21
+        enabled: false
+      assembly:
+        weight: 22
+        enabled: false
+      choise_of_instance:
+        weight: 6
+        enabled: false
+      customer_details:
+        weight: 7
+        enabled: false
+      delivery:
+        weight: 25
+        enabled: false
+      installment:
+        weight: 26
+        enabled: false
+      list_of_selected_fabrics:
+        weight: 27
+        enabled: false
+      list_of_selected_furniture_sets:
+        weight: 28
+        enabled: false
+      list_of_selected_moduls:
+        weight: 29
+        enabled: false
+      opisanie_zayavki:
+        weight: 8
+        enabled: false
+      organization_details_form:
+        weight: 31
+        enabled: false
+      other_goods:
+        weight: 32
+        enabled: false
+      payment:
+        weight: 33
+        enabled: false
+      seller:
+        weight: 34
+        enabled: false
+      separate_set_of_module:
+        weight: 35
+        enabled: false
+      separate_set_of_upholstered_furn:
+        weight: 36
+        enabled: false
+      service:
+        weight: 37
+        enabled: false
+      total_amount:
+        weight: 38
+        enabled: false
+      trading_operation_type:
+        weight: 9
+        enabled: true
+      vybrat_tkan_dlya_elementov:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

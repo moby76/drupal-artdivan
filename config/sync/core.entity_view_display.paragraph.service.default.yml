@@ -1,0 +1,64 @@
+uuid: 9867567c-6610-415c-bf30-3f4eaea12aba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.service.field_assembly
+    - field.field.paragraph.service.field_delivery
+    - field.field.paragraph.service.field_delivery_or_pickup
+    - field.field.paragraph.service.field_note
+    - field.field.paragraph.service.field_total_cost_of_services
+    - paragraphs.paragraphs_type.service
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.service.default
+targetEntityType: paragraph
+bundle: service
+mode: default
+content:
+  field_assembly:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_delivery:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_delivery_or_pickup:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_note:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_total_cost_of_services:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: 1e393c08-e9e8-4f1e-9261-a1922dc67cc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modul_price
+    - paragraphs.paragraphs_type.separate_set_of_module
+  module:
+    - field_token_value
+id: paragraph.separate_set_of_module.field_modul_price
+field_name: field_modul_price
+entity_type: paragraph
+bundle: separate_set_of_module
+label: 'Стоимость модуля'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  field_value: '[paragraph:field_variation:entity:field_variation_price]'
+  remove_empty: 0
+field_type: field_token_value

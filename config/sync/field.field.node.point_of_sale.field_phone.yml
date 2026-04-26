@@ -1,0 +1,37 @@
+uuid: 273f5446-5b2b-4121-b162-636c412c0cad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.point_of_sale
+  module:
+    - phonenumber
+id: node.point_of_sale.field_phone
+field_name: field_phone
+entity_type: node
+bundle: point_of_sale
+label: Телефон
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  strict_mode: 1
+  national_mode: 0
+  allowed: include
+  countries:
+    RU: RU
+  geo_ip_lookup: ipapi
+  api_key: ''
+  validation_number_type: FIXED_LINE
+  placeholder_number_type: MOBILE
+  custom_placeholder: ''
+  container_class: ''
+  extension_field: 0
+  country_order: {  }
+  auto_placeholder: polite
+  enabled_localisation: false
+  localized_countries: {  }
+field_type: phone

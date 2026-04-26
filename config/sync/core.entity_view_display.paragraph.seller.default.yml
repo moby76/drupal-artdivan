@@ -1,0 +1,30 @@
+uuid: 0417c98b-dbe2-4672-a7f1-50277af3f835
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.seller.field_point_of_sale
+    - field.field.paragraph.seller.field_sellers_name
+    - paragraphs.paragraphs_type.seller
+id: paragraph.seller.default
+targetEntityType: paragraph
+bundle: seller
+mode: default
+content:
+  field_point_of_sale:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sellers_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

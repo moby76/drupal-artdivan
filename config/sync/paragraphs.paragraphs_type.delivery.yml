@@ -1,0 +1,10 @@
+uuid: ed0c96f9-50e7-475a-b7c2-162e5fd03749
+langcode: en
+status: true
+dependencies: {  }
+id: delivery
+label: Доставка
+icon_uuid: null
+icon_default: null
+description: 'Доставка мебели. Этот тип параграфов входит в состав родительского типа параграфов "Сервис"'
+behavior_plugins: {  }

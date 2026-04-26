@@ -1,0 +1,28 @@
+uuid: 20afbdd2-30a7-4685-91af-77cc7cab0634
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.display_modules
+    - field.field.paragraph.separate_set_of_module.field_modul
+    - field.field.paragraph.separate_set_of_module.field_modul_price
+    - field.field.paragraph.separate_set_of_module.field_modules_arrangement
+    - field.field.paragraph.separate_set_of_module.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_module
+id: paragraph.separate_set_of_module.display_modules
+targetEntityType: paragraph
+bundle: separate_set_of_module
+mode: display_modules
+content:
+  field_variation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_modul: true
+  field_modul_price: true
+  field_modules_arrangement: true

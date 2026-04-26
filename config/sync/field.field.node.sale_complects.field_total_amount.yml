@@ -1,0 +1,73 @@
+uuid: 5b37671d-c322-4773-994c-8fad57e8d146
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_total_amount
+    - node.type.sale_complects
+    - paragraphs.paragraphs_type.total_amount
+  module:
+    - entity_reference_revisions
+id: node.sale_complects.field_total_amount
+field_name: field_total_amount
+entity_type: node
+bundle: sale_complects
+label: 'Общая стоимость'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      total_amount: total_amount
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info:
+        weight: 16
+        enabled: false
+      assembly:
+        weight: 17
+        enabled: false
+      choise_of_instance:
+        weight: 18
+        enabled: false
+      customer_details:
+        weight: 19
+        enabled: false
+      delivery:
+        weight: 20
+        enabled: false
+      installment:
+        weight: 21
+        enabled: false
+      opisanie_zayavki:
+        weight: 22
+        enabled: false
+      organization_details_form:
+        weight: 23
+        enabled: false
+      other_goods:
+        weight: 24
+        enabled: false
+      payment:
+        weight: 25
+        enabled: false
+      seller:
+        weight: 26
+        enabled: false
+      service:
+        weight: 27
+        enabled: false
+      total_amount:
+        weight: 28
+        enabled: true
+      trading_operation_type:
+        weight: 29
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

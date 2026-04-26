@@ -1,0 +1,21 @@
+uuid: e2be22f3-03e4-45de-b9dd-f8dcb9bd91c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_modular_set
+    - node.type.model_instance
+id: node.model_instance.field_is_modular_set
+field_name: field_is_modular_set
+entity_type: node
+bundle: model_instance
+label: 'Это модульный комплект?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Модульный к-т'
+  off_label: 'Отдельный к-т'
+field_type: boolean

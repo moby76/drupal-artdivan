@@ -1,0 +1,23 @@
+uuid: 0c8c477b-c1a8-48b5-9313-9d0778e29c48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_variation_price
+    - node.type.beds_variations
+id: node.beds_variations.field_variation_price
+field_name: field_variation_price
+entity_type: node
+bundle: beds_variations
+label: Стоимость
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

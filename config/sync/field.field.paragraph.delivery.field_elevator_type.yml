@@ -1,0 +1,21 @@
+uuid: 66af3ffa-fdb4-4492-9356-eddf12a08b21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_elevator_type
+    - paragraphs.paragraphs_type.delivery
+  module:
+    - options
+id: paragraph.delivery.field_elevator_type
+field_name: field_elevator_type
+entity_type: paragraph
+bundle: delivery
+label: 'Тип лифта'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

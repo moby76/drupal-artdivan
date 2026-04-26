@@ -1,0 +1,18 @@
+uuid: a6815ede-60c1-4f89-ba7c-4b1dfe6c328f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_is_assembler
+field_name: field_is_assembler
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

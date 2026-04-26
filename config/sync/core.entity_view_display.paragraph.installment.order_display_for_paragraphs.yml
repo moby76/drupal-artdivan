@@ -1,0 +1,283 @@
+uuid: cd2050ec-97f7-4ae2-9a00-2715d68d7c92
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.installment.field_payment_date
+    - field.field.paragraph.installment.field_payment_state
+    - field.field.paragraph.installment.field_summa
+    - field.field.paragraph.installment.field_variant_oplaty
+    - paragraphs.paragraphs_type.installment
+  module:
+    - datetime
+    - display_builder
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_3'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '3'
+                    - '3'
+                    - '6'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - '3'
+                    - '3'
+                    - '6'
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - '3'
+                    - '3'
+                    - '6'
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - '3'
+                    - '3'
+                    - '6'
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="d-flex align-items-center justify-content-center"'
+              col_3_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:installment:field_summa'
+                      'field:paragraph:installment:field_summa':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:installment:field_summa'
+                              source:
+                                type: number_integer
+                                settings:
+                                  thousand_separator: ''
+                                  prefix_suffix: '1'
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 93d2e92fb9cc7169
+                    third_party_settings:
+                      styles:
+                        selected:
+                          typography: fs-5
+                          text_font_weight: fw-medium
+                        extra: ''
+              col_2_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: icon_renderable
+                    source:
+                      value:
+                        target_id: 'bootstrap:calendar2-date'
+                        settings:
+                          bootstrap:
+                            size: 22px
+                            color: ''
+                            alt: ''
+                        icon_id: 'bootstrap:calendar2-date'
+                        icon_settings:
+                          bootstrap:
+                            size: 22px
+                            color: ''
+                            alt: ''
+                      saved_values:
+                        size: 22px
+                        color: ''
+                        alt: ''
+                    node_id: ba1f5146d6856eda
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:installment:field_payment_date'
+                      'field:paragraph:installment:field_payment_date':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:installment:field_payment_date'
+                              source:
+                                type: datetime_custom
+                                settings:
+                                  timezone_override: Asia/Novokuznetsk
+                                  date_format: d.m.Y
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 9b09d3e8d8991954
+                    third_party_settings:
+                      styles:
+                        selected:
+                          text_text_alignment: text-center
+                          borders_border: border
+                          borders_border_color: border-success
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-2
+                        extra: 'mx-2 px-2'
+              col_3_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:installment:field_variant_oplaty'
+                      'field:paragraph:installment:field_variant_oplaty':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:installment:field_variant_oplaty'
+                              source:
+                                type: entity_reference_label
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                                settings:
+                                  link: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: deca945604b9dc44
+            third_party_settings: ''
+            node_id: ''
+        node_id: 6f5acd4695b1bdbc
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border-bottom
+              borders_border_width: border-2
+              borders_border_color: border-secondary-subtle
+            extra: 'my-1 pb-1'
+id: paragraph.installment.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: installment
+mode: order_display_for_paragraphs
+content:
+  field_payment_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_summa:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_variant_oplaty:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_payment_state: true

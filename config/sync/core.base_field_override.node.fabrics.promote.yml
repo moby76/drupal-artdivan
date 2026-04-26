@@ -1,0 +1,22 @@
+uuid: 04a57930-0970-4f26-9d0a-279ac57c3168
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fabrics
+id: node.fabrics.promote
+field_name: promote
+entity_type: node
+bundle: fabrics
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

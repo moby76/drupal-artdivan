@@ -1,0 +1,29 @@
+uuid: 1ee03a24-f97c-495f-af77-3674649049d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_version
+    - node.type.model_instance
+    - taxonomy.vocabulary.version
+id: node.model_instance.field_version
+field_name: field_version
+entity_type: node
+bundle: model_instance
+label: Версия
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      version: version
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

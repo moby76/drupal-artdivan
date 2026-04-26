@@ -1,0 +1,23 @@
+uuid: 7853c3dc-6186-4c2f-b3f6-685d8bf9dc40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_summa
+    - paragraphs.paragraphs_type.installment
+id: paragraph.installment.field_summa
+field_name: field_summa
+entity_type: paragraph
+bundle: installment
+label: Сумма
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

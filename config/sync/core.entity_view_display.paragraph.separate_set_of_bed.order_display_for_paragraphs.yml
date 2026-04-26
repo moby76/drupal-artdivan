@@ -1,0 +1,428 @@
+uuid: 2e35e44e-8d65-4a3c-b1a3-b7ecd01fe6df
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.separate_set_of_bed.field_additional_information
+    - field.field.paragraph.separate_set_of_bed.field_assembly
+    - field.field.paragraph.separate_set_of_bed.field_execution_time
+    - field.field.paragraph.separate_set_of_bed.field_fabric_list
+    - field.field.paragraph.separate_set_of_bed.field_instance
+    - field.field.paragraph.separate_set_of_bed.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_bed
+  module:
+    - display_builder
+    - entity_reference_revisions
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_2'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                          col_sm:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                          col_md:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '9'
+                          col_lg:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '9'
+                          col_xl:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '9'
+                          col_xxl:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '9'
+                          col_offset:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_1_attributes:
+                            source_id: attributes
+                            source:
+                              value: 'class="border-end border-2 border-secondary-subtle"'
+                          col_2_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          col_1_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:separate_set_of_bed:field_instance'
+                                  'field:paragraph:separate_set_of_bed:field_instance':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:separate_set_of_bed:field_instance'
+                                          source:
+                                            type: entity_reference_label
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                            settings:
+                                              link: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: f576038929845d5d
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      text_font_weight: fw-medium
+                                      text_text_alignment: text-center
+                                    extra: ''
+                          col_2_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:separate_set_of_bed:field_variation'
+                                  'field:paragraph:separate_set_of_bed:field_variation':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:separate_set_of_bed:field_variation'
+                                          source:
+                                            type: entity_reference_entity_view
+                                            settings:
+                                              view_mode: order_display
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                enabled: '1'
+                                                separator: '|'
+                                                referenced_entity: '1'
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: f5ee4ccef3b22bfc
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 6da9a5185c3c9e6e
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:separate_set_of_bed:field_fabric_list'
+                                  'field:paragraph:separate_set_of_bed:field_fabric_list':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:separate_set_of_bed:field_fabric_list'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings:
+                                              view_mode: order_display_for_paragraphs
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: e49a5b63bdabbf9c
+                    node_id: 6cf1802904de0f3e
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:separate_set_of_bed:field_execution_time'
+                                  'field:paragraph:separate_set_of_bed:field_execution_time':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:separate_set_of_bed:field_execution_time'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings:
+                                              view_mode: order_display_for_paragraphs
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: af943a46c233e9b8
+                    node_id: 2fb363fb548ed75e
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:separate_set_of_bed:field_assembly'
+                                  'field:paragraph:separate_set_of_bed:field_assembly':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:separate_set_of_bed:field_assembly'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings:
+                                              view_mode: order_display_for_paragraphs
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 147ed39926c94ad7
+                    node_id: 4a766eb50f2b5235
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:separate_set_of_bed:field_additional_information'
+                      'field:paragraph:separate_set_of_bed:field_additional_information':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:separate_set_of_bed:field_additional_information'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 91f03051799c02d6
+        node_id: 6ea018948205de2e
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-secondary
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-2
+            extra: 'py-2 my-2 mx-1'
+id: paragraph.separate_set_of_bed.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: separate_set_of_bed
+mode: order_display_for_paragraphs
+content:
+  field_additional_information:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_assembly:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_execution_time:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_fabric_list:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_variation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

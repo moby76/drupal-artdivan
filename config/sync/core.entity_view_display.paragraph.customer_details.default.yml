@@ -1,0 +1,61 @@
+uuid: aeff971e-aa75-4576-af1d-ee40b26aeaef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.customer_details.field_customer_address
+    - field.field.paragraph.customer_details.field_delivery_address
+    - field.field.paragraph.customer_details.field_delivery_address_is_some
+    - field.field.paragraph.customer_details.field_initials
+    - field.field.paragraph.customer_details.field_phone
+    - paragraphs.paragraphs_type.customer_details
+  module:
+    - address
+    - phonenumber
+id: paragraph.customer_details.default
+targetEntityType: paragraph
+bundle: customer_details
+mode: default
+content:
+  field_customer_address:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_delivery_address:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_delivery_address_is_some:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_initials:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_phone:
+    type: phone_international
+    label: above
+    settings:
+      title: ''
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

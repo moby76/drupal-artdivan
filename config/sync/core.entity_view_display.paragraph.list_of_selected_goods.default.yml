@@ -1,0 +1,54 @@
+uuid: a97116ad-44d4-4794-a1b7-b5b03cc66832
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_of_selected_goods.field_additional_information
+    - field.field.paragraph.list_of_selected_goods.field_choose_a_suppliers_goodss
+    - field.field.paragraph.list_of_selected_goods.field_selected_items_cost
+    - paragraphs.paragraphs_type.list_of_selected_goods
+  module:
+    - entity_reference_revisions
+    - field_label
+    - nomarkup
+id: paragraph.list_of_selected_goods.default
+targetEntityType: paragraph
+bundle: list_of_selected_goods
+mode: default
+content:
+  field_additional_information:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_choose_a_suppliers_goodss:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_selected_items_cost:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      field_label:
+        label_class: ''
+        label_value: 'Стоимость выбранных модулей'
+        label_tag: ''
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
+    region: content
+hidden: {  }

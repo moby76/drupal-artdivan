@@ -1,0 +1,46 @@
+uuid: 7075fa57-71db-40b0-9488-2837b481b2e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adres
+    - node.type.point_of_sale
+  module:
+    - address
+id: node.point_of_sale.field_adres
+field_name: field_adres
+entity_type: node
+bundle: point_of_sale
+label: Адрес
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    RU: RU
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    addressLine2:
+      override: hidden
+    addressLine3:
+      override: hidden
+    postalCode:
+      override: hidden
+    sortingCode:
+      override: hidden
+    dependentLocality:
+      override: hidden
+    administrativeArea:
+      override: hidden
+  fields: {  }
+field_type: address

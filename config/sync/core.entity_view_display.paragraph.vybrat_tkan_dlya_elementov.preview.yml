@@ -1,0 +1,85 @@
+uuid: 52a6debd-bcb2-471f-b4fe-ff2b0c48406b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.vybrat_tkan_dlya_elementov.field_choise_element
+    - field.field.paragraph.vybrat_tkan_dlya_elementov.field_choise_fabric
+    - field.field.paragraph.vybrat_tkan_dlya_elementov.field_filling
+    - paragraphs.paragraphs_type.vybrat_tkan_dlya_elementov
+  module:
+    - field_group
+    - field_label
+    - layout_builder
+    - nomarkup
+    - options
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  field_group:
+    group_vybrat_tkan:
+      children:
+        - field_choise_element
+        - field_choise_fabric
+        - field_filling
+      label: 'Выбрать ткань'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+id: paragraph.vybrat_tkan_dlya_elementov.preview
+targetEntityType: paragraph
+bundle: vybrat_tkan_dlya_elementov
+mode: preview
+content:
+  field_choise_element:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      field_label:
+        label_class: ''
+        label_value: элемент
+        label_tag: ''
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
+    region: content
+  field_choise_fabric:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      field_label:
+        label_class: ''
+        label_value: ткань
+        label_tag: ''
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
+    region: content
+  field_filling:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

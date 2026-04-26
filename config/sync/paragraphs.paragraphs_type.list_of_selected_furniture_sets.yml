@@ -1,0 +1,10 @@
+uuid: 1edb0654-b70e-4c0f-bc9e-ee1b3b522ad3
+langcode: en
+status: true
+dependencies: {  }
+id: list_of_selected_furniture_sets
+label: 'Выбрать комплекты мягкой мебели'
+icon_uuid: null
+icon_default: null
+description: 'Параграф содержащий в себе список выбранных комплектов мягкой. Включает в себя параграф "Выбор отдельного комплекта мягкой мебели" (separate_set_of_upholstered_furn). И сам в свою очередь включён в тип контента "Заявка" (order)'
+behavior_plugins: {  }

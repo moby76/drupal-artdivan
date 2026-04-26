@@ -1,0 +1,20 @@
+uuid: 37304edc-5f4d-402d-a7f6-c51d2d73d24f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_manufacturing_time
+field_name: field_manufacturing_time
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

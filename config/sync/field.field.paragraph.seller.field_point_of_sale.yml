@@ -1,0 +1,33 @@
+uuid: 87507d4a-b97a-4bcc-b8d1-51012e5854e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_point_of_sale
+    - node.type.point_of_sale
+    - paragraphs.paragraphs_type.seller
+  content:
+    - 'node:point_of_sale:b33b7225-39d2-410b-ab79-629bd3126629'
+id: paragraph.seller.field_point_of_sale
+field_name: field_point_of_sale
+entity_type: paragraph
+bundle: seller
+label: 'Пункт реализации'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: b33b7225-39d2-410b-ab79-629bd3126629
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      point_of_sale: point_of_sale
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

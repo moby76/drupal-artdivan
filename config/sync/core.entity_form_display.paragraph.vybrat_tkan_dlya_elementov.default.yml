@@ -1,0 +1,66 @@
+uuid: c0c07fdb-e213-4137-aa6d-00bb5f4c0080
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.vybrat_tkan_dlya_elementov.field_choise_element
+    - field.field.paragraph.vybrat_tkan_dlya_elementov.field_choise_fabric
+    - field.field.paragraph.vybrat_tkan_dlya_elementov.field_filling
+    - paragraphs.paragraphs_type.vybrat_tkan_dlya_elementov
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_podbor_tkani:
+      children:
+        - field_choise_element
+        - field_choise_fabric
+        - field_filling
+      label: 'Подбор ткани'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: flex-group-row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+id: paragraph.vybrat_tkan_dlya_elementov.default
+targetEntityType: paragraph
+bundle: vybrat_tkan_dlya_elementov
+mode: default
+content:
+  field_choise_element:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_choise_fabric:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 5
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_filling:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

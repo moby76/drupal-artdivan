@@ -1,0 +1,197 @@
+uuid: ff89281e-fffe-4955-b9a2-28e7fafe4e41
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.trading_operation_type.field_manufacturing_time
+    - field.field.paragraph.trading_operation_type.field_operation_type
+    - paragraphs.paragraphs_type.trading_operation_type
+  module:
+    - display_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              row_cols:
+                source_id: select
+                source:
+                  value: auto
+              col_xs:
+                source_id: select
+                source:
+                  value: ''
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: textfield
+                    source:
+                      value: 'Тип реализации:'
+                    node_id: a1f758a798f1918c
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border-bottom
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          spacing_padding_top: pt-1
+                          spacing_padding_bottom: pb-1
+                        extra: ''
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:trading_operation_type:field_operation_type'
+                      'field:paragraph:trading_operation_type:field_operation_type':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:trading_operation_type:field_operation_type'
+                              source:
+                                type: entity_reference_label
+                                third_party_settings:
+                                  nomarkup:
+                                    enabled: '1'
+                                    separator: '|'
+                                    referenced_entity: ''
+                                settings:
+                                  link: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: e1f6048f5c743bc1
+                    third_party_settings:
+                      styles:
+                        selected:
+                          text_text_alignment: text-center
+                          colors_background_color: bg-secondary-subtle
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-dark-subtle
+                          borders_border_radius: rounded-pill
+                          spacing_padding_start: ps-3
+                          spacing_padding_end: pe-3
+                        extra: ''
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:trading_operation_type:field_manufacturing_time'
+                      'field:paragraph:trading_operation_type:field_manufacturing_time':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:trading_operation_type:field_manufacturing_time'
+                              source:
+                                type: number_integer
+                                label: hidden
+                                settings:
+                                  thousand_separator: ''
+                                  prefix_suffix: true
+                                third_party_settings: {  }
+                                weight: 1
+                                region: content
+                    node_id: 0583c32a9ceb97ea
+                    third_party_settings:
+                      styles:
+                        selected:
+                          spacing_padding_top: pt-1
+                          spacing_padding_bottom: pb-1
+                        extra: ''
+            third_party_settings: ''
+            node_id: ''
+        node_id: dfa7e638a70c321c
+        third_party_settings:
+          styles:
+            selected: {  }
+            extra: ''
+id: paragraph.trading_operation_type.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: trading_operation_type
+mode: order_display_for_paragraphs
+content:
+  field_manufacturing_time:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_operation_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

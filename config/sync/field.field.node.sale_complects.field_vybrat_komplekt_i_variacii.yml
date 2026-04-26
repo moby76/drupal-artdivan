@@ -1,0 +1,43 @@
+uuid: 012f2440-4f7e-4e15-a045-7ac266aa1600
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vybrat_komplekt_i_variacii
+    - node.type.sale_complects
+    - paragraphs.paragraphs_type.choise_of_instance
+  module:
+    - entity_reference_revisions
+id: node.sale_complects.field_vybrat_komplekt_i_variacii
+field_name: field_vybrat_komplekt_i_variacii
+entity_type: node
+bundle: sale_complects
+label: 'Выбрать комплекты'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      choise_of_instance: choise_of_instance
+    negate: 0
+    target_bundles_drag_drop:
+      choise_of_instance:
+        weight: 2
+        enabled: true
+      customer_details:
+        weight: 6
+        enabled: false
+      opisanie_zayavki:
+        weight: 7
+        enabled: false
+      trading_operation_type:
+        weight: 9
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

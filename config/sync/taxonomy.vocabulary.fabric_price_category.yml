@@ -1,0 +1,9 @@
+uuid: 15605ea6-72ba-4cef-93cc-44c512470875
+langcode: en
+status: true
+dependencies: {  }
+name: 'Ценовые категории тканей'
+vid: fabric_price_category
+description: null
+weight: -5
+new_revision: false

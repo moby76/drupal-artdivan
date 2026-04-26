@@ -1,0 +1,37 @@
+uuid: ca301863-b3c3-4b2e-8734-9872e25847d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_phone
+    - paragraphs.paragraphs_type.customer_details
+  module:
+    - phonenumber
+id: paragraph.customer_details.field_phone
+field_name: field_phone
+entity_type: paragraph
+bundle: customer_details
+label: Телефон
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  strict_mode: 0
+  national_mode: 1
+  allowed: include
+  countries:
+    RU: RU
+  geo_ip_lookup: ipapi
+  api_key: ''
+  validation_number_type: MOBILE
+  placeholder_number_type: MOBILE
+  custom_placeholder: ''
+  container_class: ''
+  extension_field: 0
+  country_order: {  }
+  auto_placeholder: polite
+  enabled_localisation: false
+  localized_countries: {  }
+field_type: phone

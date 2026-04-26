@@ -1,0 +1,70 @@
+uuid: 09f4396a-63c3-4e90-865e-6c369e807612
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_point_of_sale
+    - node.type.sale_complects
+    - paragraphs.paragraphs_type.seller
+  module:
+    - entity_reference_revisions
+id: node.sale_complects.field_point_of_sale
+field_name: field_point_of_sale
+entity_type: node
+bundle: sale_complects
+label: 'Пункт реализации и продавец'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      seller: seller
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info:
+        weight: 16
+        enabled: false
+      assembly:
+        weight: 17
+        enabled: false
+      choise_of_instance:
+        weight: 18
+        enabled: false
+      customer_details:
+        weight: 19
+        enabled: false
+      delivery:
+        weight: 20
+        enabled: false
+      installment:
+        weight: 21
+        enabled: false
+      opisanie_zayavki:
+        weight: 22
+        enabled: false
+      organization_details_form:
+        weight: 23
+        enabled: false
+      other_goods:
+        weight: 24
+        enabled: false
+      payment:
+        weight: 25
+        enabled: false
+      seller:
+        weight: 15
+        enabled: true
+      service:
+        weight: 26
+        enabled: false
+      trading_operation_type:
+        weight: 27
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

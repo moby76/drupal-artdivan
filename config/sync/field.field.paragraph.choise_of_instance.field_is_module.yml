@@ -1,0 +1,23 @@
+uuid: 92a22676-5ad7-47d4-b17e-c7bfb7d39a32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_module
+    - paragraphs.paragraphs_type.choise_of_instance
+id: paragraph.choise_of_instance.field_is_module
+field_name: field_is_module
+entity_type: paragraph
+bundle: choise_of_instance
+label: 'Это модуль?'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Это модуль'
+  off_label: 'Это отдельный комплект'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 82f96e9d-67f9-49a3-9721-74f78af96fee
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap_artdivan
+_core:
+  default_config_hash: OI5jhQ-xQ-ZS5meXTHueZlPjFf-UohK0wKpG9A8c-K8
+id: bootstrap_artdivan_local_actions
+theme: bootstrap_artdivan
+region: header
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

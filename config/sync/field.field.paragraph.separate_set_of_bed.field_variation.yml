@@ -1,0 +1,25 @@
+uuid: 70a2a6b4-a99d-478e-b30d-cd37feb69f0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_bed
+id: paragraph.separate_set_of_bed.field_variation
+field_name: field_variation
+entity_type: paragraph
+bundle: separate_set_of_bed
+label: Вариация
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: varianty_ekzemplyarov_krovatey
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

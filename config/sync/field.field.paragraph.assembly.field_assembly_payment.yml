@@ -1,0 +1,29 @@
+uuid: e2e27720-54d9-4615-a01a-dedd057062f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_assembly_payment
+    - paragraphs.paragraphs_type.assembly
+    - taxonomy.vocabulary.payments_variants
+id: paragraph.assembly.field_assembly_payment
+field_name: field_assembly_payment
+entity_type: paragraph
+bundle: assembly
+label: 'Оплата сборки'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      payments_variants: payments_variants
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

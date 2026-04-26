@@ -1,0 +1,18 @@
+uuid: d2b3255a-67b0-4f1b-9869-41cb20076fb6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Вариации кроватей'
+type: beds_variations
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

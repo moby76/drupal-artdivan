@@ -1,0 +1,29 @@
+uuid: 10167e4e-500e-4200-8063-e9d6874ac4cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oplata_ostatka
+    - paragraphs.paragraphs_type.payment
+    - taxonomy.vocabulary.payments_variants
+id: paragraph.payment.field_oplata_ostatka
+field_name: field_oplata_ostatka
+entity_type: paragraph
+bundle: payment
+label: 'Вариант оплаты остатка(при погашении одним платежём)'
+description: 'Вариант оплаты остатка(при погашении одним платежём)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      payments_variants: payments_variants
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

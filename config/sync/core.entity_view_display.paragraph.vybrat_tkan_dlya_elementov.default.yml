@@ -1,0 +1,43 @@
+uuid: 5bc0d57b-eb12-4644-87f4-19e0c8cba099
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.vybrat_tkan_dlya_elementov.field_choise_element
+    - field.field.paragraph.vybrat_tkan_dlya_elementov.field_choise_fabric
+    - field.field.paragraph.vybrat_tkan_dlya_elementov.field_filling
+    - paragraphs.paragraphs_type.vybrat_tkan_dlya_elementov
+  module:
+    - options
+id: paragraph.vybrat_tkan_dlya_elementov.default
+targetEntityType: paragraph
+bundle: vybrat_tkan_dlya_elementov
+mode: default
+content:
+  field_choise_element:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_choise_fabric:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_filling:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

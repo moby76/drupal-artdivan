@@ -1,0 +1,29 @@
+uuid: 10c164c2-ac78-412b-a70b-9a8e3a6ce79f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_transformation_mechanism
+    - node.type.beds_variations
+    - taxonomy.vocabulary.transformation_mechanisms
+id: node.beds_variations.field_transformation_mechanism
+field_name: field_transformation_mechanism
+entity_type: node
+bundle: beds_variations
+label: 'Механизм трансформации'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      transformation_mechanisms: transformation_mechanisms
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

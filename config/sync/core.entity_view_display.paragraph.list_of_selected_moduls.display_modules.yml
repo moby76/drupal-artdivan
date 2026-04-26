@@ -1,0 +1,36 @@
+uuid: 2aad7860-908f-4ecd-89b2-ab3a01207fbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.display_modules
+    - field.field.paragraph.list_of_selected_moduls.field_additional_information
+    - field.field.paragraph.list_of_selected_moduls.field_assembly
+    - field.field.paragraph.list_of_selected_moduls.field_choose_a_mod_and_variation
+    - field.field.paragraph.list_of_selected_moduls.field_execution_time
+    - field.field.paragraph.list_of_selected_moduls.field_fabric_list
+    - field.field.paragraph.list_of_selected_moduls.field_instance
+    - field.field.paragraph.list_of_selected_moduls.field_select_embroidery
+    - field.field.paragraph.list_of_selected_moduls.field_selected_items_cost
+    - paragraphs.paragraphs_type.list_of_selected_moduls
+id: paragraph.list_of_selected_moduls.display_modules
+targetEntityType: paragraph
+bundle: list_of_selected_moduls
+mode: display_modules
+content:
+  field_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_additional_information: true
+  field_assembly: true
+  field_choose_a_mod_and_variation: true
+  field_execution_time: true
+  field_fabric_list: true
+  field_select_embroidery: true
+  field_selected_items_cost: true

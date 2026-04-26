@@ -1,0 +1,46 @@
+uuid: 06c4fe39-d9a7-412a-83f6-3fc295d4b06e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.display_complects
+    - field.field.paragraph.list_of_selected_moduls.field_additional_information
+    - field.field.paragraph.list_of_selected_moduls.field_assembly
+    - field.field.paragraph.list_of_selected_moduls.field_choose_a_mod_and_variation
+    - field.field.paragraph.list_of_selected_moduls.field_execution_time
+    - field.field.paragraph.list_of_selected_moduls.field_fabric_list
+    - field.field.paragraph.list_of_selected_moduls.field_instance
+    - field.field.paragraph.list_of_selected_moduls.field_select_embroidery
+    - field.field.paragraph.list_of_selected_moduls.field_selected_items_cost
+    - paragraphs.paragraphs_type.list_of_selected_moduls
+  module:
+    - entity_reference_revisions
+id: paragraph.list_of_selected_moduls.display_complects
+targetEntityType: paragraph
+bundle: list_of_selected_moduls
+mode: display_complects
+content:
+  field_execution_time:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_additional_information: true
+  field_assembly: true
+  field_choose_a_mod_and_variation: true
+  field_fabric_list: true
+  field_select_embroidery: true
+  field_selected_items_cost: true

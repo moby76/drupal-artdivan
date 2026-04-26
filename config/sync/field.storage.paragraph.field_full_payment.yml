@@ -1,0 +1,18 @@
+uuid: 886a6905-266b-43c5-a323-3b37fe8660ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_full_payment
+field_name: field_full_payment
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: cf1cf32e-a8c1-4830-9e89-9f50fdc55a1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_choise_fabric
+    - node.type.fabrics
+    - paragraphs.paragraphs_type.vybrat_tkan_dlya_elementov
+id: paragraph.vybrat_tkan_dlya_elementov.field_choise_fabric
+field_name: field_choise_fabric
+entity_type: paragraph
+bundle: vybrat_tkan_dlya_elementov
+label: 'Выбрать ткань'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      fabrics: fabrics
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

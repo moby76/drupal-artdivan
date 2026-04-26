@@ -1,0 +1,52 @@
+uuid: 73c38f06-06b6-4586-938d-f6515132f1ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.total_amount.field_assembly_cost
+    - field.field.paragraph.total_amount.field_delivery_cost
+    - field.field.paragraph.total_amount.field_products_cost
+    - field.field.paragraph.total_amount.field_total_amount
+    - paragraphs.paragraphs_type.total_amount
+id: paragraph.total_amount.default
+targetEntityType: paragraph
+bundle: total_amount
+mode: default
+content:
+  field_assembly_cost:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_delivery_cost:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_products_cost:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_total_amount:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

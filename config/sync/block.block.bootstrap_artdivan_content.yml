@@ -1,0 +1,22 @@
+uuid: 171d3990-802b-47b1-a489-6b388f0cf043
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_artdivan
+_core:
+  default_config_hash: LO4Z6R_q4ej5K47EKRHBqXdpaE4qVPUwl4SvnFyQ47g
+id: bootstrap_artdivan_content
+theme: bootstrap_artdivan
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

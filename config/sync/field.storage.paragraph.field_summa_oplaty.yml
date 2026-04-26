@@ -1,0 +1,20 @@
+uuid: e7e74333-1cd4-465e-a694-b031257d4fcc
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_summa_oplaty
+field_name: field_summa_oplaty
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

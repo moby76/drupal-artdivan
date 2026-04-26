@@ -1,0 +1,50 @@
+uuid: dab2b793-3198-4dc3-8b4c-4679d8c06193
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.display_modules
+    - field.field.paragraph.choise_of_instance.field_additional_info
+    - field.field.paragraph.choise_of_instance.field_assembly
+    - field.field.paragraph.choise_of_instance.field_execution_time
+    - field.field.paragraph.choise_of_instance.field_fabrics
+    - field.field.paragraph.choise_of_instance.field_instance
+    - field.field.paragraph.choise_of_instance.field_is_module
+    - field.field.paragraph.choise_of_instance.field_variation
+    - paragraphs.paragraphs_type.choise_of_instance
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.choise_of_instance.display_modules
+targetEntityType: paragraph
+bundle: choise_of_instance
+mode: display_modules
+content:
+  field_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_variation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_additional_info: true
+  field_assembly: true
+  field_execution_time: true
+  field_fabrics: true
+  field_is_module: true

@@ -1,0 +1,9 @@
+uuid: 50838ef2-56c3-4381-a0bc-5d34994a62a8
+langcode: en
+status: true
+dependencies: {  }
+name: Вышивка(узор)
+vid: embroidery
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,23 @@
+uuid: 168e6d88-0097-4b74-b9de-212ee52b9fba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_payment_state
+    - paragraphs.paragraphs_type.installment
+id: paragraph.installment.field_payment_state
+field_name: field_payment_state
+entity_type: paragraph
+bundle: installment
+label: 'Статус оплаты'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Оплачено
+  off_label: Неоплачено
+field_type: boolean

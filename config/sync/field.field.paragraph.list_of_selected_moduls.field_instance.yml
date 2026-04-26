@@ -1,0 +1,29 @@
+uuid: e20d7c7d-c2b6-4c2a-bc11-6780928ff9bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_instance
+    - node.type.model_instance
+    - paragraphs.paragraphs_type.list_of_selected_moduls
+id: paragraph.list_of_selected_moduls.field_instance
+field_name: field_instance
+entity_type: paragraph
+bundle: list_of_selected_moduls
+label: Комплект(родительский)
+description: 'Родительский экземпляр/модульный Комплект'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      model_instance: model_instance
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

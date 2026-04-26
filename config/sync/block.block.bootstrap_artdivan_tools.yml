@@ -1,0 +1,27 @@
+uuid: 92ade69c-034b-4362-b450-605a97a3827a
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - bootstrap_artdivan
+_core:
+  default_config_hash: 8w7ZuupTed324KlBPwnJuSBbLdN-F_Q2OSu8k9Ln_xw
+id: bootstrap_artdivan_tools
+theme: bootstrap_artdivan
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

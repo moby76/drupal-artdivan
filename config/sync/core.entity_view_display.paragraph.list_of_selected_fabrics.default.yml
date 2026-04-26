@@ -1,0 +1,24 @@
+uuid: c446c190-5f19-4c40-a8a7-43d41ec77922
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_of_selected_fabrics.field_fabrics
+    - paragraphs.paragraphs_type.list_of_selected_fabrics
+  module:
+    - entity_reference_revisions
+id: paragraph.list_of_selected_fabrics.default
+targetEntityType: paragraph
+bundle: list_of_selected_fabrics
+mode: default
+content:
+  field_fabrics:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 60d228d0-729f-4c0d-9c44-7fe04de93ca8
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bootstrap_artdivan
+_core:
+  default_config_hash: ILvrGbNzd4OjsnX-1Coe5I703l2pVMlWpYCe74N_W0Y
+id: bootstrap_artdivan_help
+theme: bootstrap_artdivan
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

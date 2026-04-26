@@ -1,0 +1,29 @@
+uuid: 96684564-623e-4b6b-8223-654fe844f3b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instance_dimension
+    - node.type.beds_variations
+    - taxonomy.vocabulary.dimensions
+id: node.beds_variations.field_instance_dimension
+field_name: field_instance_dimension
+entity_type: node
+bundle: beds_variations
+label: 'Размеры спального места кровати'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dimensions: dimensions
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

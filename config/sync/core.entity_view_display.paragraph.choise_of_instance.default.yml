@@ -1,0 +1,91 @@
+uuid: 7c6729fd-fd28-4916-adb1-a5d4c77c32cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.choise_of_instance.field_additional_info
+    - field.field.paragraph.choise_of_instance.field_assembly
+    - field.field.paragraph.choise_of_instance.field_execution_time
+    - field.field.paragraph.choise_of_instance.field_fabrics
+    - field.field.paragraph.choise_of_instance.field_instance
+    - field.field.paragraph.choise_of_instance.field_is_module
+    - field.field.paragraph.choise_of_instance.field_variation
+    - paragraphs.paragraphs_type.choise_of_instance
+  module:
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.choise_of_instance.default
+targetEntityType: paragraph
+bundle: choise_of_instance
+mode: default
+content:
+  field_additional_info:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_assembly:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_execution_time:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_fabrics:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_is_module:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_variation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

@@ -1,0 +1,88 @@
+uuid: 57031de0-a4e5-41e1-999f-9b062d6fdfc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_choose_a_mod_and_variation
+    - paragraphs.paragraphs_type.list_of_selected_moduls
+    - paragraphs.paragraphs_type.separate_set_of_module
+  module:
+    - entity_reference_revisions
+id: paragraph.list_of_selected_moduls.field_choose_a_mod_and_variation
+field_name: field_choose_a_mod_and_variation
+entity_type: paragraph
+bundle: list_of_selected_moduls
+label: 'Выбрать модуль и вариацию'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      separate_set_of_module: separate_set_of_module
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info:
+        weight: 21
+        enabled: false
+      assembly:
+        weight: 22
+        enabled: false
+      choise_of_instance:
+        weight: 23
+        enabled: false
+      customer_details:
+        weight: 24
+        enabled: false
+      delivery:
+        weight: 25
+        enabled: false
+      installment:
+        weight: 26
+        enabled: false
+      list_of_selected_fabrics:
+        weight: 27
+        enabled: false
+      list_of_selected_furniture_sets:
+        weight: 28
+        enabled: false
+      list_of_selected_moduls:
+        weight: 29
+        enabled: false
+      opisanie_zayavki:
+        weight: 30
+        enabled: false
+      organization_details_form:
+        weight: 31
+        enabled: false
+      other_goods:
+        weight: 32
+        enabled: false
+      payment:
+        weight: 33
+        enabled: false
+      seller:
+        weight: 34
+        enabled: false
+      separate_set_of_module:
+        weight: 35
+        enabled: true
+      separate_set_of_upholstered_furn:
+        weight: 36
+        enabled: false
+      service:
+        weight: 37
+        enabled: false
+      total_amount:
+        weight: 38
+        enabled: false
+      trading_operation_type:
+        weight: 39
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

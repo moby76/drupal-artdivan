@@ -1,0 +1,10 @@
+uuid: 0209e539-4791-4155-af33-6af4ab697ee3
+langcode: en
+status: true
+dependencies: {  }
+id: trading_operation_type
+label: 'Тип операции и срок изготовления'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

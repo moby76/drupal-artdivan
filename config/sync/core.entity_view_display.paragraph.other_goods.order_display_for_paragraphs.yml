@@ -1,0 +1,252 @@
+uuid: 77b30dd8-0fa4-4573-95b0-ccdf48c48c76
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.other_goods.field_is_assembler
+    - field.field.paragraph.other_goods.field_opisanie_tovarov
+    - field.field.paragraph.other_goods.field_price
+    - paragraphs.paragraphs_type.other_goods
+  module:
+    - display_builder
+    - layout_builder
+    - text
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_2'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                          col_sm:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                          col_md:
+                            source_id: selects
+                            source:
+                              value:
+                                - '9'
+                                - '3'
+                          col_lg:
+                            source_id: selects
+                            source:
+                              value:
+                                - '9'
+                                - '3'
+                          col_xl:
+                            source_id: selects
+                            source:
+                              value:
+                                - '9'
+                                - '3'
+                          col_xxl:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_offset:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_1_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          col_2_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          col_1_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:other_goods:field_opisanie_tovarov'
+                                  'field:paragraph:other_goods:field_opisanie_tovarov':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:other_goods:field_opisanie_tovarov'
+                                          source:
+                                            type: text_default
+                                            label: above
+                                            settings: {  }
+                                            third_party_settings: {  }
+                                            weight: 0
+                                            region: content
+                                node_id: 3af5c241ec042993
+                          col_2_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:other_goods:field_price'
+                                  'field:paragraph:other_goods:field_price':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:other_goods:field_price'
+                                          source:
+                                            type: number_integer
+                                            label: above
+                                            settings:
+                                              thousand_separator: ''
+                                              prefix_suffix: true
+                                            third_party_settings: {  }
+                                            weight: 1
+                                            region: content
+                                node_id: 2e8fb233c1097baf
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      colors_color: text-danger
+                                      text_font_weight: fw-medium
+                                    extra: ''
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 7744929e8965bd8b
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border-bottom
+                          borders_border_width: border-1
+                          borders_border_color: border-secondary
+                          spacing_margin_bottom: mb-1
+                          spacing_padding_bottom: pb-0
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:other_goods:field_is_assembler'
+                                  'field:paragraph:other_goods:field_is_assembler':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:other_goods:field_is_assembler'
+                                          source:
+                                            type: boolean
+                                            label: above
+                                            settings:
+                                              format: default
+                                              format_custom_false: ''
+                                              format_custom_true: ''
+                                            third_party_settings: {  }
+                                            weight: 2
+                                            region: content
+                                node_id: 2916bb6be90e693f
+                    node_id: db220f2b2b45f430
+        node_id: 4f1d638c122bcda6
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-secondary
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-2
+              spacing_margin: m-1
+              spacing_padding: p-2
+            extra: ''
+id: paragraph.other_goods.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: other_goods
+mode: order_display_for_paragraphs
+content:
+  field_is_assembler:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_opisanie_tovarov:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

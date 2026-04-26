@@ -1,0 +1,9 @@
+uuid: 72cf4a25-b473-4344-a65f-df69bc613717
+langcode: en
+status: true
+dependencies: {  }
+name: Версия
+vid: version
+description: null
+weight: -7
+new_revision: true

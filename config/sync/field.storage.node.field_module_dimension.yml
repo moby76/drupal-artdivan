@@ -1,0 +1,20 @@
+uuid: 6887c7de-4e8e-4ed0-b7e0-11850bfc7ad4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_module_dimension
+field_name: field_module_dimension
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

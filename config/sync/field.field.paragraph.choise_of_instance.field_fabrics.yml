@@ -1,0 +1,40 @@
+uuid: 059d4b3c-3b1a-4595-8ddd-ee1498f21790
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fabrics
+    - paragraphs.paragraphs_type.choise_of_instance
+    - paragraphs.paragraphs_type.vybrat_tkan_dlya_elementov
+  module:
+    - entity_reference_revisions
+id: paragraph.choise_of_instance.field_fabrics
+field_name: field_fabrics
+entity_type: paragraph
+bundle: choise_of_instance
+label: 'Подобрать ткани'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      vybrat_tkan_dlya_elementov: vybrat_tkan_dlya_elementov
+    negate: 0
+    target_bundles_drag_drop:
+      choise_of_instance:
+        weight: 6
+        enabled: false
+      opisanie_zayavki:
+        weight: 7
+        enabled: false
+      variacii:
+        weight: 8
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 5
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,76 @@
+uuid: e9f18b86-77e5-4ed0-89bd-6c1359e5e9f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_execution_time
+    - paragraphs.paragraphs_type.separate_set_of_upholstered_furn
+    - paragraphs.paragraphs_type.trading_operation_type
+  module:
+    - entity_reference_revisions
+id: paragraph.separate_set_of_upholstered_furn.field_execution_time
+field_name: field_execution_time
+entity_type: paragraph
+bundle: separate_set_of_upholstered_furn
+label: 'Срок изготовления'
+description: 'Тип реализации комплекта: Продажа из магазина или заказ на изготовление. И, если это заказ, то указывается срок.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      trading_operation_type: trading_operation_type
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info:
+        weight: 17
+        enabled: false
+      assembly:
+        weight: 18
+        enabled: false
+      choise_of_instance:
+        weight: 6
+        enabled: false
+      customer_details:
+        weight: 7
+        enabled: false
+      delivery:
+        weight: 21
+        enabled: false
+      installment:
+        weight: 22
+        enabled: false
+      opisanie_zayavki:
+        weight: 8
+        enabled: false
+      organization_details_form:
+        weight: 24
+        enabled: false
+      other_goods:
+        weight: 25
+        enabled: false
+      payment:
+        weight: 26
+        enabled: false
+      seller:
+        weight: 27
+        enabled: false
+      separate_set_of_upholstered_furn:
+        weight: 28
+        enabled: false
+      service:
+        weight: 29
+        enabled: false
+      total_amount:
+        weight: 30
+        enabled: false
+      trading_operation_type:
+        weight: 9
+        enabled: true
+      vybrat_tkan_dlya_elementov:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

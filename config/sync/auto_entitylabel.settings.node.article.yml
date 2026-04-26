@@ -1,0 +1,10 @@
+status: 1
+pattern: 'статья про [node:field_image:alt] от [current-date:short] [node:author] '
+escape: false
+preserve_titles: false
+save: true
+chunk: 50
+dependencies:
+  config:
+    - node.type.article
+new_content_behavior: 0

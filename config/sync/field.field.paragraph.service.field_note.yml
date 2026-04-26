@@ -1,0 +1,26 @@
+uuid: b7374c20-8bdb-4b8d-85aa-accabfcde67c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_note
+    - filter.format.basic_html
+    - filter.format.plain_text
+    - paragraphs.paragraphs_type.service
+  module:
+    - text
+id: paragraph.service.field_note
+field_name: field_note
+entity_type: paragraph
+bundle: service
+label: Примечание
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - plain_text
+field_type: text_long

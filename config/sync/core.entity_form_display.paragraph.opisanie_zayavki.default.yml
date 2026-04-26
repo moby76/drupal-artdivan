@@ -1,0 +1,21 @@
+uuid: eca9bdb2-11bb-4fe2-a4c9-6f4ecea7fbe4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.opisanie_zayavki.field_shop
+    - paragraphs.paragraphs_type.opisanie_zayavki
+id: paragraph.opisanie_zayavki.default
+targetEntityType: paragraph
+bundle: opisanie_zayavki
+mode: default
+content:
+  field_shop:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

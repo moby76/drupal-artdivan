@@ -1,0 +1,94 @@
+unique_field_settings:
+  fabrics:
+    fields:
+      field_fabric_article: field_fabric_article
+    scope: type
+    comp: each
+  model_instance:
+    fields:
+      field_execution: field_execution
+      field_model: field_model
+      field_version: field_version
+    scope: type
+    comp: all
+  instances_variations:
+    fields:
+      field_fabric_price_category: field_fabric_price_category
+      field_instance_dimension: field_instance_dimension
+      field_parent_instance: field_parent_instance
+      field_variation_price: field_variation_price
+    scope: type
+    comp: all
+  order:
+    fields: {  }
+    scope: type
+    comp: each
+  sale_modules:
+    fields: {  }
+    scope: type
+    comp: each
+  article:
+    fields: {  }
+    scope: type
+    comp: each
+  sale_complects:
+    fields: {  }
+    scope: type
+    comp: each
+  point_of_sale:
+    scope: type
+    comp: each
+  modules_variations:
+    fields: {  }
+    scope: type
+    comp: each
+unique_field_taxonomy:
+  fabric_article:
+    fields:
+      name: name
+    scope: vocabulary
+    comp: each
+  main_elements:
+    fields: {  }
+    scope: vocabulary
+    comp: each
+  order_type:
+    fields: {  }
+    scope: vocabulary
+    comp: each
+  production_types:
+    fields: {  }
+    scope: vocabulary
+    comp: each
+  payments_variants:
+    fields: {  }
+    scope: vocabulary
+    comp: each
+  moduli_dlya_modulnyh_komplektov:
+    fields: {  }
+    scope: vocabulary
+    comp: each
+  dimensions:
+    fields: {  }
+    scope: vocabulary
+    comp: each
+  execution_options:
+    fields: {  }
+    scope: vocabulary
+    comp: each
+  execution_options_modules:
+    fields: {  }
+    scope: vocabulary
+    comp: each
+  embroidery:
+    fields: {  }
+    scope: vocabulary
+    comp: each
+  transformation_mechanisms:
+    fields: {  }
+    scope: vocabulary
+    comp: each
+  modules_arrangement:
+    fields: {  }
+    scope: vocabulary
+    comp: each

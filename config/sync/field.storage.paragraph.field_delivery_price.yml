@@ -1,0 +1,20 @@
+uuid: 7676c6f9-c416-46e3-8583-d4d1029c2a88
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_delivery_price
+field_name: field_delivery_price
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

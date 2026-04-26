@@ -1,0 +1,29 @@
+uuid: ec4a6a5d-0725-4236-9068-4f18a2a98c78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sellers_name
+    - node.type.seller
+    - paragraphs.paragraphs_type.seller
+id: paragraph.seller.field_sellers_name
+field_name: field_sellers_name
+entity_type: paragraph
+bundle: seller
+label: Менеджер
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      seller: seller
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

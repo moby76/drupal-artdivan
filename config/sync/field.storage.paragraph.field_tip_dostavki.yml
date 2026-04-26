@@ -1,0 +1,36 @@
+uuid: 7463bf85-ed10-41d5-a500-47a40f95ea68
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_tip_dostavki
+field_name: field_tip_dostavki
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: do_podezda
+      label: 'До подъезда'
+    -
+      value: do_kvartiry
+      label: 'До квартиры'
+    -
+      value: do_doma
+      label: 'До Дома'
+    -
+      value: s_fabriki
+      label: 'С фабрики'
+    -
+      value: iz_magazina
+      label: 'Из магазина'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

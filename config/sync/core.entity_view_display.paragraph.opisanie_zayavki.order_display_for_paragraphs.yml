@@ -1,0 +1,24 @@
+uuid: db9f6dca-1245-4a1c-9616-54f8e1171c66
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.opisanie_zayavki.field_shop
+    - paragraphs.paragraphs_type.opisanie_zayavki
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.opisanie_zayavki.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: opisanie_zayavki
+mode: order_display_for_paragraphs
+content: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_shop: true

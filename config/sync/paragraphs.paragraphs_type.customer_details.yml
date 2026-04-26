@@ -1,0 +1,10 @@
+uuid: 5e6da395-ef68-4237-9310-46e24d2e4845
+langcode: en
+status: true
+dependencies: {  }
+id: customer_details
+label: 'Данные о покупателе'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

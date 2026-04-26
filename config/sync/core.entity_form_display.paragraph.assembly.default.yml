@@ -1,0 +1,57 @@
+uuid: 231bc687-25a2-434e-9c28-ac028181101f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.assembly.field_assembly_is_required
+    - field.field.paragraph.assembly.field_assembly_payment
+    - field.field.paragraph.assembly.field_assembly_price
+    - paragraphs.paragraphs_type.assembly
+  module:
+    - conditional_fields
+id: paragraph.assembly.default
+targetEntityType: paragraph
+bundle: assembly
+mode: default
+content:
+  field_assembly_is_required:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_assembly_payment:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_assembly_price:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        c31a1b27-4ca4-40d7-bea5-0bfa22942c79:
+          entity_type: paragraph
+          bundle: assembly
+          dependee: field_assembly_is_required
+          settings:
+            state: disabled
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: 1
+            effect: show
+            effect_options: {  }
+            selector: ''
+hidden:
+  created: true
+  status: true

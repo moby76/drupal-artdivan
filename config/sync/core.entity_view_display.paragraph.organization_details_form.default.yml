@@ -1,0 +1,24 @@
+uuid: f26bdf5f-8dee-4a39-9029-5a929b68772a
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.organization_details_form
+  module:
+    - display_builder
+    - ui_patterns
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: textfield
+        source:
+          value: 'ООО АртДиван'
+        node_id: c07f826f96b1f585
+id: paragraph.organization_details_form.default
+targetEntityType: paragraph
+bundle: organization_details_form
+mode: default
+content: {  }
+hidden: {  }

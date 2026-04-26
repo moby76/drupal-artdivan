@@ -1,0 +1,10 @@
+_core:
+  default_config_hash: kzGzlXzRJXALNHVUxT4A4iJfhUXBGjkvNucC6O6UUzc
+logo_style: thumbnail
+logo_path: sites/default/files/Лого-2.png
+logo_alt: 'Drush Site-Install'
+logo_title: 'Drush Site-Install'
+logo_loading: eager
+logo_fetchpriority: _none
+logo_decoding: _none
+debug_enabled: false

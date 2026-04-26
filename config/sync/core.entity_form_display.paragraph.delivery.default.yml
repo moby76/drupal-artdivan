@@ -1,0 +1,223 @@
+uuid: fa171ed0-8214-4932-b767-11c544b0ff43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.delivery.field_delivery_date
+    - field.field.paragraph.delivery.field_delivery_or_pickup
+    - field.field.paragraph.delivery.field_delivery_price
+    - field.field.paragraph.delivery.field_delivery_today
+    - field.field.paragraph.delivery.field_elevator_type
+    - field.field.paragraph.delivery.field_floor
+    - field.field.paragraph.delivery.field_is_elevator
+    - field.field.paragraph.delivery.field_time_range
+    - field.field.paragraph.delivery.field_tip_dostavki
+    - field.field.paragraph.delivery.field_variant_oplaty
+    - paragraphs.paragraphs_type.delivery
+  module:
+    - datetime
+    - field_group
+    - time_range
+third_party_settings:
+  field_group:
+    group_qwerty:
+      children:
+        - field_delivery_or_pickup
+        - field_tip_dostavki
+      label: 'Тип доставки'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: flex-group-row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h5
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+    group_srok_dostavki:
+      children:
+        - field_delivery_today
+        - field_delivery_date
+        - group_time_range
+      label: 'Срок доставки'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: flex-group-row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h5
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: slow
+        required_fields: true
+    group_time_range:
+      children:
+        - field_time_range
+      label: time-range
+      region: content
+      parent_name: group_srok_dostavki
+      weight: 7
+      format_type: html_element
+      format_settings:
+        classes: time-range-custom-class
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+    group_floor:
+      children:
+        - field_floor
+        - field_is_elevator
+        - field_elevator_type
+      label: Этаж
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: flex-group-row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+    group_delivery_payment:
+      children:
+        - field_delivery_price
+        - field_variant_oplaty
+      label: 'Оплата доставки'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: flex-group-row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+id: paragraph.delivery.default
+targetEntityType: paragraph
+bundle: delivery
+mode: default
+content:
+  field_delivery_date:
+    type: datetime_default
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_delivery_or_pickup:
+    type: options_buttons
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_delivery_price:
+    type: number
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_delivery_today:
+    type: options_buttons
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_elevator_type:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        6bac39df-18af-4a02-b2f3-53678e2ac76c:
+          entity_type: paragraph
+          bundle: delivery
+          dependee: field_is_elevator
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '1'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_floor:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_is_elevator:
+    type: options_buttons
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_time_range:
+    type: time_range
+    weight: 7
+    region: content
+    settings:
+      start_label: 'С '
+      end_label: 'До '
+    third_party_settings: {  }
+  field_tip_dostavki:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_variant_oplaty:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

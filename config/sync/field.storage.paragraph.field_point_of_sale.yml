@@ -1,0 +1,20 @@
+uuid: eca9b246-e12a-4662-bb14-deab84f3e41d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: paragraph.field_point_of_sale
+field_name: field_point_of_sale
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

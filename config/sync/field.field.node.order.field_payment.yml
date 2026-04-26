@@ -1,0 +1,94 @@
+uuid: 5a4da5ff-9e22-4aed-98e1-6d3d3508d69a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payment
+    - node.type.order
+    - paragraphs.paragraphs_type.payment
+  module:
+    - entity_reference_revisions
+id: node.order.field_payment
+field_name: field_payment
+entity_type: node
+bundle: order
+label: Оплата
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      payment: payment
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info:
+        weight: 12
+        enabled: false
+      assembly:
+        weight: 13
+        enabled: false
+      choise_of_instance:
+        weight: 14
+        enabled: false
+      customer_details:
+        weight: 15
+        enabled: false
+      delivery:
+        weight: 16
+        enabled: false
+      installment:
+        weight: 13
+        enabled: false
+      list_of_selected_beds:
+        weight: 29
+        enabled: false
+      list_of_selected_fabrics:
+        weight: 30
+        enabled: false
+      list_of_selected_furniture_sets:
+        weight: 31
+        enabled: false
+      list_of_selected_moduls:
+        weight: 32
+        enabled: false
+      opisanie_zayavki:
+        weight: 17
+        enabled: false
+      organization_details_form:
+        weight: 18
+        enabled: false
+      other_goods:
+        weight: 35
+        enabled: false
+      payment:
+        weight: 19
+        enabled: true
+      seller:
+        weight: 37
+        enabled: false
+      separate_set_of_bed:
+        weight: 38
+        enabled: false
+      separate_set_of_module:
+        weight: 39
+        enabled: false
+      separate_set_of_upholstered_furn:
+        weight: 40
+        enabled: false
+      service:
+        weight: 20
+        enabled: false
+      total_amount:
+        weight: 42
+        enabled: false
+      trading_operation_type:
+        weight: 21
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,319 @@
+uuid: 8debb120-6882-4316-91d7-9d486daba5e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.order_display
+    - field.field.node.point_of_sale.field_adres
+    - field.field.node.point_of_sale.field_litera
+    - field.field.node.point_of_sale.field_nazvanie
+    - field.field.node.point_of_sale.field_phone
+    - field.field.node.point_of_sale.field_point_of_sale_type
+    - field.field.node.point_of_sale.field_store_affiliation
+    - node.type.point_of_sale
+  module:
+    - address
+    - display_builder
+    - layout_builder
+    - options
+    - phonenumber
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - user
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_2'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '4'
+                    - '8'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - '4'
+                    - '8'
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - '4'
+                    - '8'
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:point_of_sale:field_nazvanie'
+                      'field:node:point_of_sale:field_nazvanie':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:point_of_sale:field_nazvanie'
+                              source:
+                                type: string
+                                label: above
+                                settings:
+                                  link_to_entity: false
+                                third_party_settings: {  }
+                                weight: 2
+                                region: content
+                    node_id: 044e630be8f691fa
+                    third_party_settings:
+                      styles:
+                        selected:
+                          typography: fs-5
+                          text_font_weight: fw-medium
+                        extra: ''
+              col_2_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          row_cols:
+                            source_id: select
+                            source:
+                              value: auto
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: icon_renderable
+                                source:
+                                  value:
+                                    target_id: 'bootstrap:phone-vibrate-fill'
+                                    settings:
+                                      bootstrap:
+                                        size: 20px
+                                        color: ''
+                                        alt: ''
+                                    icon_id: 'bootstrap:phone-vibrate-fill'
+                                    icon_settings:
+                                      bootstrap:
+                                        size: 20px
+                                        color: ''
+                                        alt: ''
+                                  saved_values:
+                                    size: 20px
+                                    color: ''
+                                    alt: ''
+                                node_id: 690e948dd8c48a25
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:point_of_sale:field_phone'
+                                  'field:node:point_of_sale:field_phone':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:point_of_sale:field_phone'
+                                          source:
+                                            type: phone_international
+                                            label: above
+                                            settings:
+                                              title: ''
+                                              link: false
+                                            third_party_settings: {  }
+                                            weight: 5
+                                            region: content
+                                node_id: a6d96ad6620c9dd8
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: ba12edc63b8ecbee
+            third_party_settings: ''
+            node_id: ''
+        node_id: 9f84874d3ba94551
+id: node.point_of_sale.order_display
+targetEntityType: node
+bundle: point_of_sale
+mode: order_display
+content:
+  field_adres:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_litera:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_nazvanie:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_phone:
+    type: phone_international
+    label: above
+    settings:
+      title: ''
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_point_of_sale_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_store_affiliation: true

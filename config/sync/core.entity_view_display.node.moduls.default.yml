@@ -1,0 +1,38 @@
+uuid: 5fa215d1-5847-4fa2-833b-0376ea284351
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.moduls.field_execution
+    - field.field.node.moduls.field_parent_instance
+    - node.type.moduls
+  module:
+    - user
+id: node.moduls.default
+targetEntityType: node
+bundle: moduls
+mode: default
+content:
+  field_execution:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_parent_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_link_display: true

@@ -1,0 +1,227 @@
+uuid: 7a58fb5d-5757-46dc-9d0f-c05292110cd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.vybrat_tkan_dlya_elementov.field_choise_element
+    - field.field.paragraph.vybrat_tkan_dlya_elementov.field_choise_fabric
+    - field.field.paragraph.vybrat_tkan_dlya_elementov.field_filling
+    - paragraphs.paragraphs_type.vybrat_tkan_dlya_elementov
+  module:
+    - display_builder
+    - layout_builder
+    - options
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_3'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: gx-0
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '4'
+                    - '4'
+                    - '4'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_3_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:vybrat_tkan_dlya_elementov:field_choise_element'
+                      'field:paragraph:vybrat_tkan_dlya_elementov:field_choise_element':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:vybrat_tkan_dlya_elementov:field_choise_element'
+                              source:
+                                type: entity_reference_label
+                                label: above
+                                settings:
+                                  link: false
+                                third_party_settings: {  }
+                                weight: 1
+                                region: content
+                    node_id: f951c0261d55c090
+              col_2_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:vybrat_tkan_dlya_elementov:field_choise_fabric'
+                      'field:paragraph:vybrat_tkan_dlya_elementov:field_choise_fabric':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:vybrat_tkan_dlya_elementov:field_choise_fabric'
+                              source:
+                                type: entity_reference_label
+                                label: above
+                                settings:
+                                  link: false
+                                third_party_settings: {  }
+                                weight: 0
+                                region: content
+                    node_id: a40d73aa39d4eb7d
+              col_3_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:vybrat_tkan_dlya_elementov:field_filling'
+                      'field:paragraph:vybrat_tkan_dlya_elementov:field_filling':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:vybrat_tkan_dlya_elementov:field_filling'
+                              source:
+                                type: list_default
+                                label: above
+                                settings: {  }
+                                third_party_settings: {  }
+                                weight: 2
+                                region: content
+                    node_id: fa48dc87471d9419
+            third_party_settings: ''
+            node_id: ''
+        node_id: 90dea549e0b02e1a
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border-bottom
+              borders_border_width: border-1
+              borders_border_color: border-dark-subtle
+              borders_border_opacity: border-opacity-50
+            extra: ''
+id: paragraph.vybrat_tkan_dlya_elementov.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: vybrat_tkan_dlya_elementov
+mode: order_display_for_paragraphs
+content:
+  field_choise_element:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_choise_fabric:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_filling:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

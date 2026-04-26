@@ -1,0 +1,21 @@
+uuid: 5d7e0c4d-9899-4329-8606-9aa6d6dd90ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_time_range
+    - paragraphs.paragraphs_type.delivery
+  module:
+    - datetime_range
+id: paragraph.delivery.field_time_range
+field_name: field_time_range
+entity_type: paragraph
+bundle: delivery
+label: 'Временной интервал'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

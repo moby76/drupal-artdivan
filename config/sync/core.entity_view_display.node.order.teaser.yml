@@ -1,0 +1,56 @@
+uuid: 45bd4b93-81ee-45c2-ac9e-9d9b0874982a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.order.body
+    - field.field.node.order.field_auto_order_number
+    - field.field.node.order.field_customer
+    - field.field.node.order.field_delivery
+    - field.field.node.order.field_header
+    - field.field.node.order.field_order_description
+    - field.field.node.order.field_payment
+    - field.field.node.order.field_point_of_sale
+    - field.field.node.order.field_print_page
+    - field.field.node.order.field_product_selection
+    - field.field.node.order.field_production_type
+    - field.field.node.order.field_total_amount
+    - node.type.order
+  module:
+    - text
+    - user
+id: node.order.teaser
+targetEntityType: node
+bundle: order
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_link_display: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_auto_order_number: true
+  field_customer: true
+  field_delivery: true
+  field_header: true
+  field_order_description: true
+  field_payment: true
+  field_point_of_sale: true
+  field_print_page: true
+  field_product_selection: true
+  field_production_type: true
+  field_total_amount: true

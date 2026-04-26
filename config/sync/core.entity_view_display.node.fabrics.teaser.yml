@@ -1,0 +1,39 @@
+uuid: 9a6083f0-6c81-40bd-9c19-e890e244af9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.fabrics.body
+    - field.field.node.fabrics.field_fabric_article
+    - field.field.node.fabrics.field_fabric_price_category
+    - field.field.node.fabrics.field_main_supplier
+    - node.type.fabrics
+  module:
+    - text
+    - user
+id: node.fabrics.teaser
+targetEntityType: node
+bundle: fabrics
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_fabric_article: true
+  field_fabric_price_category: true
+  field_main_supplier: true

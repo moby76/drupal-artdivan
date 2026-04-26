@@ -1,0 +1,42 @@
+uuid: cfaf7f47-353b-48a7-ab03-989d65d11f7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.assembly.field_assembly_is_required
+    - field.field.paragraph.assembly.field_assembly_payment
+    - field.field.paragraph.assembly.field_assembly_price
+    - paragraphs.paragraphs_type.assembly
+id: paragraph.assembly.default
+targetEntityType: paragraph
+bundle: assembly
+mode: default
+content:
+  field_assembly_is_required:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_assembly_payment:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_assembly_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,65 @@
+uuid: 8403a53d-a1e5-4a8f-9b15-8b9652140708
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.selected_items_cost.field_selcted_items_cost
+    - paragraphs.paragraphs_type.selected_items_cost
+  module:
+    - display_builder
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:selected_items_cost:field_selcted_items_cost'
+          'field:paragraph:selected_items_cost:field_selcted_items_cost':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:selected_items_cost:field_selcted_items_cost'
+                  source:
+                    type: number_integer
+                    label: hidden
+                    settings:
+                      thousand_separator: ''
+                      prefix_suffix: true
+                    third_party_settings: {  }
+                    weight: 0
+                    region: content
+        node_id: 4384b20186f3e7ac
+        third_party_settings:
+          styles:
+            selected:
+              colors_color: text-danger
+              text_font_weight: fw-medium
+              text_text_alignment: text-center
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-danger
+              borders_border_radius: rounded-pill
+            extra: px-3
+id: paragraph.selected_items_cost.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: selected_items_cost
+mode: order_display_for_paragraphs
+content:
+  field_selcted_items_cost:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,9 @@
+uuid: 7bb42078-32a9-4a35-833d-44da893e6088
+langcode: en
+status: true
+dependencies: {  }
+name: Конфигурация
+vid: configuration
+description: null
+weight: -8
+new_revision: false

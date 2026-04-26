@@ -1,0 +1,23 @@
+uuid: 985753ba-4df9-4434-835a-b9abbee548a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_assembly_cost
+    - paragraphs.paragraphs_type.total_amount
+id: paragraph.total_amount.field_assembly_cost
+field_name: field_assembly_cost
+entity_type: paragraph
+bundle: total_amount
+label: 'Стоимость сборки'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

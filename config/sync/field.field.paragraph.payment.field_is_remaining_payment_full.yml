@@ -1,0 +1,21 @@
+uuid: 53f879f1-866c-4073-a8ef-04b68f1a0620
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_remaining_payment_full
+    - paragraphs.paragraphs_type.payment
+id: paragraph.payment.field_is_remaining_payment_full
+field_name: field_is_remaining_payment_full
+entity_type: paragraph
+bundle: payment
+label: 'Остаток оплачивается за один платёж?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Остаток будет оплачен одним платежом'
+  off_label: 'Остаток оплачивается равными долями(рассрочка)'
+field_type: boolean

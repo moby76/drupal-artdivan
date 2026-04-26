@@ -1,0 +1,18 @@
+uuid: e87c36e7-47e7-4a69-96a1-ea9d26420666
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_delivery_or_pickup
+field_name: field_delivery_or_pickup
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

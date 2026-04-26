@@ -1,0 +1,58 @@
+uuid: c1f58da5-3853-4997-8921-41be045ec011
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.installment.field_payment_date
+    - field.field.paragraph.installment.field_payment_state
+    - field.field.paragraph.installment.field_summa
+    - field.field.paragraph.installment.field_variant_oplaty
+    - paragraphs.paragraphs_type.installment
+  module:
+    - datetime
+    - display_builder
+third_party_settings:
+  display_builder:
+    profile: default
+id: paragraph.installment.default
+targetEntityType: paragraph
+bundle: installment
+mode: default
+content:
+  field_payment_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_payment_state:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_summa:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_variant_oplaty:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

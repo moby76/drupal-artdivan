@@ -1,0 +1,23 @@
+uuid: 1dd4691c-5de8-46cf-b9b6-6b71f9f0c0ef
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - ui_suite_bootstrap
+_core:
+  default_config_hash: z_CH-dib6Ck0pB0nKjzVNvKUBGmBaObfLS2T_hOBLU4
+id: ui_suite_bootstrap_search
+theme: ui_suite_bootstrap
+region: footer
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: null
+visibility: {  }

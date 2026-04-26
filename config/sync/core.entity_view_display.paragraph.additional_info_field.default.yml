@@ -1,0 +1,22 @@
+uuid: 7a7e8c41-c617-4334-8d13-8e222ca101a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.additional_info_field.field_additional
+    - paragraphs.paragraphs_type.additional_info_field
+  module:
+    - text
+id: paragraph.additional_info_field.default
+targetEntityType: paragraph
+bundle: additional_info_field
+mode: default
+content:
+  field_additional:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,747 @@
+uuid: ff5f092f-34af-4c36-a51d-ba64952b5316
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.delivery.field_delivery_date
+    - field.field.paragraph.delivery.field_delivery_or_pickup
+    - field.field.paragraph.delivery.field_delivery_price
+    - field.field.paragraph.delivery.field_delivery_today
+    - field.field.paragraph.delivery.field_elevator_type
+    - field.field.paragraph.delivery.field_floor
+    - field.field.paragraph.delivery.field_is_elevator
+    - field.field.paragraph.delivery.field_time_range
+    - field.field.paragraph.delivery.field_tip_dostavki
+    - field.field.paragraph.delivery.field_variant_oplaty
+    - paragraphs.paragraphs_type.delivery
+  module:
+    - datetime
+    - datetime_range
+    - display_builder
+    - layout_builder
+    - nomarkup
+    - options
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: select
+                source:
+                  value: '12'
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_2'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: gx-0
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                          col_sm:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                          col_md:
+                            source_id: selects
+                            source:
+                              value:
+                                - '2'
+                                - '10'
+                          col_lg:
+                            source_id: selects
+                            source:
+                              value:
+                                - '2'
+                                - '10'
+                          col_xl:
+                            source_id: selects
+                            source:
+                              value:
+                                - '2'
+                                - '10'
+                          col_xxl:
+                            source_id: selects
+                            source:
+                              value:
+                                - '2'
+                                - '10'
+                          col_offset:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_1_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          col_2_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          col_1_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:delivery:field_delivery_or_pickup'
+                                  'field:paragraph:delivery:field_delivery_or_pickup':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:delivery:field_delivery_or_pickup'
+                                          source:
+                                            type: boolean
+                                            settings:
+                                              format: default
+                                              format_custom_false: ''
+                                              format_custom_true: ''
+                                            third_party_settings: {  }
+                                node_id: c5c8ede07bd0a210
+                          col_2_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: component
+                                source:
+                                  component:
+                                    component_id: 'ui_suite_bootstrap:grid_row'
+                                    variant_id: null
+                                    props:
+                                      attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      container:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      container_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      container_wrapper_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      gutters:
+                                        source_id: select
+                                        source:
+                                          value: g-0
+                                      gutters_horizontal:
+                                        source_id: select
+                                        source:
+                                          value: gx-0
+                                      gutters_vertical:
+                                        source_id: select
+                                        source:
+                                          value: gy-0
+                                      row_cols:
+                                        source_id: select
+                                        source:
+                                          value: '6'
+                                      col_xs:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_sm:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_md:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_lg:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_xl:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_xxl:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_offset:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                    slots:
+                                      content:
+                                        add_more_button: ''
+                                        sources:
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:delivery:field_delivery_today'
+                                              'field:paragraph:delivery:field_delivery_today':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:delivery:field_delivery_today'
+                                                      source:
+                                                        type: boolean
+                                                        label: above
+                                                        settings:
+                                                          format: default
+                                                          format_custom_false: ''
+                                                          format_custom_true: ''
+                                                        third_party_settings: {  }
+                                                        weight: 0
+                                                        region: content
+                                            node_id: ff8f9fa0f1b251d6
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  borders_border: border-end
+                                                  borders_border_width: border-1
+                                                  borders_border_color: border-secondary-subtle
+                                                extra: ''
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:delivery:field_tip_dostavki'
+                                              'field:paragraph:delivery:field_tip_dostavki':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:delivery:field_tip_dostavki'
+                                                      source:
+                                                        type: list_default
+                                                        label: above
+                                                        settings: {  }
+                                                        third_party_settings: {  }
+                                                        weight: 1
+                                                        region: content
+                                            node_id: dcd78cc34f0c3eae
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  borders_border: border-end
+                                                  borders_border_width: border-1
+                                                  borders_border_color: border-secondary-subtle
+                                                extra: ''
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:delivery:field_delivery_date'
+                                              'field:paragraph:delivery:field_delivery_date':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:delivery:field_delivery_date'
+                                                      source:
+                                                        type: datetime_custom
+                                                        label: above
+                                                        settings:
+                                                          timezone_override: Asia/Novokuznetsk
+                                                          date_format: d.m.Y
+                                                        third_party_settings:
+                                                          nomarkup:
+                                                            enabled: false
+                                                            separator: '|'
+                                                            referenced_entity: ''
+                                                        weight: 2
+                                                        region: content
+                                            node_id: c7fe79fe46c1208d
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  borders_border: border-end
+                                                  borders_border_width: border-1
+                                                  borders_border_color: border-secondary-subtle
+                                                extra: ''
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:delivery:field_time_range'
+                                              'field:paragraph:delivery:field_time_range':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:delivery:field_time_range'
+                                                      source:
+                                                        type: daterange_default
+                                                        label: above
+                                                        settings:
+                                                          timezone_override: Asia/Novokuznetsk
+                                                          format_type: html_time
+                                                          from_to: both
+                                                          separator: '-'
+                                                        third_party_settings:
+                                                          nomarkup:
+                                                            enabled: false
+                                                            separator: '|'
+                                                            referenced_entity: ''
+                                                        weight: 3
+                                                        region: content
+                                            node_id: 4b56520116696ebc
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  text_text_alignment: text-center
+                                                  flex_flex: d-inline-flex
+                                                extra: ''
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:delivery:field_delivery_price'
+                                              'field:paragraph:delivery:field_delivery_price':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:delivery:field_delivery_price'
+                                                      source:
+                                                        type: number_integer
+                                                        label: above
+                                                        settings:
+                                                          thousand_separator: ''
+                                                          prefix_suffix: true
+                                                        third_party_settings: {  }
+                                                        weight: 4
+                                                        region: content
+                                            node_id: 8cb11a72967e9bf8
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  colors_color: text-danger
+                                                  text_font_weight: fw-medium
+                                                extra: ''
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:delivery:field_variant_oplaty'
+                                              'field:paragraph:delivery:field_variant_oplaty':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:delivery:field_variant_oplaty'
+                                                      source:
+                                                        type: entity_reference_label
+                                                        third_party_settings:
+                                                          nomarkup:
+                                                            separator: '|'
+                                                            referenced_entity: ''
+                                                            enabled: 0
+                                                        settings:
+                                                          link: 0
+                                                      node_id: ''
+                                                      third_party_settings: ''
+                                                      _weight: '0'
+                                            node_id: 3ecf27549a57f5a9
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  colors_color: text-danger
+                                                  text_text_alignment: text-center
+                                                  text_text_truncate: text-truncate
+                                                  colors_background_color: bg-danger-subtle
+                                                extra: ''
+                                    third_party_settings: ''
+                                    node_id: ''
+                                node_id: 73b902855f7f5dc0
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      text_text_alignment: text-center
+                                    extra: ''
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 9687d97bfff5285d
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border-bottom
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          spacing_padding_bottom: pb-2
+                        extra: 'mx-2 my-1'
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: container-fluid
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: gx-2
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          row_cols:
+                            source_id: select
+                            source:
+                              value: auto
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: auto
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: auto
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: auto
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: 'Примечания к доставке:'
+                                node_id: 062b9ee11833889c
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      text_font_italics: fst-italic
+                                    extra: ''
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:delivery:field_floor'
+                                  'field:paragraph:delivery:field_floor':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:delivery:field_floor'
+                                          source:
+                                            type: list_default
+                                            settings: {  }
+                                            third_party_settings: {  }
+                                node_id: 55ea36a47895b198
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      text_text_decoration: text-decoration-underline
+                                      text_line_height: lh-base
+                                    extra: ''
+                              -
+                                source_id: textfield
+                                source:
+                                  value: ','
+                                node_id: 474d21d96f706c55
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      text_font_italics: fst-italic
+                                    extra: ''
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:delivery:field_is_elevator'
+                                  'field:paragraph:delivery:field_is_elevator':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:delivery:field_is_elevator'
+                                          source:
+                                            type: boolean
+                                            settings:
+                                              format: default
+                                              format_custom_false: ''
+                                              format_custom_true: ''
+                                            third_party_settings: {  }
+                                node_id: 9293339acb2a76e4
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      text_text_decoration: text-decoration-underline
+                                    extra: ''
+                              -
+                                source_id: textfield
+                                source:
+                                  value: ','
+                                node_id: 2b733f27dd888c6c
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      text_font_italics: fst-italic
+                                    extra: ''
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:delivery:field_elevator_type'
+                                  'field:paragraph:delivery:field_elevator_type':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:delivery:field_elevator_type'
+                                          source:
+                                            type: list_default
+                                            settings: {  }
+                                            third_party_settings: {  }
+                                node_id: ff89ea8e02e91b22
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      text_text_decoration: text-decoration-underline
+                                    extra: ''
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: dfb1740f3cce2fc4
+                    third_party_settings:
+                      styles:
+                        selected:
+                          text_font_italics: fst-italic
+                          text_text_alignment: text-center
+                          spacing_margin: m-2
+                          spacing_margin_top: mt-0
+                          float: float-end
+                        extra: ''
+            third_party_settings: ''
+            node_id: ''
+        node_id: 0d4f8a86175964c4
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-secondary
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-2
+            extra: my-1
+id: paragraph.delivery.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: delivery
+mode: order_display_for_paragraphs
+content:
+  field_delivery_date:
+    type: datetime_custom
+    label: above
+    settings:
+      timezone_override: Asia/Novokuznetsk
+      date_format: d.m.Y
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
+    region: content
+  field_delivery_or_pickup:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_delivery_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_delivery_today:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_time_range:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: Asia/Novokuznetsk
+      format_type: html_time
+      from_to: both
+      separator: '-'
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 3
+    region: content
+  field_tip_dostavki:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_variant_oplaty:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_elevator_type: true
+  field_floor: true
+  field_is_elevator: true

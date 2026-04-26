@@ -1,0 +1,21 @@
+uuid: 2ea32a24-814e-4bfe-a816-69bee3226eb9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - serial
+id: node.field_auto_order_number
+field_name: field_auto_order_number
+entity_type: node
+type: serial
+settings:
+  start_value: 1
+  init_existing_entities: 1
+module: serial
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

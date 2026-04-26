@@ -1,0 +1,287 @@
+uuid: ef70a36e-7d65-455d-a348-8a2c3807641a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.service.field_assembly
+    - field.field.paragraph.service.field_delivery
+    - field.field.paragraph.service.field_delivery_or_pickup
+    - field.field.paragraph.service.field_note
+    - field.field.paragraph.service.field_total_cost_of_services
+    - paragraphs.paragraphs_type.service
+  module:
+    - display_builder
+    - entity_reference_revisions
+    - layout_builder
+    - text
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_2'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '4'
+                    - '8'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - '3'
+                    - '9'
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - '3'
+                    - '9'
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:service:field_delivery_or_pickup'
+                      'field:paragraph:service:field_delivery_or_pickup':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:service:field_delivery_or_pickup'
+                              source:
+                                type: boolean
+                                label: above
+                                settings:
+                                  format: default
+                                  format_custom_false: ''
+                                  format_custom_true: ''
+                                third_party_settings: {  }
+                                weight: 0
+                                region: content
+                    node_id: 82149357f4197641
+              col_2_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:service:field_delivery'
+                      'field:paragraph:service:field_delivery':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:service:field_delivery'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: bf1f58908be66950
+            third_party_settings: ''
+            node_id: ''
+        node_id: cebf746afb2a901a
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border-bottom
+              borders_border_width: border-2
+              borders_border_color: border-secondary-subtle
+              spacing_padding_bottom: pb-2
+            extra: ''
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:service:field_assembly'
+                      'field:paragraph:service:field_assembly':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:service:field_assembly'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                label: above
+                                settings:
+                                  view_mode: default
+                                  link: ''
+                                third_party_settings: {  }
+                                weight: 2
+                                region: content
+                    node_id: 0aab73994b55e765
+        node_id: 6b3cd16f4dd0b9cb
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:service:field_total_cost_of_services'
+          'field:paragraph:service:field_total_cost_of_services':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:service:field_total_cost_of_services'
+                  source:
+                    type: number_integer
+                    label: above
+                    settings:
+                      thousand_separator: ''
+                      prefix_suffix: true
+                    third_party_settings: {  }
+                    weight: 3
+                    region: content
+        node_id: 4aed47b7929b64b5
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:service:field_note'
+          'field:paragraph:service:field_note':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:service:field_note'
+                  source:
+                    type: text_default
+                    label: above
+                    settings: {  }
+                    third_party_settings: {  }
+                    weight: 4
+                    region: content
+        node_id: 49a90c17d1ecb820
+id: paragraph.service.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: service
+mode: order_display_for_paragraphs
+content:
+  field_assembly:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_delivery:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_delivery_or_pickup:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_note:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_total_cost_of_services:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

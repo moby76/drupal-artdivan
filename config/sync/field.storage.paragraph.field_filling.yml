@@ -1,0 +1,30 @@
+uuid: 84351c58-8877-44d4-99c9-6b28b1370c71
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_filling
+field_name: field_filling
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 100%
+      label: 100%
+    -
+      value: 50%
+      label: 50%
+    -
+      value: 25%
+      label: 25%
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

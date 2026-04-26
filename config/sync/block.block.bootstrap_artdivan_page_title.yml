@@ -1,0 +1,20 @@
+uuid: f4699182-030e-40ba-9632-7e52ecfe21ea
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap_artdivan
+_core:
+  default_config_hash: WzjnjBXsQND1jvjN7cUVQ3bEAfxWetAUrNTjeFH6vXU
+id: bootstrap_artdivan_page_title
+theme: bootstrap_artdivan
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 8e1fface-d1c6-4aac-8d74-1379fb10c408
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modul
+    - node.type.moduls
+    - paragraphs.paragraphs_type.separate_set_of_module
+id: paragraph.separate_set_of_module.field_modul
+field_name: field_modul
+entity_type: paragraph
+bundle: separate_set_of_module
+label: Модуль
+description: 'Дочерний от Экземпляра модели , такого как Модульный(Хеннеси Арт, Монреаль, Кенди и т.д.)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      moduls: moduls
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

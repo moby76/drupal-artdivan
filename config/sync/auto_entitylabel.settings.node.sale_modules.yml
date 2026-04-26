@@ -1,0 +1,10 @@
+status: 1
+pattern: 'Покупка модулей №[node:field_auto_order_number:value]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.sale_modules
+new_content_behavior: 0

@@ -1,0 +1,21 @@
+uuid: 121908e7-a794-4d9d-985c-4f2adc030695
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_assembly_is_required
+    - paragraphs.paragraphs_type.assembly
+id: paragraph.assembly.field_assembly_is_required
+field_name: field_assembly_is_required
+entity_type: paragraph
+bundle: assembly
+label: 'Требуется сборка'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Сборка нужна'
+  off_label: 'Собирать не нужно'
+field_type: boolean

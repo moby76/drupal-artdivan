@@ -1,0 +1,27 @@
+uuid: 236aad39-f695-4747-be9a-923b4efedaed
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - ui_suite_bootstrap
+_core:
+  default_config_hash: TU1nNcyubN2biGFYospGEpgUJ3f2U8Du38FxNYJkBN4
+id: ui_suite_bootstrap_tools
+theme: ui_suite_bootstrap
+region: footer
+weight: -3
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

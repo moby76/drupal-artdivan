@@ -1,0 +1,64 @@
+uuid: ccaef48e-cdc6-47fb-9368-ecf82e09444c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_installment
+    - paragraphs.paragraphs_type.installment
+    - paragraphs.paragraphs_type.payment
+  module:
+    - entity_reference_revisions
+id: paragraph.payment.field_installment
+field_name: field_installment
+entity_type: paragraph
+bundle: payment
+label: Рассрочка
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      installment: installment
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info:
+        weight: 14
+        enabled: false
+      assembly:
+        weight: 15
+        enabled: false
+      choise_of_instance:
+        weight: 16
+        enabled: false
+      customer_details:
+        weight: 17
+        enabled: false
+      delivery:
+        weight: 18
+        enabled: false
+      installment:
+        weight: 13
+        enabled: true
+      opisanie_zayavki:
+        weight: 19
+        enabled: false
+      organization_details_form:
+        weight: 20
+        enabled: false
+      payment:
+        weight: 21
+        enabled: false
+      service:
+        weight: 22
+        enabled: false
+      trading_operation_type:
+        weight: 23
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

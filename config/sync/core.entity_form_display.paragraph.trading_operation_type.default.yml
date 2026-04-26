@@ -1,0 +1,53 @@
+uuid: a5516f0c-83f8-4fd7-af29-a30fa0b62868
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.trading_operation_type.field_manufacturing_time
+    - field.field.paragraph.trading_operation_type.field_operation_type
+    - paragraphs.paragraphs_type.trading_operation_type
+  module:
+    - conditional_fields
+id: paragraph.trading_operation_type.default
+targetEntityType: paragraph
+bundle: trading_operation_type
+mode: default
+content:
+  field_manufacturing_time:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        24072fbc-d6a5-4d39-b70c-7fed27c40b94:
+          entity_type: paragraph
+          bundle: choise_of_instance
+          dependee: field_operation_type
+          settings:
+            state: '!disabled'
+            reset: false
+            condition: value
+            grouping: OR
+            values_set: 3
+            value: ''
+            values: '16'
+            value_form:
+              -
+                target_id: '16'
+            effect: fill
+            effect_options:
+              fill:
+                value: '0'
+                reset: 1
+            selector: ''
+  field_operation_type:
+    type: options_buttons
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,67 @@
+uuid: e56feb53-a488-4e45-bafe-1f75f8681e86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_goods
+    - node.type.sale_complects
+    - paragraphs.paragraphs_type.other_goods
+  module:
+    - entity_reference_revisions
+id: node.sale_complects.field_other_goods
+field_name: field_other_goods
+entity_type: node
+bundle: sale_complects
+label: 'Прочие товары'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      other_goods: other_goods
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info:
+        weight: 14
+        enabled: false
+      assembly:
+        weight: 15
+        enabled: false
+      choise_of_instance:
+        weight: 16
+        enabled: false
+      customer_details:
+        weight: 17
+        enabled: false
+      delivery:
+        weight: 18
+        enabled: false
+      installment:
+        weight: 19
+        enabled: false
+      opisanie_zayavki:
+        weight: 20
+        enabled: false
+      organization_details_form:
+        weight: 21
+        enabled: false
+      other_goods:
+        weight: 22
+        enabled: true
+      payment:
+        weight: 23
+        enabled: false
+      service:
+        weight: 24
+        enabled: false
+      trading_operation_type:
+        weight: 25
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

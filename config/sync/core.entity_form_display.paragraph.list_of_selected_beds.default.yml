@@ -1,0 +1,58 @@
+uuid: cc862fbe-1339-41bb-a1aa-53bc96f8cf6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_of_selected_beds.field_choose_a_bed_and_variation
+    - field.field.paragraph.list_of_selected_beds.field_selected_items_cost
+    - paragraphs.paragraphs_type.list_of_selected_beds
+  module:
+    - paragraphs
+id: paragraph.list_of_selected_beds.default
+targetEntityType: paragraph
+bundle: list_of_selected_beds
+mode: default
+content:
+  field_choose_a_bed_and_variation:
+    type: paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: separate_set_of_bed
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_selected_items_cost:
+    type: paragraphs
+    weight: 2
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: selected_items_cost
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: '0'
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

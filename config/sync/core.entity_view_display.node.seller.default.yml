@@ -1,0 +1,28 @@
+uuid: 47051252-4e21-4283-b095-632d2ee79956
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.seller.field_sellers_full_name
+    - node.type.seller
+  module:
+    - user
+id: node.seller.default
+targetEntityType: node
+bundle: seller
+mode: default
+content:
+  field_sellers_full_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

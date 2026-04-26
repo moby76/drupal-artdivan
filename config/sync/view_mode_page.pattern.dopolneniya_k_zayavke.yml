@@ -1,0 +1,24 @@
+uuid: ee2c72bc-0e9b-42b2-8c2a-ea38a206d040
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: dopolneniya_k_zayavke
+label: 'Дополнения к заявке'
+type: 'canonical_entities:node'
+pattern: /%/additions
+view_mode: additions
+selection_criteria:
+  9110ece2-b3f0-453d-96d6-9b9553a8b6b3:
+    id: 'entity_bundle:node'
+    bundles:
+      order: order
+      sale_complects: sale_complects
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9110ece2-b3f0-453d-96d6-9b9553a8b6b3
+selection_logic: and
+weight: -5
+relationships: {  }

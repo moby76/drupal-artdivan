@@ -1,0 +1,18 @@
+uuid: f1ecf6d8-0a78-4abd-9c2f-75a012f49518
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Реализация комплектов'
+type: sale_complects
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

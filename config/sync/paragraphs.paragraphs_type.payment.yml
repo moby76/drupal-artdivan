@@ -1,0 +1,10 @@
+uuid: 69f33469-250e-4302-aafd-2d9f4cdc97ee
+langcode: en
+status: true
+dependencies: {  }
+id: payment
+label: Оплата
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+uuid: 7b44684a-8336-4665-b865-467e308a511d
+langcode: en
+status: true
+dependencies: {  }
+id: list_of_selected_goods
+label: 'Выбрать Товары поставщиков'
+icon_uuid: null
+icon_default: null
+description: 'Список подобранных в заявку товаров поставщиков и их общая стоимость. Включает в себя массив типов параграфов "Прочие товары(товары поставщиков)" и параграф "Стоимость выбранных элементов"'
+behavior_plugins: {  }

@@ -1,0 +1,77 @@
+uuid: eaf04f7f-f196-4303-ab81-38734d0943c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.list_of_selected_fabrics.field_fabrics
+    - paragraphs.paragraphs_type.list_of_selected_fabrics
+  module:
+    - display_builder
+    - entity_reference_revisions
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:list_of_selected_fabrics:field_fabrics'
+                      'field:paragraph:list_of_selected_fabrics:field_fabrics':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:list_of_selected_fabrics:field_fabrics'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 3725ab686e84da61
+        node_id: d1cba895b89077c1
+        third_party_settings:
+          styles:
+            selected: {  }
+            extra: ''
+id: paragraph.list_of_selected_fabrics.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: list_of_selected_fabrics
+mode: order_display_for_paragraphs
+content:
+  field_fabrics:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

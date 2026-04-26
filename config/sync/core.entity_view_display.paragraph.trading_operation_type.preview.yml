@@ -1,0 +1,38 @@
+uuid: ec30e572-ea7e-45f5-be56-16fd99c003f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.trading_operation_type.field_manufacturing_time
+    - field.field.paragraph.trading_operation_type.field_operation_type
+    - paragraphs.paragraphs_type.trading_operation_type
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.trading_operation_type.preview
+targetEntityType: paragraph
+bundle: trading_operation_type
+mode: preview
+content:
+  field_manufacturing_time:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_operation_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

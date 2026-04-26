@@ -1,0 +1,10 @@
+uuid: ce195c53-c653-48a9-98b6-36ead05a04f7
+langcode: en
+status: true
+dependencies: {  }
+id: list_of_selected_moduls
+label: 'Выбор модулей'
+icon_uuid: null
+icon_default: null
+description: 'Параграф содержащий в себе список выбранных модулей. Включает в себя параграф "Выбор отдельного модуля" (separate_set_of_modul). И сам в свою очередь включён в тип контента "Заявка" (order)'
+behavior_plugins: {  }

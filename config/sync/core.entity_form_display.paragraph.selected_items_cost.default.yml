@@ -1,0 +1,22 @@
+uuid: 9f1d7b89-ec72-49da-a4d4-b82dd24f288c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.selected_items_cost.field_selcted_items_cost
+    - paragraphs.paragraphs_type.selected_items_cost
+id: paragraph.selected_items_cost.default
+targetEntityType: paragraph
+bundle: selected_items_cost
+mode: default
+content:
+  field_selcted_items_cost:
+    type: number
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

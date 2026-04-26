@@ -1,0 +1,23 @@
+uuid: f0f7fcbe-5d6e-47b5-8fb7-16bbac16a835
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_assembly_price
+    - paragraphs.paragraphs_type.assembly
+id: paragraph.assembly.field_assembly_price
+field_name: field_assembly_price
+entity_type: paragraph
+bundle: assembly
+label: 'Стоимость сборки'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

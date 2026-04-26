@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: kIuS7aUq1-kn8i65F9XIjvyCZYWoRu8rJpTNmU8ODXc
+default_source: drupalorg_jsonapi
+enabled_sources:
+  drupalorg_jsonapi: {  }
+  recipes: {  }
+  recommended: {  }
+  local_modules: {  }
+  drupal_core: {  }
+allow_ui_install: false
+max_selections: null

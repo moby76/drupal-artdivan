@@ -1,0 +1,9 @@
+uuid: 5faaed29-a20c-4d42-943a-b35de754452c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Механизмы трансформации'
+vid: transformation_mechanisms
+description: null
+weight: 0
+new_revision: false

@@ -1,0 +1,9 @@
+uuid: 0e3ea49c-237f-421d-9834-39a195da80a8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Варианты оплаты'
+vid: payments_variants
+description: 'Варианты оплаты'
+weight: 0
+new_revision: false

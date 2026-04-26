@@ -1,0 +1,9 @@
+uuid: 1ff7748b-eba1-40dd-ae56-1d384bdc5ca7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Основные элементы комплектов мебели'
+vid: main_elements
+description: null
+weight: 0
+new_revision: false

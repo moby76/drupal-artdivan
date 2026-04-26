@@ -1,0 +1,29 @@
+uuid: dc16f241-ab26-4b5b-8c7b-ebf97ad8a9c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_instance
+    - node.type.model_instance
+    - paragraphs.paragraphs_type.separate_set_of_bed
+id: paragraph.separate_set_of_bed.field_instance
+field_name: field_instance
+entity_type: paragraph
+bundle: separate_set_of_bed
+label: Экземпляр
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      model_instance: model_instance
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

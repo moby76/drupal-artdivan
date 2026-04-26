@@ -1,0 +1,64 @@
+uuid: f7e8403f-de14-4a1f-bb9c-0f0ca3435783
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_payment
+    - node.type.sale_complects
+    - paragraphs.paragraphs_type.payment
+  module:
+    - entity_reference_revisions
+id: node.sale_complects.field_payment
+field_name: field_payment
+entity_type: node
+bundle: sale_complects
+label: Оплата
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      payment: payment
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info:
+        weight: 12
+        enabled: false
+      assembly:
+        weight: 13
+        enabled: false
+      choise_of_instance:
+        weight: 14
+        enabled: false
+      customer_details:
+        weight: 15
+        enabled: false
+      delivery:
+        weight: 16
+        enabled: false
+      installment:
+        weight: 13
+        enabled: false
+      opisanie_zayavki:
+        weight: 17
+        enabled: false
+      organization_details_form:
+        weight: 18
+        enabled: false
+      payment:
+        weight: 19
+        enabled: true
+      service:
+        weight: 20
+        enabled: false
+      trading_operation_type:
+        weight: 21
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions

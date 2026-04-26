@@ -1,0 +1,36 @@
+uuid: 4d1767b1-d3f1-4cbd-8ad1-503dde733b63
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+    - ui_styles
+  theme:
+    - bootstrap_artdivan
+third_party_settings:
+  ui_styles:
+    block:
+      selected: {  }
+      extra: ''
+    title:
+      selected:
+        visually_hidden: visually-hidden
+      extra: ''
+    content:
+      selected: {  }
+      extra: ''
+_core:
+  default_config_hash: '-oVVcBq_SC4L3GnVOpO221512TXdbdkY2Ot-XHo5ssY'
+id: bootstrap_artdivan_search
+theme: bootstrap_artdivan
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: null
+visibility: {  }

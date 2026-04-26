@@ -1,0 +1,33 @@
+uuid: e7af5505-1a0c-483a-8b57-cf9fcb069089
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_operation_type
+    - paragraphs.paragraphs_type.trading_operation_type
+    - taxonomy.vocabulary.order_type
+  content:
+    - 'taxonomy_term:order_type:af0b56e1-1599-48f6-a421-ef825521a457'
+id: paragraph.trading_operation_type.field_operation_type
+field_name: field_operation_type
+entity_type: paragraph
+bundle: trading_operation_type
+label: 'Тип торговой операции'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: af0b56e1-1599-48f6-a421-ef825521a457
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      order_type: order_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,24 @@
+uuid: d3ba0963-9000-43cd-8763-eba8b077b9a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_additional
+    - filter.format.plain_text
+    - paragraphs.paragraphs_type.additional_info_field
+  module:
+    - text
+id: paragraph.additional_info_field.field_additional
+field_name: field_additional
+entity_type: paragraph
+bundle: additional_info_field
+label: 'Дополнительная информация'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - plain_text
+field_type: text_long

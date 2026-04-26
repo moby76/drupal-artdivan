@@ -1,0 +1,44 @@
+uuid: 6a0c64d3-e0dc-4416-847e-43cbba4d17ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_of_selected_beds.field_choose_a_bed_and_variation
+    - field.field.paragraph.list_of_selected_beds.field_selected_items_cost
+    - paragraphs.paragraphs_type.list_of_selected_beds
+  module:
+    - entity_reference_revisions
+    - field_label
+    - nomarkup
+id: paragraph.list_of_selected_beds.default
+targetEntityType: paragraph
+bundle: list_of_selected_beds
+mode: default
+content:
+  field_choose_a_bed_and_variation:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_selected_items_cost:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      field_label:
+        label_class: ''
+        label_value: 'Стоимость выбранных модулей'
+        label_tag: ''
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
+    region: content
+hidden: {  }

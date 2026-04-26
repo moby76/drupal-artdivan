@@ -1,0 +1,31 @@
+uuid: b807cdbd-d26d-4d22-a776-a9e71643a294
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.fabrics_images.field_media_image_1
+    - image.style.thumbnail
+    - media.type.fabrics_images
+  module:
+    - image
+id: media.fabrics_images.media_library
+targetEntityType: media
+bundle: fabrics_images
+mode: media_library
+content:
+  field_media_image_1:
+    type: image_image
+    weight: -50
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_folders_folder: true
+  name: true
+  path: true
+  status: true
+  uid: true

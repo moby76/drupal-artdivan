@@ -1,0 +1,23 @@
+uuid: 9e4b4709-2e02-4601-9f80-9482107b3787
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_delivery_address_is_some
+    - paragraphs.paragraphs_type.customer_details
+id: paragraph.customer_details.field_delivery_address_is_some
+field_name: field_delivery_address_is_some
+entity_type: paragraph
+bundle: customer_details
+label: 'Адрес доставки соответствует адресу покупателя'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Адрес доставки соответствует'
+  off_label: 'Адрес доставки другой'
+field_type: boolean

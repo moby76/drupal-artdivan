@@ -1,0 +1,138 @@
+uuid: ad0e3634-7c7e-435e-84e9-65ee17cf17ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_additional_information
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_assembly
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_execution_time
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_fabric_list
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_instance
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_select_embroidery
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_upholstered_furn
+  module:
+    - entity_reference_revisions
+    - field_group
+    - field_label
+    - layout_builder
+    - nomarkup
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  field_group:
+    group_vybor_tkaney:
+      children:
+        - field_fabric_list
+      label: 'выбор тканей'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        description: ''
+id: paragraph.separate_set_of_upholstered_furn.preview
+targetEntityType: paragraph
+bundle: separate_set_of_upholstered_furn
+mode: preview
+content:
+  field_additional_information:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 6
+    region: content
+  field_assembly:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 5
+    region: content
+  field_execution_time:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 3
+    region: content
+  field_fabric_list:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
+    region: content
+  field_select_embroidery:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings:
+      field_label:
+        label_class: ''
+        label_value: Вышивка
+        label_tag: ''
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 4
+    region: content
+  field_variation:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_instance: true

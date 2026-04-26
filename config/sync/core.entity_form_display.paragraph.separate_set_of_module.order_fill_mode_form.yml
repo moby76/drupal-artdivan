@@ -1,0 +1,53 @@
+uuid: a6f27d77-a191-4b46-b60c-6955740dd2b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.order_fill_mode_form
+    - field.field.paragraph.separate_set_of_module.field_modul
+    - field.field.paragraph.separate_set_of_module.field_modul_price
+    - field.field.paragraph.separate_set_of_module.field_modules_arrangement
+    - field.field.paragraph.separate_set_of_module.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_module
+  module:
+    - field_token_value
+id: paragraph.separate_set_of_module.order_fill_mode_form
+targetEntityType: paragraph
+bundle: separate_set_of_module
+mode: order_fill_mode_form
+content:
+  field_modul:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_modul_price:
+    type: field_token_value_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_modules_arrangement:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_variation:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

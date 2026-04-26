@@ -1,0 +1,23 @@
+uuid: dea3ae1d-bdb5-4e01-ac8c-1e04269676d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_total_cost_of_services
+    - paragraphs.paragraphs_type.service
+id: paragraph.service.field_total_cost_of_services
+field_name: field_total_cost_of_services
+entity_type: paragraph
+bundle: service
+label: 'Общая стоимость услуг'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

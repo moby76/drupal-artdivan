@@ -1,0 +1,10 @@
+uuid: a0057275-2ebc-41b6-a87a-5f1763db95c9
+langcode: en
+status: true
+dependencies: {  }
+id: additional_info_field
+label: 'Поле с дополнительнй информацией'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

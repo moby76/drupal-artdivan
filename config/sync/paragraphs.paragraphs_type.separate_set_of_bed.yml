@@ -1,0 +1,10 @@
+uuid: 5b4ab16c-244d-4607-a307-9df713f64c9f
+langcode: en
+status: true
+dependencies: {  }
+id: separate_set_of_bed
+label: 'Отдельная кровать'
+icon_uuid: null
+icon_default: null
+description: 'Создание элемента(Кровать) для добавления в список Кроватей в Заявку: Кровать, ценовая вариация, подбор тканей, вышивка, срок изготовления.'
+behavior_plugins: {  }

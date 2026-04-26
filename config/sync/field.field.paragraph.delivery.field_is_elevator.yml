@@ -1,0 +1,21 @@
+uuid: b6679b7b-6986-4be5-b2f2-56e6f16e3c1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_elevator
+    - paragraphs.paragraphs_type.delivery
+id: paragraph.delivery.field_is_elevator
+field_name: field_is_elevator
+entity_type: paragraph
+bundle: delivery
+label: 'Наличие лифта'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Лифт есть'
+  off_label: 'Лифта нет'
+field_type: boolean

@@ -1,0 +1,14 @@
+uuid: 0cfd75dc-ec3a-43d9-8d7c-bcb55d00d0f7
+langcode: en
+status: true
+dependencies: {  }
+id: fabrics_images
+label: 'Изображения образцов тканей'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map:
+  name: name

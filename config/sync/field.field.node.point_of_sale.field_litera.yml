@@ -1,0 +1,19 @@
+uuid: 770c9f10-b4b2-49a1-8867-92f077c6c412
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_litera
+    - node.type.point_of_sale
+id: node.point_of_sale.field_litera
+field_name: field_litera
+entity_type: node
+bundle: point_of_sale
+label: Литера
+description: 'Первая(ые) буква названия магазина для подстановки в документах'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

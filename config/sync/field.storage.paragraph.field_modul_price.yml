@@ -1,0 +1,19 @@
+uuid: 9176bc11-6763-4392-b8c9-2332f0efcdfd
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_token_value
+    - paragraphs
+id: paragraph.field_modul_price
+field_name: field_modul_price
+entity_type: paragraph
+type: field_token_value
+settings: {  }
+module: field_token_value
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

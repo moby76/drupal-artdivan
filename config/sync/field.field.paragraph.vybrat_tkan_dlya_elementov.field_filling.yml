@@ -1,0 +1,21 @@
+uuid: 6332c765-d6e6-40c3-be50-612530d15745
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_filling
+    - paragraphs.paragraphs_type.vybrat_tkan_dlya_elementov
+  module:
+    - options
+id: paragraph.vybrat_tkan_dlya_elementov.field_filling
+field_name: field_filling
+entity_type: paragraph
+bundle: vybrat_tkan_dlya_elementov
+label: Заполнение
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

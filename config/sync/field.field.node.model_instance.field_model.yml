@@ -1,0 +1,29 @@
+uuid: 3fae9f99-a721-448c-bdcd-67bb99c05b1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_model
+    - node.type.model_instance
+    - taxonomy.vocabulary.model
+id: node.model_instance.field_model
+field_name: field_model
+entity_type: node
+bundle: model_instance
+label: Модель
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      model: model
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

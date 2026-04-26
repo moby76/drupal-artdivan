@@ -1,0 +1,10 @@
+uuid: a5c50832-e410-4a42-bfaa-b22bd6c0773b
+langcode: en
+status: true
+dependencies: {  }
+id: organization_details_form
+label: 'Реквизиты для формы заявки'
+icon_uuid: null
+icon_default: null
+description: 'Реквизиты организации для "шапки" формы заявки'
+behavior_plugins: {  }

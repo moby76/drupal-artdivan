@@ -1,0 +1,22 @@
+uuid: 67e02e88-92b0-4213-bccb-152be0588354
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.selected_items_cost.field_selcted_items_cost
+    - paragraphs.paragraphs_type.selected_items_cost
+id: paragraph.selected_items_cost.default
+targetEntityType: paragraph
+bundle: selected_items_cost
+mode: default
+content:
+  field_selcted_items_cost:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

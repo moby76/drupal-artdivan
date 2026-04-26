@@ -1,0 +1,39 @@
+uuid: 62aece5c-e916-42cb-b3c5-fd45dd7cc2e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.order_display
+    - field.field.node.moduls.field_execution
+    - field.field.node.moduls.field_parent_instance
+    - node.type.moduls
+  module:
+    - user
+id: node.moduls.order_display
+targetEntityType: node
+bundle: moduls
+mode: order_display
+content:
+  field_execution:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_parent_instance:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_link_display: true

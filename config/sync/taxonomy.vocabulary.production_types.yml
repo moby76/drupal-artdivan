@@ -1,0 +1,9 @@
+uuid: a34b4592-9e76-4d74-9a49-fac7db0c6568
+langcode: en
+status: true
+dependencies: {  }
+name: 'Тип продукции'
+vid: production_types
+description: 'Корпусная мебель, Маягкая мебель(комплекты), Модульная, матрасы...'
+weight: 0
+new_revision: false

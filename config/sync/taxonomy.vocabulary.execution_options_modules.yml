@@ -1,0 +1,9 @@
+uuid: b7bbba69-d779-4af7-8319-374358e28d7a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Вариант исполнения модуля'
+vid: execution_options_modules
+description: 'Угол, Оттоманка, Пуфик, Диван малый'
+weight: 0
+new_revision: false

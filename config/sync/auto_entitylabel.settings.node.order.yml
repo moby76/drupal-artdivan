@@ -1,0 +1,10 @@
+status: 1
+pattern: 'Заявка №[node:field_auto_order_number]([node:created:custom:d.m.y]/[node:created:custom:H:i:s])'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.order
+new_content_behavior: 0

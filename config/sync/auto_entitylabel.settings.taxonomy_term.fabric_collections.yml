@@ -1,0 +1,10 @@
+status: 1
+pattern: '[term:parent] [term:field_fabric_article]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - taxonomy.vocabulary.fabric_collections
+new_content_behavior: 0

@@ -1,0 +1,21 @@
+uuid: df3d8bb2-b0ea-4a70-ad8e-f22c2b8230c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_delivery_or_pickup
+    - paragraphs.paragraphs_type.service
+id: paragraph.service.field_delivery_or_pickup
+field_name: field_delivery_or_pickup
+entity_type: paragraph
+bundle: service
+label: 'Доставка или самовывоз'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Наша доставка'
+  off_label: Самовывоз
+field_type: boolean

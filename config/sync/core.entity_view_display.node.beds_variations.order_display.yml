@@ -1,0 +1,234 @@
+uuid: a0c03afc-fa01-4093-97e7-27e13e8d41c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.order_display
+    - field.field.node.beds_variations.field_dekor
+    - field.field.node.beds_variations.field_fabric_price_category
+    - field.field.node.beds_variations.field_instance_dimension
+    - field.field.node.beds_variations.field_parent_instance
+    - field.field.node.beds_variations.field_prolozhki
+    - field.field.node.beds_variations.field_transformation_mechanism
+    - field.field.node.beds_variations.field_variation_price
+    - node.type.beds_variations
+  module:
+    - display_builder
+    - options
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - user
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_2'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: gx-2
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '9'
+                    - '3'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - '10'
+                    - '2'
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - '10'
+                    - '2'
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - '10'
+                    - '2'
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:beds_variations:title'
+                      'field:node:beds_variations:title':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:beds_variations:title'
+                              source:
+                                type: string
+                                settings:
+                                  link_to_entity: false
+                                third_party_settings: {  }
+                    node_id: 7bf25a5d6e0f6a66
+              col_2_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:beds_variations:field_variation_price'
+                      'field:node:beds_variations:field_variation_price':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:beds_variations:field_variation_price'
+                              source:
+                                type: number_integer
+                                label: inline
+                                settings:
+                                  thousand_separator: ''
+                                  prefix_suffix: true
+                                third_party_settings: {  }
+                                weight: 2
+                                region: content
+                    node_id: da01bf56a2a1eb02
+                    third_party_settings:
+                      styles:
+                        selected:
+                          colors_color: text-danger
+                          text_font_weight: fw-medium
+                          text_text_alignment: text-center
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-danger
+                          borders_border_radius: rounded-pill
+                          vertical_align: align-baseline
+                        extra: ''
+            third_party_settings: ''
+            node_id: ''
+        node_id: bd5e6e3a105f6da8
+id: node.beds_variations.order_display
+targetEntityType: node
+bundle: beds_variations
+mode: order_display
+content:
+  field_dekor:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_fabric_price_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_instance_dimension:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_parent_instance:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_prolozhki:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_transformation_mechanism:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_variation_price:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  entity_link_display: true

@@ -1,0 +1,33 @@
+uuid: 7d124503-08e3-4952-9554-45a3c7682883
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_payments_variants
+    - paragraphs.paragraphs_type.payment
+    - taxonomy.vocabulary.payments_variants
+  content:
+    - 'taxonomy_term:payments_variants:768c107b-65c5-4041-8996-4912dabaa81e'
+id: paragraph.payment.field_payments_variants
+field_name: field_payments_variants
+entity_type: paragraph
+bundle: payment
+label: 'Форма оплаты'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 768c107b-65c5-4041-8996-4912dabaa81e
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      payments_variants: payments_variants
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,83 @@
+uuid: a062c543-715f-4788-b0f9-d5714bccd135
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.beds_variations.field_dekor
+    - field.field.node.beds_variations.field_fabric_price_category
+    - field.field.node.beds_variations.field_instance_dimension
+    - field.field.node.beds_variations.field_parent_instance
+    - field.field.node.beds_variations.field_prolozhki
+    - field.field.node.beds_variations.field_transformation_mechanism
+    - field.field.node.beds_variations.field_variation_price
+    - node.type.beds_variations
+  module:
+    - options
+    - user
+id: node.beds_variations.default
+targetEntityType: node
+bundle: beds_variations
+mode: default
+content:
+  field_dekor:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_fabric_price_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_instance_dimension:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_parent_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_prolozhki:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_transformation_mechanism:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_variation_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_link_display: true

@@ -1,0 +1,20 @@
+uuid: cac711eb-1e04-4670-8cc7-c5198dba1c7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_variation_price
+field_name: field_variation_price
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

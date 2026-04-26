@@ -1,0 +1,29 @@
+uuid: 1395eac9-611c-40b0-96fa-5021de430a12
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fabric_price_category
+    - node.type.instances_variations
+    - taxonomy.vocabulary.fabric_price_category
+id: node.instances_variations.field_fabric_price_category
+field_name: field_fabric_price_category
+entity_type: node
+bundle: instances_variations
+label: 'Ценовая категория ткани'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      fabric_price_category: fabric_price_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

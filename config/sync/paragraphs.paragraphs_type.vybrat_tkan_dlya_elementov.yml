@@ -1,0 +1,10 @@
+uuid: 1f612f1d-a890-4d3c-ba80-7872e45bc44a
+langcode: en
+status: true
+dependencies: {  }
+id: vybrat_tkan_dlya_elementov
+label: 'Выбрать ткань для элементов'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

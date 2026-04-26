@@ -1,0 +1,32 @@
+uuid: e8a7a363-595b-47e6-8c03-aa66f0a212d1
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.display_complects
+    - field.field.paragraph.trading_operation_type.field_manufacturing_time
+    - field.field.paragraph.trading_operation_type.field_operation_type
+    - paragraphs.paragraphs_type.trading_operation_type
+id: paragraph.trading_operation_type.display_complects
+targetEntityType: paragraph
+bundle: trading_operation_type
+mode: display_complects
+content:
+  field_manufacturing_time:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_operation_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

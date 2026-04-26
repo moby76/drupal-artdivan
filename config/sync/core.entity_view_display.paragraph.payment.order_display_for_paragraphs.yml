@@ -1,0 +1,537 @@
+uuid: def16e5b-ead6-46cd-a63f-d106a91d520f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.payment.field_full_payment
+    - field.field.paragraph.payment.field_installment
+    - field.field.paragraph.payment.field_is_remaining_payment_full
+    - field.field.paragraph.payment.field_oplata_ostatka
+    - field.field.paragraph.payment.field_payments_variants
+    - field.field.paragraph.payment.field_remaining_payment
+    - field.field.paragraph.payment.field_summa_oplaty
+    - paragraphs.paragraphs_type.payment
+  module:
+    - display_builder
+    - entity_reference_revisions
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: select
+                source:
+                  value: '12'
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_2'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                          col_sm:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_md:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '9'
+                          col_lg:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '9'
+                          col_xl:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '9'
+                          col_xxl:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '9'
+                          col_offset:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_1_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          col_2_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          col_1_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:payment:field_full_payment'
+                                  'field:paragraph:payment:field_full_payment':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:payment:field_full_payment'
+                                          source:
+                                            type: boolean
+                                            label: above
+                                            settings:
+                                              format: default
+                                              format_custom_false: ''
+                                              format_custom_true: ''
+                                            third_party_settings: {  }
+                                            weight: 2
+                                            region: content
+                                node_id: 061e340df4a0f8ee
+                          col_2_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: component
+                                source:
+                                  component:
+                                    component_id: 'ui_suite_bootstrap:grid_row_3'
+                                    slots:
+                                      col_1_content:
+                                        sources:
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:payment:field_payments_variants'
+                                              'field:paragraph:payment:field_payments_variants':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:payment:field_payments_variants'
+                                                      source:
+                                                        type: entity_reference_label
+                                                        third_party_settings:
+                                                          nomarkup:
+                                                            separator: '|'
+                                                            referenced_entity: ''
+                                                            enabled: 0
+                                                        settings:
+                                                          link: 0
+                                                      node_id: ''
+                                                      third_party_settings: ''
+                                                      _weight: '0'
+                                            node_id: 697645705ba52b94
+                                      col_2_content:
+                                        sources:
+                                          -
+                                            source_id: textfield
+                                            source:
+                                              value: 'Предоплата: '
+                                            node_id: 0a6b0f37c7589637
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:payment:field_summa_oplaty'
+                                              'field:paragraph:payment:field_summa_oplaty':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:payment:field_summa_oplaty'
+                                                      source:
+                                                        type: number_integer
+                                                        label: above
+                                                        settings:
+                                                          thousand_separator: ''
+                                                          prefix_suffix: true
+                                                        third_party_settings: {  }
+                                                        weight: 1
+                                                        region: content
+                                            node_id: 272e45d850336cc8
+                                      col_3_content:
+                                        sources:
+                                          -
+                                            source_id: textfield
+                                            source:
+                                              value: 'Остаток: '
+                                            node_id: 8a092eef512a7432
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:payment:field_remaining_payment'
+                                              'field:paragraph:payment:field_remaining_payment':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:payment:field_remaining_payment'
+                                                      source:
+                                                        type: number_integer
+                                                        settings: {  }
+                                                        third_party_settings: {  }
+                                            node_id: 0cd860100f8f626e
+                                node_id: 69e04e4e7991c87b
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: c85d403bde3eab6e
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border-bottom
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                        extra: 'pb-1 my-1'
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_2'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                          col_sm:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                          col_md:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '9'
+                          col_lg:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '9'
+                          col_xl:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '9'
+                          col_xxl:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '9'
+                          col_offset:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_1_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          col_2_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          col_1_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:payment:field_is_remaining_payment_full'
+                                  'field:paragraph:payment:field_is_remaining_payment_full':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:payment:field_is_remaining_payment_full'
+                                          source:
+                                            type: boolean
+                                            settings:
+                                              format: default
+                                              format_custom_false: ''
+                                              format_custom_true: ''
+                                            third_party_settings: {  }
+                                node_id: a9b0a2785224da46
+                          col_2_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:payment:field_oplata_ostatka'
+                                  'field:paragraph:payment:field_oplata_ostatka':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:payment:field_oplata_ostatka'
+                                          source:
+                                            type: entity_reference_label
+                                            third_party_settings:
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                            settings:
+                                              link: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 28fe7d463d12b79e
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:payment:field_installment'
+                                  'field:paragraph:payment:field_installment':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:payment:field_installment'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings:
+                                              view_mode: order_display_for_paragraphs
+                                            third_party_settings:
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: dbf34d6deebe8c25
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 2dfe55464eb90953
+            third_party_settings: ''
+            node_id: ''
+        node_id: d1ea24fde20536ac
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-primary
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-2
+            extra: 'my-2 px-3 py-2'
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.payment.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: payment
+mode: order_display_for_paragraphs
+content:
+  field_full_payment:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_installment:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_is_remaining_payment_full:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_oplata_ostatka:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_payments_variants:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_remaining_payment:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_summa_oplaty:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

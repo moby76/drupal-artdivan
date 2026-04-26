@@ -1,0 +1,10 @@
+uuid: 19d5a12c-b82e-4952-9a5b-ef4d8b488b14
+langcode: en
+status: true
+dependencies: {  }
+id: separate_set_of_module
+label: 'Отдельный модуль модульного комплекта'
+icon_uuid: null
+icon_default: null
+description: 'Создание элемента для добавления в список модулей в Заявку: Модуль и его ценовая вариация'
+behavior_plugins: {  }

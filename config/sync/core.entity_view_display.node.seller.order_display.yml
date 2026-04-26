@@ -1,0 +1,54 @@
+uuid: 2f914d89-002f-4315-89dc-2cd968be2359
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.order_display
+    - field.field.node.seller.field_sellers_full_name
+    - node.type.seller
+  module:
+    - display_builder
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:seller:field_sellers_full_name'
+          'field:node:seller:field_sellers_full_name':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:seller:field_sellers_full_name'
+                  source:
+                    type: string
+                    label: above
+                    settings:
+                      link_to_entity: false
+                    third_party_settings: {  }
+                    weight: 0
+                    region: content
+        node_id: ece02482d994555b
+id: node.seller.order_display
+targetEntityType: node
+bundle: seller
+mode: order_display
+content:
+  field_sellers_full_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true

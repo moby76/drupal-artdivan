@@ -1,0 +1,30 @@
+uuid: 8784bc63-9afe-44ba-8bcb-2db2d2084a3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - ui_styles
+  theme:
+    - bootstrap_artdivan
+third_party_settings:
+  ui_styles:
+    block:
+      selected:
+        colors_background_color: bg-light
+        spacing_padding_start: ps-2
+        spacing_padding_end: pe-2
+_core:
+  default_config_hash: ws7A2SagJ3zpgy8PMjaVAq49VY4mNZmwAtrfyylv6Os
+id: bootstrap_artdivan_breadcrumbs
+theme: bootstrap_artdivan
+region: header
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

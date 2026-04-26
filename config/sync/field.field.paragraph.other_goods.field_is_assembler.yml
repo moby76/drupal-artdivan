@@ -1,0 +1,21 @@
+uuid: 136eca7f-23b9-414c-8a68-5613dfc3b407
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_is_assembler
+    - paragraphs.paragraphs_type.other_goods
+id: paragraph.other_goods.field_is_assembler
+field_name: field_is_assembler
+entity_type: paragraph
+bundle: other_goods
+label: 'Сборщик нужен?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Сборщик нужен.'
+  off_label: 'Сборщик не нужен.'
+field_type: boolean

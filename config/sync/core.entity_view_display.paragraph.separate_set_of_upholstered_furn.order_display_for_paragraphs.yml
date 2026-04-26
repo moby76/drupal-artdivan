@@ -1,0 +1,716 @@
+uuid: 0969adad-f828-4327-90ec-6f073b27666d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_additional_information
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_assembly
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_execution_time
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_fabric_list
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_instance
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_select_embroidery
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_upholstered_furn
+  module:
+    - display_builder
+    - entity_reference_revisions
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: select
+                source:
+                  value: '12'
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_2'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                          col_sm:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_md:
+                            source_id: selects
+                            source:
+                              value:
+                                - '4'
+                                - '8'
+                          col_lg:
+                            source_id: selects
+                            source:
+                              value:
+                                - '4'
+                                - '8'
+                          col_xl:
+                            source_id: selects
+                            source:
+                              value:
+                                - '4'
+                                - '8'
+                          col_xxl:
+                            source_id: selects
+                            source:
+                              value:
+                                - '4'
+                                - '8'
+                          col_offset:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_1_attributes:
+                            source_id: attributes
+                            source:
+                              value: 'class="border-end border-2 border-secondary-subtle"'
+                          col_2_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          col_1_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:separate_set_of_upholstered_furn:field_instance'
+                                  'field:paragraph:separate_set_of_upholstered_furn:field_instance':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:separate_set_of_upholstered_furn:field_instance'
+                                          source:
+                                            type: entity_reference_label
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                            settings:
+                                              link: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: f7e6783e906f83c2
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      typography: fs-5
+                                      text_font_weight: fw-medium
+                                      text_text_alignment: text-center
+                                    extra: ''
+                          col_2_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:separate_set_of_upholstered_furn:field_variation'
+                                  'field:paragraph:separate_set_of_upholstered_furn:field_variation':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:separate_set_of_upholstered_furn:field_variation'
+                                          source:
+                                            type: entity_reference_entity_view
+                                            settings:
+                                              view_mode: order_display
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: '1'
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 301b9ae72a60fb9c
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: bc48058bc42913b1
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: '12'
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          col_1_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:separate_set_of_upholstered_furn:field_fabric_list'
+                                  'field:paragraph:separate_set_of_upholstered_furn:field_fabric_list':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:separate_set_of_upholstered_furn:field_fabric_list'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings:
+                                              view_mode: order_display_for_paragraphs
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 5522922a8204ea00
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: f1044a80b2f2c2bf
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: px-2
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          row_cols:
+                            source_id: select
+                            source:
+                              value: auto
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: 'Вышивка: '
+                                node_id: 6e8a81b4dfe79ca7
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      borders_border: border-bottom
+                                      borders_border_width: border-2
+                                      borders_border_color: border-secondary-subtle
+                                    extra: ''
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:separate_set_of_upholstered_furn:field_select_embroidery'
+                                  'field:paragraph:separate_set_of_upholstered_furn:field_select_embroidery':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:separate_set_of_upholstered_furn:field_select_embroidery'
+                                          source:
+                                            type: entity_reference_label
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                            settings:
+                                              link: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 439745d8c5cf9a50
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 1ea6de0fecd81dff
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: '12'
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          col_1_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:separate_set_of_upholstered_furn:field_execution_time'
+                                  'field:paragraph:separate_set_of_upholstered_furn:field_execution_time':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:separate_set_of_upholstered_furn:field_execution_time'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings:
+                                              view_mode: order_display_for_paragraphs
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 0711791e0830589d
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 3f712bd4e0723190
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:separate_set_of_upholstered_furn:field_assembly'
+                                  'field:paragraph:separate_set_of_upholstered_furn:field_assembly':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:separate_set_of_upholstered_furn:field_assembly'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings:
+                                              view_mode: order_display_for_paragraphs
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: cd00a277a2b3b7d0
+                    node_id: 7aac2e0421c675c6
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:separate_set_of_upholstered_furn:field_additional_information'
+                      'field:paragraph:separate_set_of_upholstered_furn:field_additional_information':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:separate_set_of_upholstered_furn:field_additional_information'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 9fc3ff63708ccaa1
+            third_party_settings: ''
+            node_id: ''
+        node_id: df4d79051c1b6d77
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-secondary
+              shadows: shadow-sm
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-2
+            extra: 'py-2 my-2 mx-1'
+id: paragraph.separate_set_of_upholstered_furn.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: separate_set_of_upholstered_furn
+mode: order_display_for_paragraphs
+content:
+  field_assembly:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_additional_information: true
+  field_execution_time: true
+  field_fabric_list: true
+  field_instance: true
+  field_select_embroidery: true
+  field_variation: true

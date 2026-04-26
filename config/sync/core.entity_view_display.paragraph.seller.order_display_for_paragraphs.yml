@@ -1,0 +1,139 @@
+uuid: 6eedc352-27e3-45fe-b95d-3f84efbfb764
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.seller.field_point_of_sale
+    - field.field.paragraph.seller.field_sellers_name
+    - paragraphs.paragraphs_type.seller
+  module:
+    - display_builder
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_2'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: textfield
+                    source:
+                      value: 'Пункт реализации:'
+                    node_id: bd4ecbc8b8946b7e
+                    third_party_settings:
+                      styles:
+                        selected:
+                          text_text_alignment: text-center
+                          borders_border: border-bottom
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          spacing_margin_bottom: mb-1
+                          spacing_padding_bottom: pb-1
+                        extra: ''
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:seller:field_point_of_sale'
+                      'field:paragraph:seller:field_point_of_sale':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:seller:field_point_of_sale'
+                              source:
+                                type: entity_reference_entity_view
+                                settings:
+                                  view_mode: order_display
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: '1'
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: daf2fdc9f6cdaea8
+              col_2_content:
+                sources:
+                  -
+                    source_id: textfield
+                    source:
+                      value: 'Продавец:'
+                    node_id: a0d01c95584b1e10
+                    third_party_settings:
+                      styles:
+                        selected:
+                          text_text_alignment: text-center
+                          borders_border: border-bottom
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          spacing_margin_bottom: mb-1
+                          spacing_padding_bottom: pb-1
+                        extra: ''
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:seller:field_sellers_name'
+                      'field:paragraph:seller:field_sellers_name':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:seller:field_sellers_name'
+                              source:
+                                type: entity_reference_label
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                                settings:
+                                  link: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 93bed60337532809
+        node_id: 52cec9f3265cc195
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-secondary
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-2
+            extra: 'my-2 p-1 '
+id: paragraph.seller.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: seller
+mode: order_display_for_paragraphs
+content:
+  field_point_of_sale:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sellers_name:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

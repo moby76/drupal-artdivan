@@ -1,0 +1,23 @@
+uuid: 63350ddf-df69-4b9f-820e-19fe60984187
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_price
+    - paragraphs.paragraphs_type.other_goods
+id: paragraph.other_goods.field_price
+field_name: field_price
+entity_type: paragraph
+bundle: other_goods
+label: Стоимость
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

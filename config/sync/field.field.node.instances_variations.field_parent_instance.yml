@@ -1,0 +1,29 @@
+uuid: 9d1ca9af-bd5d-46be-9d12-1b245c2c8830
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parent_instance
+    - node.type.instances_variations
+    - node.type.model_instance
+id: node.instances_variations.field_parent_instance
+field_name: field_parent_instance
+entity_type: node
+bundle: instances_variations
+label: Экземпляр(родительский)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      model_instance: model_instance
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

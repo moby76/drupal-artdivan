@@ -1,0 +1,8 @@
+uuid: f93210c3-df76-465d-b121-eb56823004d7
+langcode: en
+status: true
+dependencies: {  }
+id: organization_details_block
+label: 'Реквизиты организации'
+revision: false
+description: null

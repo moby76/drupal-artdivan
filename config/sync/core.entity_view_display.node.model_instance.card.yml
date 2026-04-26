@@ -1,0 +1,299 @@
+uuid: 8d8fc8d9-3639-4a38-a584-b36745a97b3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.model_instance.body
+    - field.field.node.model_instance.field_configuration
+    - field.field.node.model_instance.field_execution
+    - field.field.node.model_instance.field_instance_main_image
+    - field.field.node.model_instance.field_is_modular_set
+    - field.field.node.model_instance.field_model
+    - field.field.node.model_instance.field_tags
+    - field.field.node.model_instance.field_version
+    - node.type.model_instance
+  module:
+    - display_builder
+    - layout_builder
+    - media
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - user
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:card'
+            variant_id:
+              source_id: select
+              source:
+                value: ''
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              image_position:
+                source_id: select
+                source:
+                  value: ''
+              header_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              footer_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              row_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="g-0"'
+              image_col_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="col-md-4"'
+              content_col_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="col-md-8"'
+            slots:
+              image:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance:field_instance_main_image'
+                      'field:node:model_instance:field_instance_main_image':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance:field_instance_main_image'
+                              source:
+                                type: media_thumbnail
+                                settings:
+                                  image_style: scale_crop_200_200
+                                  image_link: content
+                                  image_loading:
+                                    attribute: lazy
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 4d511384eca4f6cd
+                    third_party_settings:
+                      styles:
+                        selected: {  }
+                        extra: 'd-flex h-100'
+              header:
+                add_more_button: ''
+              content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:card_body'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          heading_level:
+                            source_id: select
+                            source:
+                              value: ''
+                          title_attributes:
+                            source_id: entity_field
+                            source:
+                              derivable_context: 'field:node:model_instance:field_model'
+                              'field:node:model_instance:field_model':
+                                value:
+                                  source_id: ''
+                          subtitle_attributes:
+                            source_id: ''
+                            source:
+                              value: ''
+                          text_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          title:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:model_instance:title'
+                                  'field:node:model_instance:title':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:model_instance:title'
+                                          source:
+                                            type: string
+                                            third_party_settings:
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                            settings:
+                                              link_to_entity: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 66818e3cf3bec7f7
+                          subtitle:
+                            add_more_button: ''
+                          text:
+                            add_more_button: ''
+                          content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:model_instance:body'
+                                  'field:node:model_instance:body':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:model_instance:body'
+                                          source:
+                                            type: text_trimmed
+                                            settings:
+                                              trim_length: '100'
+                                            third_party_settings:
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: f171e8c1d043ca2f
+                          links:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: component
+                                source:
+                                  component:
+                                    component_id: 'ui_suite_bootstrap:grid_row_1'
+                                    slots:
+                                      col_1_content:
+                                        sources:
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:node:model_instance:field_tags'
+                                              'field:node:model_instance:field_tags':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:node:model_instance:field_tags'
+                                                      source:
+                                                        type: ui_patterns_component_per_item
+                                                        settings:
+                                                          ui_patterns:
+                                                            component_id: 'ui_suite_bootstrap:badge'
+                                                            slots:
+                                                              label:
+                                                                sources:
+                                                                  -
+                                                                    source_id: 'field_formatter:node:model_instance:field_tags'
+                                                                    source:
+                                                                      type: entity_reference_label
+                                                                      third_party_settings:
+                                                                        nomarkup:
+                                                                          enabled: '1'
+                                                                          separator: '|'
+                                                                          referenced_entity: ''
+                                                                      settings:
+                                                                        link: 0
+                                                                    node_id: ''
+                                                                    third_party_settings: ''
+                                                                    _weight: '0'
+                                                                    _remove:
+                                                                      dropdown_actions:
+                                                                        - Remove
+                                                                add_more_button: ''
+                                                            props:
+                                                              attributes:
+                                                                source_id: attributes
+                                                                source:
+                                                                  value: ''
+                                                            third_party_settings: ''
+                                                            node_id: ''
+                                                        third_party_settings:
+                                                          nomarkup:
+                                                            separator: '|'
+                                                            referenced_entity: ''
+                                                            enabled: 0
+                                                      node_id: ''
+                                                      third_party_settings: ''
+                                                      _weight: '0'
+                                            node_id: 299f40cf486ea29e
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  colors_color: text-light
+                                                  text_font_weight: fw-normal
+                                                  colors_background_color: text-bg-primary
+                                                  spacing_margin_start: ms-0
+                                                  spacing_padding_bottom: pb-2
+                                                extra: ''
+                                node_id: 3e577ecc2a7fb301
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 7dbe4be0a4620491
+              footer:
+                add_more_button: ''
+                sources: {  }
+            third_party_settings: ''
+            node_id: ''
+        node_id: f8d7dbb64d295ab5
+        third_party_settings:
+          styles:
+            selected:
+              colors_background_color: bg-body-tertiary
+              borders_border: border-top
+              shadows: shadow
+            extra: ''
+id: node.model_instance.card
+targetEntityType: node
+bundle: model_instance
+mode: card
+content: {  }
+hidden:
+  body: true
+  entity_link_display: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_configuration: true
+  field_execution: true
+  field_instance_main_image: true
+  field_is_modular_set: true
+  field_model: true
+  field_tags: true
+  field_version: true
+  links: true

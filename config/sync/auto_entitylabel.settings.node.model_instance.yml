@@ -1,0 +1,10 @@
+status: 1
+pattern: '[node:field_furniture_type:entity:field_singular_designation] [node:field_execution] [node:field_model] [node:field_version]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.model_instance
+new_content_behavior: 0

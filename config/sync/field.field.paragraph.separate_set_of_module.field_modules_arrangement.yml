@@ -1,0 +1,29 @@
+uuid: 7ee8a19f-06f7-48cb-8854-059c22e2aa14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modules_arrangement
+    - paragraphs.paragraphs_type.separate_set_of_module
+    - taxonomy.vocabulary.modules_arrangement
+id: paragraph.separate_set_of_module.field_modules_arrangement
+field_name: field_modules_arrangement
+entity_type: paragraph
+bundle: separate_set_of_module
+label: 'Расположение модуля'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      modules_arrangement: modules_arrangement
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,51 @@
+uuid: 339dc3e9-047b-4d35-a3b6-08e03bd2e9a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.separate_set_of_module.field_modul
+    - field.field.paragraph.separate_set_of_module.field_modul_price
+    - field.field.paragraph.separate_set_of_module.field_modules_arrangement
+    - field.field.paragraph.separate_set_of_module.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_module
+  module:
+    - field_token_value
+id: paragraph.separate_set_of_module.default
+targetEntityType: paragraph
+bundle: separate_set_of_module
+mode: default
+content:
+  field_modul:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_modul_price:
+    type: field_token_value_text
+    label: above
+    settings:
+      wrapper: ''
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_modules_arrangement:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_variation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

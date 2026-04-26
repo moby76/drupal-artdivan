@@ -1,0 +1,20 @@
+uuid: 70af0a91-a220-449a-9779-a178c6ee1b95
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_select_embroidery
+field_name: field_select_embroidery
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

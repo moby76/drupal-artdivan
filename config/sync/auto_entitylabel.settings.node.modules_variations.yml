@@ -1,0 +1,10 @@
+status: 1
+pattern: '[node:field_parent_module] | [node:field_fabric_price_category] | [node:field_module_dimension] | [node:field_variation_price]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.modules_variations
+new_content_behavior: 0

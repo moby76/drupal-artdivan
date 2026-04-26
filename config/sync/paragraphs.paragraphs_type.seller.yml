@@ -1,0 +1,10 @@
+uuid: 08607e19-fbdb-4f75-84a2-ba6bea3d47e7
+langcode: en
+status: true
+dependencies: {  }
+id: seller
+label: 'Пункт реализации и продавец'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

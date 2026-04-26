@@ -1,0 +1,52 @@
+uuid: 972c936c-e0a1-464f-b838-57c20eacf26e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_assembly
+    - paragraphs.paragraphs_type.assembly
+    - paragraphs.paragraphs_type.choise_of_instance
+  module:
+    - entity_reference_revisions
+id: paragraph.choise_of_instance.field_assembly
+field_name: field_assembly
+entity_type: paragraph
+bundle: choise_of_instance
+label: Сборка
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      assembly: assembly
+    negate: 0
+    target_bundles_drag_drop:
+      assembly:
+        weight: 9
+        enabled: true
+      choise_of_instance:
+        weight: 10
+        enabled: false
+      customer_details:
+        weight: 11
+        enabled: false
+      delivery:
+        weight: 12
+        enabled: false
+      opisanie_zayavki:
+        weight: 13
+        enabled: false
+      service:
+        weight: 14
+        enabled: false
+      trading_operation_type:
+        weight: 15
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

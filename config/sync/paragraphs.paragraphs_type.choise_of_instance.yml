@@ -1,0 +1,10 @@
+uuid: ed037e53-8a55-42c5-a880-0ace9a3b3622
+langcode: en
+status: true
+dependencies: {  }
+id: choise_of_instance
+label: 'Выбрать Экземпляр(Устаревшее)'
+icon_uuid: null
+icon_default: null
+description: 'Параграф для подбора экземпляров/комплектов мягкой мебели с их ценовыми вариантами'
+behavior_plugins: {  }

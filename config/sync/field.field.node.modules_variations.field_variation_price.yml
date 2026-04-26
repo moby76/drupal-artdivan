@@ -1,0 +1,23 @@
+uuid: 75f3d1cf-960e-4eef-a9d2-1304d98e9f20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_variation_price
+    - node.type.modules_variations
+id: node.modules_variations.field_variation_price
+field_name: field_variation_price
+entity_type: node
+bundle: modules_variations
+label: Стоимость
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

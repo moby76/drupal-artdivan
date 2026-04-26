@@ -1,0 +1,21 @@
+uuid: d2b36bea-efe6-44c8-88c8-53c76b04c04d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_delivery_date
+    - paragraphs.paragraphs_type.delivery
+  module:
+    - datetime
+id: paragraph.delivery.field_delivery_date
+field_name: field_delivery_date
+entity_type: paragraph
+bundle: delivery
+label: 'Дата доставки'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

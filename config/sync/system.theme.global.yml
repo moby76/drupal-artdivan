@@ -1,0 +1,24 @@
+_core:
+  default_config_hash: KZiV2LB312xgJBphfq5BTjmp16xiR5KM8InBJ-pff7Y
+favicon:
+  mimetype: image/png
+  path: 'public://Лого-5_0.png'
+  url: ''
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: sites/default/files/2026-04/Лого-2.png
+  url: null
+  use_default: true
+ui_styles_entity_status_unpublished: {  }
+logo_style: _none
+logo_alt: 'Drush Site-Install'
+logo_title: 'Drush Site-Install'
+logo_loading: eager
+logo_fetchpriority: _none
+logo_decoding: _none
+debug_enabled: 0

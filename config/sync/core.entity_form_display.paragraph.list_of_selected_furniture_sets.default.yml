@@ -1,0 +1,37 @@
+uuid: 568853fe-fc7f-435c-887b-ec67214194c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_of_selected_furniture_sets.field_choose_a_set_and_variation
+    - paragraphs.paragraphs_type.list_of_selected_furniture_sets
+  module:
+    - paragraphs
+id: paragraph.list_of_selected_furniture_sets.default
+targetEntityType: paragraph
+bundle: list_of_selected_furniture_sets
+mode: default
+content:
+  field_choose_a_set_and_variation:
+    type: paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: separate_set_of_upholstered_furn
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,94 @@
+uuid: 23d9ebe9-3f44-47c2-9c6e-23b542ce5073
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_choose_a_bed_and_variation
+    - paragraphs.paragraphs_type.list_of_selected_beds
+    - paragraphs.paragraphs_type.separate_set_of_bed
+  module:
+    - entity_reference_revisions
+id: paragraph.list_of_selected_beds.field_choose_a_bed_and_variation
+field_name: field_choose_a_bed_and_variation
+entity_type: paragraph
+bundle: list_of_selected_beds
+label: 'Выбрать кровать'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      separate_set_of_bed: separate_set_of_bed
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info:
+        weight: 23
+        enabled: false
+      assembly:
+        weight: 24
+        enabled: false
+      choise_of_instance:
+        weight: 25
+        enabled: false
+      customer_details:
+        weight: 26
+        enabled: false
+      delivery:
+        weight: 27
+        enabled: false
+      installment:
+        weight: 28
+        enabled: false
+      list_of_selected_beds:
+        weight: 29
+        enabled: false
+      list_of_selected_fabrics:
+        weight: 30
+        enabled: false
+      list_of_selected_furniture_sets:
+        weight: 31
+        enabled: false
+      list_of_selected_moduls:
+        weight: 32
+        enabled: false
+      opisanie_zayavki:
+        weight: 33
+        enabled: false
+      organization_details_form:
+        weight: 34
+        enabled: false
+      other_goods:
+        weight: 35
+        enabled: false
+      payment:
+        weight: 36
+        enabled: false
+      seller:
+        weight: 37
+        enabled: false
+      separate_set_of_bed:
+        weight: 38
+        enabled: true
+      separate_set_of_module:
+        weight: 39
+        enabled: false
+      separate_set_of_upholstered_furn:
+        weight: 40
+        enabled: false
+      service:
+        weight: 41
+        enabled: false
+      total_amount:
+        weight: 42
+        enabled: false
+      trading_operation_type:
+        weight: 43
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

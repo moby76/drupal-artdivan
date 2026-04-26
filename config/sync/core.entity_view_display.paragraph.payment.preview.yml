@@ -1,0 +1,119 @@
+uuid: 830e0959-2665-41d0-8f1e-656762cc20a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.payment.field_full_payment
+    - field.field.paragraph.payment.field_installment
+    - field.field.paragraph.payment.field_is_remaining_payment_full
+    - field.field.paragraph.payment.field_oplata_ostatka
+    - field.field.paragraph.payment.field_payments_variants
+    - field.field.paragraph.payment.field_remaining_payment
+    - field.field.paragraph.payment.field_summa_oplaty
+    - paragraphs.paragraphs_type.payment
+  module:
+    - display_builder
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+third_party_settings:
+  display_builder:
+    sources:
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:payment:field_payments_variants'
+          'field:paragraph:payment:field_payments_variants':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:payment:field_payments_variants'
+                  source:
+                    type: entity_reference_label
+                    label: above
+                    settings:
+                      link: true
+                    third_party_settings: {  }
+                    weight: 0
+                    region: content
+        node_id: 697645705ba52b94
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:payment:field_full_payment'
+          'field:paragraph:payment:field_full_payment':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:payment:field_full_payment'
+                  source:
+                    type: boolean
+                    label: above
+                    settings:
+                      format: default
+                      format_custom_false: ''
+                      format_custom_true: ''
+                    third_party_settings: {  }
+                    weight: 2
+                    region: content
+        node_id: 061e340df4a0f8ee
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:payment:field_summa_oplaty'
+          'field:paragraph:payment:field_summa_oplaty':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:payment:field_summa_oplaty'
+                  source:
+                    type: number_integer
+                    label: above
+                    settings:
+                      thousand_separator: ''
+                      prefix_suffix: true
+                    third_party_settings: {  }
+                    weight: 1
+                    region: content
+        node_id: 272e45d850336cc8
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.payment.preview
+targetEntityType: paragraph
+bundle: payment
+mode: preview
+content:
+  field_full_payment:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_payments_variants:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_summa_oplaty:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_installment: true
+  field_is_remaining_payment_full: true
+  field_oplata_ostatka: true
+  field_remaining_payment: true

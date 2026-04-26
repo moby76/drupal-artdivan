@@ -1,0 +1,22 @@
+uuid: 03587605-2c52-4a7d-bf1e-c56ac8e00373
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_artdivan
+_core:
+  default_config_hash: CIiuc9I3ztLfMs8BHfKlB-dyoDe4aFrVN5YD3tE5fP4
+id: bootstrap_artdivan_powered
+theme: bootstrap_artdivan
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: 10f60df0-8d86-4ab5-95c3-1e839b97d649
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: main_view_mode
+label: 'Основной вид'
+type: 'canonical_entities:node'
+pattern: /%/full
+view_mode: full
+selection_criteria:
+  31cd7fd8-a6df-4d6f-bdd4-ffca878da0e8:
+    id: 'entity_bundle:node'
+    bundles:
+      sale_complects: sale_complects
+      sale_modules: sale_modules
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 31cd7fd8-a6df-4d6f-bdd4-ffca878da0e8
+selection_logic: and
+weight: -5
+relationships: {  }

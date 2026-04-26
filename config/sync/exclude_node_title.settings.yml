@@ -1,0 +1,21 @@
+_core:
+  default_config_hash: a_EXRfXokVSU2tHLT-BsxRL-gAyOAydZrqejaIQMWu4
+translation_sync: true
+search: false
+type: remove
+content_types:
+  article: none
+  fabrics: none
+  instances_variations: all
+  model_instance: all
+  order: none
+  page: none
+content_type_modes:
+  article: {  }
+  fabrics: {  }
+  instances_variations:
+    - order_display
+  model_instance:
+    - order_display
+  order: {  }
+  page: {  }

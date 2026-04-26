@@ -1,0 +1,25 @@
+uuid: 4c12e798-0ae2-4030-8ecb-ef005cca9d16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_module
+id: paragraph.separate_set_of_module.field_variation
+field_name: field_variation
+entity_type: paragraph
+bundle: separate_set_of_module
+label: Вариация
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: varianty_ekzemplyarov_moduley
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

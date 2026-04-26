@@ -1,0 +1,649 @@
+uuid: 6629b310-29e3-4f09-b9d6-ad1fc8c5b974
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.list_of_selected_moduls.field_additional_information
+    - field.field.paragraph.list_of_selected_moduls.field_assembly
+    - field.field.paragraph.list_of_selected_moduls.field_choose_a_mod_and_variation
+    - field.field.paragraph.list_of_selected_moduls.field_execution_time
+    - field.field.paragraph.list_of_selected_moduls.field_fabric_list
+    - field.field.paragraph.list_of_selected_moduls.field_instance
+    - field.field.paragraph.list_of_selected_moduls.field_select_embroidery
+    - field.field.paragraph.list_of_selected_moduls.field_selected_items_cost
+    - paragraphs.paragraphs_type.list_of_selected_moduls
+  module:
+    - display_builder
+    - entity_reference_revisions
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: select
+                source:
+                  value: '12'
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: gx-2
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          row_cols:
+                            source_id: select
+                            source:
+                              value: auto
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: 'Модульный комплект: '
+                                node_id: 6cb2830afe765f42
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      borders_border: border-bottom
+                                      borders_border_width: border-2
+                                      borders_border_color: border-secondary-subtle
+                                    extra: ''
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:list_of_selected_moduls:field_instance'
+                                  'field:paragraph:list_of_selected_moduls:field_instance':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:list_of_selected_moduls:field_instance'
+                                          source:
+                                            type: entity_reference_label
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                            settings:
+                                              link: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: fe6e3042d6408f73
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      typography: fs-5
+                                      text_font_weight: fw-medium
+                                    extra: ''
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: aff1e76c297edba0
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:list_of_selected_moduls:field_choose_a_mod_and_variation'
+                                  'field:paragraph:list_of_selected_moduls:field_choose_a_mod_and_variation':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:list_of_selected_moduls:field_choose_a_mod_and_variation'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings:
+                                              view_mode: order_display_for_paragraphs
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: bf6114f0e932dd6b
+                    node_id: 1606fefc6d5385b9
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-2
+                          spacing_padding: p-1
+                        extra: 'py-2 my-2 mx-1 px-2'
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          row_cols:
+                            source_id: select
+                            source:
+                              value: auto
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: 'Стоимость комплекта: '
+                                node_id: 930eeb8a024e8b36
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      borders_border: border-bottom
+                                      borders_border_width: border-2
+                                      borders_border_color: border-secondary-subtle
+                                    extra: ''
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:list_of_selected_moduls:field_selected_items_cost'
+                                  'field:paragraph:list_of_selected_moduls:field_selected_items_cost':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:list_of_selected_moduls:field_selected_items_cost'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings:
+                                              view_mode: order_display_for_paragraphs
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 8360089eb79e9210
+                                third_party_settings:
+                                  styles:
+                                    selected: {  }
+                                    extra: ''
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 26e5f4c95f10c223
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:list_of_selected_moduls:field_fabric_list'
+                                  'field:paragraph:list_of_selected_moduls:field_fabric_list':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:list_of_selected_moduls:field_fabric_list'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings:
+                                              view_mode: order_display_for_paragraphs
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 3253ffecb9733292
+                    node_id: 7707cc5b7b1541a1
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:list_of_selected_moduls:field_execution_time'
+                                  'field:paragraph:list_of_selected_moduls:field_execution_time':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:list_of_selected_moduls:field_execution_time'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings:
+                                              view_mode: order_display_for_paragraphs
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 90d1b60ae91d2349
+                    node_id: f3b89fc7824afc1f
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:list_of_selected_moduls:field_assembly'
+                                  'field:paragraph:list_of_selected_moduls:field_assembly':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:list_of_selected_moduls:field_assembly'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings:
+                                              view_mode: order_display_for_paragraphs
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 31ef6e4c94cc037c
+                    node_id: 7979df8e58b9601b
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                          spacing_margin: m-1
+                          spacing_padding: p-2
+                        extra: ''
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:list_of_selected_moduls:field_additional_information'
+                      'field:paragraph:list_of_selected_moduls:field_additional_information':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:list_of_selected_moduls:field_additional_information'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: ab9acd83d83cf378
+            third_party_settings: ''
+            node_id: ''
+        node_id: 5635af288b8c3423
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-secondary
+              shadows: shadow
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-2
+              spacing_padding: p-1
+            extra: 'my-2 py-2'
+id: paragraph.list_of_selected_moduls.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: list_of_selected_moduls
+mode: order_display_for_paragraphs
+content:
+  field_additional_information:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_assembly:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_choose_a_mod_and_variation:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_execution_time:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_fabric_list:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_selected_items_cost:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_select_embroidery: true

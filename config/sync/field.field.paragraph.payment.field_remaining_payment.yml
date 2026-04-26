@@ -1,0 +1,23 @@
+uuid: 7e589842-7aed-482b-b553-24e55d27c255
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_remaining_payment
+    - paragraphs.paragraphs_type.payment
+id: paragraph.payment.field_remaining_payment
+field_name: field_remaining_payment
+entity_type: paragraph
+bundle: payment
+label: 'Остаток оплаты'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

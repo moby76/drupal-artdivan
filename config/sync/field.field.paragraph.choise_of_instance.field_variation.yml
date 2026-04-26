@@ -1,0 +1,25 @@
+uuid: f932c1d5-bb24-4399-b5ab-4ffc2ecc9212
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_variation
+    - paragraphs.paragraphs_type.choise_of_instance
+id: paragraph.choise_of_instance.field_variation
+field_name: field_variation
+entity_type: paragraph
+bundle: choise_of_instance
+label: Вариация
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: varianty_ekzemplyarov_myagkoy_mebeli
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

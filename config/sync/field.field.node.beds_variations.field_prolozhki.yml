@@ -1,0 +1,21 @@
+uuid: d47fc4ff-ba84-4b58-bb8f-1f6e4014b658
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prolozhki
+    - node.type.beds_variations
+  module:
+    - options
+id: node.beds_variations.field_prolozhki
+field_name: field_prolozhki
+entity_type: node
+bundle: beds_variations
+label: Проложки
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

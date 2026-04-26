@@ -1,0 +1,43 @@
+uuid: 5d5eeeef-1188-40ac-aaa7-6bc8a6b2d1bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.other_goods.field_is_assembler
+    - field.field.paragraph.other_goods.field_opisanie_tovarov
+    - field.field.paragraph.other_goods.field_price
+    - paragraphs.paragraphs_type.other_goods
+  module:
+    - text
+id: paragraph.other_goods.default
+targetEntityType: paragraph
+bundle: other_goods
+mode: default
+content:
+  field_is_assembler:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_opisanie_tovarov:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

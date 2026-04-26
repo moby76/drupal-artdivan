@@ -1,0 +1,52 @@
+uuid: f2415f4b-63dd-495e-a5a7-d25b0eb84769
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.separate_set_of_module.field_modul
+    - field.field.paragraph.separate_set_of_module.field_modul_price
+    - field.field.paragraph.separate_set_of_module.field_modules_arrangement
+    - field.field.paragraph.separate_set_of_module.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_module
+  module:
+    - field_token_value
+id: paragraph.separate_set_of_module.default
+targetEntityType: paragraph
+bundle: separate_set_of_module
+mode: default
+content:
+  field_modul:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_modul_price:
+    type: field_token_value_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_modules_arrangement:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_variation:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

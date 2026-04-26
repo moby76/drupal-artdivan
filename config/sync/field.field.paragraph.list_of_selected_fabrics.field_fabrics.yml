@@ -1,0 +1,85 @@
+uuid: d1d0afff-5c17-4f5f-81f5-c24c91c6d680
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fabrics
+    - paragraphs.paragraphs_type.list_of_selected_fabrics
+    - paragraphs.paragraphs_type.vybrat_tkan_dlya_elementov
+  module:
+    - entity_reference_revisions
+id: paragraph.list_of_selected_fabrics.field_fabrics
+field_name: field_fabrics
+entity_type: paragraph
+bundle: list_of_selected_fabrics
+label: 'Подобрать ткани'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      vybrat_tkan_dlya_elementov: vybrat_tkan_dlya_elementov
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info:
+        weight: 20
+        enabled: false
+      assembly:
+        weight: 21
+        enabled: false
+      choise_of_instance:
+        weight: 6
+        enabled: false
+      customer_details:
+        weight: 23
+        enabled: false
+      delivery:
+        weight: 24
+        enabled: false
+      installment:
+        weight: 25
+        enabled: false
+      list_of_selected_fabrics:
+        weight: 26
+        enabled: false
+      list_of_selected_furniture_sets:
+        weight: 27
+        enabled: false
+      list_of_selected_moduls:
+        weight: 28
+        enabled: false
+      opisanie_zayavki:
+        weight: 7
+        enabled: false
+      organization_details_form:
+        weight: 30
+        enabled: false
+      other_goods:
+        weight: 31
+        enabled: false
+      payment:
+        weight: 32
+        enabled: false
+      seller:
+        weight: 33
+        enabled: false
+      separate_set_of_upholstered_furn:
+        weight: 34
+        enabled: false
+      service:
+        weight: 35
+        enabled: false
+      total_amount:
+        weight: 36
+        enabled: false
+      trading_operation_type:
+        weight: 37
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 5
+        enabled: true
+field_type: entity_reference_revisions

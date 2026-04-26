@@ -1,0 +1,29 @@
+uuid: d9c39b85-433a-4e08-92c8-e8adeb93bfb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_choise_element
+    - paragraphs.paragraphs_type.vybrat_tkan_dlya_elementov
+    - taxonomy.vocabulary.main_elements
+id: paragraph.vybrat_tkan_dlya_elementov.field_choise_element
+field_name: field_choise_element
+entity_type: paragraph
+bundle: vybrat_tkan_dlya_elementov
+label: 'Выбрать элемент'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      main_elements: main_elements
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

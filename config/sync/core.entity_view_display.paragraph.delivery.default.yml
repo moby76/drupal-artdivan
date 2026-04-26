@@ -1,0 +1,233 @@
+uuid: 2b5f9bda-6e0e-4ff7-9a6b-50a2d327729d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.delivery.field_delivery_date
+    - field.field.paragraph.delivery.field_delivery_or_pickup
+    - field.field.paragraph.delivery.field_delivery_price
+    - field.field.paragraph.delivery.field_delivery_today
+    - field.field.paragraph.delivery.field_elevator_type
+    - field.field.paragraph.delivery.field_floor
+    - field.field.paragraph.delivery.field_is_elevator
+    - field.field.paragraph.delivery.field_time_range
+    - field.field.paragraph.delivery.field_tip_dostavki
+    - field.field.paragraph.delivery.field_variant_oplaty
+    - paragraphs.paragraphs_type.delivery
+  module:
+    - datetime
+    - datetime_range
+    - display_builder
+    - nomarkup
+    - options
+    - ui_patterns
+    - ui_patterns_field_formatters
+third_party_settings:
+  display_builder:
+    sources:
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:delivery:field_delivery_today'
+          'field:paragraph:delivery:field_delivery_today':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:delivery:field_delivery_today'
+                  source:
+                    type: boolean
+                    label: above
+                    settings:
+                      format: default
+                      format_custom_false: ''
+                      format_custom_true: ''
+                    third_party_settings: {  }
+                    weight: 0
+                    region: content
+        node_id: 38b58c434016e14d
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:delivery:field_tip_dostavki'
+          'field:paragraph:delivery:field_tip_dostavki':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:delivery:field_tip_dostavki'
+                  source:
+                    type: list_default
+                    label: above
+                    settings: {  }
+                    third_party_settings: {  }
+                    weight: 1
+                    region: content
+        node_id: d75541bbff9c68fd
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:delivery:field_delivery_date'
+          'field:paragraph:delivery:field_delivery_date':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:delivery:field_delivery_date'
+                  source:
+                    type: datetime_custom
+                    label: above
+                    settings:
+                      timezone_override: Asia/Novokuznetsk
+                      date_format: d.m.Y
+                    third_party_settings:
+                      nomarkup:
+                        enabled: false
+                        separator: '|'
+                        referenced_entity: ''
+                    weight: 2
+                    region: content
+        node_id: e3c1487048aa098a
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:delivery:field_time_range'
+          'field:paragraph:delivery:field_time_range':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:delivery:field_time_range'
+                  source:
+                    type: daterange_default
+                    label: above
+                    settings:
+                      timezone_override: Asia/Novokuznetsk
+                      format_type: html_time
+                      from_to: both
+                      separator: '-'
+                    third_party_settings:
+                      nomarkup:
+                        enabled: false
+                        separator: '|'
+                        referenced_entity: ''
+                    weight: 3
+                    region: content
+        node_id: ac6cfdb09ff3e52f
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:delivery:field_delivery_price'
+          'field:paragraph:delivery:field_delivery_price':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:delivery:field_delivery_price'
+                  source:
+                    type: number_integer
+                    label: above
+                    settings:
+                      thousand_separator: ''
+                      prefix_suffix: true
+                    third_party_settings: {  }
+                    weight: 4
+                    region: content
+        node_id: 6f7af4cc37645152
+id: paragraph.delivery.default
+targetEntityType: paragraph
+bundle: delivery
+mode: default
+content:
+  field_delivery_date:
+    type: datetime_custom
+    label: above
+    settings:
+      timezone_override: Asia/Novokuznetsk
+      date_format: d.m.Y
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
+    region: content
+  field_delivery_or_pickup:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_delivery_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_delivery_today:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_elevator_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_floor:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_is_elevator:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_time_range:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: Asia/Novokuznetsk
+      format_type: html_time
+      from_to: both
+      separator: '-'
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 3
+    region: content
+  field_tip_dostavki:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_variant_oplaty:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -1,0 +1,14 @@
+uuid: d8a671a2-44a0-42d7-9e9d-a7b5082aec0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.customer
+  module:
+    - user
+id: user_add_role_action.customer
+label: 'Add the Покупатель role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: customer

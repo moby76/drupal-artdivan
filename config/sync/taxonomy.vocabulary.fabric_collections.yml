@@ -1,0 +1,9 @@
+uuid: 4c179e0f-8b24-4f6d-bcab-03387f1e94dd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Коллекции тканей'
+vid: fabric_collections
+description: 'Содержит коллекции и артикулы тканей'
+weight: -1
+new_revision: false

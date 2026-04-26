@@ -1,0 +1,11 @@
+uuid: 6f3f4d89-61c7-42cb-894d-42c40ce19fc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.additions
+label: Additions
+description: "Дополнения к основному документ: \r\n- Графики платежей \r\n- Задержки и т.д"
+targetEntityType: node
+cache: true

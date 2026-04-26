@@ -1,0 +1,19 @@
+uuid: 36b1d877-d79c-4960-a6a5-005843a657e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.organization_details_block
+    - field.storage.block_content.field_osnovnoy_telefon
+id: block_content.organization_details_block.field_osnovnoy_telefon
+field_name: field_osnovnoy_telefon
+entity_type: block_content
+bundle: organization_details_block
+label: 'Основной телефон'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,11 @@
+uuid: 8f617c89-ddab-42d0-9ad1-290eb9591a41
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.display_complects
+label: 'Дисплей для комплектов'
+description: null
+targetEntityType: paragraph
+cache: true

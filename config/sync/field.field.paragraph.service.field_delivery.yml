@@ -1,0 +1,52 @@
+uuid: 2eb66da3-3ca9-41d9-aaa2-c0b10053d8e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_delivery
+    - paragraphs.paragraphs_type.delivery
+    - paragraphs.paragraphs_type.service
+  module:
+    - entity_reference_revisions
+id: paragraph.service.field_delivery
+field_name: field_delivery
+entity_type: paragraph
+bundle: service
+label: Доставка
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      delivery: delivery
+    negate: 0
+    target_bundles_drag_drop:
+      assembly:
+        weight: 9
+        enabled: false
+      choise_of_instance:
+        weight: 10
+        enabled: false
+      customer_details:
+        weight: 11
+        enabled: false
+      delivery:
+        weight: 12
+        enabled: true
+      opisanie_zayavki:
+        weight: 13
+        enabled: false
+      service:
+        weight: 14
+        enabled: false
+      trading_operation_type:
+        weight: 15
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

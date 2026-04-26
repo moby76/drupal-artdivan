@@ -1,0 +1,40 @@
+uuid: 27021422-1c4c-485d-8848-530feb23356a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customer
+    - node.type.order
+    - paragraphs.paragraphs_type.customer_details
+  module:
+    - entity_reference_revisions
+id: node.order.field_customer
+field_name: field_customer
+entity_type: node
+bundle: order
+label: Покупатель
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      customer_details: customer_details
+    negate: 0
+    target_bundles_drag_drop:
+      choise_of_instance:
+        weight: 6
+        enabled: false
+      customer_details:
+        weight: 5
+        enabled: true
+      opisanie_zayavki:
+        weight: 7
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

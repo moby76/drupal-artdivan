@@ -1,0 +1,29 @@
+uuid: 632906c7-65e4-412d-8aa9-8e66d6a2f91f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.selected_items_cost.field_selcted_items_cost
+    - paragraphs.paragraphs_type.selected_items_cost
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.selected_items_cost.preview
+targetEntityType: paragraph
+bundle: selected_items_cost
+mode: preview
+content:
+  field_selcted_items_cost:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

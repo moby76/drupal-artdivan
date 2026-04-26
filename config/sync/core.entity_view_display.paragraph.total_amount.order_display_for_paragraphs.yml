@@ -1,0 +1,497 @@
+uuid: 0924c4ed-b1d3-441c-92ac-20f479aad824
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.total_amount.field_assembly_cost
+    - field.field.paragraph.total_amount.field_delivery_cost
+    - field.field.paragraph.total_amount.field_products_cost
+    - field.field.paragraph.total_amount.field_total_amount
+    - paragraphs.paragraphs_type.total_amount
+  module:
+    - display_builder
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: select
+                source:
+                  value: '12'
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_4'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: container-fluid
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                                - '12'
+                                - '12'
+                          col_sm:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                                - ''
+                                - ''
+                          col_md:
+                            source_id: selects
+                            source:
+                              value:
+                                - '3'
+                                - '3'
+                                - '3'
+                                - '3'
+                          col_lg:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                                - ''
+                                - ''
+                          col_xl:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                                - ''
+                                - ''
+                          col_xxl:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                                - ''
+                                - ''
+                          col_offset:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                                - ''
+                                - ''
+                          col_1_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          col_2_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          col_3_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          col_4_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          col_1_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: 'Стоимость товаров: '
+                                node_id: 0361b6999577d7ec
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:total_amount:field_products_cost'
+                                  'field:paragraph:total_amount:field_products_cost':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:total_amount:field_products_cost'
+                                          source:
+                                            type: number_integer
+                                            label: above
+                                            settings:
+                                              thousand_separator: ''
+                                              prefix_suffix: true
+                                            third_party_settings: {  }
+                                            weight: 2
+                                            region: content
+                                node_id: 5b1309b223541c7e
+                                third_party_settings:
+                                  styles:
+                                    selected: {  }
+                                    extra: ''
+                          col_2_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: 'Стоимость доставки: '
+                                node_id: 75dfbe9a90ba95af
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:total_amount:field_delivery_cost'
+                                  'field:paragraph:total_amount:field_delivery_cost':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:total_amount:field_delivery_cost'
+                                          source:
+                                            type: number_integer
+                                            label: above
+                                            settings:
+                                              thousand_separator: ''
+                                              prefix_suffix: true
+                                            third_party_settings: {  }
+                                            weight: 3
+                                            region: content
+                                node_id: 9bf4f386a1713532
+                                third_party_settings:
+                                  styles:
+                                    selected: {  }
+                                    extra: ''
+                          col_3_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: 'Стоимость сборки: '
+                                node_id: e90e5d0e43e413a1
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:total_amount:field_assembly_cost'
+                                  'field:paragraph:total_amount:field_assembly_cost':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:total_amount:field_assembly_cost'
+                                          source:
+                                            type: number_integer
+                                            label: above
+                                            settings:
+                                              thousand_separator: ''
+                                              prefix_suffix: true
+                                            third_party_settings: {  }
+                                            weight: 1
+                                            region: content
+                                node_id: 9be6664eb3af3312
+                                third_party_settings:
+                                  styles:
+                                    selected: {  }
+                                    extra: ''
+                          col_4_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: component
+                                source:
+                                  component:
+                                    component_id: 'ui_suite_bootstrap:grid_row_2'
+                                    variant_id: null
+                                    props:
+                                      attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      container:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      container_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      container_wrapper_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      gutters:
+                                        source_id: select
+                                        source:
+                                          value: g-0
+                                      gutters_horizontal:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      gutters_vertical:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_xs:
+                                        source_id: selects
+                                        source:
+                                          value:
+                                            - '12'
+                                            - '12'
+                                      col_sm:
+                                        source_id: selects
+                                        source:
+                                          value:
+                                            - '12'
+                                            - '12'
+                                      col_md:
+                                        source_id: selects
+                                        source:
+                                          value:
+                                            - '7'
+                                            - '5'
+                                      col_lg:
+                                        source_id: selects
+                                        source:
+                                          value:
+                                            - '7'
+                                            - '5'
+                                      col_xl:
+                                        source_id: selects
+                                        source:
+                                          value:
+                                            - '7'
+                                            - '5'
+                                      col_xxl:
+                                        source_id: selects
+                                        source:
+                                          value:
+                                            - ''
+                                            - ''
+                                      col_offset:
+                                        source_id: selects
+                                        source:
+                                          value:
+                                            - ''
+                                            - ''
+                                      col_1_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      col_2_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                    slots:
+                                      col_1_content:
+                                        add_more_button: ''
+                                        sources:
+                                          -
+                                            source_id: textfield
+                                            source:
+                                              value: 'Общая стоимость: '
+                                            node_id: ba4b93edc267f0d6
+                                      col_2_content:
+                                        add_more_button: ''
+                                        sources:
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:total_amount:field_total_amount'
+                                              'field:paragraph:total_amount:field_total_amount':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:total_amount:field_total_amount'
+                                                      source:
+                                                        type: number_integer
+                                                        settings:
+                                                          thousand_separator: ''
+                                                          prefix_suffix: '1'
+                                                        third_party_settings:
+                                                          nomarkup:
+                                                            separator: '|'
+                                                            referenced_entity: ''
+                                                            enabled: 0
+                                                      node_id: ''
+                                                      third_party_settings: ''
+                                                      _weight: '0'
+                                            node_id: 75249288efac63fe
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  typography: fs-5
+                                                  colors_color: text-danger
+                                                  text_font_weight: fw-medium
+                                                extra: ''
+                                    third_party_settings: ''
+                                    node_id: ''
+                                node_id: 13a53a2ab4786b23
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      borders_border_width: border-2
+                                      spacing_padding_bottom: pb-1
+                                    extra: ''
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: d8a72d505e8cfac2
+                    third_party_settings:
+                      styles:
+                        selected: {  }
+                        extra: ''
+            third_party_settings: ''
+            node_id: ''
+        node_id: ce1228d81107ca8f
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-danger
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-2
+            extra: 'my-1 py-2'
+id: paragraph.total_amount.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: total_amount
+mode: order_display_for_paragraphs
+content:
+  field_assembly_cost:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_delivery_cost:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_products_cost:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_total_amount:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

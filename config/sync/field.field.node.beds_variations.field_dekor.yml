@@ -1,0 +1,21 @@
+uuid: 1160e5f5-cf02-4097-90ed-c54dd54dd989
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dekor
+    - node.type.beds_variations
+  module:
+    - options
+id: node.beds_variations.field_dekor
+field_name: field_dekor
+entity_type: node
+bundle: beds_variations
+label: Декор
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

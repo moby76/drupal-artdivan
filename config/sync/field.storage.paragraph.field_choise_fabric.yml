@@ -1,0 +1,20 @@
+uuid: d5b5dc78-7d1e-436b-9b4e-8b1266da15bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: paragraph.field_choise_fabric
+field_name: field_choise_fabric
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

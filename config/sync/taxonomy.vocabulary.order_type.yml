@@ -1,0 +1,9 @@
+uuid: b2a9ad4c-3a91-40c3-98ec-c98adcbf6656
+langcode: en
+status: true
+dependencies: {  }
+name: 'Тип операции'
+vid: order_type
+description: 'Это продажа из салона или заказ на изготовление?'
+weight: -4
+new_revision: false

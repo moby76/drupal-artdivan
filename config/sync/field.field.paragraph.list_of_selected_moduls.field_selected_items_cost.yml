@@ -1,0 +1,97 @@
+uuid: 3a892718-961b-408a-a811-b2f37c40af84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_selected_items_cost
+    - paragraphs.paragraphs_type.list_of_selected_moduls
+    - paragraphs.paragraphs_type.selected_items_cost
+  module:
+    - entity_reference_revisions
+id: paragraph.list_of_selected_moduls.field_selected_items_cost
+field_name: field_selected_items_cost
+entity_type: paragraph
+bundle: list_of_selected_moduls
+label: 'Итоговая стоимость модульного комплекта'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      selected_items_cost: selected_items_cost
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info_field:
+        weight: 24
+        enabled: false
+      assembly:
+        weight: 25
+        enabled: false
+      choise_of_instance:
+        weight: 26
+        enabled: false
+      customer_details:
+        weight: 27
+        enabled: false
+      delivery:
+        weight: 28
+        enabled: false
+      installment:
+        weight: 29
+        enabled: false
+      list_of_selected_beds:
+        weight: 30
+        enabled: false
+      list_of_selected_fabrics:
+        weight: 31
+        enabled: false
+      list_of_selected_furniture_sets:
+        weight: 32
+        enabled: false
+      list_of_selected_moduls:
+        weight: 33
+        enabled: false
+      opisanie_zayavki:
+        weight: 34
+        enabled: false
+      organization_details_form:
+        weight: 35
+        enabled: false
+      other_goods:
+        weight: 36
+        enabled: false
+      payment:
+        weight: 37
+        enabled: false
+      selected_items_cost:
+        weight: 38
+        enabled: true
+      seller:
+        weight: 39
+        enabled: false
+      separate_set_of_bed:
+        weight: 40
+        enabled: false
+      separate_set_of_module:
+        weight: 41
+        enabled: false
+      separate_set_of_upholstered_furn:
+        weight: 42
+        enabled: false
+      service:
+        weight: 43
+        enabled: false
+      total_amount:
+        weight: 44
+        enabled: false
+      trading_operation_type:
+        weight: 45
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 46
+        enabled: false
+field_type: entity_reference_revisions

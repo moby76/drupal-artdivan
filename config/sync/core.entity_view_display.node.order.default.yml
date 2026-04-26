@@ -1,0 +1,107 @@
+uuid: 706234dd-58c7-4944-81c8-fa2a0cd2c0d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.order.body
+    - field.field.node.order.field_auto_order_number
+    - field.field.node.order.field_customer
+    - field.field.node.order.field_delivery
+    - field.field.node.order.field_header
+    - field.field.node.order.field_order_description
+    - field.field.node.order.field_payment
+    - field.field.node.order.field_point_of_sale
+    - field.field.node.order.field_print_page
+    - field.field.node.order.field_product_selection
+    - field.field.node.order.field_production_type
+    - field.field.node.order.field_total_amount
+    - node.type.order
+  module:
+    - block_field
+    - entity_reference_revisions
+    - user
+id: node.order.default
+targetEntityType: node
+bundle: order
+mode: default
+content:
+  field_customer:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_delivery:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_header:
+    type: block_field
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_payment:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_point_of_sale:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_print_page:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_product_selection:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_total_amount:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  entity_link_display: true
+  field_auto_order_number: true
+  field_order_description: true
+  field_production_type: true

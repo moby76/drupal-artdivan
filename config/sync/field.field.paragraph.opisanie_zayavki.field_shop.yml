@@ -1,0 +1,21 @@
+uuid: b3b617e3-aebe-43ee-8035-da8a3690aa65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_shop
+    - paragraphs.paragraphs_type.opisanie_zayavki
+  module:
+    - options
+id: paragraph.opisanie_zayavki.field_shop
+field_name: field_shop
+entity_type: paragraph
+bundle: opisanie_zayavki
+label: Магазин
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

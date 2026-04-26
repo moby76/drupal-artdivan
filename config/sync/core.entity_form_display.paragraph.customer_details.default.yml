@@ -1,0 +1,89 @@
+uuid: 1ecb632e-c476-4856-8a31-80360cdeb35d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.customer_details.field_customer_address
+    - field.field.paragraph.customer_details.field_delivery_address
+    - field.field.paragraph.customer_details.field_delivery_address_is_some
+    - field.field.paragraph.customer_details.field_initials
+    - field.field.paragraph.customer_details.field_phone
+    - paragraphs.paragraphs_type.customer_details
+  module:
+    - address
+    - conditional_fields
+    - phonenumber
+id: paragraph.customer_details.default
+targetEntityType: paragraph
+bundle: customer_details
+mode: default
+content:
+  field_customer_address:
+    type: address_default
+    weight: 2
+    region: content
+    settings:
+      wrapper_type: fieldset
+    third_party_settings: {  }
+  field_delivery_address:
+    type: address_default
+    weight: 4
+    region: content
+    settings:
+      wrapper_type: fieldset
+    third_party_settings:
+      conditional_fields:
+        b2533459-3f33-4fbd-902e-051e23588c43:
+          entity_type: paragraph
+          bundle: customer_details
+          dependee: field_delivery_address_is_some
+          settings:
+            state: '!visible'
+            reset: true
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '1'
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_delivery_address_is_some:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_initials:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone:
+    type: phone_default
+    weight: 1
+    region: content
+    settings:
+      initial_country: RU
+      preferred_countries: {  }
+      allow_dropdown: true
+      fix_dropdown_width: true
+      separate_dial_code: false
+      show_flags: false
+      country_search: false
+      format_as_you_type: true
+      format_on_display: false
+      use_fullscreen_popup: true
+      remove_start_zero: false
+      mask_formatter: false
+      show_error: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

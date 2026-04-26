@@ -1,0 +1,10 @@
+uuid: 91955208-eaf5-45eb-94af-55606cbeb0d8
+langcode: en
+status: true
+dependencies: {  }
+id: opisanie_zayavki
+label: 'Описание заявки'
+icon_uuid: null
+icon_default: null
+description: 'Где и кем оформлена заявка, тип(продажа/заказ на изготовление)'
+behavior_plugins: {  }

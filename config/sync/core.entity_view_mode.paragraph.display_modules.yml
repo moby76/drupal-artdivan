@@ -1,0 +1,11 @@
+uuid: 45bd3f9e-a122-4f9f-b8bc-2aedc7bf5e5e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.display_modules
+label: 'Дисплей для модулей'
+description: null
+targetEntityType: paragraph
+cache: true

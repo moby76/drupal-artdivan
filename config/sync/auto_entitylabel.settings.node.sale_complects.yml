@@ -1,0 +1,10 @@
+status: 1
+pattern: 'Покупка комплекта №[node:field_auto_order_number]'
+escape: false
+preserve_titles: true
+save: true
+chunk: 50
+dependencies:
+  config:
+    - node.type.sale_complects
+new_content_behavior: 0

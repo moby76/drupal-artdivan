@@ -1,0 +1,84 @@
+uuid: 16f5d7de-bf60-4b15-9f20-b4bc82e5d7d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_floor
+field_name: field_floor
+entity_type: paragraph
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: 'Это дом'
+    -
+      value: 1
+      label: '1 этаж'
+    -
+      value: 2
+      label: '2 этаж'
+    -
+      value: 3
+      label: '3 этаж'
+    -
+      value: 4
+      label: '4 этаж'
+    -
+      value: 5
+      label: '5 этаж'
+    -
+      value: 6
+      label: '6 этаж'
+    -
+      value: 7
+      label: '7 этаж'
+    -
+      value: 8
+      label: '8 этаж'
+    -
+      value: 9
+      label: '9 этаж'
+    -
+      value: 10
+      label: '10 этаж'
+    -
+      value: 11
+      label: '11 этаж'
+    -
+      value: 12
+      label: '12 этаж'
+    -
+      value: 13
+      label: '13 этаж'
+    -
+      value: 14
+      label: '14 этаж'
+    -
+      value: 15
+      label: '15 этаж'
+    -
+      value: 16
+      label: '16 этаж'
+    -
+      value: 17
+      label: '17 этаж'
+    -
+      value: 18
+      label: '18 этаж'
+    -
+      value: 19
+      label: '19 этаж'
+    -
+      value: 20
+      label: '20 этаж'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: b38f2e07-695d-49af-bf83-c2b389c0fc82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_short_name
+    - taxonomy.vocabulary.transformation_mechanisms
+id: taxonomy_term.transformation_mechanisms.field_short_name
+field_name: field_short_name
+entity_type: taxonomy_term
+bundle: transformation_mechanisms
+label: 'Краткое наименование'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

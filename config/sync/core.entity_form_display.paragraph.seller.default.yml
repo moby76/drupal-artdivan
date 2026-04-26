@@ -1,0 +1,28 @@
+uuid: bc712553-4eb4-4409-a49c-1c4094051033
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.seller.field_point_of_sale
+    - field.field.paragraph.seller.field_sellers_name
+    - paragraphs.paragraphs_type.seller
+id: paragraph.seller.default
+targetEntityType: paragraph
+bundle: seller
+mode: default
+content:
+  field_point_of_sale:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sellers_name:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

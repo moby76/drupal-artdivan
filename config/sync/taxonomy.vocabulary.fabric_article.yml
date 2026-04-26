@@ -1,0 +1,9 @@
+uuid: d2469cff-260f-476d-845c-ae15c3e93ce1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Артикулы тканей'
+vid: fabric_article
+description: null
+weight: 0
+new_revision: false

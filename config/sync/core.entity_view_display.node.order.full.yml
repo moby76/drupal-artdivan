@@ -1,0 +1,403 @@
+uuid: b757554c-3583-4db3-952c-cda270e6fab5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.order.body
+    - field.field.node.order.field_auto_order_number
+    - field.field.node.order.field_customer
+    - field.field.node.order.field_delivery
+    - field.field.node.order.field_header
+    - field.field.node.order.field_order_description
+    - field.field.node.order.field_payment
+    - field.field.node.order.field_point_of_sale
+    - field.field.node.order.field_print_page
+    - field.field.node.order.field_product_selection
+    - field.field.node.order.field_production_type
+    - field.field.node.order.field_total_amount
+    - node.type.order
+  module:
+    - block_field
+    - display_builder
+    - entity_reference_revisions
+    - print_this_page
+    - token
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - user
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:order:field_print_page'
+          'field:node:order:field_print_page':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:order:field_print_page'
+                  source:
+                    type: print_this_page
+                    settings:
+                      link_text: Распечатать
+                      show_icon: '1'
+                      exclude_list: 'header, footer, aside, nav, form, iframe, .menu, .nav, .alert, .btn'
+                    third_party_settings:
+                      field_label:
+                        label_value: ''
+                        label_class: ''
+                        label_tag: ''
+                      nomarkup:
+                        separator: '|'
+                        referenced_entity: ''
+                        enabled: 0
+                  node_id: ''
+                  third_party_settings: ''
+                  _weight: '0'
+        node_id: 047e0fb702ae892e
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:order:field_header'
+          'field:node:order:field_header':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:order:field_header'
+                  source:
+                    type: block_field
+                    settings: {  }
+                    third_party_settings: {  }
+        node_id: dd795237c0fdd3c8
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:order:field_point_of_sale'
+          'field:node:order:field_point_of_sale':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:order:field_point_of_sale'
+                  source:
+                    type: entity_reference_revisions_entity_view
+                    settings:
+                      view_mode: order_display_for_paragraphs
+                    third_party_settings:
+                      field_label:
+                        label_value: ''
+                        label_class: ''
+                        label_tag: ''
+                      nomarkup:
+                        enabled: '1'
+                        separator: '|'
+                        referenced_entity: ''
+                  node_id: ''
+                  third_party_settings: ''
+                  _weight: '0'
+        node_id: e5c91ded0abb15f0
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:order:field_customer'
+          'field:node:order:field_customer':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:order:field_customer'
+                  source:
+                    type: entity_reference_revisions_entity_view
+                    settings:
+                      view_mode: order_display_for_paragraphs
+                    third_party_settings:
+                      field_label:
+                        label_value: ''
+                        label_class: ''
+                        label_tag: ''
+                      nomarkup:
+                        separator: '|'
+                        referenced_entity: ''
+                        enabled: 0
+                  node_id: ''
+                  third_party_settings: ''
+                  _weight: '0'
+        node_id: 849278b82dec6def
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:order:field_product_selection'
+                      'field:node:order:field_product_selection':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:order:field_product_selection'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 431563e22d1bd31e
+        node_id: beaa933626b99c5c
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:order:field_delivery'
+                      'field:node:order:field_delivery':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:order:field_delivery'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 55687caf6f570d9b
+        node_id: ffdf9fd859a7305f
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:order:field_total_amount'
+          'field:node:order:field_total_amount':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:order:field_total_amount'
+                  source:
+                    type: entity_reference_revisions_entity_view
+                    settings:
+                      view_mode: order_display_for_paragraphs
+                    third_party_settings:
+                      field_label:
+                        label_value: ''
+                        label_class: ''
+                        label_tag: ''
+                      nomarkup:
+                        separator: '|'
+                        referenced_entity: ''
+                        enabled: 0
+                  node_id: ''
+                  third_party_settings: ''
+                  _weight: '0'
+        node_id: 886426aecca31214
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: select
+                source:
+                  value: '12'
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="d-flex justify-content-center"'
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:button'
+                        variant_id:
+                          source_id: select
+                          source:
+                            value: outline_dark
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          disabled:
+                            source_id: checkbox
+                            source:
+                              value: 0
+                          label_visually_hidden:
+                            source_id: checkbox
+                            source:
+                              value: 0
+                          url:
+                            source_id: token
+                            source:
+                              value: '[node:url]/additions'
+                        slots:
+                          label:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: 'Перейти на страницу оплаты и подтверждению'
+                                node_id: c11421ed4da8665d
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 30ad815a1a5c3066
+            third_party_settings: ''
+            node_id: ''
+        node_id: 5611b349d2fa2318
+        third_party_settings:
+          styles:
+            selected: {  }
+            extra: my-2
+id: node.order.full
+targetEntityType: node
+bundle: order
+mode: full
+content:
+  field_delivery:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_payment:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_point_of_sale:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_print_page:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_product_selection:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  body: true
+  entity_link_display: true
+  field_auto_order_number: true
+  field_customer: true
+  field_header: true
+  field_order_description: true
+  field_production_type: true
+  field_total_amount: true

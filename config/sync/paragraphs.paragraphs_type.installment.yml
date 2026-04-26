@@ -1,0 +1,10 @@
+uuid: 1123ae1a-b0a3-4f9f-b93f-f6a787874d49
+langcode: en
+status: true
+dependencies: {  }
+id: installment
+label: Рассрочка
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

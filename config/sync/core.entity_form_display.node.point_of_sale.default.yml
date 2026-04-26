@@ -1,0 +1,116 @@
+uuid: 491ada46-e68c-4c2f-8689-e4f499c8d530
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.point_of_sale.field_adres
+    - field.field.node.point_of_sale.field_litera
+    - field.field.node.point_of_sale.field_nazvanie
+    - field.field.node.point_of_sale.field_phone
+    - field.field.node.point_of_sale.field_point_of_sale_type
+    - field.field.node.point_of_sale.field_store_affiliation
+    - node.type.point_of_sale
+  module:
+    - address
+    - path
+    - phonenumber
+id: node.point_of_sale.default
+targetEntityType: node
+bundle: point_of_sale
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_adres:
+    type: address_default
+    weight: 8
+    region: content
+    settings:
+      wrapper_type: fieldset
+    third_party_settings: {  }
+  field_litera:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_nazvanie:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone:
+    type: phone_default
+    weight: 9
+    region: content
+    settings:
+      initial_country: RU
+      preferred_countries:
+        - RU
+      allow_dropdown: false
+      fix_dropdown_width: true
+      separate_dial_code: false
+      show_flags: true
+      country_search: true
+      format_as_you_type: true
+      format_on_display: true
+      use_fullscreen_popup: true
+      remove_start_zero: true
+      mask_formatter: true
+      show_error: false
+    third_party_settings: {  }
+  field_point_of_sale_type:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_store_affiliation:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

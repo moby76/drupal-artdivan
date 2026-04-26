@@ -1,0 +1,404 @@
+uuid: 167fae91-c83c-4880-964b-e5ce3eba3e40
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.display_complects
+    - field.field.paragraph.choise_of_instance.field_additional_info
+    - field.field.paragraph.choise_of_instance.field_assembly
+    - field.field.paragraph.choise_of_instance.field_execution_time
+    - field.field.paragraph.choise_of_instance.field_fabrics
+    - field.field.paragraph.choise_of_instance.field_instance
+    - field.field.paragraph.choise_of_instance.field_is_module
+    - field.field.paragraph.choise_of_instance.field_variation
+    - paragraphs.paragraphs_type.choise_of_instance
+  module:
+    - display_builder
+    - entity_reference_revisions
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:paragraph:choise_of_instance:field_is_module'
+          'field:paragraph:choise_of_instance:field_is_module':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:paragraph:choise_of_instance:field_is_module'
+                  source:
+                    type: boolean
+                    label: above
+                    settings:
+                      format: default
+                      format_custom_false: ''
+                      format_custom_true: ''
+                    third_party_settings: {  }
+                    weight: 5
+                    region: content
+        node_id: f9f6b441bc8124ca
+        third_party_settings:
+          styles:
+            selected:
+              text_font_weight: fw-normal
+              text_text_alignment: text-center
+              colors_background_color: bg-secondary-subtle
+              borders_border: border-bottom
+              borders_border_width: border-2
+              borders_border_color: border-secondary-subtle
+              spacing_margin_start: ms-1
+              spacing_margin_end: me-1
+              spacing_padding_top: pt-1
+              spacing_padding_bottom: pb-1
+            extra: ''
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_2'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '4'
+                    - '8'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - '4'
+                    - '8'
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - '4'
+                    - '8'
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="border-end border-2 border-secondary-subtle"'
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:choise_of_instance:field_instance'
+                      'field:paragraph:choise_of_instance:field_instance':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:choise_of_instance:field_instance'
+                              source:
+                                type: entity_reference_label
+                                label: above
+                                settings:
+                                  link: false
+                                third_party_settings: {  }
+                                weight: 0
+                                region: content
+                    node_id: c972250003525a6e
+                    third_party_settings:
+                      styles:
+                        selected:
+                          typography: fs-5
+                          text_font_weight: fw-medium
+                          text_text_alignment: text-center
+                          spacing_margin_top: mt-2
+                        extra: ''
+              col_2_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:choise_of_instance:field_variation'
+                      'field:paragraph:choise_of_instance:field_variation':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:choise_of_instance:field_variation'
+                              source:
+                                type: entity_reference_entity_view
+                                settings:
+                                  view_mode: order_display
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: '1'
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: e4cfda3e11a199b3
+            third_party_settings: ''
+            node_id: ''
+        node_id: 2697034d59da6825
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-secondary-subtle
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-1
+              spacing_margin: m-1
+              spacing_padding: p-1
+            extra: ''
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:choise_of_instance:field_fabrics'
+                      'field:paragraph:choise_of_instance:field_fabrics':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:choise_of_instance:field_fabrics'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: b41598efdced5a22
+                    third_party_settings:
+                      styles:
+                        selected: {  }
+                        extra: ''
+        node_id: 3dce90076e3f668e
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-secondary-subtle
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-1
+              spacing_margin: m-1
+              spacing_padding: p-2
+              spacing_padding_bottom: pb-3
+            extra: ''
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:choise_of_instance:field_execution_time'
+                      'field:paragraph:choise_of_instance:field_execution_time':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:choise_of_instance:field_execution_time'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 86f6cd5fd94888e2
+                    third_party_settings:
+                      styles:
+                        selected: {  }
+                        extra: ''
+        node_id: 3ffa684f0b97307f
+        third_party_settings:
+          styles:
+            selected:
+              spacing_margin_top: mt-2
+              spacing_padding_start: ps-3
+              spacing_padding_end: pe-3
+            extra: ''
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:choise_of_instance:field_assembly'
+                      'field:paragraph:choise_of_instance:field_assembly':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:choise_of_instance:field_assembly'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 1f92f5b9dab76930
+        node_id: 3f06d5667a3df847
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-secondary-subtle
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-1
+              spacing_margin: m-1
+              spacing_margin_top: mt-2
+              spacing_padding: p-2
+            extra: ''
+id: paragraph.choise_of_instance.display_complects
+targetEntityType: paragraph
+bundle: choise_of_instance
+mode: display_complects
+content:
+  field_execution_time:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_fabrics:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_is_module:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_variation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_additional_info: true
+  field_assembly: true

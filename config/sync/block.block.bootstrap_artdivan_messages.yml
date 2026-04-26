@@ -1,0 +1,22 @@
+uuid: 37f90c46-9b43-441e-aefb-8f393ea9b22c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_artdivan
+_core:
+  default_config_hash: BGdegxBDEeIt0rtFJC6pRNfoUqWRyvc5c5C8vMHrltQ
+id: bootstrap_artdivan_messages
+theme: bootstrap_artdivan
+region: header
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

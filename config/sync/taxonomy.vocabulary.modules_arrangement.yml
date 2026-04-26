@@ -1,0 +1,9 @@
+uuid: cc6256d8-9910-403e-b30a-ae6ae0b415e9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Расположение модулей'
+vid: modules_arrangement
+description: 'Расположение модулей. Слева направо'
+weight: 0
+new_revision: false

@@ -1,0 +1,21 @@
+uuid: 95698ce8-6cb5-4d0a-af24-1d5461c7c509
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_floor
+    - paragraphs.paragraphs_type.delivery
+  module:
+    - options
+id: paragraph.delivery.field_floor
+field_name: field_floor
+entity_type: paragraph
+bundle: delivery
+label: Этаж
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

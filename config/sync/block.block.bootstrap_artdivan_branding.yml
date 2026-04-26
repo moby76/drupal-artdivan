@@ -1,0 +1,25 @@
+uuid: cd671e8b-cc4e-48e8-a0a7-9217a98b53eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_artdivan
+_core:
+  default_config_hash: kdfSga5fQR57EUQr5YUOlLKLmTMomQtdPvRhmW8jKZw
+id: bootstrap_artdivan_branding
+theme: bootstrap_artdivan
+region: navigation
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

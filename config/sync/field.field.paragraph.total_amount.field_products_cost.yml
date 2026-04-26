@@ -1,0 +1,23 @@
+uuid: 54c31166-e3fc-4b9a-97ba-498078cde2c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_products_cost
+    - paragraphs.paragraphs_type.total_amount
+id: paragraph.total_amount.field_products_cost
+field_name: field_products_cost
+entity_type: paragraph
+bundle: total_amount
+label: 'Стоимость товаров'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

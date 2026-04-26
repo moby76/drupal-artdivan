@@ -1,0 +1,11 @@
+uuid: b7c6ece6-3dda-4f5a-8d8e-23fada270639
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.order_display_for_paragraphs
+label: 'Дисплей для заявок(универсальный)'
+description: null
+targetEntityType: paragraph
+cache: true

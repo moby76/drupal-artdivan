@@ -1,0 +1,74 @@
+uuid: 17f768de-1715-4207-95d1-6356ed2595f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.point_of_sale.field_adres
+    - field.field.node.point_of_sale.field_litera
+    - field.field.node.point_of_sale.field_nazvanie
+    - field.field.node.point_of_sale.field_phone
+    - field.field.node.point_of_sale.field_point_of_sale_type
+    - field.field.node.point_of_sale.field_store_affiliation
+    - node.type.point_of_sale
+  module:
+    - address
+    - layout_builder
+    - options
+    - phonenumber
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.point_of_sale.full
+targetEntityType: node
+bundle: point_of_sale
+mode: full
+content:
+  field_adres:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_litera:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_nazvanie:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_phone:
+    type: phone_international
+    label: above
+    settings:
+      title: ''
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_point_of_sale_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_store_affiliation: true

@@ -1,0 +1,38 @@
+_core:
+  default_config_hash: sW7uMt_Kkd_2vAb5CjySbE5cqON78CZataG_rscpMvM
+favicon:
+  mimetype: image/png
+  path: sites/default/files/Лого-2.png
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: sites/default/files/Лого-2.png
+  use_default: false
+ui_skins_theme: light
+ui_styles_entity_status_unpublished:
+  selected:
+    colors_background_color: bg-danger-subtle
+ui_styles_regions:
+  sidebar_first:
+    selected:
+      colors_background_color: bg-light
+      spacing_padding: p-3
+  sidebar_second:
+    selected:
+      colors_background_color: bg-light
+      spacing_padding: p-3
+container: container-lg
+library:
+  js_loading: ui_suite_bootstrap/framework_js
+  css_loading: bootstrap_artdivan/framework
+logo_style: thumbnail
+logo_alt: 'Drush Site-Install'
+logo_title: 'Drush Site-Install'
+logo_loading: eager
+logo_fetchpriority: _none
+logo_decoding: _none
+debug_enabled: false

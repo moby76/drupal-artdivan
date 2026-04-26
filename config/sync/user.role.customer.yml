@@ -1,0 +1,9 @@
+uuid: 66627a94-2b14-4854-8679-d94b7c5259b7
+langcode: en
+status: true
+dependencies: {  }
+id: customer
+label: Покупатель
+weight: 4
+is_admin: null
+permissions: {  }

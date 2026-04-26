@@ -1,0 +1,21 @@
+uuid: a5410580-a2f0-4659-a00c-81256309227f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_delivery_today
+    - paragraphs.paragraphs_type.delivery
+id: paragraph.delivery.field_delivery_today
+field_name: field_delivery_today
+entity_type: paragraph
+bundle: delivery
+label: 'Доставка сегодня'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: Сегодня
+  off_label: Отложенная
+field_type: boolean

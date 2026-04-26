@@ -1,0 +1,10 @@
+uuid: feef1543-91d6-47cc-b51e-5711dd2990fa
+langcode: en
+status: true
+dependencies: {  }
+id: selected_items_cost
+label: 'Стоимость выбранных элементов'
+icon_uuid: null
+icon_default: null
+description: 'Стоимость элементов списка добавленных при подборе: Модулей/Кроватей/комплектов/товаров. Используется в параграфах обобщающих '
+behavior_plugins: {  }

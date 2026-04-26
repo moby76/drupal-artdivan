@@ -1,0 +1,220 @@
+uuid: 82469946-95c4-4dac-be40-048f57698b48
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.assembly.field_assembly_is_required
+    - field.field.paragraph.assembly.field_assembly_payment
+    - field.field.paragraph.assembly.field_assembly_price
+    - paragraphs.paragraphs_type.assembly
+  module:
+    - display_builder
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: gx-2
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              row_cols:
+                source_id: select
+                source:
+                  value: auto
+              col_xs:
+                source_id: select
+                source:
+                  value: ''
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:assembly:field_assembly_is_required'
+                      'field:paragraph:assembly:field_assembly_is_required':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:assembly:field_assembly_is_required'
+                              source:
+                                type: boolean
+                                label: above
+                                settings:
+                                  format: default
+                                  format_custom_false: ''
+                                  format_custom_true: ''
+                                third_party_settings: {  }
+                                weight: 0
+                                region: content
+                    node_id: 6c5ba28b3258cdb8
+                    third_party_settings:
+                      styles:
+                        selected:
+                          text_text_alignment: text-start
+                          borders_border: border-end
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          spacing_padding_end: pe-2
+                        extra: ''
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:assembly:field_assembly_price'
+                      'field:paragraph:assembly:field_assembly_price':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:assembly:field_assembly_price'
+                              source:
+                                type: number_integer
+                                label: above
+                                settings:
+                                  thousand_separator: ''
+                                  prefix_suffix: true
+                                third_party_settings: {  }
+                                weight: 1
+                                region: content
+                    node_id: b604208014b60029
+                    third_party_settings:
+                      styles:
+                        selected:
+                          colors_color: text-danger
+                          text_font_weight: fw-medium
+                        extra: ''
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:assembly:field_assembly_payment'
+                      'field:paragraph:assembly:field_assembly_payment':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:assembly:field_assembly_payment'
+                              source:
+                                type: entity_reference_label
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                                settings:
+                                  link: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 28e8f7317dcf1f8a
+                    third_party_settings:
+                      styles:
+                        selected:
+                          colors_color: text-danger
+                          text_text_alignment: text-center
+                          colors_background_color: bg-danger-subtle
+                        extra: px-1
+            third_party_settings: ''
+            node_id: ''
+        node_id: 3cce05cdc7fd94b7
+        third_party_settings:
+          styles:
+            selected:
+              text_text_alignment: text-center
+            extra: ''
+id: paragraph.assembly.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: assembly
+mode: order_display_for_paragraphs
+content:
+  field_assembly_is_required:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_assembly_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_assembly_payment: true

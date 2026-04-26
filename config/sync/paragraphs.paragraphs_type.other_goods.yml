@@ -1,0 +1,10 @@
+uuid: a9142739-87ee-4195-9e34-0afa58ad5158
+langcode: en
+status: true
+dependencies: {  }
+id: other_goods
+label: 'Прочие товары(Товары поставщиков)'
+icon_uuid: null
+icon_default: null
+description: 'Параграф для добавления в стандартную форму заявки прочих товаров(товаров поставщиков): матрасов, корпусной мебели, шкафов, стульев'
+behavior_plugins: {  }

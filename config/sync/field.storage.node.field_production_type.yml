@@ -1,0 +1,20 @@
+uuid: 68f90c4a-1bc1-4cec-88b7-d0fb35d3b822
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_production_type
+field_name: field_production_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

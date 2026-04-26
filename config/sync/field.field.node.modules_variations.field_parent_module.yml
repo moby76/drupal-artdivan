@@ -1,0 +1,29 @@
+uuid: 4dea856f-e6fd-47ae-852f-6508dc8167bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parent_module
+    - node.type.modules_variations
+    - node.type.moduls
+id: node.modules_variations.field_parent_module
+field_name: field_parent_module
+entity_type: node
+bundle: modules_variations
+label: Модуль(родительский)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      moduls: moduls
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

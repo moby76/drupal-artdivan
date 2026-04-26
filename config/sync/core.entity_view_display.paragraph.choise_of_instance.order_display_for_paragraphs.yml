@@ -1,0 +1,37 @@
+uuid: 8b447844-1d23-4a89-8de4-375a4454b8ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.choise_of_instance.field_additional_info
+    - field.field.paragraph.choise_of_instance.field_assembly
+    - field.field.paragraph.choise_of_instance.field_execution_time
+    - field.field.paragraph.choise_of_instance.field_fabrics
+    - field.field.paragraph.choise_of_instance.field_instance
+    - field.field.paragraph.choise_of_instance.field_is_module
+    - field.field.paragraph.choise_of_instance.field_variation
+    - paragraphs.paragraphs_type.choise_of_instance
+  module:
+    - entity_reference_revisions
+id: paragraph.choise_of_instance.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: choise_of_instance
+mode: order_display_for_paragraphs
+content:
+  field_assembly:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_additional_info: true
+  field_execution_time: true
+  field_fabrics: true
+  field_instance: true
+  field_is_module: true
+  field_variation: true

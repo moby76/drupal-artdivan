@@ -1,0 +1,23 @@
+uuid: 75e3176c-2deb-4071-b1aa-42d81276f6d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_delivery_price
+    - paragraphs.paragraphs_type.delivery
+id: paragraph.delivery.field_delivery_price
+field_name: field_delivery_price
+entity_type: paragraph
+bundle: delivery
+label: 'Стоимость доставки'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

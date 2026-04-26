@@ -1,0 +1,168 @@
+uuid: 268d9ab1-946b-4d5c-b399-e17e66c54336
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.additional_info_field.field_additional
+    - paragraphs.paragraphs_type.additional_info_field
+  module:
+    - display_builder
+    - layout_builder
+    - text
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_2'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - '1'
+                    - '11'
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '1'
+                    - '11'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - '1'
+                    - '11'
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - '1'
+                    - '11'
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: icon_renderable
+                    source:
+                      value:
+                        target_id: 'bootstrap:info-circle'
+                        settings:
+                          bootstrap:
+                            size: 22px
+                            color: ''
+                            alt: ''
+                        icon_id: 'bootstrap:info-circle'
+                        icon_settings:
+                          bootstrap:
+                            size: 22px
+                            color: ''
+                            alt: ''
+                      saved_values:
+                        size: 22px
+                        color: ''
+                        alt: ''
+                    node_id: 6c61ad758f70d886
+              col_2_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:additional_info_field:field_additional'
+                      'field:paragraph:additional_info_field:field_additional':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:additional_info_field:field_additional'
+                              source:
+                                type: text_default
+                                label: above
+                                settings: {  }
+                                third_party_settings: {  }
+                                weight: 0
+                                region: content
+                    node_id: a80a1ec1f8f41eb7
+            third_party_settings: ''
+            node_id: ''
+        node_id: 03eccaad5b13bb70
+id: paragraph.additional_info_field.preview
+targetEntityType: paragraph
+bundle: additional_info_field
+mode: preview
+content:
+  field_additional:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

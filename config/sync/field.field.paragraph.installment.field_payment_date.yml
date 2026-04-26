@@ -1,0 +1,21 @@
+uuid: 679b595d-1dfd-41b0-8fee-38e7dacb32b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_payment_date
+    - paragraphs.paragraphs_type.installment
+  module:
+    - datetime
+id: paragraph.installment.field_payment_date
+field_name: field_payment_date
+entity_type: paragraph
+bundle: installment
+label: 'Дата платежа'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

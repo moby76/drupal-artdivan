@@ -1,0 +1,9 @@
+uuid: ee316655-61bd-4a05-8ed2-99fb985a1ac7
+langcode: en
+status: true
+dependencies: {  }
+name: Поставщики
+vid: suppliers
+description: null
+weight: 1
+new_revision: false

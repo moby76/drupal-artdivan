@@ -1,0 +1,390 @@
+uuid: 0b606508-9e99-471e-8d17-39ba58554156
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.order_display_for_paragraphs
+    - field.field.paragraph.customer_details.field_customer_address
+    - field.field.paragraph.customer_details.field_delivery_address
+    - field.field.paragraph.customer_details.field_delivery_address_is_some
+    - field.field.paragraph.customer_details.field_initials
+    - field.field.paragraph.customer_details.field_phone
+    - paragraphs.paragraphs_type.customer_details
+  module:
+    - address
+    - display_builder
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: select
+                source:
+                  value: '12'
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: textfield
+                    source:
+                      value: 'Покупатель: '
+                    node_id: 4cb98017046f34e4
+                    third_party_settings:
+                      styles:
+                        selected:
+                          text_text_alignment: text-center
+                          borders_border: border-bottom
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary-subtle
+                          spacing_margin_bottom: mb-1
+                          spacing_padding_bottom: pb-1
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_3'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: component
+                                source:
+                                  component:
+                                    component_id: 'ui_suite_bootstrap:grid_row_1'
+                                    slots:
+                                      col_1_content:
+                                        sources:
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:customer_details:field_initials'
+                                              'field:paragraph:customer_details:field_initials':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:customer_details:field_initials'
+                                                      source:
+                                                        type: string
+                                                        label: above
+                                                        settings:
+                                                          link_to_entity: false
+                                                        third_party_settings: {  }
+                                                        weight: 0
+                                                        region: content
+                                            node_id: 94545334a11a5a8f
+                                node_id: c4e8d767040d6ea0
+                              -
+                                source_id: component
+                                source:
+                                  component:
+                                    component_id: 'ui_suite_bootstrap:grid_row'
+                                    variant_id: null
+                                    props:
+                                      attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      container:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      container_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      container_wrapper_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      gutters:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      gutters_horizontal:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      gutters_vertical:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      row_cols:
+                                        source_id: select
+                                        source:
+                                          value: auto
+                                      col_xs:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_sm:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_md:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_lg:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_xl:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_xxl:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_offset:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                    slots:
+                                      content:
+                                        add_more_button: ''
+                                        sources:
+                                          -
+                                            source_id: icon_renderable
+                                            source:
+                                              value:
+                                                target_id: 'bootstrap:phone-vibrate-fill'
+                                                settings:
+                                                  bootstrap:
+                                                    size: 20px
+                                                    color: ''
+                                                    alt: ''
+                                                icon_id: 'bootstrap:phone-vibrate-fill'
+                                                icon_settings:
+                                                  bootstrap:
+                                                    size: 20px
+                                                    color: ''
+                                                    alt: ''
+                                              saved_values:
+                                                size: 20px
+                                                color: ''
+                                                alt: ''
+                                            node_id: 0ae305dd17dd9f28
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  spacing_padding: p-1
+                                                  display_all: d-flex
+                                                  flex_flex: d-flex
+                                                extra: ''
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:customer_details:field_phone'
+                                              'field:paragraph:customer_details:field_phone':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_property:paragraph:field_phone:local_number'
+                                                      node_id: ''
+                                                      third_party_settings: ''
+                                                      _weight: '0'
+                                            node_id: adc71f41941c14e5
+                                            third_party_settings:
+                                              styles:
+                                                selected: {  }
+                                                extra: ''
+                                    third_party_settings: ''
+                                    node_id: ''
+                                node_id: d0190608e5180918
+                              -
+                                source_id: component
+                                source:
+                                  component:
+                                    component_id: 'ui_suite_bootstrap:grid_row_1'
+                                    slots:
+                                      col_1_content:
+                                        sources: {  }
+                                node_id: ae8571bb8f66bd7d
+                          col_2_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:customer_details:field_customer_address'
+                                  'field:paragraph:customer_details:field_customer_address':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:customer_details:field_customer_address'
+                                          source:
+                                            type: address_default
+                                            label: above
+                                            settings: {  }
+                                            third_party_settings: {  }
+                                            weight: 1
+                                            region: content
+                                node_id: 31abd2dbcb379179
+                          col_3_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:customer_details:field_delivery_address_is_some'
+                                  'field:paragraph:customer_details:field_delivery_address_is_some':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:customer_details:field_delivery_address_is_some'
+                                          source:
+                                            type: boolean
+                                            label: hidden
+                                            settings:
+                                              format: default
+                                              format_custom_false: ''
+                                              format_custom_true: ''
+                                            third_party_settings: {  }
+                                            weight: 2
+                                            region: content
+                                node_id: face567921a40615
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:customer_details:field_delivery_address'
+                                  'field:paragraph:customer_details:field_delivery_address':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:customer_details:field_delivery_address'
+                                          source:
+                                            type: address_default
+                                            label: above
+                                            settings: {  }
+                                            third_party_settings: {  }
+                                            weight: 3
+                                            region: content
+                                node_id: '4678538291205402'
+                    node_id: b625cd11c52517b4
+            third_party_settings: ''
+            node_id: ''
+        node_id: f64188b33285a487
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-2
+              borders_border_color: border-secondary
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-2
+            extra: 'my-1 p-1'
+id: paragraph.customer_details.order_display_for_paragraphs
+targetEntityType: paragraph
+bundle: customer_details
+mode: order_display_for_paragraphs
+content:
+  field_customer_address:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_delivery_address:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_delivery_address_is_some:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_initials:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_phone: true

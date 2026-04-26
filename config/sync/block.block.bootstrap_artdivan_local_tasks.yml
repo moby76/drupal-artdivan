@@ -1,0 +1,22 @@
+uuid: 383553b8-8d6d-48f8-b733-bdf25d8c92c0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap_artdivan
+_core:
+  default_config_hash: qK52rjTVF0SNzg3sQHs3uzv9mQpEQanXoFDo_5Qj90U
+id: bootstrap_artdivan_local_tasks
+theme: bootstrap_artdivan
+region: header
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

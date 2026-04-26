@@ -1,0 +1,25 @@
+uuid: 46c36ec1-4dba-458b-af9d-56987c3bb8b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_upholstered_furn
+id: paragraph.separate_set_of_upholstered_furn.field_variation
+field_name: field_variation
+entity_type: paragraph
+bundle: separate_set_of_upholstered_furn
+label: Вариация
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: varianty_ekzemplyarov_myagkoy_mebeli
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

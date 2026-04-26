@@ -1,0 +1,46 @@
+uuid: a6af7f60-18f6-4bc5-9b08-a7a2861bc2ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_customer_address
+    - paragraphs.paragraphs_type.customer_details
+  module:
+    - address
+id: paragraph.customer_details.field_customer_address
+field_name: field_customer_address
+entity_type: paragraph
+bundle: customer_details
+label: 'Адрес покупателя'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    RU: RU
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    addressLine2:
+      override: hidden
+    addressLine3:
+      override: hidden
+    postalCode:
+      override: hidden
+    sortingCode:
+      override: hidden
+    dependentLocality:
+      override: hidden
+    administrativeArea:
+      override: hidden
+  fields: {  }
+field_type: address

@@ -1,0 +1,18 @@
+uuid: aeec7104-2160-4f5c-90c7-ec838a93477d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Вариации для готовых комплектов'
+type: instances_variations
+description: "Ценовая вариация экземпляра модели основанная на:\r\n- Размере \r\n- Категории ткани для "
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

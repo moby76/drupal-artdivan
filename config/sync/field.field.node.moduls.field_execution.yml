@@ -1,0 +1,29 @@
+uuid: 74524e85-08de-4253-bd88-710724907e39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_execution
+    - node.type.moduls
+    - taxonomy.vocabulary.execution_options_modules
+id: node.moduls.field_execution
+field_name: field_execution
+entity_type: node
+bundle: moduls
+label: 'Вариант исполнения'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      execution_options_modules: execution_options_modules
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

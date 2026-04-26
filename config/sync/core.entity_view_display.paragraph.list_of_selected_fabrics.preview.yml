@@ -1,0 +1,40 @@
+uuid: 4dcb6d3b-a56a-4808-9e1b-dcd2cfb3b49b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.list_of_selected_fabrics.field_fabrics
+    - paragraphs.paragraphs_type.list_of_selected_fabrics
+  module:
+    - entity_reference_revisions
+    - field_label
+    - layout_builder
+    - nomarkup
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.list_of_selected_fabrics.preview
+targetEntityType: paragraph
+bundle: list_of_selected_fabrics
+mode: preview
+content:
+  field_fabrics:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings:
+      field_label:
+        label_class: ''
+        label_value: ''
+        label_tag: ''
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 4
+    region: content
+hidden: {  }

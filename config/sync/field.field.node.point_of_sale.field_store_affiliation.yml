@@ -1,0 +1,21 @@
+uuid: 206f9387-0ba5-4452-8cc4-d0dde7c27f79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_store_affiliation
+    - node.type.point_of_sale
+  module:
+    - options
+id: node.point_of_sale.field_store_affiliation
+field_name: field_store_affiliation
+entity_type: node
+bundle: point_of_sale
+label: 'принадлежность магазина'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

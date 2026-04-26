@@ -1,0 +1,10 @@
+uuid: 48497c77-18d5-4680-a677-57d4a9a5c6c0
+langcode: en
+status: true
+dependencies: {  }
+id: assembly
+label: 'Сборка мебели'
+icon_uuid: null
+icon_default: null
+description: 'Сборка мебели. нужна-ли сборка. И, если нужна, то какая стоимость.'
+behavior_plugins: {  }

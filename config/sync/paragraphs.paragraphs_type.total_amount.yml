@@ -1,0 +1,10 @@
+uuid: 29066d93-afae-49c3-90c5-fe0869f1d712
+langcode: en
+status: true
+dependencies: {  }
+id: total_amount
+label: 'итоговая сумма заявки'
+icon_uuid: null
+icon_default: null
+description: 'Итоговая сумма реализации'
+behavior_plugins: {  }

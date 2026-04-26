@@ -1,0 +1,81 @@
+uuid: b78c94ab-3ac9-4358-aee0-e6ed5bbe60d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_additional_information
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_assembly
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_execution_time
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_fabric_list
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_instance
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_select_embroidery
+    - field.field.paragraph.separate_set_of_upholstered_furn.field_variation
+    - paragraphs.paragraphs_type.separate_set_of_upholstered_furn
+  module:
+    - entity_reference_revisions
+id: paragraph.separate_set_of_upholstered_furn.default
+targetEntityType: paragraph
+bundle: separate_set_of_upholstered_furn
+mode: default
+content:
+  field_additional_information:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_assembly:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_execution_time:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_fabric_list:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_select_embroidery:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_variation:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

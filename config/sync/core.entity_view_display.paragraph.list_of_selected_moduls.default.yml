@@ -1,0 +1,95 @@
+uuid: b29bef8c-3e46-4a0e-80b2-ed58ed61a8fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_of_selected_moduls.field_additional_information
+    - field.field.paragraph.list_of_selected_moduls.field_assembly
+    - field.field.paragraph.list_of_selected_moduls.field_choose_a_mod_and_variation
+    - field.field.paragraph.list_of_selected_moduls.field_execution_time
+    - field.field.paragraph.list_of_selected_moduls.field_fabric_list
+    - field.field.paragraph.list_of_selected_moduls.field_instance
+    - field.field.paragraph.list_of_selected_moduls.field_select_embroidery
+    - field.field.paragraph.list_of_selected_moduls.field_selected_items_cost
+    - paragraphs.paragraphs_type.list_of_selected_moduls
+  module:
+    - entity_reference_revisions
+    - field_label
+    - nomarkup
+id: paragraph.list_of_selected_moduls.default
+targetEntityType: paragraph
+bundle: list_of_selected_moduls
+mode: default
+content:
+  field_additional_information:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_assembly:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_choose_a_mod_and_variation:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_execution_time:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_fabric_list:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_selected_items_cost:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      field_label:
+        label_class: ''
+        label_value: 'Стоимость выбранных модулей'
+        label_tag: ''
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
+    region: content
+hidden:
+  field_select_embroidery: true

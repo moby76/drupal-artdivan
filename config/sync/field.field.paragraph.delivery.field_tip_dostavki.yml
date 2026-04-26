@@ -1,0 +1,23 @@
+uuid: 3da9c559-588e-48a5-a665-22ebbbe43b93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tip_dostavki
+    - paragraphs.paragraphs_type.delivery
+  module:
+    - options
+id: paragraph.delivery.field_tip_dostavki
+field_name: field_tip_dostavki
+entity_type: paragraph
+bundle: delivery
+label: 'Тип доставки'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: s_fabriki
+default_value_callback: ''
+settings: {  }
+field_type: list_string

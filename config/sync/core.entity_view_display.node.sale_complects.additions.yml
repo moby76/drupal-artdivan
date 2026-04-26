@@ -1,0 +1,696 @@
+uuid: 9c30ecdb-501d-4c48-89b8-e61ffc45fa5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.additions
+    - field.field.node.sale_complects.field_auto_order_number
+    - field.field.node.sale_complects.field_customer
+    - field.field.node.sale_complects.field_delivery
+    - field.field.node.sale_complects.field_other_goods
+    - field.field.node.sale_complects.field_payment
+    - field.field.node.sale_complects.field_point_of_sale
+    - field.field.node.sale_complects.field_print_page
+    - field.field.node.sale_complects.field_total_amount
+    - field.field.node.sale_complects.field_vybrat_komplekt_i_variacii
+    - field.field.paragraph.customer_details.field_initials
+    - field.field.paragraph.seller.field_sellers_name
+    - node.type.sale_complects
+  content:
+    - 'block_content:organization_details_block:c6a14a42-32b8-4565-a973-b63a95b44b35'
+  module:
+    - block_content
+    - display_builder
+    - entity_reference_revisions
+    - layout_builder
+    - print_this_page
+    - serial
+    - token
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - user
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:sale_complects:field_print_page'
+          'field:node:sale_complects:field_print_page':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:sale_complects:field_print_page'
+                  source:
+                    type: print_this_page
+                    settings:
+                      link_text: Распечатать
+                      show_icon: '1'
+                      exclude_list: 'header, footer, aside, nav, form, iframe, .menu, .nav, .btn'
+                    third_party_settings:
+                      nomarkup:
+                        separator: '|'
+                        referenced_entity: ''
+                        enabled: 0
+                  node_id: ''
+                  third_party_settings: ''
+                  _weight: '0'
+        node_id: 78f071bb5055f5c6
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: block
+                    source:
+                      plugin_id: 'block_content:c6a14a42-32b8-4565-a973-b63a95b44b35'
+                    node_id: 5e9195bd9f708693
+        node_id: 2e28bdfd1d4c90ed
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:alert'
+            variant_id:
+              source_id: select
+              source:
+                value: success
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              dismissible:
+                source_id: checkbox
+                source:
+                  value: 0
+              heading_level:
+                source_id: select
+                source:
+                  value: ''
+              heading_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              heading:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: textfield
+                    source:
+                      value: 'Оплата и подтверждение.'
+                    node_id: aa04680c6ca97a25
+              message:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: textfield
+                    source: {  }
+                    node_id: afba21a4352edf99
+                  -
+                    source_id: token
+                    source:
+                      value: 'Подтверждение приобретения и оплаты [node:title]'
+                    node_id: bb7e36898848a3de
+            third_party_settings: ''
+            node_id: ''
+        node_id: 793d37adc464daaa
+        third_party_settings:
+          styles:
+            selected:
+              display_all: d-inline-block
+              flex_flex: d-flex
+              flex_direction: flex-column
+            extra: ''
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:sale_complects:field_point_of_sale'
+                      'field:node:sale_complects:field_point_of_sale':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:sale_complects:field_point_of_sale'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  nomarkup:
+                                    enabled: '1'
+                                    separator: '|'
+                                    referenced_entity: ''
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: a8dbc55bcb396dd3
+        node_id: fb40c84429334839
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:sale_complects:field_customer'
+                      'field:node:sale_complects:field_customer':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:sale_complects:field_customer'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 69d02dcdc9501f4c
+        node_id: 839c5c84a61a3454
+        third_party_settings:
+          styles:
+            selected: {  }
+            extra: ''
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:sale_complects:field_payment'
+                      'field:node:sale_complects:field_payment':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:sale_complects:field_payment'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings:
+                                  view_mode: order_display_for_paragraphs
+                                third_party_settings:
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: c7cf1d079f81f37e
+        node_id: 2b9dd69854133c5c
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_2'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          row_cols:
+                            source_id: select
+                            source:
+                              value: auto
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: 'Менеджер: '
+                                node_id: 932ebfdf6666c471
+                              -
+                                source_id: entity_reference
+                                source:
+                                  derivable_context: 'entity_reference:node:sale_complects:field_point_of_sale:paragraph:seller'
+                                  'entity_reference:node:sale_complects:field_point_of_sale:paragraph:seller':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: entity_field
+                                          source:
+                                            derivable_context: 'field:paragraph:seller:field_sellers_name'
+                                            'field:paragraph:seller:field_sellers_name':
+                                              value:
+                                                sources:
+                                                  -
+                                                    source_id: 'field_formatter:paragraph:seller:field_sellers_name'
+                                                    source:
+                                                      type: entity_reference_label
+                                                      third_party_settings:
+                                                        nomarkup:
+                                                          enabled: '1'
+                                                          separator: '|'
+                                                          referenced_entity: ''
+                                                      settings:
+                                                        link: 0
+                                                    node_id: ''
+                                                    third_party_settings: ''
+                                                    _weight: '0'
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 9939555603c3a500
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: e51bb08657f6b63e
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border-bottom
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary
+                        extra: 'me-1 py-1'
+              col_2_content:
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          row_cols:
+                            source_id: select
+                            source:
+                              value: auto
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: 'Покупатель: '
+                                node_id: c284467ec43f40d2
+                              -
+                                source_id: entity_reference
+                                source:
+                                  derivable_context: 'entity_reference:node:sale_complects:field_customer:paragraph:customer_details'
+                                  'entity_reference:node:sale_complects:field_customer:paragraph:customer_details':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: entity_field
+                                          source:
+                                            derivable_context: 'field:paragraph:customer_details:field_initials'
+                                            'field:paragraph:customer_details:field_initials':
+                                              value:
+                                                sources:
+                                                  -
+                                                    source_id: 'field_formatter:paragraph:customer_details:field_initials'
+                                                    source:
+                                                      type: string
+                                                      third_party_settings:
+                                                        nomarkup:
+                                                          enabled: '1'
+                                                          separator: '|'
+                                                          referenced_entity: ''
+                                                    node_id: ''
+                                                    third_party_settings: ''
+                                                    _weight: '0'
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 24757864d71db883
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: f938d4c7fb625206
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border-bottom
+                          borders_border_width: border-2
+                          borders_border_color: border-secondary
+                        extra: 'ms-1 py-1'
+        node_id: 10c0f1dafd11de62
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: container-fluid
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              row_cols:
+                source_id: select
+                source:
+                  value: auto
+              col_xs:
+                source_id: select
+                source:
+                  value: ''
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:button'
+                        variant_id:
+                          source_id: select
+                          source:
+                            value: dark
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          disabled:
+                            source_id: checkbox
+                            source:
+                              value: 0
+                          label_visually_hidden:
+                            source_id: checkbox
+                            source:
+                              value: 0
+                          url:
+                            source_id: token
+                            source:
+                              value: '[node:url]'
+                        slots:
+                          label:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: 'Перейти на страницу заявки'
+                                node_id: b58e5078a0abadec
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: a7f1e04928f675fc
+            third_party_settings: ''
+            node_id: ''
+        node_id: 3fa529ae1a4d6e90
+        third_party_settings:
+          styles:
+            selected:
+              flex_justify_content: justify-content-center
+            extra: my-2
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.sale_complects.additions
+targetEntityType: node
+bundle: sale_complects
+mode: additions
+content:
+  field_auto_order_number:
+    type: serial_default_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_customer:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_delivery:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_other_goods:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_payment:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_point_of_sale:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_print_page:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_total_amount:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_vybrat_komplekt_i_variacii:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_link_display: true

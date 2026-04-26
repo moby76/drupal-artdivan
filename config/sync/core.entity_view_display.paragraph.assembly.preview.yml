@@ -1,0 +1,42 @@
+uuid: 3dd6014c-acd4-4de0-a3fd-e1b8c9e0a1c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.assembly.field_assembly_is_required
+    - field.field.paragraph.assembly.field_assembly_payment
+    - field.field.paragraph.assembly.field_assembly_price
+    - paragraphs.paragraphs_type.assembly
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.assembly.preview
+targetEntityType: paragraph
+bundle: assembly
+mode: preview
+content:
+  field_assembly_is_required:
+    type: boolean
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_assembly_price:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_assembly_payment: true

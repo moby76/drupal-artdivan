@@ -1,0 +1,9 @@
+uuid: c2fb5173-26ab-4f38-bd29-dadc6805d829
+langcode: en
+status: true
+dependencies: {  }
+name: 'Размеры комплекта'
+vid: dimensions
+description: 'Размеры комплекта, модуля или кровати'
+weight: -6
+new_revision: false

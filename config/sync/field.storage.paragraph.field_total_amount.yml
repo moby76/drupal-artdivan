@@ -1,0 +1,20 @@
+uuid: 49d60b01-b594-4f00-aefa-69ac2f0afe37
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_total_amount
+field_name: field_total_amount
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

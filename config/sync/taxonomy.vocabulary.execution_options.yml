@@ -1,0 +1,9 @@
+uuid: c50fa90f-960e-4ce5-a12b-b823799365df
+langcode: en
+status: true
+dependencies: {  }
+name: 'Вариант исполнения комплекта'
+vid: execution_options
+description: 'Модульный, Диван, Кресло и т.д. '
+weight: -2
+new_revision: false

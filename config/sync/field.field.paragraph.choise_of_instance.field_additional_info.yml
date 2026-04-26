@@ -1,0 +1,97 @@
+uuid: 01e179e7-511d-4954-87e7-7b19775f6f1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_additional_info
+    - paragraphs.paragraphs_type.additional_info_field
+    - paragraphs.paragraphs_type.choise_of_instance
+  module:
+    - entity_reference_revisions
+id: paragraph.choise_of_instance.field_additional_info
+field_name: field_additional_info
+entity_type: paragraph
+bundle: choise_of_instance
+label: 'Поле с дополнительнй информацией'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      additional_info_field: additional_info_field
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info:
+        weight: 10
+        enabled: false
+      additional_info_field:
+        weight: 25
+        enabled: true
+      assembly:
+        weight: 11
+        enabled: false
+      choise_of_instance:
+        weight: 12
+        enabled: false
+      customer_details:
+        weight: 13
+        enabled: false
+      delivery:
+        weight: 14
+        enabled: false
+      installment:
+        weight: 30
+        enabled: false
+      list_of_selected_beds:
+        weight: 31
+        enabled: false
+      list_of_selected_fabrics:
+        weight: 32
+        enabled: false
+      list_of_selected_furniture_sets:
+        weight: 33
+        enabled: false
+      list_of_selected_moduls:
+        weight: 34
+        enabled: false
+      opisanie_zayavki:
+        weight: 15
+        enabled: false
+      organization_details_form:
+        weight: 36
+        enabled: false
+      other_goods:
+        weight: 37
+        enabled: false
+      payment:
+        weight: 38
+        enabled: false
+      seller:
+        weight: 39
+        enabled: false
+      separate_set_of_bed:
+        weight: 40
+        enabled: false
+      separate_set_of_module:
+        weight: 41
+        enabled: false
+      separate_set_of_upholstered_furn:
+        weight: 42
+        enabled: false
+      service:
+        weight: 16
+        enabled: false
+      total_amount:
+        weight: 44
+        enabled: false
+      trading_operation_type:
+        weight: 17
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

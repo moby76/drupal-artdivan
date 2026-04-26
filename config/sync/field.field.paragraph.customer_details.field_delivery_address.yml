@@ -1,0 +1,49 @@
+uuid: 00c34c2d-ab95-48cb-a6b5-a537199e15ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_delivery_address
+    - paragraphs.paragraphs_type.customer_details
+  module:
+    - address
+id: paragraph.customer_details.field_delivery_address
+field_name: field_delivery_address
+entity_type: paragraph
+bundle: customer_details
+label: 'Адрес доставки'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    addressLine1:
+      override: optional
+    addressLine2:
+      override: hidden
+    addressLine3:
+      override: hidden
+    postalCode:
+      override: hidden
+    sortingCode:
+      override: hidden
+    dependentLocality:
+      override: hidden
+    locality:
+      override: optional
+    administrativeArea:
+      override: hidden
+  fields: {  }
+field_type: address

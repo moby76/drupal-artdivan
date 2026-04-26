@@ -1,0 +1,21 @@
+uuid: 6369117c-7d11-4018-a1c1-7e853b7ac45e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_full_payment
+    - paragraphs.paragraphs_type.payment
+id: paragraph.payment.field_full_payment
+field_name: field_full_payment
+entity_type: paragraph
+bundle: payment
+label: 'Оплачено полностью?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Полная оплата'
+  off_label: 'Оплачено частично'
+field_type: boolean

@@ -1,0 +1,21 @@
+uuid: 3e9fc68c-65e4-489a-9938-1413933438bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_point_of_sale_type
+    - node.type.point_of_sale
+  module:
+    - options
+id: node.point_of_sale.field_point_of_sale_type
+field_name: field_point_of_sale_type
+entity_type: node
+bundle: point_of_sale
+label: 'Тип пункта реализации'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
