@@ -14,9 +14,7 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        {
-            "packagist": false
-        },
+
         {
             "name": "asset-bootstrap",
             "type": "package",
@@ -68,6 +66,7 @@
         "drupal/core-composer-scaffold": "^11.3.5",
         "drupal/core-project-message": "^11.3.5",
         "drupal/core-recommended": "^11.3.5",
+        "drupal/devel": "5.5",
         "drupal/display_builder": "^1.0@beta",
         "drupal/double_field": "^5.0@RC",
         "drupal/entity_clone": "^2.1@beta",
