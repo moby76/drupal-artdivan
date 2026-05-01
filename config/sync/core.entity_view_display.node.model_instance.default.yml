@@ -10,13 +10,136 @@ dependencies:
     - field.field.node.model_instance.field_is_modular_set
     - field.field.node.model_instance.field_model
     - field.field.node.model_instance.field_tags
+    - field.field.node.model_instance.field_variations
     - field.field.node.model_instance.field_version
     - node.type.model_instance
   module:
+    - display_builder
     - media_folders
     - nomarkup
     - text
+    - ui_patterns
+    - ui_patterns_field_formatters
     - user
+    - viewsreference
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance:title'
+                      'field:node:model_instance:title':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance:title'
+                              source:
+                                type: string
+                                settings:
+                                  link_to_entity: false
+                                third_party_settings: {  }
+                    node_id: 2895b36877b811a9
+        node_id: aff8d161e7cc8789
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_2'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance:field_instance_main_image'
+                      'field:node:model_instance:field_instance_main_image':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance:field_instance_main_image'
+                              source:
+                                type: media_folders
+                                settings:
+                                  images:
+                                    image_style: large
+                                    image_loading:
+                                      attribute: lazy
+                                  videos:
+                                    video_width: '400'
+                                    video_height: '250'
+                                    video_muted: false
+                                    video_controls: true
+                                    video_autoplay: false
+                                  audio:
+                                    audio_loop: false
+                                    audio_controls: true
+                                    audio_autoplay: false
+                                  other:
+                                    other_format: file_link
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: e2bde2441a3221a6
+              col_2_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance:field_variations'
+                      'field:node:model_instance:field_variations':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance:field_variations'
+                              source:
+                                type: viewsreference_formatter
+                                label: above
+                                settings:
+                                  plugin_types:
+                                    - block
+                                third_party_settings: {  }
+                                weight: 9
+                                region: content
+                    node_id: 805c8069ee31e7b9
+        node_id: 29d88447849cd2e1
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:model_instance:body'
+          'field:node:model_instance:body':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:model_instance:body'
+                  source:
+                    type: text_default
+                    label: above
+                    settings: {  }
+                    third_party_settings: {  }
+                    weight: 6
+                    region: content
+        node_id: 1355de1d46e8a1ac
 id: node.model_instance.default
 targetEntityType: node
 bundle: model_instance
@@ -100,6 +223,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 7
+    region: content
+  field_variations:
+    type: viewsreference_formatter
+    label: above
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 9
     region: content
   field_version:
     type: entity_reference_label

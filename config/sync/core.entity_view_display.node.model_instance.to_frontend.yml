@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.model_instance.field_is_modular_set
     - field.field.node.model_instance.field_model
     - field.field.node.model_instance.field_tags
+    - field.field.node.model_instance.field_variations
     - field.field.node.model_instance.field_version
     - node.type.model_instance
   module:
@@ -22,6 +23,7 @@ dependencies:
     - ui_patterns
     - ui_patterns_field_formatters
     - user
+    - viewsreference
   theme:
     - ui_suite_bootstrap
 third_party_settings:
@@ -154,6 +156,20 @@ third_party_settings:
                                 region: content
                     node_id: 2892183b49f26573
         node_id: 3ca9d2e14f64203a
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:model_instance:field_variations'
+          'field:node:model_instance:field_variations':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:model_instance:field_variations'
+                  source:
+                    type: viewsreference_formatter
+                    settings: {  }
+                    third_party_settings: {  }
+        node_id: 5a1d0147dbe4d9a9
       -
         source_id: extra_field
         source:
@@ -316,3 +332,4 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_variations: true

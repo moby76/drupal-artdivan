@@ -1,0 +1,35 @@
+uuid: 3e3dcab9-6371-40c9-8da1-a3cb52389319
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_variations
+    - node.type.model_instance
+    - views.view.varianty_ekzemplyarov_myagkoy_mebeli
+  module:
+    - viewsreference
+id: node.model_instance.field_variations
+field_name: field_variations
+entity_type: node
+bundle: model_instance
+label: Вариации
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: cf3632a2-951e-48d1-bf3d-90d84c94183c
+    display_id: block_1
+    data: 'a:6:{s:6:"offset";N;s:6:"header";N;s:8:"argument";N;s:5:"limit";N;s:5:"title";N;s:5:"pager";N;}'
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views:
+    varianty_ekzemplyarov_myagkoy_mebeli: varianty_ekzemplyarov_myagkoy_mebeli
+  enabled_settings: {  }
+field_type: viewsreference

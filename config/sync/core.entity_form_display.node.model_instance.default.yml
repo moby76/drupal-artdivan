@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.model_instance.field_is_modular_set
     - field.field.node.model_instance.field_model
     - field.field.node.model_instance.field_tags
+    - field.field.node.model_instance.field_variations
     - field.field.node.model_instance.field_version
     - node.type.model_instance
   module:
@@ -17,6 +18,7 @@ dependencies:
     - media_folders
     - path
     - text
+    - viewsreference
 id: node.model_instance.default
 targetEntityType: node
 bundle: model_instance
@@ -91,6 +93,12 @@ content:
       not_found_message: "The term '@term' will be added"
       new_terms: true
       no_empty_message: 'No terms could be found. Please type in order to add a new term.'
+    third_party_settings: {  }
+  field_variations:
+    type: viewsreference_select
+    weight: 26
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_version:
     type: options_select
