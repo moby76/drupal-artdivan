@@ -1,0 +1,14 @@
+blocks:
+  -
+    info: 'Призыв к действию'
+    langcode: en
+    uuid: 7fc85ce9-2c9a-431e-94df-73d11219ff26
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: '<p><a href="https:/newsletter">Зарегестрируйся</a></p>'
+          summary: ''
+          format: basic_html
