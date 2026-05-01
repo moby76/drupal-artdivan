@@ -1,0 +1,28 @@
+uuid: 698bbecf-11b4-4c7d-9d38-32903525dc13
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7fc85ce9-2c9a-431e-94df-73d11219ff26'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_artdivan
+id: bootstrap_artdivan_prizyvkdeystviyu
+theme: bootstrap_artdivan
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:7fc85ce9-2c9a-431e-94df-73d11219ff26'
+settings:
+  id: 'block_content:7fc85ce9-2c9a-431e-94df-73d11219ff26'
+  label: 'Призыв к действию'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
