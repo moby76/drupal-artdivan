@@ -92,6 +92,7 @@
         "drupal/print_this_page": "^1.0",
         "drupal/project_browser": "^2.1",
         "drupal/serial": "^2.1",
+        "drupal/structure_sync": "^2.0",
         "drupal/term_reference_tree": "^2.0",
         "drupal/time_range": "^9.0",
         "drupal/token": "^1.17",
