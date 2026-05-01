@@ -104,6 +104,7 @@
         "drupal/upgrade_status": "^5.0@alpha",
         "drupal/view_mode_page": "^4.0",
         "drupal/views_arg_entity_field": "^3.0@beta",
+        "drupal/viewsreference": "^2.0@beta",
         "drush/drush": "^13",
         "mikehaertl/phpwkhtmltopdf": "~2.1",
         "tecnickcom/tcpdf": "~6"
