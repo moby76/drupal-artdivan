@@ -1,0 +1,44 @@
+uuid: 2b4cda7e-d66f-484f-959a-644cbac191bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.to_frontend
+    - field.field.node.moduls.field_execution
+    - field.field.node.moduls.field_parent_instance
+    - node.type.moduls
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.moduls.to_frontend
+targetEntityType: node
+bundle: moduls
+mode: to_frontend
+content:
+  field_execution:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_parent_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_link_display: true

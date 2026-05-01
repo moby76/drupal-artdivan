@@ -1,0 +1,318 @@
+uuid: f7ff859e-e167-4828-88a3-781ba286d0ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.to_frontend
+    - field.field.node.model_instance.body
+    - field.field.node.model_instance.field_configuration
+    - field.field.node.model_instance.field_execution
+    - field.field.node.model_instance.field_instance_main_image
+    - field.field.node.model_instance.field_is_modular_set
+    - field.field.node.model_instance.field_model
+    - field.field.node.model_instance.field_tags
+    - field.field.node.model_instance.field_version
+    - node.type.model_instance
+  module:
+    - display_builder
+    - layout_builder
+    - media_folders
+    - nomarkup
+    - text
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - user
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_2'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance:field_instance_main_image'
+                      'field:node:model_instance:field_instance_main_image':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance:field_instance_main_image'
+                              source:
+                                type: media_folders
+                                label: above
+                                settings:
+                                  images:
+                                    image_style: medium
+                                    image_loading:
+                                      attribute: lazy
+                                  videos:
+                                    video_width: '400'
+                                    video_height: '250'
+                                    video_muted: false
+                                    video_controls: true
+                                    video_autoplay: false
+                                  audio:
+                                    audio_loop: false
+                                    audio_controls: true
+                                    audio_autoplay: false
+                                  other:
+                                    other_format: file_link
+                                  image_style: ''
+                                  image_loading:
+                                    attribute: lazy
+                                third_party_settings:
+                                  nomarkup:
+                                    enabled: false
+                                    separator: '|'
+                                    referenced_entity: ''
+                                weight: 1
+                                region: content
+                    node_id: 4e4fc7e518807c96
+              col_2_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance:field_execution'
+                      'field:node:model_instance:field_execution':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance:field_execution'
+                              source:
+                                type: entity_reference_label
+                                label: above
+                                settings:
+                                  link: true
+                                third_party_settings: {  }
+                                weight: 5
+                                region: content
+                    node_id: fd12eaa260fe35c9
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance:field_model'
+                      'field:node:model_instance:field_model':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance:field_model'
+                              source:
+                                type: entity_reference_label
+                                label: above
+                                settings:
+                                  link: true
+                                third_party_settings: {  }
+                                weight: 2
+                                region: content
+                    node_id: b40fc3e543dc69db
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance:field_version'
+                      'field:node:model_instance:field_version':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance:field_version'
+                              source:
+                                type: entity_reference_label
+                                label: above
+                                settings:
+                                  link: true
+                                third_party_settings: {  }
+                                weight: 4
+                                region: content
+                    node_id: 87e20e0b4dc647b7
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance:field_configuration'
+                      'field:node:model_instance:field_configuration':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance:field_configuration'
+                              source:
+                                type: entity_reference_label
+                                label: above
+                                settings:
+                                  link: true
+                                third_party_settings: {  }
+                                weight: 3
+                                region: content
+                    node_id: 2892183b49f26573
+        node_id: 3ca9d2e14f64203a
+      -
+        source_id: extra_field
+        source:
+          field: links
+        node_id: 63e6653ad9a04f09
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:model_instance:body'
+          'field:node:model_instance:body':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:model_instance:body'
+                  source:
+                    type: text_default
+                    label: above
+                    settings: {  }
+                    third_party_settings: {  }
+                    weight: 6
+                    region: content
+        node_id: a09b58fe08c436f2
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:model_instance:field_tags'
+          'field:node:model_instance:field_tags':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:model_instance:field_tags'
+                  source:
+                    type: entity_reference_label
+                    label: above
+                    settings:
+                      link: true
+                    third_party_settings: {  }
+                    weight: 7
+                    region: content
+        node_id: d4ff95c492bc6cf8
+      -
+        source_id: entity_field
+        source:
+          derivable_context: 'field:node:model_instance:field_is_modular_set'
+          'field:node:model_instance:field_is_modular_set':
+            value:
+              sources:
+                -
+                  source_id: 'field_formatter:node:model_instance:field_is_modular_set'
+                  source:
+                    type: boolean
+                    label: above
+                    settings:
+                      format: default
+                      format_custom_false: ''
+                      format_custom_true: ''
+                    third_party_settings: {  }
+                    weight: 8
+                    region: content
+        node_id: 8eddecc3d96dce08
+id: node.model_instance.to_frontend
+targetEntityType: node
+bundle: model_instance
+mode: to_frontend
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_configuration:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_execution:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_instance_main_image:
+    type: media_folders
+    label: above
+    settings:
+      images:
+        image_style: medium
+        image_loading:
+          attribute: lazy
+      videos:
+        video_width: '400'
+        video_height: '250'
+        video_muted: false
+        video_controls: true
+        video_autoplay: false
+      audio:
+        audio_loop: false
+        audio_controls: true
+        audio_autoplay: false
+      other:
+        other_format: file_link
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
+    region: content
+  field_is_modular_set:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_model:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_version:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  entity_link_display: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true

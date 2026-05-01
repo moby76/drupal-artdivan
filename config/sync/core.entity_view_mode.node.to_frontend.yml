@@ -1,0 +1,11 @@
+uuid: 4b3851c8-97ed-4869-b1d0-3e98a87a5e67
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.to_frontend
+label: 'To Frontend'
+description: null
+targetEntityType: node
+cache: true

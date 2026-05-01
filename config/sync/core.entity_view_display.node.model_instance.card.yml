@@ -17,6 +17,7 @@ dependencies:
     - display_builder
     - layout_builder
     - media
+    - token
     - ui_patterns
     - ui_patterns_field_formatters
     - user
@@ -35,7 +36,7 @@ third_party_settings:
           component:
             component_id: 'ui_suite_bootstrap:card'
             variant_id:
-              source_id: select
+              source_id: token
               source:
                 value: ''
             props:
@@ -84,10 +85,14 @@ third_party_settings:
                                 type: media_thumbnail
                                 settings:
                                   image_style: scale_crop_200_200
-                                  image_link: content
+                                  image_link: ''
                                   image_loading:
                                     attribute: lazy
                                 third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
                                   nomarkup:
                                     separator: '|'
                                     referenced_entity: ''
@@ -267,7 +272,45 @@ third_party_settings:
                     node_id: 7dbe4be0a4620491
               footer:
                 add_more_button: ''
-                sources: {  }
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:button'
+                        variant_id:
+                          source_id: select
+                          source:
+                            value: ''
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          disabled:
+                            source_id: checkbox
+                            source:
+                              value: 0
+                          label_visually_hidden:
+                            source_id: checkbox
+                            source:
+                              value: 0
+                          url:
+                            source_id: token
+                            source:
+                              value: '[node:url]/to_frontend'
+                        slots:
+                          label:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: Перейти
+                                node_id: e53a10615a316311
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 141d3c2517b2e29e
             third_party_settings: ''
             node_id: ''
         node_id: f8d7dbb64d295ab5

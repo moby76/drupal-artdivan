@@ -1,0 +1,24 @@
+uuid: 7ef87ca8-5b11-44a3-a98a-e4ceca34898d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: dlya_frontenda
+label: 'Для фронтенда'
+type: 'canonical_entities:node'
+pattern: /%/to_frontend
+view_mode: to_frontend
+selection_criteria:
+  d5b26283-2fcf-49c3-a2f1-889546325bd7:
+    id: 'entity_bundle:node'
+    bundles:
+      model_instance: model_instance
+      moduls: moduls
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d5b26283-2fcf-49c3-a2f1-889546325bd7
+selection_logic: and
+weight: -5
+relationships: {  }
