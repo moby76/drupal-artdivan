@@ -161,6 +161,13 @@ third_party_settings:
                               _weight: '0'
                     node_id: 431563e22d1bd31e
         node_id: beaa933626b99c5c
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border-top
+              borders_border_width: border-2
+              borders_border_color: border-secondary-subtle
+            extra: ''
       -
         source_id: component
         source:
