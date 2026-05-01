@@ -127,16 +127,6 @@ third_party_settings:
                   _weight: '0'
         node_id: 849278b82dec6def
       -
-        source_id: textfield
-        source:
-          value: Продукция
-        node_id: 81f50d25f5f8919c
-        third_party_settings:
-          styles:
-            selected:
-              text_text_alignment: text-center
-            extra: ''
-      -
         source_id: component
         source:
           component:
@@ -173,10 +163,7 @@ third_party_settings:
         node_id: beaa933626b99c5c
         third_party_settings:
           styles:
-            selected:
-              borders_border: border-top
-              borders_border_width: border-2
-              borders_border_color: border-secondary-subtle
+            selected: {  }
             extra: ''
       -
         source_id: component
