@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.model_instance.field_is_modular_set
     - field.field.node.model_instance.field_model
     - field.field.node.model_instance.field_tags
+    - field.field.node.model_instance.field_three_dimensional_image
     - field.field.node.model_instance.field_variations
     - field.field.node.model_instance.field_version
     - node.type.model_instance
@@ -57,8 +58,89 @@ third_party_settings:
         source:
           component:
             component_id: 'ui_suite_bootstrap:grid_row_2'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - '6'
+                    - '6'
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '8'
+                    - '4'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - '8'
+                    - '4'
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - '8'
+                    - '4'
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - '8'
+                    - '4'
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: ''
             slots:
               col_1_content:
+                add_more_button: ''
                 sources:
                   -
                     source_id: entity_field
@@ -102,6 +184,7 @@ third_party_settings:
                               _weight: '0'
                     node_id: e2bde2441a3221a6
               col_2_content:
+                add_more_button: ''
                 sources:
                   -
                     source_id: entity_field
@@ -122,6 +205,8 @@ third_party_settings:
                                 weight: 9
                                 region: content
                     node_id: 805c8069ee31e7b9
+            third_party_settings: ''
+            node_id: ''
         node_id: 29d88447849cd2e1
       -
         source_id: entity_field
@@ -223,6 +308,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 7
+    region: content
+  field_three_dimensional_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 10
     region: content
   field_variations:
     type: viewsreference_formatter

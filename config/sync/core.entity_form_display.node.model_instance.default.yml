@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.model_instance.field_is_modular_set
     - field.field.node.model_instance.field_model
     - field.field.node.model_instance.field_tags
+    - field.field.node.model_instance.field_three_dimensional_image
     - field.field.node.model_instance.field_variations
     - field.field.node.model_instance.field_version
     - node.type.model_instance
@@ -26,7 +27,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 13
+    weight: 14
     region: content
     settings:
       rows: 9
@@ -79,7 +80,7 @@ content:
     third_party_settings: {  }
   field_tags:
     type: autocomplete_deluxe
-    weight: 14
+    weight: 15
     region: content
     settings:
       match_operator: CONTAINS
@@ -94,9 +95,20 @@ content:
       new_terms: true
       no_empty_message: 'No terms could be found. Please type in order to add a new term.'
     third_party_settings: {  }
+  field_three_dimensional_image:
+    type: media_folders_widget
+    weight: 13
+    region: content
+    settings:
+      view_type: list
+      view_order: date-desc
+      show_navigation: 1
+      show_search: 1
+      form_mode: {  }
+    third_party_settings: {  }
   field_variations:
     type: viewsreference_select
-    weight: 26
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }

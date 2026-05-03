@@ -3,12 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_fabric_price_category
+    - field.storage.node.field_instance_dimension
     - field.storage.node.field_variation_price
     - node.type.instances_variations
   module:
     - entity_reference_revisions
     - node
+    - nomarkup
+    - ui_patterns
+    - ui_patterns_views
     - user
+  theme:
+    - ui_suite_bootstrap
 id: varianty_ekzemplyarov_myagkoy_mebeli
 label: 'Варианты экземпляров мягкой мебели'
 module: views
@@ -474,7 +481,7 @@ display:
           entity_field: title
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -519,6 +526,132 @@ display:
           settings:
             link_to_entity: false
           group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_instance_dimension:
+          id: field_instance_dimension
+          table: node__field_instance_dimension
+          field: field_instance_dimension
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_fabric_price_category:
+          id: field_fabric_price_category
+          table: node__field_fabric_price_category
+          field: field_fabric_price_category
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -657,6 +790,20 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+      sorts:
+        field_instance_dimension_target_id:
+          id: field_instance_dimension_target_id
+          table: node__field_instance_dimension
+          field: field_instance_dimension_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       arguments:
         nid:
           id: nid
@@ -694,23 +841,155 @@ display:
           break_phrase: false
           not: false
       style:
-        type: default
+        type: nomarkup
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
+          uses_fields: false
       row:
-        type: fields
+        type: ui_patterns
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
           hide_empty: false
+          ui_patterns:
+            component_id: 'ui_suite_bootstrap:grid_row_3'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: 'class="border-1 border-bottom border-secondary"'
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: gx-1
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+                    - '12'
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '6'
+                    - '3'
+                    - '3'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - '6'
+                    - '3'
+                    - '3'
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - '6'
+                    - '3'
+                    - '3'
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - '6'
+                    - '3'
+                    - '3'
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="small"'
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="small"'
+              col_3_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="small"'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: view_field
+                    source:
+                      ui_patterns_views_field: field_instance_dimension
+                    _weight: '0'
+                    third_party_settings: ''
+                    node_id: ''
+                    _remove:
+                      dropdown_actions:
+                        - Remove
+                add_more_button: ''
+              col_2_content:
+                sources:
+                  -
+                    source_id: view_field
+                    source:
+                      ui_patterns_views_field: field_fabric_price_category
+                    _weight: '0'
+                    third_party_settings: ''
+                    node_id: ''
+                    _remove:
+                      dropdown_actions:
+                        - Remove
+                add_more_button: ''
+              col_3_content:
+                sources:
+                  -
+                    source_id: view_field
+                    source:
+                      ui_patterns_views_field: field_variation_price
+                    _weight: '0'
+                    third_party_settings: ''
+                    node_id: ''
+                    _remove:
+                      dropdown_actions:
+                        - Remove
+                add_more_button: ''
+            third_party_settings: ''
+            node_id: ''
       defaults:
         style: false
         row: false
         relationships: false
         fields: false
+        sorts: false
         arguments: false
       relationships:
         field_parent_instance:
@@ -723,7 +1002,212 @@ display:
           plugin_id: standard
           required: true
       display_extenders:
-        display_builder: {  }
+        display_builder:
+          profile: default
+          sources:
+            -
+              source_id: view_header
+              source: {  }
+              node_id: 326673b1915875f2
+            -
+              source_id: view_exposed
+              source: {  }
+              node_id: 426c60b43dccef8f
+            -
+              source_id: view_attachment_before
+              source: {  }
+              node_id: f220b831dfd91d5a
+            -
+              source_id: component
+              source:
+                component:
+                  component_id: 'ui_suite_bootstrap:grid_row_1'
+                  slots:
+                    col_1_content:
+                      sources:
+                        -
+                          source_id: component
+                          source:
+                            component:
+                              component_id: 'ui_suite_bootstrap:grid_row_3'
+                              variant_id: null
+                              props:
+                                attributes:
+                                  source_id: attributes
+                                  source:
+                                    value: ''
+                                container:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                container_attributes:
+                                  source_id: attributes
+                                  source:
+                                    value: ''
+                                container_wrapper_attributes:
+                                  source_id: attributes
+                                  source:
+                                    value: ''
+                                gutters:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                gutters_horizontal:
+                                  source_id: select
+                                  source:
+                                    value: gx-1
+                                gutters_vertical:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                col_xs:
+                                  source_id: selects
+                                  source:
+                                    value:
+                                      - '12'
+                                      - '12'
+                                      - '12'
+                                col_sm:
+                                  source_id: selects
+                                  source:
+                                    value:
+                                      - '12'
+                                      - '12'
+                                      - '12'
+                                col_md:
+                                  source_id: selects
+                                  source:
+                                    value:
+                                      - '5'
+                                      - '4'
+                                      - '3'
+                                col_lg:
+                                  source_id: selects
+                                  source:
+                                    value:
+                                      - '5'
+                                      - '4'
+                                      - '3'
+                                col_xl:
+                                  source_id: selects
+                                  source:
+                                    value:
+                                      - '5'
+                                      - '4'
+                                      - '3'
+                                col_xxl:
+                                  source_id: selects
+                                  source:
+                                    value:
+                                      - '5'
+                                      - '4'
+                                      - '3'
+                                col_offset:
+                                  source_id: selects
+                                  source:
+                                    value:
+                                      - ''
+                                      - ''
+                                      - ''
+                                col_1_attributes:
+                                  source_id: attributes
+                                  source:
+                                    value: ''
+                                col_2_attributes:
+                                  source_id: attributes
+                                  source:
+                                    value: ''
+                                col_3_attributes:
+                                  source_id: attributes
+                                  source:
+                                    value: ''
+                              slots:
+                                col_1_content:
+                                  add_more_button: ''
+                                  sources:
+                                    -
+                                      source_id: textfield
+                                      source:
+                                        value: Размер
+                                      node_id: dae7d42d4042abd9
+                                col_2_content:
+                                  add_more_button: ''
+                                  sources:
+                                    -
+                                      source_id: textfield
+                                      source:
+                                        value: 'Категория ткани'
+                                      node_id: b306d9f493787e7c
+                                col_3_content:
+                                  add_more_button: ''
+                                  sources:
+                                    -
+                                      source_id: textfield
+                                      source:
+                                        value: Цена
+                                      node_id: add3ea77bfa0117b
+                              third_party_settings: ''
+                              node_id: ''
+                          node_id: 6527fca70bc7b505
+                          third_party_settings:
+                            styles:
+                              selected:
+                                typography: small
+                                borders_border: border-bottom
+                                borders_border_width: border-1
+                              extra: 'mb-1 pb-1'
+                        -
+                          source_id: component
+                          source:
+                            component:
+                              component_id: 'ui_suite_bootstrap:grid_row_1'
+                              slots:
+                                col_1_content:
+                                  sources:
+                                    -
+                                      source_id: view_rows
+                                      source: {  }
+                                      node_id: bcd4124ebd4f6eac
+                                      third_party_settings:
+                                        styles:
+                                          selected: {  }
+                                          extra: ''
+                          node_id: 1b218f91ed7ec050
+                          third_party_settings:
+                            styles:
+                              selected:
+                                overflow_vertical: overflow-y-scroll
+                              extra: ''
+              node_id: 3306418f023c01bc
+              third_party_settings:
+                styles:
+                  selected:
+                    colors_color: text-light
+                    colors_background_color: bg-dark
+                    borders_border: border
+                    borders_border_radius: rounded
+                    borders_border_radius_width: rounded-2
+                  extra: 'py-2 pe-1'
+            -
+              source_id: view_pager
+              source: {  }
+              node_id: e6c78f390d171007
+            -
+              source_id: view_attachment_after
+              source: {  }
+              node_id: 9d78c331edaa1bec
+            -
+              source_id: view_more
+              source: {  }
+              node_id: acfd81f997467c71
+            -
+              source_id: view_footer
+              source: {  }
+              node_id: 47ba42e08de170cf
+            -
+              source_id: view_feed_icons
+              source: {  }
+              node_id: 4bf47cdd5ec1d03d
         ui_styles: {  }
     cache_metadata:
       max-age: -1
@@ -735,6 +1219,8 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_fabric_price_category'
+        - 'config:field.storage.node.field_instance_dimension'
         - 'config:field.storage.node.field_variation_price'
   entity_reference_1:
     id: entity_reference_1

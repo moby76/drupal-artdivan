@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.model_instance.field_is_modular_set
     - field.field.node.model_instance.field_model
     - field.field.node.model_instance.field_tags
+    - field.field.node.model_instance.field_three_dimensional_image
     - field.field.node.model_instance.field_variations
     - field.field.node.model_instance.field_version
     - node.type.model_instance
@@ -339,6 +340,7 @@ hidden:
   field_is_modular_set: true
   field_model: true
   field_tags: true
+  field_three_dimensional_image: true
   field_variations: true
   field_version: true
   links: true
