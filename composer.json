@@ -10,11 +10,15 @@
     },
     "repositories": [
         {
+            "name": "asset-packagist",
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
             "name": "drupal",
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-
         {
             "name": "asset-bootstrap",
             "type": "package",
@@ -89,6 +93,7 @@
         "drupal/paragraphs": "^1.20",
         "drupal/pathauto": "^1.14",
         "drupal/phonenumber": "^1.0@beta",
+        "drupal/photoswipe": "^5.0",
         "drupal/print_this_page": "^1.0",
         "drupal/project_browser": "^2.1",
         "drupal/serial": "^2.1",
@@ -132,12 +137,18 @@
                 "web-root": "web/"
             }
         },
+        "installer-types": [
+            "npm-asset",
+            "bower-asset"
+        ],
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
             ],
             "web/libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "type:npm-asset",
+                "type:bower-asset"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"

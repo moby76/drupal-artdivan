@@ -73,6 +73,7 @@ module:
   path: 0
   path_alias: 0
   phonenumber: 0
+  photoswipe: 0
   print_this_page: 0
   project_browser: 0
   search: 0

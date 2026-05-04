@@ -204,10 +204,13 @@ third_party_settings:
                                                       -
                                                         source_id: 'field_formatter:node:model_instance:field_three_dimensional_image'
                                                         source:
-                                                          type: media_thumbnail
+                                                          type: photoswipe_field_formatter
                                                           settings:
-                                                            image_style: wide
-                                                            image_link: ''
+                                                            photoswipe_thumbnail_style: wide
+                                                            photoswipe_thumbnail_style_first: wide
+                                                            photoswipe_image_style: ''
+                                                            photoswipe_reference_image_field: field_media_image
+                                                            photoswipe_view_mode: _custom
                                                             image_loading:
                                                               attribute: lazy
                                                           third_party_settings:
@@ -216,9 +219,9 @@ third_party_settings:
                                                               label_class: ''
                                                               label_tag: ''
                                                             nomarkup:
+                                                              enabled: '1'
                                                               separator: '|'
                                                               referenced_entity: ''
-                                                              enabled: 0
                                                         node_id: ''
                                                         third_party_settings: ''
                                                         _weight: '0'
@@ -255,6 +258,7 @@ third_party_settings:
                                           node_id: ''
                                           third_party_settings: ''
                                           _weight: '0'
+                                  imagefieldnodemodel_instancefield_three_dimensional_image_value_sources_0_source_settings_ui_patterns_slots_image_0_remove: Remove
                                 node_id: 474229ad8110f5c8
                         third_party_settings: ''
                         node_id: ''
