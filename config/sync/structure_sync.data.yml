@@ -13,104 +13,64 @@ blocks:
           summary: ''
           format: basic_html
 taxonomies:
-  model:
+  execution_options:
     -
-      vid: model
-      tid: '1'
+      vid: execution_options
+      tid: '138'
       langcode: en
-      name: Акканто
+      name: Кровать
       description__value: null
       description__format: null
       weight: '0'
-      parent: '133'
-      uuid: 1b64ed18-7121-400a-8f7f-ba2e6e388d0c
+      parent: '0'
+      uuid: b07ff1ac-6093-4445-bfe0-5abe325d7a5e
     -
-      vid: model
-      tid: '135'
+      vid: execution_options
+      tid: '103'
       langcode: en
-      name: Виктория
+      name: 'Прямой диван'
       description__value: null
       description__format: null
       weight: '0'
-      parent: '134'
-      uuid: 694ee55c-9166-4c43-a243-12e4230dcfe0
+      parent: '0'
+      uuid: e287d196-b19f-4035-8cd6-9ed9586a9896
     -
-      vid: model
-      tid: '137'
+      vid: execution_options
+      tid: '165'
       langcode: en
-      name: Елена
+      name: Трансформер
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 6ebef0c6-3ca2-4259-bba1-f6edf0fbb290
+    -
+      vid: execution_options
+      tid: '101'
+      langcode: en
+      name: Кресло
       description__value: null
       description__format: null
       weight: '1'
-      parent: '134'
-      uuid: 1b9d9d57-3c7c-4407-850e-bb5f1956e9a1
+      parent: '0'
+      uuid: e03d830c-573a-4ad7-9da6-63fc6ff6d587
     -
-      vid: model
-      tid: '2'
+      vid: execution_options
+      tid: '98'
       langcode: en
-      name: Лидер
-      description__value: null
-      description__format: null
-      weight: '1'
-      parent: '133'
-      uuid: 0f07066a-7079-47d8-9e31-3ad3a27f56f6
-    -
-      vid: model
-      tid: '136'
-      langcode: en
-      name: Карина
+      name: Модульный
       description__value: null
       description__format: null
       weight: '2'
-      parent: '134'
-      uuid: abb56277-7ec4-4d05-bab4-721f9e98f798
+      parent: '0'
+      uuid: db0b5ca0-9368-421d-b735-3ab748606446
     -
-      vid: model
-      tid: '166'
+      vid: execution_options
+      tid: '23'
       langcode: en
-      name: Монреаль
-      description__value: null
-      description__format: null
-      weight: '2'
-      parent: '133'
-      uuid: a4902496-8fed-4023-b108-d7d6f3b15034
-    -
-      vid: model
-      tid: '68'
-      langcode: en
-      name: 'Хеннесси Арт'
+      name: 'Угловой диван'
       description__value: null
       description__format: null
       weight: '3'
-      parent: '133'
-      uuid: ca3acea1-9994-44b9-8bb3-04e304ac2705
-    -
-      vid: model
-      tid: '139'
-      langcode: en
-      name: Шарм
-      description__value: null
-      description__format: null
-      weight: '3'
-      parent: '134'
-      uuid: 86f5ece5-5a6a-4b21-8a9c-e6612e182f8e
-    -
-      vid: model
-      tid: '133'
-      langcode: en
-      name: 'Мягкая мебель'
-      description__value: null
-      description__format: null
-      weight: '4'
       parent: '0'
-      uuid: b519096b-463a-4885-bf8e-441cd21af46b
-    -
-      vid: model
-      tid: '134'
-      langcode: en
-      name: Кровати
-      description__value: null
-      description__format: null
-      weight: '9'
-      parent: '0'
-      uuid: d661a0e9-5db1-4867-8c5d-e13d893ef6a2
+      uuid: 4e6f0739-2923-4b08-a2b9-a583136779de
