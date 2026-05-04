@@ -12765,3 +12765,12 @@ textarea.form-control-lg {
 .col p {
     margin-bottom: 0px;
 }
+
+.carousel-control-next,
+.carousel-control-prev {
+  border-radius: 6px;
+}
+.carousel-indicators {
+  background: #000000cf;
+    /* border-radius: 0.5rem; */
+}
