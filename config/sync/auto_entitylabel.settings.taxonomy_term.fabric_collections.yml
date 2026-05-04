@@ -1,5 +1,5 @@
 status: 1
-pattern: '[term:parent] [term:field_fabric_article]'
+pattern: '[term:field_fabric_collection] [term:field_fabric_article]'
 escape: false
 preserve_titles: false
 save: false

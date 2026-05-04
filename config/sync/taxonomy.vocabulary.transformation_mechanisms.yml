@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'Механизмы трансформации'
 vid: transformation_mechanisms
 description: null
-weight: 0
+weight: 5
 new_revision: false

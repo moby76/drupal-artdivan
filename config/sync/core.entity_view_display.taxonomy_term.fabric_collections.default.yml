@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.fabric_collections.field_fabric_article
+    - field.field.taxonomy_term.fabric_collections.field_fabric_collection
     - taxonomy.vocabulary.fabric_collections
   module:
     - text
@@ -27,7 +28,16 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_fabric_collection:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
+  entity_link_display: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true

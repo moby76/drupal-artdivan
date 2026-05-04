@@ -13,6 +13,253 @@ blocks:
           summary: ''
           format: basic_html
 taxonomies:
+  fabric_collections:
+    -
+      vid: fabric_collections
+      tid: '27'
+      langcode: en
+      name: 'Ameli 01'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '24'
+      uuid: 576ad515-9cee-4325-97bd-92eb8b85669f
+      field_fabric_article:
+        -
+          name: '01'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '173'
+      langcode: en
+      name: 'Arcadia rose'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '172'
+      uuid: 29a2ba65-c1e7-47d2-9d5f-3e1aa7cbcffa
+      field_fabric_article:
+        -
+          name: rose
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '29'
+      langcode: en
+      name: 'Armando 10'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '25'
+      uuid: fcf8c092-3664-44b2-8177-89ab07825920
+      field_fabric_article:
+        -
+          name: '10'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '31'
+      langcode: en
+      name: 'Bruno 07'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '26'
+      uuid: f086ee4f-e4cc-4b8a-9e13-9beada69ddc2
+      field_fabric_article:
+        -
+          name: '07'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '41'
+      langcode: en
+      name: 'Sensey coriza'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '38'
+      uuid: 46bba6cc-e978-4cd1-9031-7f355bbc8a72
+      field_fabric_article:
+        -
+          name: coriza
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '28'
+      langcode: en
+      name: 'Ameli 02'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '24'
+      uuid: 9cd9c37f-51b6-4738-8b65-32eb566de386
+      field_fabric_article:
+        -
+          name: '02'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '181'
+      langcode: en
+      name: 'Arcadia salmon'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '172'
+      uuid: 1fbca5a2-dcd1-44c1-bfa5-702594d16819
+      field_fabric_article:
+        -
+          name: salmon
+          vid: fabric_article
+      field_fabric_collection:
+        -
+          name: Arcadia
+          vid: fabric_collections_list
+    -
+      vid: fabric_collections
+      tid: '30'
+      langcode: en
+      name: 'Armando 05'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '25'
+      uuid: 41939d6a-5338-4187-aa16-993971985bfb
+      field_fabric_article:
+        -
+          name: '05'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '32'
+      langcode: en
+      name: 'Bruno 08'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '26'
+      uuid: 58d5a6ac-5c47-4588-b3fa-fcdb7d65e106
+      field_fabric_article:
+        -
+          name: '08'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '39'
+      langcode: en
+      name: 'Sensey steel grey'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '38'
+      uuid: 93baa479-3369-4c7e-abec-2051777395bc
+      field_fabric_article:
+        -
+          name: 'steel grey'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '179'
+      langcode: en
+      name: 'Arcadia multi'
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '172'
+      uuid: 6abcbf4b-ebd1-4d41-a468-b8fc391233c9
+      field_fabric_article:
+        -
+          name: multi
+          vid: fabric_article
+      field_fabric_collection:
+        -
+          name: Arcadia
+          vid: fabric_collections_list
+    -
+      vid: fabric_collections
+      tid: '40'
+      langcode: en
+      name: 'Sensey silver light'
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '38'
+      uuid: 34f84a43-d6e2-4c2d-aa08-2c675cf5331a
+      field_fabric_article:
+        -
+          name: 'silver light'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '172'
+      langcode: en
+      name: Arcadia
+      description__value: null
+      description__format: null
+      weight: '12'
+      parent: '0'
+      uuid: 68502820-19d1-4701-8d54-f220f7c3e017
+      field_fabric_collection:
+        -
+          name: Arcadia
+          vid: fabric_collections_list
+    -
+      vid: fabric_collections
+      tid: '38'
+      langcode: en
+      name: Sensey
+      description__value: null
+      description__format: null
+      weight: '13'
+      parent: '0'
+      uuid: 085c2530-e5b9-44a9-b231-a93a68fc9f9f
+      field_fabric_collection:
+        -
+          name: Sensey
+          vid: fabric_collections_list
+    -
+      vid: fabric_collections
+      tid: '24'
+      langcode: en
+      name: Ameli
+      description__value: null
+      description__format: null
+      weight: '14'
+      parent: '0'
+      uuid: b3819aa6-d805-4ad4-a970-2b8da0d75c74
+      field_fabric_collection:
+        -
+          name: Ameli
+          vid: fabric_collections_list
+    -
+      vid: fabric_collections
+      tid: '25'
+      langcode: en
+      name: Armando
+      description__value: null
+      description__format: null
+      weight: '15'
+      parent: '0'
+      uuid: b746911d-8e0a-4807-b719-0054e36db444
+      field_fabric_collection:
+        -
+          name: Armando
+          vid: fabric_collections_list
+    -
+      vid: fabric_collections
+      tid: '26'
+      langcode: en
+      name: Bruno
+      description__value: null
+      description__format: null
+      weight: '16'
+      parent: '0'
+      uuid: 94844f68-d9e6-4e0e-9487-7baa601320e8
+      field_fabric_collection:
+        -
+          name: Bruno
+          vid: fabric_collections_list
   configuration:
     -
       vid: configuration
@@ -196,6 +443,67 @@ taxonomies:
       weight: '2'
       parent: '0'
       uuid: d627ca31-49cf-444d-b552-02150dd3e893
+  execution_options:
+    -
+      vid: execution_options
+      tid: '138'
+      langcode: en
+      name: Кровать
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: b07ff1ac-6093-4445-bfe0-5abe325d7a5e
+    -
+      vid: execution_options
+      tid: '103'
+      langcode: en
+      name: 'Прямой диван'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: e287d196-b19f-4035-8cd6-9ed9586a9896
+    -
+      vid: execution_options
+      tid: '165'
+      langcode: en
+      name: Трансформер
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 6ebef0c6-3ca2-4259-bba1-f6edf0fbb290
+    -
+      vid: execution_options
+      tid: '101'
+      langcode: en
+      name: Кресло
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: e03d830c-573a-4ad7-9da6-63fc6ff6d587
+    -
+      vid: execution_options
+      tid: '98'
+      langcode: en
+      name: Модульный
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: db0b5ca0-9368-421d-b735-3ab748606446
+    -
+      vid: execution_options
+      tid: '23'
+      langcode: en
+      name: 'Угловой диван'
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: 4e6f0739-2923-4b08-a2b9-a583136779de
   execution_options_modules:
     -
       vid: execution_options_modules
@@ -350,6 +658,36 @@ taxonomies:
       uuid: 0ac4f433-8d2d-490a-b059-c09daa32ee3f
     -
       vid: fabric_article
+      tid: '180'
+      langcode: en
+      name: multi
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: d113948f-edbd-4aa2-9d59-f2a4e00e41cc
+    -
+      vid: fabric_article
+      tid: '170'
+      langcode: en
+      name: rose
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: f30e370a-83b1-4d84-8bc5-d76d885e48e6
+    -
+      vid: fabric_article
+      tid: '168'
+      langcode: en
+      name: salmon
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: faf23f45-e474-4a48-8fba-c3b90900b0e3
+    -
+      vid: fabric_article
       tid: '121'
       langcode: en
       name: 'silver light'
@@ -368,173 +706,57 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: de69e27e-290c-4450-9829-a2e02333c9fb
-  fabric_collections:
+  fabric_collections_list:
     -
-      vid: fabric_collections
-      tid: '27'
-      langcode: en
-      name: 'Ameli 01'
-      description__value: null
-      description__format: null
-      weight: '0'
-      parent: '24'
-      uuid: 576ad515-9cee-4325-97bd-92eb8b85669f
-      field_fabric_article:
-        -
-          name: '01'
-          vid: fabric_article
-    -
-      vid: fabric_collections
-      tid: '29'
-      langcode: en
-      name: 'Armando 10'
-      description__value: null
-      description__format: null
-      weight: '0'
-      parent: '25'
-      uuid: fcf8c092-3664-44b2-8177-89ab07825920
-      field_fabric_article:
-        -
-          name: '10'
-          vid: fabric_article
-    -
-      vid: fabric_collections
-      tid: '31'
-      langcode: en
-      name: 'Bruno 07'
-      description__value: null
-      description__format: null
-      weight: '0'
-      parent: '26'
-      uuid: f086ee4f-e4cc-4b8a-9e13-9beada69ddc2
-      field_fabric_article:
-        -
-          name: '07'
-          vid: fabric_article
-    -
-      vid: fabric_collections
-      tid: '41'
-      langcode: en
-      name: 'Sensey coriza'
-      description__value: null
-      description__format: null
-      weight: '0'
-      parent: '38'
-      uuid: 46bba6cc-e978-4cd1-9031-7f355bbc8a72
-      field_fabric_article:
-        -
-          name: coriza
-          vid: fabric_article
-    -
-      vid: fabric_collections
-      tid: '28'
-      langcode: en
-      name: 'Ameli 02'
-      description__value: null
-      description__format: null
-      weight: '1'
-      parent: '24'
-      uuid: 9cd9c37f-51b6-4738-8b65-32eb566de386
-      field_fabric_article:
-        -
-          name: '02'
-          vid: fabric_article
-    -
-      vid: fabric_collections
-      tid: '30'
-      langcode: en
-      name: 'Armando 05'
-      description__value: null
-      description__format: null
-      weight: '1'
-      parent: '25'
-      uuid: 41939d6a-5338-4187-aa16-993971985bfb
-      field_fabric_article:
-        -
-          name: '05'
-          vid: fabric_article
-    -
-      vid: fabric_collections
-      tid: '32'
-      langcode: en
-      name: 'Bruno 08'
-      description__value: null
-      description__format: null
-      weight: '1'
-      parent: '26'
-      uuid: 58d5a6ac-5c47-4588-b3fa-fcdb7d65e106
-      field_fabric_article:
-        -
-          name: '08'
-          vid: fabric_article
-    -
-      vid: fabric_collections
-      tid: '39'
-      langcode: en
-      name: 'Sensey steel grey'
-      description__value: null
-      description__format: null
-      weight: '1'
-      parent: '38'
-      uuid: 93baa479-3369-4c7e-abec-2051777395bc
-      field_fabric_article:
-        -
-          name: 'steel grey'
-          vid: fabric_article
-    -
-      vid: fabric_collections
-      tid: '40'
-      langcode: en
-      name: 'Sensey silver light'
-      description__value: null
-      description__format: null
-      weight: '2'
-      parent: '38'
-      uuid: 34f84a43-d6e2-4c2d-aa08-2c675cf5331a
-      field_fabric_article:
-        -
-          name: 'silver light'
-          vid: fabric_article
-    -
-      vid: fabric_collections
-      tid: '38'
-      langcode: en
-      name: Sensey
-      description__value: null
-      description__format: null
-      weight: '3'
-      parent: '0'
-      uuid: 085c2530-e5b9-44a9-b231-a93a68fc9f9f
-    -
-      vid: fabric_collections
-      tid: '24'
+      vid: fabric_collections_list
+      tid: '174'
       langcode: en
       name: Ameli
       description__value: null
       description__format: null
-      weight: '10'
+      weight: '0'
       parent: '0'
-      uuid: b3819aa6-d805-4ad4-a970-2b8da0d75c74
+      uuid: 0e36a326-ef5e-4566-8025-bcd9ae652a91
     -
-      vid: fabric_collections
-      tid: '25'
+      vid: fabric_collections_list
+      tid: '175'
+      langcode: en
+      name: Arcadia
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: f40e7745-8020-4af4-8aa7-99752a49afc9
+    -
+      vid: fabric_collections_list
+      tid: '177'
       langcode: en
       name: Armando
       description__value: null
       description__format: null
-      weight: '11'
+      weight: '0'
       parent: '0'
-      uuid: b746911d-8e0a-4807-b719-0054e36db444
+      uuid: 950d42a2-db80-4b00-8451-b307cf6f6092
     -
-      vid: fabric_collections
-      tid: '26'
+      vid: fabric_collections_list
+      tid: '176'
       langcode: en
       name: Bruno
       description__value: null
       description__format: null
-      weight: '12'
+      weight: '0'
       parent: '0'
-      uuid: 94844f68-d9e6-4e0e-9487-7baa601320e8
+      uuid: 258d92d6-c456-4da2-aca2-c934ad058b61
+    -
+      vid: fabric_collections_list
+      tid: '178'
+      langcode: en
+      name: Sensey
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 2b006ede-1fa1-4e73-8b10-daad8585675a
   fabric_price_category:
     -
       vid: fabric_price_category
@@ -868,6 +1090,107 @@ taxonomies:
       weight: '0'
       parent: '140'
       uuid: 544573e1-144a-469e-953c-93c34fb2ef80
+  model:
+    -
+      vid: model
+      tid: '1'
+      langcode: en
+      name: Акканто
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '133'
+      uuid: 1b64ed18-7121-400a-8f7f-ba2e6e388d0c
+    -
+      vid: model
+      tid: '135'
+      langcode: en
+      name: Виктория
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '134'
+      uuid: 694ee55c-9166-4c43-a243-12e4230dcfe0
+    -
+      vid: model
+      tid: '137'
+      langcode: en
+      name: Елена
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '134'
+      uuid: 1b9d9d57-3c7c-4407-850e-bb5f1956e9a1
+    -
+      vid: model
+      tid: '2'
+      langcode: en
+      name: Лидер
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '133'
+      uuid: 0f07066a-7079-47d8-9e31-3ad3a27f56f6
+    -
+      vid: model
+      tid: '136'
+      langcode: en
+      name: Карина
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '134'
+      uuid: abb56277-7ec4-4d05-bab4-721f9e98f798
+    -
+      vid: model
+      tid: '166'
+      langcode: en
+      name: Монреаль
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '133'
+      uuid: a4902496-8fed-4023-b108-d7d6f3b15034
+    -
+      vid: model
+      tid: '68'
+      langcode: en
+      name: 'Хеннесси Арт'
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '133'
+      uuid: ca3acea1-9994-44b9-8bb3-04e304ac2705
+    -
+      vid: model
+      tid: '139'
+      langcode: en
+      name: Шарм
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '134'
+      uuid: 86f5ece5-5a6a-4b21-8a9c-e6612e182f8e
+    -
+      vid: model
+      tid: '133'
+      langcode: en
+      name: 'Мягкая мебель'
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '0'
+      uuid: b519096b-463a-4885-bf8e-441cd21af46b
+    -
+      vid: model
+      tid: '134'
+      langcode: en
+      name: Кровати
+      description__value: null
+      description__format: null
+      weight: '9'
+      parent: '0'
+      uuid: d661a0e9-5db1-4867-8c5d-e13d893ef6a2
   modules_arrangement:
     -
       vid: modules_arrangement

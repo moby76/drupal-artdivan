@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'Расположение модулей'
 vid: modules_arrangement
 description: 'Расположение модулей. Слева направо'
-weight: 0
+weight: 7
 new_revision: false

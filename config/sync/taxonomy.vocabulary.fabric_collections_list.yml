@@ -1,0 +1,9 @@
+uuid: 0c667c9a-888e-4a27-bea2-f4e6034e7079
+langcode: en
+status: true
+dependencies: {  }
+name: 'Список коллекций тканей'
+vid: fabric_collections_list
+description: 'Список коллекций для формирования каталога тканей. Запрашивается в словаре терминов "Коллекции тканей"'
+weight: -1
+new_revision: false

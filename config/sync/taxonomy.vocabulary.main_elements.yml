@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'Основные элементы комплектов мебели'
 vid: main_elements
 description: null
-weight: 0
+weight: 6
 new_revision: false

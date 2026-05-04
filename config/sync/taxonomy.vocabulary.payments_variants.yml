@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'Варианты оплаты'
 vid: payments_variants
 description: 'Варианты оплаты'
-weight: 0
+weight: 3
 new_revision: false

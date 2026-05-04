@@ -1,0 +1,29 @@
+uuid: 5d23100c-4de7-4848-b9e1-3f1549a0ff8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_fabric_collection
+    - taxonomy.vocabulary.fabric_collections
+    - taxonomy.vocabulary.fabric_collections_list
+id: taxonomy_term.fabric_collections.field_fabric_collection
+field_name: field_fabric_collection
+entity_type: taxonomy_term
+bundle: fabric_collections
+label: 'Коллекция ткани'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      fabric_collections_list: fabric_collections_list
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

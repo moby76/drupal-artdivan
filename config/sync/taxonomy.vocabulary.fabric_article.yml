@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 name: 'Артикулы тканей'
 vid: fabric_article
-description: null
+description: 'Универсальные артикулы тканей'
 weight: 0
 new_revision: false

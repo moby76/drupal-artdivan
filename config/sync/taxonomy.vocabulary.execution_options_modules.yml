@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'Вариант исполнения модуля'
 vid: execution_options_modules
 description: 'Угол, Оттоманка, Пуфик, Диван малый'
-weight: 0
+weight: 2
 new_revision: false

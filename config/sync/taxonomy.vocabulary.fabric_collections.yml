@@ -5,5 +5,5 @@ dependencies: {  }
 name: 'Коллекции тканей'
 vid: fabric_collections
 description: 'Содержит коллекции и артикулы тканей'
-weight: -1
+weight: 1
 new_revision: false

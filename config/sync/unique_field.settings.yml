@@ -92,3 +92,13 @@ unique_field_taxonomy:
     fields: {  }
     scope: vocabulary
     comp: each
+  fabric_collections_list:
+    fields:
+      name: name
+    scope: vocabulary
+    comp: each
+  fabric_collections:
+    fields:
+      field_fabric_article: field_fabric_article
+    scope: term
+    comp: all
