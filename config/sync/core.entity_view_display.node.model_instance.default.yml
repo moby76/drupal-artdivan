@@ -263,8 +263,12 @@ third_party_settings:
                       styles:
                         selected:
                           text_text_alignment: text-center
-                          colors_background_color: bg-dark
+                          colors_background_color: bg-light
                           borders_border: border
+                          borders_border_width: border-1
+                          borders_border_color: border-secondary
+                          borders_border_opacity: border-opacity-50
+                          shadows: shadow
                           borders_border_radius_width: rounded-2
                         extra: ''
               col_2_content:
