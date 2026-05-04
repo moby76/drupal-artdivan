@@ -143,46 +143,130 @@ third_party_settings:
                 add_more_button: ''
                 sources:
                   -
-                    source_id: entity_field
+                    source_id: component
                     source:
-                      derivable_context: 'field:node:model_instance:field_instance_main_image'
-                      'field:node:model_instance:field_instance_main_image':
-                        value:
-                          sources:
-                            -
-                              source_id: 'field_formatter:node:model_instance:field_instance_main_image'
-                              source:
-                                type: media_folders
-                                settings:
-                                  images:
-                                    image_style: large
-                                    image_loading:
-                                      attribute: lazy
-                                  videos:
-                                    video_width: '400'
-                                    video_height: '250'
-                                    video_muted: false
-                                    video_controls: true
-                                    video_autoplay: false
-                                  audio:
-                                    audio_loop: false
-                                    audio_controls: true
-                                    audio_autoplay: false
-                                  other:
-                                    other_format: file_link
-                                third_party_settings:
-                                  field_label:
-                                    label_value: ''
-                                    label_class: ''
-                                    label_tag: ''
-                                  nomarkup:
-                                    separator: '|'
-                                    referenced_entity: ''
-                                    enabled: 0
-                              node_id: ''
-                              third_party_settings: ''
-                              _weight: '0'
-                    node_id: e2bde2441a3221a6
+                      component:
+                        component_id: 'ui_suite_bootstrap:carousel'
+                        variant_id:
+                          source_id: select
+                          source:
+                            value: ''
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          with_controls:
+                            source_id: checkbox
+                            source:
+                              value: '1'
+                          with_indicators:
+                            source_id: checkbox
+                            source:
+                              value: '1'
+                          with_touch:
+                            source_id: checkbox
+                            source:
+                              value: '1'
+                          interval:
+                            source_id: number
+                            source:
+                              value: '0'
+                          autoplay_mode:
+                            source_id: select
+                            source:
+                              value: ''
+                          carousel_id:
+                            source_id: textfield
+                            source:
+                              value: ''
+                        slots:
+                          slides:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:model_instance:field_three_dimensional_image'
+                                  'field:node:model_instance:field_three_dimensional_image':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:model_instance:field_three_dimensional_image'
+                                          source:
+                                            type: ui_patterns_component_per_item
+                                            settings:
+                                              ui_patterns:
+                                                component_id: 'ui_suite_bootstrap:carousel_item'
+                                                slots:
+                                                  image:
+                                                    sources:
+                                                      -
+                                                        source_id: 'field_formatter:node:model_instance:field_three_dimensional_image'
+                                                        source:
+                                                          type: media_thumbnail
+                                                          settings:
+                                                            image_style: wide
+                                                            image_link: ''
+                                                            image_loading:
+                                                              attribute: lazy
+                                                          third_party_settings:
+                                                            field_label:
+                                                              label_value: ''
+                                                              label_class: ''
+                                                              label_tag: ''
+                                                            nomarkup:
+                                                              separator: '|'
+                                                              referenced_entity: ''
+                                                              enabled: 0
+                                                        node_id: ''
+                                                        third_party_settings: ''
+                                                        _weight: '0'
+                                                        _remove:
+                                                          dropdown_actions:
+                                                            - Remove
+                                                    add_more_button: ''
+                                                  caption:
+                                                    add_more_button: ''
+                                                props:
+                                                  attributes:
+                                                    source_id: attributes
+                                                    source:
+                                                      value: ''
+                                                  interval:
+                                                    source_id: number
+                                                    source:
+                                                      value: ''
+                                                  caption_attributes:
+                                                    source_id: attributes
+                                                    source:
+                                                      value: ''
+                                                third_party_settings: ''
+                                                node_id: ''
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 474229ad8110f5c8
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 744d79d0b9c0ea8c
+                    third_party_settings:
+                      styles:
+                        selected:
+                          text_text_alignment: text-center
+                          colors_background_color: bg-dark
+                          borders_border: border
+                          borders_border_radius_width: rounded-2
+                        extra: ''
               col_2_content:
                 add_more_button: ''
                 sources:
