@@ -13,104 +13,1297 @@ blocks:
           summary: ''
           format: basic_html
 taxonomies:
-  model:
+  configuration:
     -
-      vid: model
-      tid: '1'
+      vid: configuration
+      tid: '6'
       langcode: en
-      name: Акканто
+      name: Трансформер
       description__value: null
       description__format: null
       weight: '0'
-      parent: '133'
-      uuid: 1b64ed18-7121-400a-8f7f-ba2e6e388d0c
+      parent: '0'
+      uuid: 9d770a9f-578f-4ebc-a215-0d07b1e26bbe
     -
-      vid: model
-      tid: '135'
+      vid: configuration
+      tid: '8'
       langcode: en
-      name: Виктория
+      name: 'Угол слева'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: 71c9c190-35e0-4177-808c-c532cde11b99
+    -
+      vid: configuration
+      tid: '7'
+      langcode: en
+      name: 'Угол справа'
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: 242eaa9a-054d-4d0f-b63a-39fbbad894f9
+    -
+      vid: configuration
+      tid: '15'
+      langcode: en
+      name: Универсальный
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: 63fda934-1694-4e15-a586-95fdf2353bce
+  dimensions:
+    -
+      vid: dimensions
+      tid: '145'
+      langcode: en
+      name: '1400*2000'
       description__value: null
       description__format: null
       weight: '0'
-      parent: '134'
-      uuid: 694ee55c-9166-4c43-a243-12e4230dcfe0
+      parent: '142'
+      uuid: c5d7fd38-e0d2-47d9-916a-1adc84b5bcac
     -
-      vid: model
-      tid: '137'
+      vid: dimensions
+      tid: '12'
       langcode: en
-      name: Елена
+      name: 'Базовый размер'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 8e6f8e20-9774-4eaf-8263-63c0ffd94198
+    -
+      vid: dimensions
+      tid: '143'
+      langcode: en
+      name: '1600*2000'
       description__value: null
       description__format: null
       weight: '1'
-      parent: '134'
-      uuid: 1b9d9d57-3c7c-4407-850e-bb5f1956e9a1
+      parent: '142'
+      uuid: daedd749-21dc-45b0-828a-e3cb69025e46
     -
-      vid: model
-      tid: '2'
+      vid: dimensions
+      tid: '144'
       langcode: en
-      name: Лидер
-      description__value: null
-      description__format: null
-      weight: '1'
-      parent: '133'
-      uuid: 0f07066a-7079-47d8-9e31-3ad3a27f56f6
-    -
-      vid: model
-      tid: '136'
-      langcode: en
-      name: Карина
+      name: '1800*2000'
       description__value: null
       description__format: null
       weight: '2'
-      parent: '134'
-      uuid: abb56277-7ec4-4d05-bab4-721f9e98f798
+      parent: '142'
+      uuid: a1bd0e54-f838-47ad-b17d-95fea52d0a20
     -
-      vid: model
-      tid: '166'
+      vid: dimensions
+      tid: '13'
       langcode: en
-      name: Монреаль
+      name: 'Базовый размер + 10 см'
       description__value: null
       description__format: null
       weight: '2'
-      parent: '133'
-      uuid: a4902496-8fed-4023-b108-d7d6f3b15034
+      parent: '0'
+      uuid: 953fa234-379a-4d18-b4b1-7e19aabcbde0
     -
-      vid: model
-      tid: '68'
+      vid: dimensions
+      tid: '14'
       langcode: en
-      name: 'Хеннесси Арт'
-      description__value: null
-      description__format: null
-      weight: '3'
-      parent: '133'
-      uuid: ca3acea1-9994-44b9-8bb3-04e304ac2705
-    -
-      vid: model
-      tid: '139'
-      langcode: en
-      name: Шарм
-      description__value: null
-      description__format: null
-      weight: '3'
-      parent: '134'
-      uuid: 86f5ece5-5a6a-4b21-8a9c-e6612e182f8e
-    -
-      vid: model
-      tid: '133'
-      langcode: en
-      name: 'Мягкая мебель'
+      name: 'Базовый размер + 20 см'
       description__value: null
       description__format: null
       weight: '4'
       parent: '0'
-      uuid: b519096b-463a-4885-bf8e-441cd21af46b
+      uuid: 1fddc3bb-ee39-490f-8b12-066b6cc91514
     -
-      vid: model
-      tid: '134'
+      vid: dimensions
+      tid: '142'
+      langcode: en
+      name: 'Размер спального места(для кроватей)'
+      description__value: null
+      description__format: null
+      weight: '6'
+      parent: '0'
+      uuid: 288b2fe5-e652-41a9-ac1c-85d326eb2ecc
+  embroidery:
+    -
+      vid: embroidery
+      tid: '127'
+      langcode: en
+      name: 'Карина №1'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '124'
+      uuid: beef7362-8bf1-4034-bf86-383017fa4ea3
+    -
+      vid: embroidery
+      tid: '125'
+      langcode: en
+      name: 'Квадраты 200*200'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '123'
+      uuid: 08ae5458-7304-48a4-a7a3-fb4a746365e7
+    -
+      vid: embroidery
+      tid: '155'
+      langcode: en
+      name: Стандартная
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 4b97972f-d573-495b-8b4a-6ff7408f0404
+    -
+      vid: embroidery
+      tid: '124'
+      langcode: en
+      name: 'Для Кроватей'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: 05106462-6de3-4a6b-80a9-139ea4cc542c
+    -
+      vid: embroidery
+      tid: '128'
+      langcode: en
+      name: 'Кровать №3(Елена)'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '124'
+      uuid: a5f3a6d4-30bf-4593-a0dd-8eb16c825632
+    -
+      vid: embroidery
+      tid: '126'
+      langcode: en
+      name: 'Ромбики малые 140*140'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '123'
+      uuid: 33941c02-8f53-427e-827b-24e25dde0795
+    -
+      vid: embroidery
+      tid: '123'
+      langcode: en
+      name: 'Для мягкой мебели(диванов)'
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: d627ca31-49cf-444d-b552-02150dd3e893
+  execution_options_modules:
+    -
+      vid: execution_options_modules
+      tid: '108'
+      langcode: en
+      name: 'Диван малый'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 3b1b5c89-c68b-4792-a3bc-3adb39c7d7aa
+    -
+      vid: execution_options_modules
+      tid: '106'
+      langcode: en
+      name: Оттоманка
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: 411467bc-550a-4b30-b66f-64e389bbc864
+    -
+      vid: execution_options_modules
+      tid: '107'
+      langcode: en
+      name: Пуфик
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: 295ed092-1f88-4bca-9f9e-c80366331ed3
+    -
+      vid: execution_options_modules
+      tid: '105'
+      langcode: en
+      name: Угол
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: 15048bbe-ca2d-4a2f-b49d-36e662677af2
+  fabric_article:
+    -
+      vid: fabric_article
+      tid: '109'
+      langcode: en
+      name: '01'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1c270664-7102-4760-b7e6-a09e48d5e9c5
+    -
+      vid: fabric_article
+      tid: '110'
+      langcode: en
+      name: '02'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 86270b6b-88ea-4bcf-88bc-db9ed3e1a3f1
+    -
+      vid: fabric_article
+      tid: '111'
+      langcode: en
+      name: '03'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 16538747-21e3-461b-ade6-385da82b80a4
+    -
+      vid: fabric_article
+      tid: '112'
+      langcode: en
+      name: '04'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: a0af3a69-4ac4-458b-ab10-b8840f468146
+    -
+      vid: fabric_article
+      tid: '113'
+      langcode: en
+      name: '05'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ba834ae0-3af4-4b0c-a40b-9e605ce547c1
+    -
+      vid: fabric_article
+      tid: '114'
+      langcode: en
+      name: '06'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 280be3e5-ea8f-42ac-8502-c49f06e04cf7
+    -
+      vid: fabric_article
+      tid: '115'
+      langcode: en
+      name: '07'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 72fec95e-a7cb-4b8d-ab5c-0d4658d128d4
+    -
+      vid: fabric_article
+      tid: '116'
+      langcode: en
+      name: '08'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 842bd852-f616-47a3-8ebb-3f5f29f9ad12
+    -
+      vid: fabric_article
+      tid: '117'
+      langcode: en
+      name: '09'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1415a5be-23e6-485a-9908-2694791f1b93
+    -
+      vid: fabric_article
+      tid: '118'
+      langcode: en
+      name: '10'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 8d9f759b-291e-4ec2-9abe-ae0da119731d
+    -
+      vid: fabric_article
+      tid: '119'
+      langcode: en
+      name: coriza
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 0ac4f433-8d2d-490a-b059-c09daa32ee3f
+    -
+      vid: fabric_article
+      tid: '121'
+      langcode: en
+      name: 'silver light'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: d81038db-5f85-4dea-a834-56020e5ba0a9
+    -
+      vid: fabric_article
+      tid: '120'
+      langcode: en
+      name: 'steel grey'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: de69e27e-290c-4450-9829-a2e02333c9fb
+  fabric_collections:
+    -
+      vid: fabric_collections
+      tid: '27'
+      langcode: en
+      name: 'Ameli 01'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '24'
+      uuid: 576ad515-9cee-4325-97bd-92eb8b85669f
+      field_fabric_article:
+        -
+          name: '01'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '29'
+      langcode: en
+      name: 'Armando 10'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '25'
+      uuid: fcf8c092-3664-44b2-8177-89ab07825920
+      field_fabric_article:
+        -
+          name: '10'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '31'
+      langcode: en
+      name: 'Bruno 07'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '26'
+      uuid: f086ee4f-e4cc-4b8a-9e13-9beada69ddc2
+      field_fabric_article:
+        -
+          name: '07'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '41'
+      langcode: en
+      name: 'Sensey coriza'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '38'
+      uuid: 46bba6cc-e978-4cd1-9031-7f355bbc8a72
+      field_fabric_article:
+        -
+          name: coriza
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '28'
+      langcode: en
+      name: 'Ameli 02'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '24'
+      uuid: 9cd9c37f-51b6-4738-8b65-32eb566de386
+      field_fabric_article:
+        -
+          name: '02'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '30'
+      langcode: en
+      name: 'Armando 05'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '25'
+      uuid: 41939d6a-5338-4187-aa16-993971985bfb
+      field_fabric_article:
+        -
+          name: '05'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '32'
+      langcode: en
+      name: 'Bruno 08'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '26'
+      uuid: 58d5a6ac-5c47-4588-b3fa-fcdb7d65e106
+      field_fabric_article:
+        -
+          name: '08'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '39'
+      langcode: en
+      name: 'Sensey steel grey'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '38'
+      uuid: 93baa479-3369-4c7e-abec-2051777395bc
+      field_fabric_article:
+        -
+          name: 'steel grey'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '40'
+      langcode: en
+      name: 'Sensey silver light'
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '38'
+      uuid: 34f84a43-d6e2-4c2d-aa08-2c675cf5331a
+      field_fabric_article:
+        -
+          name: 'silver light'
+          vid: fabric_article
+    -
+      vid: fabric_collections
+      tid: '38'
+      langcode: en
+      name: Sensey
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: 085c2530-e5b9-44a9-b231-a93a68fc9f9f
+    -
+      vid: fabric_collections
+      tid: '24'
+      langcode: en
+      name: Ameli
+      description__value: null
+      description__format: null
+      weight: '10'
+      parent: '0'
+      uuid: b3819aa6-d805-4ad4-a970-2b8da0d75c74
+    -
+      vid: fabric_collections
+      tid: '25'
+      langcode: en
+      name: Armando
+      description__value: null
+      description__format: null
+      weight: '11'
+      parent: '0'
+      uuid: b746911d-8e0a-4807-b719-0054e36db444
+    -
+      vid: fabric_collections
+      tid: '26'
+      langcode: en
+      name: Bruno
+      description__value: null
+      description__format: null
+      weight: '12'
+      parent: '0'
+      uuid: 94844f68-d9e6-4e0e-9487-7baa601320e8
+  fabric_price_category:
+    -
+      vid: fabric_price_category
+      tid: '9'
+      langcode: en
+      name: 'кат. 400'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: e8206bf5-fae6-4378-93f4-40ecb0bdc8ca
+    -
+      vid: fabric_price_category
+      tid: '10'
+      langcode: en
+      name: 'кат. 500'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 4f997671-b6e9-48d8-a0aa-67e6c9968b44
+    -
+      vid: fabric_price_category
+      tid: '11'
+      langcode: en
+      name: 'кат. 600'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: b06a8cec-89bb-4c09-81cb-8aaf12652fc8
+  main_elements:
+    -
+      vid: main_elements
+      tid: '69'
+      langcode: en
+      name: 'Весь комплект'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '162'
+      uuid: fd3fd432-8cc6-4932-9da4-989ba3d8e131
+    -
+      vid: main_elements
+      tid: '156'
+      langcode: en
+      name: 'Изголовье и изножье кровати'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '163'
+      uuid: 4f535628-b625-4e35-bbc6-e3043f056408
+    -
+      vid: main_elements
+      tid: '157'
+      langcode: en
+      name: 'Изголовье кровати'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '163'
+      uuid: 9da654e4-4b9b-4f0a-a5b8-fdf1f55ddd53
+    -
+      vid: main_elements
+      tid: '70'
+      langcode: en
+      name: 'Сидушка и спинка'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '162'
+      uuid: 75ae2cc4-9423-4148-b6f3-6642879fc120
+    -
+      vid: main_elements
+      tid: '158'
+      langcode: en
+      name: 'Изножье кровати'
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '163'
+      uuid: 745947ac-38ea-4971-b00b-4cecc2ed7a34
+    -
+      vid: main_elements
+      tid: '56'
+      langcode: en
+      name: 'Сидушка дивана'
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '162'
+      uuid: f0f0e26c-f61b-48fb-9e0c-a4daf1381413
+    -
+      vid: main_elements
+      tid: '160'
+      langcode: en
+      name: 'Накладная часть изголовья кровати'
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '163'
+      uuid: 95a9c9b1-e572-45f1-b397-199b76cef40d
+    -
+      vid: main_elements
+      tid: '55'
+      langcode: en
+      name: 'Спинка дивана'
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '162'
+      uuid: f8831327-a4b9-42f7-8f69-032c1c42f7d1
+    -
+      vid: main_elements
+      tid: '57'
+      langcode: en
+      name: Короб
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '162'
+      uuid: 5d3b46bc-5011-41d6-999e-1d31d147e310
+    -
+      vid: main_elements
+      tid: '161'
+      langcode: en
+      name: 'Тыльная часть изголовья кровати'
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '163'
+      uuid: a22d4fb4-a386-4cfb-9dd7-cf66bc4d57a1
+    -
+      vid: main_elements
+      tid: '159'
+      langcode: en
+      name: 'Боковины Кровати'
+      description__value: null
+      description__format: null
+      weight: '5'
+      parent: '163'
+      uuid: 4ec5dd06-1c96-40e9-8127-12cf7f07a28a
+    -
+      vid: main_elements
+      tid: '71'
+      langcode: en
+      name: Корпус
+      description__value: null
+      description__format: null
+      weight: '5'
+      parent: '162'
+      uuid: 7413bf14-d2bc-42cb-8d64-f46ec725c30d
+    -
+      vid: main_elements
+      tid: '162'
+      langcode: en
+      name: 'Для мягкой мебели(диванов)'
+      description__value: null
+      description__format: null
+      weight: '6'
+      parent: '0'
+      uuid: e4eabf06-e403-46a5-afa7-7c63e26cf7b5
+    -
+      vid: main_elements
+      tid: '59'
+      langcode: en
+      name: 'Матрас(топпер) дивана'
+      description__value: null
+      description__format: null
+      weight: '6'
+      parent: '162'
+      uuid: 7ed26520-1b6b-43f5-91e1-c8596dd54c09
+    -
+      vid: main_elements
+      tid: '58'
+      langcode: en
+      name: Подлокотник
+      description__value: null
+      description__format: null
+      weight: '7'
+      parent: '162'
+      uuid: c82d234e-45f8-4233-b201-3f745629a3b3
+    -
+      vid: main_elements
+      tid: '61'
+      langcode: en
+      name: Подголовник
+      description__value: null
+      description__format: null
+      weight: '8'
+      parent: '162'
+      uuid: 99d3de2d-902c-442a-9b63-0b6df0c4eda2
+    -
+      vid: main_elements
+      tid: '60'
+      langcode: en
+      name: 'Подушки(лицевая часть)'
+      description__value: null
+      description__format: null
+      weight: '9'
+      parent: '162'
+      uuid: cff17f38-39ce-44a5-b6ba-f2d402cbd9cf
+    -
+      vid: main_elements
+      tid: '62'
+      langcode: en
+      name: 'Подушки(тыльная часть)'
+      description__value: null
+      description__format: null
+      weight: '10'
+      parent: '162'
+      uuid: 0af6b466-0613-4b6e-a2e4-613b04e87fe3
+    -
+      vid: main_elements
+      tid: '64'
+      langcode: en
+      name: 'Чехол дивана'
+      description__value: null
+      description__format: null
+      weight: '11'
+      parent: '162'
+      uuid: 6b8566eb-243a-407a-a68c-13a56f190c10
+    -
+      vid: main_elements
+      tid: '63'
+      langcode: en
+      name: 'Чехол оттоманки'
+      description__value: null
+      description__format: null
+      weight: '12'
+      parent: '162'
+      uuid: 4f73f765-2e5c-44a1-9979-41e70e9205c2
+    -
+      vid: main_elements
+      tid: '163'
+      langcode: en
+      name: 'Для Кроватей'
+      description__value: null
+      description__format: null
+      weight: '13'
+      parent: '0'
+      uuid: b12f77a3-2ccd-47b8-aa3e-03a14d5cd08a
+  media_folders_folder:
+    -
+      vid: media_folders_folder
+      tid: '82'
+      langcode: en
+      name: Assets
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 24a1f3f4-8cd5-4309-8827-fc4ba2e4c942
+    -
+      vid: media_folders_folder
+      tid: '140'
       langcode: en
       name: Кровати
       description__value: null
       description__format: null
-      weight: '9'
+      weight: '0'
       parent: '0'
-      uuid: d661a0e9-5db1-4867-8c5d-e13d893ef6a2
+      uuid: 16e93ef9-ee52-402d-8dbb-9f163e80684f
+    -
+      vid: media_folders_folder
+      tid: '79'
+      langcode: en
+      name: 'Модель Акканто'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '76'
+      uuid: 059e81a6-3124-4e90-b217-2bc39d12d947
+    -
+      vid: media_folders_folder
+      tid: '77'
+      langcode: en
+      name: 'Модель Лидер'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '76'
+      uuid: c3608f38-ebc6-455f-8ad3-9e508381503c
+    -
+      vid: media_folders_folder
+      tid: '164'
+      langcode: en
+      name: 'Модель Монреаль-2'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '76'
+      uuid: cc0b2064-a1a6-4cc3-9391-106fb97e7061
+    -
+      vid: media_folders_folder
+      tid: '78'
+      langcode: en
+      name: 'Модель Хеннесси Арт'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '76'
+      uuid: 5bfe579a-39ac-4767-acac-fb9426c67d7f
+    -
+      vid: media_folders_folder
+      tid: '76'
+      langcode: en
+      name: 'Мягкая мебель'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: d085412d-3cd9-4c88-bb7d-2d856ec09392
+    -
+      vid: media_folders_folder
+      tid: '37'
+      langcode: en
+      name: 'Образцы тканей'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 23401934-e17d-44c9-81be-d45a9c230c3b
+    -
+      vid: media_folders_folder
+      tid: '141'
+      langcode: en
+      name: Шарм
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '140'
+      uuid: 544573e1-144a-469e-953c-93c34fb2ef80
+  modules_arrangement:
+    -
+      vid: modules_arrangement
+      tid: '146'
+      langcode: en
+      name: 'первый слева'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 6479a9d5-23da-48b8-a408-7ec654d2483c
+    -
+      vid: modules_arrangement
+      tid: '147'
+      langcode: en
+      name: 'второй слева'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: 98350428-18f1-4ebd-9c7e-14092d491601
+    -
+      vid: modules_arrangement
+      tid: '148'
+      langcode: en
+      name: 'третий слева'
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: 3cf53b87-3c88-4d80-b0ea-f0593603b88e
+    -
+      vid: modules_arrangement
+      tid: '149'
+      langcode: en
+      name: 'четвёртый слева'
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: e4d726b6-1578-47cc-8385-36a82ebd31b0
+    -
+      vid: modules_arrangement
+      tid: '150'
+      langcode: en
+      name: 'пятый слева'
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '0'
+      uuid: 57b2e338-4ea6-4b49-be89-557779dca55a
+    -
+      vid: modules_arrangement
+      tid: '151'
+      langcode: en
+      name: 'шестой слева'
+      description__value: null
+      description__format: null
+      weight: '5'
+      parent: '0'
+      uuid: d18ed3d9-2674-4bed-b309-446388354de8
+    -
+      vid: modules_arrangement
+      tid: '152'
+      langcode: en
+      name: 'седьмой слева'
+      description__value: null
+      description__format: null
+      weight: '6'
+      parent: '0'
+      uuid: 9a69b407-a57b-4eb0-856d-2913ac11bbe0
+    -
+      vid: modules_arrangement
+      tid: '154'
+      langcode: en
+      name: 'восьмой слева'
+      description__value: null
+      description__format: null
+      weight: '7'
+      parent: '0'
+      uuid: 28c22a7d-0471-4a75-9463-ea3ff91e9a7d
+    -
+      vid: modules_arrangement
+      tid: '153'
+      langcode: en
+      name: отдельный
+      description__value: null
+      description__format: null
+      weight: '8'
+      parent: '0'
+      uuid: cb762a09-1a18-4c1c-a43c-0d8c01486d2b
+  order_type:
+    -
+      vid: order_type
+      tid: '122'
+      langcode: en
+      name: 'Заказ на ремонт'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: d03d838b-f195-43a2-b8c9-bc21d17f3090
+    -
+      vid: order_type
+      tid: '17'
+      langcode: en
+      name: 'Продажа из магазина'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: af0b56e1-1599-48f6-a421-ef825521a457
+    -
+      vid: order_type
+      tid: '16'
+      langcode: en
+      name: 'Заказ на изготовление'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: ad9e46ef-9836-45be-b6b1-a7ce80659612
+  payments_variants:
+    -
+      vid: payments_variants
+      tid: '91'
+      langcode: en
+      name: 'Наличными на адресе'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 8d010be5-35d4-4bf2-9e7e-35f1d350da80
+    -
+      vid: payments_variants
+      tid: '83'
+      langcode: en
+      name: 'Оплата наличными в магазине'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 768c107b-65c5-4041-8996-4912dabaa81e
+    -
+      vid: payments_variants
+      tid: '92'
+      langcode: en
+      name: 'Переводом после доставки'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 7bc3f76c-833f-4296-81cc-92ca6660d4ab
+    -
+      vid: payments_variants
+      tid: '85'
+      langcode: en
+      name: 'Оплата через банк'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: 3eb4db44-2565-42c5-80fc-17bff838e8b6
+    -
+      vid: payments_variants
+      tid: '84'
+      langcode: en
+      name: 'Оплата через терминал(на счёт предприятия)'
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: b969e6fd-dd11-4cd5-8e2d-e34e8aa01c24
+    -
+      vid: payments_variants
+      tid: '89'
+      langcode: en
+      name: 'Оплата наличными после доставки и сборки'
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: d82940dc-9ccd-415a-87a8-6de2b9f6bbdf
+    -
+      vid: payments_variants
+      tid: '88'
+      langcode: en
+      name: 'Оплата переводом после доставки и сборки'
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '0'
+      uuid: 04a5e6a6-367a-4aed-9904-79e8223a3af6
+    -
+      vid: payments_variants
+      tid: '87'
+      langcode: en
+      name: 'Оплата золотом'
+      description__value: null
+      description__format: null
+      weight: '5'
+      parent: '0'
+      uuid: 238ed363-855f-4756-88f7-9cb4f47dfc1b
+    -
+      vid: payments_variants
+      tid: '86'
+      langcode: en
+      name: 'Оплата криптовалютой'
+      description__value: null
+      description__format: null
+      weight: '6'
+      parent: '0'
+      uuid: 79149775-a516-444f-af94-711bf139b9a6
+    -
+      vid: payments_variants
+      tid: '90'
+      langcode: en
+      name: 'Оплата неуточнена'
+      description__value: null
+      description__format: null
+      weight: '7'
+      parent: '0'
+      uuid: 0d748183-605c-40e2-bae5-32b64e957549
+  production_types:
+    -
+      vid: production_types
+      tid: '67'
+      langcode: en
+      name: Матрасы
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 27c7bb5d-2fc0-49b5-9406-f199cf8a5501
+      field_singular_designation:
+        -
+          value: Матрас
+    -
+      vid: production_types
+      tid: '66'
+      langcode: en
+      name: 'Мягкая мебель(модули)'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 53629670-e3af-4a69-9f04-1d44e310466c
+      field_singular_designation:
+        -
+          value: Модуль
+    -
+      vid: production_types
+      tid: '65'
+      langcode: en
+      name: 'Мягкая мебель(отдельные комплекты)'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 1fe674d8-9e5f-47f6-b041-fb6b15f444ec
+      field_singular_designation:
+        -
+          value: Комплет
+  suppliers:
+    -
+      vid: suppliers
+      tid: '36'
+      langcode: en
+      name: Арбен
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 02b224f1-dd93-4098-8b87-afcba35741de
+    -
+      vid: suppliers
+      tid: '34'
+      langcode: en
+      name: Вип-Текстиль
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: 2e72d0d1-d25d-4f09-9f9c-857653d5b812
+    -
+      vid: suppliers
+      tid: '33'
+      langcode: en
+      name: Союз
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: ebd687ca-33c8-47ad-8978-bbe286f377c9
+    -
+      vid: suppliers
+      tid: '35'
+      langcode: en
+      name: ТоргСиб
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: add6981b-832a-4800-b6aa-0043471d782c
+  tags:
+    -
+      vid: tags
+      tid: '81'
+      langcode: en
+      name: модульная
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 6a513a8b-62b3-4d7b-8982-f97127b2646e
+    -
+      vid: tags
+      tid: '80'
+      langcode: en
+      name: надёжное
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 03f21543-b1c3-4598-b663-77f6fa36918c
+    -
+      vid: tags
+      tid: '75'
+      langcode: en
+      name: новое
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: b6a06239-a79e-49cc-8752-237bf8179814
+    -
+      vid: tags
+      tid: '74'
+      langcode: en
+      name: продажа
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: a8157370-6a0c-4d6a-9d31-80ea68a853dd
+    -
+      vid: tags
+      tid: '73'
+      langcode: en
+      name: производство
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 681c4f7d-c189-42ce-aac7-2c293a6e23ab
+  transformation_mechanisms:
+    -
+      vid: transformation_mechanisms
+      tid: '132'
+      langcode: en
+      name: 'Без механизма'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 0f2ca13d-4c37-4a98-aae2-8140e26408c3
+      field_short_name:
+        -
+          value: БМ
+    -
+      vid: transformation_mechanisms
+      tid: '129'
+      langcode: en
+      name: 'Механизм подъёма оттоманки'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 14ab520e-2f3d-490b-832c-efa6dea60b23
+      field_short_name:
+        -
+          value: МПО
+    -
+      vid: transformation_mechanisms
+      tid: '130'
+      langcode: en
+      name: 'Механизм Пума'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 561f3fa1-496b-4d52-aca3-185d9030ce1d
+      field_short_name:
+        -
+          value: Пума
+    -
+      vid: transformation_mechanisms
+      tid: '131'
+      langcode: en
+      name: 'Подъёмный механизм кроватного основания №1'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 8b63a455-1f4e-4684-ad1f-84e636abcc26
+      field_short_name:
+        -
+          value: ПМКО-1
+  version:
+    -
+      vid: version
+      tid: '3'
+      langcode: en
+      name: v-1
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: a7552255-816f-439d-8b4c-7614b88c4e9e
+    -
+      vid: version
+      tid: '4'
+      langcode: en
+      name: v-2
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: dc1c8c26-6b27-4b9f-a565-d9fb1e16d9c3
+    -
+      vid: version
+      tid: '5'
+      langcode: en
+      name: v-3
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 3017b978-0c4c-4a8a-a48f-8978c1e411ac
