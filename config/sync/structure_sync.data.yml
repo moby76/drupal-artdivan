@@ -12,3 +12,105 @@ blocks:
           value: '<p><a href="https:/newsletter">Зарегестрируйся</a></p>'
           summary: ''
           format: basic_html
+taxonomies:
+  model:
+    -
+      vid: model
+      tid: '1'
+      langcode: en
+      name: Акканто
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '133'
+      uuid: 1b64ed18-7121-400a-8f7f-ba2e6e388d0c
+    -
+      vid: model
+      tid: '135'
+      langcode: en
+      name: Виктория
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '134'
+      uuid: 694ee55c-9166-4c43-a243-12e4230dcfe0
+    -
+      vid: model
+      tid: '137'
+      langcode: en
+      name: Елена
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '134'
+      uuid: 1b9d9d57-3c7c-4407-850e-bb5f1956e9a1
+    -
+      vid: model
+      tid: '2'
+      langcode: en
+      name: Лидер
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '133'
+      uuid: 0f07066a-7079-47d8-9e31-3ad3a27f56f6
+    -
+      vid: model
+      tid: '136'
+      langcode: en
+      name: Карина
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '134'
+      uuid: abb56277-7ec4-4d05-bab4-721f9e98f798
+    -
+      vid: model
+      tid: '166'
+      langcode: en
+      name: Монреаль
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '133'
+      uuid: a4902496-8fed-4023-b108-d7d6f3b15034
+    -
+      vid: model
+      tid: '68'
+      langcode: en
+      name: 'Хеннесси Арт'
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '133'
+      uuid: ca3acea1-9994-44b9-8bb3-04e304ac2705
+    -
+      vid: model
+      tid: '139'
+      langcode: en
+      name: Шарм
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '134'
+      uuid: 86f5ece5-5a6a-4b21-8a9c-e6612e182f8e
+    -
+      vid: model
+      tid: '133'
+      langcode: en
+      name: 'Мягкая мебель'
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '0'
+      uuid: b519096b-463a-4885-bf8e-441cd21af46b
+    -
+      vid: model
+      tid: '134'
+      langcode: en
+      name: Кровати
+      description__value: null
+      description__format: null
+      weight: '9'
+      parent: '0'
+      uuid: d661a0e9-5db1-4867-8c5d-e13d893ef6a2
