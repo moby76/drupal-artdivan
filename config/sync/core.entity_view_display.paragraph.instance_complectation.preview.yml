@@ -1,0 +1,40 @@
+uuid: 4e8ff76c-88ff-495f-9350-a5f59491f6ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.instance_complectation.field_alternative_complectation
+    - field.field.paragraph.instance_complectation.field_basic_complectation
+    - paragraphs.paragraphs_type.instance_complectation
+  module:
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.instance_complectation.preview
+targetEntityType: paragraph
+bundle: instance_complectation
+mode: preview
+content:
+  field_alternative_complectation:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_basic_complectation:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

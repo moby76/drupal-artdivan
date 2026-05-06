@@ -1,18 +1,26 @@
-uuid: 4baefc29-e588-42f6-a60a-7a8a38515455
+uuid: c37f1581-f1b1-438d-90b3-ac98f74218f4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.secondary_elements_selection.field_element
-    - field.field.paragraph.secondary_elements_selection.field_elements_quantity
-    - paragraphs.paragraphs_type.secondary_elements_selection
+    - core.entity_view_mode.node.to_frontend
+    - field.field.node.secondary_elements_type.field_element
+    - field.field.node.secondary_elements_type.field_element_image
+    - field.field.node.secondary_elements_type.field_element_model
+    - node.type.secondary_elements_type
   module:
     - display_builder
+    - layout_builder
+    - photoswipe
     - ui_patterns
     - ui_patterns_field_formatters
+    - user
   theme:
     - ui_suite_bootstrap
 third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
   display_builder:
     profile: default
     sources:
@@ -67,26 +75,26 @@ third_party_settings:
                 source_id: selects
                 source:
                   value:
-                    - '10'
-                    - '2'
+                    - '8'
+                    - '4'
               col_lg:
                 source_id: selects
                 source:
                   value:
-                    - '10'
-                    - '2'
+                    - '8'
+                    - '4'
               col_xl:
                 source_id: selects
                 source:
                   value:
-                    - '10'
-                    - '2'
+                    - '8'
+                    - '4'
               col_xxl:
                 source_id: selects
                 source:
                   value:
-                    - '10'
-                    - '2'
+                    - '8'
+                    - '4'
               col_offset:
                 source_id: selects
                 source:
@@ -108,16 +116,14 @@ third_party_settings:
                   -
                     source_id: entity_field
                     source:
-                      derivable_context: 'field:paragraph:secondary_elements_selection:field_element'
-                      'field:paragraph:secondary_elements_selection:field_element':
+                      derivable_context: 'field:node:secondary_elements_type:field_element'
+                      'field:node:secondary_elements_type:field_element':
                         value:
                           sources:
                             -
-                              source_id: 'field_formatter:paragraph:secondary_elements_selection:field_element'
+                              source_id: 'field_formatter:node:secondary_elements_type:field_element'
                               source:
-                                type: entity_reference_entity_view
-                                settings:
-                                  view_mode: to_frontend
+                                type: entity_reference_label
                                 third_party_settings:
                                   field_label:
                                     label_value: ''
@@ -125,46 +131,61 @@ third_party_settings:
                                     label_tag: ''
                                   nomarkup:
                                     separator: '|'
+                                    referenced_entity: ''
                                     enabled: 0
-                                    referenced_entity: 0
+                                settings:
+                                  link: 0
                               node_id: ''
                               third_party_settings: ''
                               _weight: '0'
-                    node_id: 800b8acc0fa62ed1
+                    node_id: 60ed042f63b2f1b3
+                    third_party_settings:
+                      styles:
+                        selected:
+                          typography: small
+                        extra: ''
               col_2_content:
                 add_more_button: ''
                 sources:
                   -
                     source_id: entity_field
                     source:
-                      derivable_context: 'field:paragraph:secondary_elements_selection:field_elements_quantity'
-                      'field:paragraph:secondary_elements_selection:field_elements_quantity':
+                      derivable_context: 'field:node:secondary_elements_type:field_element_image'
+                      'field:node:secondary_elements_type:field_element_image':
                         value:
                           sources:
                             -
-                              source_id: 'field_formatter:paragraph:secondary_elements_selection:field_elements_quantity'
+                              source_id: 'field_formatter:node:secondary_elements_type:field_element_image'
                               source:
-                                type: number_integer
-                                label: above
+                                type: photoswipe_field_formatter
                                 settings:
-                                  thousand_separator: ''
-                                  prefix_suffix: true
-                                third_party_settings: {  }
-                                weight: 1
-                                region: content
-                    node_id: b4db68ba52831d52
-                    third_party_settings:
-                      styles:
-                        selected:
-                          typography: small
-                        extra: ''
+                                  photoswipe_thumbnail_style: thumbnail_70_70
+                                  photoswipe_thumbnail_style_first: large
+                                  photoswipe_image_style: large
+                                  photoswipe_reference_image_field: field_media_image
+                                  photoswipe_view_mode: _custom
+                                  image_loading:
+                                    attribute: lazy
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: c577c6c9f4ad6ca2
             third_party_settings: ''
             node_id: ''
-        node_id: dd280c4950cd6cba
-id: paragraph.secondary_elements_selection.default
-targetEntityType: paragraph
-bundle: secondary_elements_selection
-mode: default
+        node_id: a500068ee6aa85ce
+id: node.secondary_elements_type.to_frontend
+targetEntityType: node
+bundle: secondary_elements_type
+mode: to_frontend
 content:
   field_element:
     type: entity_reference_label
@@ -172,15 +193,29 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 0
+    weight: 101
     region: content
-  field_elements_quantity:
-    type: number_integer
+  field_element_image:
+    type: entity_reference_entity_view
     label: above
     settings:
-      thousand_separator: ''
-      prefix_suffix: true
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 103
     region: content
-hidden: {  }
+  field_element_model:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_link_display: true

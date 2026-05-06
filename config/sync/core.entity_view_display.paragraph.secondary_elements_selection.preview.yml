@@ -1,0 +1,38 @@
+uuid: bd98a517-a74e-46e3-be6e-b775302c886b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.secondary_elements_selection.field_element
+    - field.field.paragraph.secondary_elements_selection.field_elements_quantity
+    - paragraphs.paragraphs_type.secondary_elements_selection
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.secondary_elements_selection.preview
+targetEntityType: paragraph
+bundle: secondary_elements_selection
+mode: preview
+content:
+  field_element:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_elements_quantity:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

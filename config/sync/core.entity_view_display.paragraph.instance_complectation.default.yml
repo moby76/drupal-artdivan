@@ -7,7 +7,103 @@ dependencies:
     - field.field.paragraph.instance_complectation.field_basic_complectation
     - paragraphs.paragraphs_type.instance_complectation
   module:
+    - display_builder
     - entity_reference_revisions
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: Комплектация
+                                node_id: 1d91947cd830cf7c
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      text_text_alignment: text-center
+                                    extra: ''
+                    node_id: bec54ed38c5cf1a8
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_2'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: Стандартная
+                                node_id: f1c8cee7c4b9f81d
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:instance_complectation:field_basic_complectation'
+                                  'field:paragraph:instance_complectation:field_basic_complectation':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:instance_complectation:field_basic_complectation'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            label: above
+                                            settings:
+                                              view_mode: default
+                                              link: ''
+                                            third_party_settings: {  }
+                                            weight: 0
+                                            region: content
+                                node_id: 8133ffb773370d63
+                          col_2_content:
+                            sources:
+                              -
+                                source_id: textfield
+                                source:
+                                  value: Альтернативная
+                                node_id: a95d9ebea4e29074
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:instance_complectation:field_alternative_complectation'
+                                  'field:paragraph:instance_complectation:field_alternative_complectation':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:instance_complectation:field_alternative_complectation'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            label: above
+                                            settings:
+                                              view_mode: default
+                                              link: ''
+                                            third_party_settings: {  }
+                                            weight: 1
+                                            region: content
+                                node_id: 6de3b096d8aba423
+                    node_id: 87da172fc60dd757
+        node_id: a4ba32af7cfba174
 id: paragraph.instance_complectation.default
 targetEntityType: paragraph
 bundle: instance_complectation

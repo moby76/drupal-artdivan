@@ -627,6 +627,29 @@ third_party_settings:
               borders_border_width: border-1
               borders_border_color: border-primary
             extra: ''
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_3'
+            slots:
+              col_2_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance:field_complectation'
+                      'field:node:model_instance:field_complectation':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance:field_complectation'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                settings: {  }
+                                third_party_settings: {  }
+                    node_id: c332a7f31c34931b
+        node_id: 1389154abeb4170c
 id: node.model_instance.default
 targetEntityType: node
 bundle: model_instance
