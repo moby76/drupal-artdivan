@@ -632,8 +632,102 @@ third_party_settings:
         source:
           component:
             component_id: 'ui_suite_bootstrap:grid_row_3'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: gx-1
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '3'
+                    - '6'
+                    - '3'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_3_attributes:
+                source_id: attributes
+                source:
+                  value: ''
             slots:
+              col_1_content:
+                add_more_button: ''
               col_2_content:
+                add_more_button: ''
                 sources:
                   -
                     source_id: entity_field
@@ -649,6 +743,10 @@ third_party_settings:
                                 settings: {  }
                                 third_party_settings: {  }
                     node_id: c332a7f31c34931b
+              col_3_content:
+                add_more_button: ''
+            third_party_settings: ''
+            node_id: ''
         node_id: 1389154abeb4170c
 id: node.model_instance.default
 targetEntityType: node

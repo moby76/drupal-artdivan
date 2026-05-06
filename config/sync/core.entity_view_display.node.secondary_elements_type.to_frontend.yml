@@ -54,7 +54,7 @@ third_party_settings:
               gutters_horizontal:
                 source_id: select
                 source:
-                  value: gx-1
+                  value: gx-0
               gutters_vertical:
                 source_id: select
                 source:
@@ -108,7 +108,7 @@ third_party_settings:
               col_2_attributes:
                 source_id: attributes
                 source:
-                  value: ''
+                  value: 'class="bg-white p-1"'
             slots:
               col_1_content:
                 add_more_button: ''
@@ -143,7 +143,8 @@ third_party_settings:
                       styles:
                         selected:
                           typography: small
-                        extra: ''
+                          text_text_truncate: text-truncate
+                        extra: pe-1
               col_2_content:
                 add_more_button: ''
                 sources:
@@ -179,9 +180,21 @@ third_party_settings:
                               third_party_settings: ''
                               _weight: '0'
                     node_id: c577c6c9f4ad6ca2
+                    third_party_settings:
+                      styles:
+                        selected:
+                          colors_background_color: bg-white
+                          borders_border: border
+                          borders_border_radius: rounded-circle
+                          borders_border_radius_width: rounded-5
+                        extra: ''
             third_party_settings: ''
             node_id: ''
         node_id: a500068ee6aa85ce
+        third_party_settings:
+          styles:
+            selected: {  }
+            extra: ''
 id: node.secondary_elements_type.to_frontend
 targetEntityType: node
 bundle: secondary_elements_type

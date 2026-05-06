@@ -161,6 +161,14 @@ third_party_settings:
             third_party_settings: ''
             node_id: ''
         node_id: dd280c4950cd6cba
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border-bottom
+              borders_border_width: border-1
+              borders_border_color: border-secondary-subtle
+              borders_border_opacity: border-opacity-50
+            extra: 'py-1 my-1'
 id: paragraph.secondary_elements_selection.default
 targetEntityType: paragraph
 bundle: secondary_elements_selection

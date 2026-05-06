@@ -22,8 +22,71 @@ third_party_settings:
         source:
           component:
             component_id: 'ui_suite_bootstrap:grid_row_1'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: gx-1
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: select
+                source:
+                  value: '12'
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
             slots:
               col_1_content:
+                add_more_button: ''
                 sources:
                   -
                     source_id: component
@@ -44,66 +107,218 @@ third_party_settings:
                                       text_text_alignment: text-center
                                     extra: ''
                     node_id: bec54ed38c5cf1a8
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border-bottom
+                          borders_border_width: border-1
+                          borders_border_color: border-light
+                        extra: 'py-1 mb-1'
                   -
                     source_id: component
                     source:
                       component:
                         component_id: 'ui_suite_bootstrap:grid_row_2'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: gx-1
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                          col_sm:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_md:
+                            source_id: selects
+                            source:
+                              value:
+                                - '6'
+                                - '6'
+                          col_lg:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_xl:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_xxl:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_offset:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_1_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          col_2_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
                         slots:
                           col_1_content:
+                            add_more_button: ''
                             sources:
                               -
-                                source_id: textfield
+                                source_id: component
                                 source:
-                                  value: Стандартная
-                                node_id: f1c8cee7c4b9f81d
-                              -
-                                source_id: entity_field
-                                source:
-                                  derivable_context: 'field:paragraph:instance_complectation:field_basic_complectation'
-                                  'field:paragraph:instance_complectation:field_basic_complectation':
-                                    value:
-                                      sources:
-                                        -
-                                          source_id: 'field_formatter:paragraph:instance_complectation:field_basic_complectation'
-                                          source:
-                                            type: entity_reference_revisions_entity_view
-                                            label: above
-                                            settings:
-                                              view_mode: default
-                                              link: ''
-                                            third_party_settings: {  }
-                                            weight: 0
-                                            region: content
-                                node_id: 8133ffb773370d63
+                                  component:
+                                    component_id: 'ui_suite_bootstrap:grid_row_1'
+                                    slots:
+                                      col_1_content:
+                                        sources:
+                                          -
+                                            source_id: textfield
+                                            source:
+                                              value: Стандартная
+                                            node_id: f1c8cee7c4b9f81d
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  text_text_alignment: text-center
+                                                  borders_border: border-bottom
+                                                  borders_border_width: border-1
+                                                  borders_border_color: border-light
+                                                extra: 'pb-1 mb-1'
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:instance_complectation:field_basic_complectation'
+                                              'field:paragraph:instance_complectation:field_basic_complectation':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:instance_complectation:field_basic_complectation'
+                                                      source:
+                                                        type: entity_reference_revisions_entity_view
+                                                        label: above
+                                                        settings:
+                                                          view_mode: default
+                                                          link: ''
+                                                        third_party_settings: {  }
+                                                        weight: 0
+                                                        region: content
+                                            node_id: 8133ffb773370d63
+                                node_id: 3bbb612f19a4a700
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      colors_background_color: bg-primary
+                                      colors_background_opacity: bg-opacity-25
+                                      borders_border: border
+                                      borders_border_color: border-primary
+                                    extra: 'py-1 m-1'
                           col_2_content:
+                            add_more_button: ''
                             sources:
                               -
-                                source_id: textfield
+                                source_id: component
                                 source:
-                                  value: Альтернативная
-                                node_id: a95d9ebea4e29074
-                              -
-                                source_id: entity_field
-                                source:
-                                  derivable_context: 'field:paragraph:instance_complectation:field_alternative_complectation'
-                                  'field:paragraph:instance_complectation:field_alternative_complectation':
-                                    value:
-                                      sources:
-                                        -
-                                          source_id: 'field_formatter:paragraph:instance_complectation:field_alternative_complectation'
-                                          source:
-                                            type: entity_reference_revisions_entity_view
-                                            label: above
-                                            settings:
-                                              view_mode: default
-                                              link: ''
-                                            third_party_settings: {  }
-                                            weight: 1
-                                            region: content
-                                node_id: 6de3b096d8aba423
+                                  component:
+                                    component_id: 'ui_suite_bootstrap:grid_row_1'
+                                    slots:
+                                      col_1_content:
+                                        sources:
+                                          -
+                                            source_id: textfield
+                                            source:
+                                              value: Альтернативная
+                                            node_id: a95d9ebea4e29074
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  text_text_alignment: text-center
+                                                  borders_border: border-bottom
+                                                  borders_border_width: border-1
+                                                  borders_border_color: border-light
+                                                extra: 'pb-1 mb-1'
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:paragraph:instance_complectation:field_alternative_complectation'
+                                              'field:paragraph:instance_complectation:field_alternative_complectation':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:paragraph:instance_complectation:field_alternative_complectation'
+                                                      source:
+                                                        type: entity_reference_revisions_entity_view
+                                                        label: above
+                                                        settings:
+                                                          view_mode: default
+                                                          link: ''
+                                                        third_party_settings: {  }
+                                                        weight: 1
+                                                        region: content
+                                            node_id: 6de3b096d8aba423
+                                node_id: c6b06469cc70eed9
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      colors_background_color: bg-secondary
+                                      colors_background_opacity: bg-opacity-25
+                                      borders_border: border
+                                      borders_border_color: border-secondary
+                                    extra: 'py-1 m-1'
+                        third_party_settings: ''
+                        node_id: ''
                     node_id: 87da172fc60dd757
+            third_party_settings: ''
+            node_id: ''
         node_id: a4ba32af7cfba174
+        third_party_settings:
+          styles:
+            selected:
+              colors_background_color: text-bg-dark
+              borders_border: border
+              shadows: shadow
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-2
+            extra: 'my-1 py-2'
 id: paragraph.instance_complectation.default
 targetEntityType: paragraph
 bundle: instance_complectation
