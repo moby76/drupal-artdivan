@@ -1130,6 +1130,26 @@ taxonomies:
       weight: '0'
       parent: '140'
       uuid: 544573e1-144a-469e-953c-93c34fb2ef80
+    -
+      vid: media_folders_folder
+      tid: '190'
+      langcode: en
+      name: 'Элементы для модели Лидер'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '189'
+      uuid: 0c017532-5da7-4cc2-ac84-f0bf27cd2dfa
+    -
+      vid: media_folders_folder
+      tid: '189'
+      langcode: en
+      name: 'Элементы мягкой мебели'
+      description__value: 'Схематические 3d-модели для подушек, валиков, подголовников и т.д.'
+      description__format: null
+      weight: '0'
+      parent: '76'
+      uuid: 32e5d0ad-b81c-4c7a-99f2-1108d45d53c7
   model:
     -
       vid: model

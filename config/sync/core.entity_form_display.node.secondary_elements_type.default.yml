@@ -22,14 +22,10 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_element:
-    type: entity_reference_autocomplete
+    type: options_select
     weight: 121
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_element_image:
     type: media_folders_widget
@@ -43,14 +39,10 @@ content:
       form_mode: {  }
     third_party_settings: {  }
   field_element_model:
-    type: entity_reference_autocomplete
+    type: options_select
     weight: 122
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path

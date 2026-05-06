@@ -1,0 +1,10 @@
+status: 1
+pattern: '[node:field_element] [node:field_element_model]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.secondary_elements_type
+new_content_behavior: 0
