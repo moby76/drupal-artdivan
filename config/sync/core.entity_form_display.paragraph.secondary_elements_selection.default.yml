@@ -1,0 +1,29 @@
+uuid: 2799e9b0-df38-411b-a1c8-bb4d2fa8924e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.secondary_elements_selection.field_element
+    - field.field.paragraph.secondary_elements_selection.field_elements_quantity
+    - paragraphs.paragraphs_type.secondary_elements_selection
+id: paragraph.secondary_elements_selection.default
+targetEntityType: paragraph
+bundle: secondary_elements_selection
+mode: default
+content:
+  field_element:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_elements_quantity:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

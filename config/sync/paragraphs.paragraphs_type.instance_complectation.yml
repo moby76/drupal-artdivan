@@ -1,0 +1,10 @@
+uuid: c30b6627-06fd-4109-b8aa-e9d6778418fd
+langcode: en
+status: true
+dependencies: {  }
+id: instance_complectation
+label: 'Комплектация экземпляров'
+icon_uuid: null
+icon_default: null
+description: 'Сколько и каких подушек, валиков, подлокотников входит в состав комплекта. А так-же альтернативная комплектация.'
+behavior_plugins: {  }

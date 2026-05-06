@@ -1,0 +1,27 @@
+uuid: ac1f5e9a-6fb1-463b-8b05-3b6cba810161
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_version_features
+    - filter.format.basic_html
+    - node.type.model_instance
+  module:
+    - text
+id: node.model_instance.field_version_features
+field_name: field_version_features
+entity_type: node
+bundle: model_instance
+label: 'Особенности этой версии модели'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '<p>Данная версия имеет отличия от версии v-1.0:</p><p>Это первая(базовая)версия модели: v-1.0</p>'
+    format: basic_html
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

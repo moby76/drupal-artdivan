@@ -1,0 +1,29 @@
+uuid: 38ba3a90-94fe-48cb-8c8b-c1e15e51c296
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_element
+    - node.type.secondary_elements_type
+    - taxonomy.vocabulary.secondary_elements
+id: node.secondary_elements_type.field_element
+field_name: field_element
+entity_type: node
+bundle: secondary_elements_type
+label: Элемент
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      secondary_elements: secondary_elements
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

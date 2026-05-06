@@ -1,0 +1,29 @@
+uuid: 5c05ddf1-c995-4044-ae4f-4c55e250b6f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_element_image
+    - media.type.image
+    - node.type.secondary_elements_type
+id: node.secondary_elements_type.field_element_image
+field_name: field_element_image
+entity_type: node
+bundle: secondary_elements_type
+label: 'Изображение элемента'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

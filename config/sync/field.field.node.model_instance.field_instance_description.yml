@@ -1,0 +1,30 @@
+uuid: 865a37f0-e85e-4827-8f2c-2abea2ee9588
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instance_description
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - node.type.model_instance
+  module:
+    - text
+id: node.model_instance.field_instance_description
+field_name: field_instance_description
+entity_type: node
+bundle: model_instance
+label: 'Описание экземпляра'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text_long

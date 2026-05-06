@@ -1,0 +1,23 @@
+uuid: b321a133-0117-409b-8daa-1d3657286954
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_elements_quantity
+    - paragraphs.paragraphs_type.secondary_elements_selection
+id: paragraph.secondary_elements_selection.field_elements_quantity
+field_name: field_elements_quantity
+entity_type: paragraph
+bundle: secondary_elements_selection
+label: Количество
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' шт.'
+field_type: integer

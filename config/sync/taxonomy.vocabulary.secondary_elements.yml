@@ -1,0 +1,9 @@
+uuid: fd615d3b-9bb5-4b20-bc44-3c581c91ef00
+langcode: en
+status: true
+dependencies: {  }
+name: 'Второстепенные элементы экземпляров'
+vid: secondary_elements
+description: 'Небазовые элементы экземпляра(комплекта/модуля/кровати): подушки, валики, подлокотники, подголовники. Привязаны к конкретной мод'
+weight: 0
+new_revision: false

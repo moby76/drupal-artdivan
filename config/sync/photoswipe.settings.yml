@@ -9,8 +9,8 @@ options:
   zoomAnimationDuration: 333
   maxWidthToAnimate: 4000
   easing: 'cubic-bezier(.4,0,.22,1)'
-  bgOpacity: 0.8
-  spacing: 0.1
+  bgOpacity: 0.9
+  spacing: 0.08
   initialZoomLevel: fit
   secondaryZoomLevel: '2.5'
   maxZoomLevel: '4'

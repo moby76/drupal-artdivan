@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.model_instance.body
+    - field.field.node.model_instance.field_complectation
     - field.field.node.model_instance.field_configuration
+    - field.field.node.model_instance.field_dimensions_scheme
     - field.field.node.model_instance.field_execution
+    - field.field.node.model_instance.field_instance_description
     - field.field.node.model_instance.field_instance_main_image
     - field.field.node.model_instance.field_is_modular_set
     - field.field.node.model_instance.field_model
@@ -13,9 +16,11 @@ dependencies:
     - field.field.node.model_instance.field_three_dimensional_image
     - field.field.node.model_instance.field_variations
     - field.field.node.model_instance.field_version
+    - field.field.node.model_instance.field_version_features
     - node.type.model_instance
   module:
     - display_builder
+    - entity_reference_revisions
     - media_folders
     - nomarkup
     - text
@@ -279,44 +284,349 @@ third_party_settings:
                 add_more_button: ''
                 sources:
                   -
-                    source_id: entity_field
+                    source_id: component
                     source:
-                      derivable_context: 'field:node:model_instance:field_variations'
-                      'field:node:model_instance:field_variations':
-                        value:
-                          sources:
-                            -
-                              source_id: 'field_formatter:node:model_instance:field_variations'
-                              source:
-                                type: viewsreference_formatter
-                                label: above
-                                settings:
-                                  plugin_types:
-                                    - block
-                                third_party_settings: {  }
-                                weight: 9
-                                region: content
-                    node_id: 805c8069ee31e7b9
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:model_instance:field_variations'
+                                  'field:node:model_instance:field_variations':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:model_instance:field_variations'
+                                          source:
+                                            type: viewsreference_formatter
+                                            label: above
+                                            settings:
+                                              plugin_types:
+                                                - block
+                                            third_party_settings: {  }
+                                            weight: 9
+                                            region: content
+                                node_id: 805c8069ee31e7b9
+                    node_id: e888accde11f2508
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: icon_renderable
+                                source:
+                                  value:
+                                    target_id: 'bootstrap:exclamation-circle'
+                                    settings:
+                                      bootstrap:
+                                        size: 28px
+                                        color: ''
+                                        alt: ''
+                                    icon_id: 'bootstrap:exclamation-circle'
+                                    icon_settings:
+                                      bootstrap:
+                                        size: 28px
+                                        color: ''
+                                        alt: ''
+                                  saved_values:
+                                    size: 28px
+                                    color: ''
+                                    alt: ''
+                                node_id: a4ba5441b46f5477
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      text_text_alignment: text-center
+                                      borders_border: border-bottom
+                                      borders_border_color: border-light
+                                    extra: 'pb-2 mb-1'
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:model_instance:field_version_features'
+                                  'field:node:model_instance:field_version_features':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:model_instance:field_version_features'
+                                          source:
+                                            type: text_default
+                                            settings: {  }
+                                            third_party_settings: {  }
+                                node_id: 84295fd21f33fd4e
+                    node_id: 67ce02767cdfd235
+                    third_party_settings:
+                      styles:
+                        selected:
+                          typography: small
+                          colors_color: text-white
+                          colors_background_color: bg-dark
+                          borders_border: border
+                          borders_border_radius: rounded
+                        extra: 'my-2 py-2'
             third_party_settings: ''
             node_id: ''
         node_id: 29d88447849cd2e1
       -
-        source_id: entity_field
+        source_id: component
         source:
-          derivable_context: 'field:node:model_instance:body'
-          'field:node:model_instance:body':
-            value:
-              sources:
-                -
-                  source_id: 'field_formatter:node:model_instance:body'
-                  source:
-                    type: text_default
-                    label: above
-                    settings: {  }
-                    third_party_settings: {  }
-                    weight: 6
-                    region: content
-        node_id: 1355de1d46e8a1ac
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_2'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '8'
+                    - '4'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - '8'
+                    - '4'
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - '8'
+                    - '4'
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - '8'
+                    - '4'
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance:field_instance_description'
+                      'field:node:model_instance:field_instance_description':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance:field_instance_description'
+                              source:
+                                type: text_default
+                                settings: {  }
+                                third_party_settings: {  }
+                    node_id: 8c981839536ee4b3
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border
+                          borders_border_width: border-1
+                          borders_border_color: border-secondary
+                        extra: ''
+              col_2_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: textfield
+                    source:
+                      value: 'Базовые размеры'
+                    node_id: 6c83b66034afbf3c
+                    third_party_settings:
+                      styles:
+                        selected:
+                          text_text_alignment: text-center
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:carousel'
+                        variant_id:
+                          source_id: select
+                          source:
+                            value: ''
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          with_controls:
+                            source_id: checkbox
+                            source:
+                              value: '1'
+                          with_indicators:
+                            source_id: checkbox
+                            source:
+                              value: '1'
+                          with_touch:
+                            source_id: checkbox
+                            source:
+                              value: '1'
+                          interval:
+                            source_id: number
+                            source:
+                              value: '5000'
+                          autoplay_mode:
+                            source_id: select
+                            source:
+                              value: ''
+                          carousel_id:
+                            source_id: textfield
+                            source:
+                              value: ''
+                        slots:
+                          slides:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:model_instance:field_dimensions_scheme'
+                                  'field:node:model_instance:field_dimensions_scheme':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:model_instance:field_dimensions_scheme'
+                                          source:
+                                            type: ui_patterns_component_per_item
+                                            settings:
+                                              ui_patterns:
+                                                component_id: 'ui_suite_bootstrap:carousel_item'
+                                                slots:
+                                                  image:
+                                                    sources:
+                                                      -
+                                                        source_id: 'field_formatter:node:model_instance:field_dimensions_scheme'
+                                                        source:
+                                                          type: photoswipe_field_formatter
+                                                          settings:
+                                                            photoswipe_thumbnail_style: medium
+                                                            photoswipe_thumbnail_style_first: large
+                                                            photoswipe_image_style: ''
+                                                            photoswipe_reference_image_field: field_media_image
+                                                            photoswipe_view_mode: _custom
+                                                            image_loading:
+                                                              attribute: lazy
+                                                          third_party_settings:
+                                                            field_label:
+                                                              label_value: ''
+                                                              label_class: ''
+                                                              label_tag: ''
+                                                            nomarkup:
+                                                              separator: '|'
+                                                              referenced_entity: ''
+                                                              enabled: 0
+                                                        node_id: ''
+                                                        third_party_settings: ''
+                                                        _weight: '0'
+                                                        _remove:
+                                                          dropdown_actions:
+                                                            - Remove
+                                                    add_more_button: ''
+                                                  caption:
+                                                    add_more_button: ''
+                                                props:
+                                                  attributes:
+                                                    source_id: attributes
+                                                    source:
+                                                      value: ''
+                                                  interval:
+                                                    source_id: number
+                                                    source:
+                                                      value: ''
+                                                  caption_attributes:
+                                                    source_id: attributes
+                                                    source:
+                                                      value: ''
+                                                third_party_settings: ''
+                                                node_id: ''
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 0fc6602d952711e6
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 4d79893961a3c08e
+            third_party_settings: ''
+            node_id: ''
+        node_id: 00e02c842aa46852
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-1
+              borders_border_color: border-primary
+            extra: ''
 id: node.model_instance.default
 targetEntityType: node
 bundle: model_instance
@@ -329,6 +639,15 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
+  field_complectation:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 14
+    region: content
   field_configuration:
     type: entity_reference_label
     label: above
@@ -337,6 +656,15 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
+  field_dimensions_scheme:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
   field_execution:
     type: entity_reference_label
     label: above
@@ -344,6 +672,13 @@ content:
       link: true
     third_party_settings: {  }
     weight: 5
+    region: content
+  field_instance_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_instance_main_image:
     type: media_folders
@@ -426,6 +761,13 @@ content:
       link: true
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_version_features:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 13
     region: content
   links:
     settings: {  }

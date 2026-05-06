@@ -5,8 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.card
     - field.field.node.model_instance.body
+    - field.field.node.model_instance.field_complectation
     - field.field.node.model_instance.field_configuration
+    - field.field.node.model_instance.field_dimensions_scheme
     - field.field.node.model_instance.field_execution
+    - field.field.node.model_instance.field_instance_description
     - field.field.node.model_instance.field_instance_main_image
     - field.field.node.model_instance.field_is_modular_set
     - field.field.node.model_instance.field_model
@@ -14,6 +17,7 @@ dependencies:
     - field.field.node.model_instance.field_three_dimensional_image
     - field.field.node.model_instance.field_variations
     - field.field.node.model_instance.field_version
+    - field.field.node.model_instance.field_version_features
     - node.type.model_instance
   module:
     - display_builder
@@ -334,8 +338,11 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_complectation: true
   field_configuration: true
+  field_dimensions_scheme: true
   field_execution: true
+  field_instance_description: true
   field_instance_main_image: true
   field_is_modular_set: true
   field_model: true
@@ -343,4 +350,5 @@ hidden:
   field_three_dimensional_image: true
   field_variations: true
   field_version: true
+  field_version_features: true
   links: true

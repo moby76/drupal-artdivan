@@ -102,3 +102,7 @@ unique_field_taxonomy:
       field_fabric_article: field_fabric_article
     scope: term
     comp: all
+  secondary_elements:
+    fields: {  }
+    scope: vocabulary
+    comp: each

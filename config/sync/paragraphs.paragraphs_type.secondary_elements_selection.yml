@@ -1,0 +1,10 @@
+uuid: f6f3559e-ec3d-4a07-9a54-714059fba19c
+langcode: en
+status: true
+dependencies: {  }
+id: secondary_elements_selection
+label: 'Подбор второстепенных элементов'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

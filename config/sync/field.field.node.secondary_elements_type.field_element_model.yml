@@ -1,0 +1,29 @@
+uuid: 8ce3fef2-f3c4-4431-8128-fb203bd36af6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_element_model
+    - node.type.secondary_elements_type
+    - taxonomy.vocabulary.model
+id: node.secondary_elements_type.field_element_model
+field_name: field_element_model
+entity_type: node
+bundle: secondary_elements_type
+label: Модель
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      model: model
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

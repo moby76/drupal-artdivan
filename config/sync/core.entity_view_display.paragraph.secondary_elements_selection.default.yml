@@ -1,0 +1,31 @@
+uuid: 4baefc29-e588-42f6-a60a-7a8a38515455
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.secondary_elements_selection.field_element
+    - field.field.paragraph.secondary_elements_selection.field_elements_quantity
+    - paragraphs.paragraphs_type.secondary_elements_selection
+id: paragraph.secondary_elements_selection.default
+targetEntityType: paragraph
+bundle: secondary_elements_selection
+mode: default
+content:
+  field_element:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_elements_quantity:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
