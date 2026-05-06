@@ -97,14 +97,125 @@ third_party_settings:
                           col_1_content:
                             sources:
                               -
-                                source_id: textfield
+                                source_id: component
                                 source:
-                                  value: Комплектация
-                                node_id: 1d91947cd830cf7c
+                                  component:
+                                    component_id: 'ui_suite_bootstrap:grid_row'
+                                    variant_id: null
+                                    props:
+                                      attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      container:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      container_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      container_wrapper_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                      gutters:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      gutters_horizontal:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      gutters_vertical:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      row_cols:
+                                        source_id: select
+                                        source:
+                                          value: auto
+                                      col_xs:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_sm:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_md:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_lg:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_xl:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_xxl:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_offset:
+                                        source_id: select
+                                        source:
+                                          value: ''
+                                      col_attributes:
+                                        source_id: attributes
+                                        source:
+                                          value: ''
+                                    slots:
+                                      content:
+                                        add_more_button: ''
+                                        sources:
+                                          -
+                                            source_id: icon_renderable
+                                            source:
+                                              value:
+                                                target_id: 'bootstrap:layout-wtf'
+                                                settings:
+                                                  bootstrap:
+                                                    size: 22px
+                                                    color: ''
+                                                    alt: ''
+                                                icon_id: 'bootstrap:layout-wtf'
+                                                icon_settings:
+                                                  bootstrap:
+                                                    size: 22px
+                                                    color: ''
+                                                    alt: ''
+                                              saved_values:
+                                                size: 22px
+                                                color: ''
+                                                alt: ''
+                                            node_id: 8fe1679735097554
+                                            third_party_settings:
+                                              styles:
+                                                selected: {  }
+                                                extra: ''
+                                          -
+                                            source_id: textfield
+                                            source:
+                                              value: Комплектация
+                                            node_id: 1d91947cd830cf7c
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  text_text_alignment: text-center
+                                                extra: ''
+                                    third_party_settings: ''
+                                    node_id: ''
+                                node_id: 4ede0c90d79ec904
                                 third_party_settings:
                                   styles:
                                     selected:
-                                      text_text_alignment: text-center
+                                      display_medium: d-md-flex
+                                      flex_flex: d-inline-flex
+                                      flex_direction: flex-row
+                                      flex_justify_content: justify-content-center
                                     extra: ''
                     node_id: bec54ed38c5cf1a8
                     third_party_settings:
@@ -113,7 +224,7 @@ third_party_settings:
                           borders_border: border-bottom
                           borders_border_width: border-1
                           borders_border_color: border-light
-                        extra: 'py-1 mb-1'
+                        extra: 'pb-2 mb-1'
                   -
                     source_id: component
                     source:
@@ -248,7 +359,7 @@ third_party_settings:
                                   styles:
                                     selected:
                                       colors_background_color: bg-primary
-                                      colors_background_opacity: bg-opacity-25
+                                      colors_background_opacity: bg-opacity-10
                                       borders_border: border
                                       borders_border_color: border-primary
                                     extra: 'py-1 m-1'
@@ -300,7 +411,7 @@ third_party_settings:
                                   styles:
                                     selected:
                                       colors_background_color: bg-secondary
-                                      colors_background_opacity: bg-opacity-25
+                                      colors_background_opacity: bg-opacity-10
                                       borders_border: border
                                       borders_border_color: border-secondary
                                     extra: 'py-1 m-1'
