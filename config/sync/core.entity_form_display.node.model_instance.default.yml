@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.model_instance.body
+    - field.field.node.model_instance.field_additional_products
     - field.field.node.model_instance.field_complectation
     - field.field.node.model_instance.field_configuration
     - field.field.node.model_instance.field_dimensions_scheme
@@ -33,6 +34,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_additional_products:
+    type: viewsreference_select
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -112,7 +119,7 @@ content:
     third_party_settings: {  }
   field_tags:
     type: autocomplete_deluxe
-    weight: 19
+    weight: 20
     region: content
     settings:
       match_operator: CONTAINS

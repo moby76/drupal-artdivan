@@ -1,0 +1,35 @@
+uuid: 1a32d430-538c-453b-9388-f346738fb48b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_products
+    - node.type.model_instance
+    - views.view.additional_products
+  module:
+    - viewsreference
+id: node.model_instance.field_additional_products
+field_name: field_additional_products
+entity_type: node
+bundle: model_instance
+label: 'Дополнительные товары'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 6198694f-9826-4864-b22b-8320e5863784
+    display_id: block_1
+    data: 'a:6:{s:6:"offset";N;s:6:"header";N;s:8:"argument";N;s:5:"limit";N;s:5:"title";N;s:5:"pager";N;}'
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views:
+    additional_products: additional_products
+  enabled_settings: {  }
+field_type: viewsreference

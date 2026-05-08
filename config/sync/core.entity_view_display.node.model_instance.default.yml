@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.model_instance.body
+    - field.field.node.model_instance.field_additional_products
     - field.field.node.model_instance.field_complectation
     - field.field.node.model_instance.field_configuration
     - field.field.node.model_instance.field_dimensions_scheme
@@ -745,6 +746,21 @@ third_party_settings:
                     node_id: c332a7f31c34931b
               col_3_content:
                 add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance:field_additional_products'
+                      'field:node:model_instance:field_additional_products':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance:field_additional_products'
+                              source:
+                                type: viewsreference_formatter
+                                settings: {  }
+                                third_party_settings: {  }
+                    node_id: 49e541f908dc571c
             third_party_settings: ''
             node_id: ''
         node_id: 1389154abeb4170c
@@ -759,6 +775,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 6
+    region: content
+  field_additional_products:
+    type: viewsreference_formatter
+    label: above
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 15
     region: content
   field_complectation:
     type: entity_reference_revisions_entity_view

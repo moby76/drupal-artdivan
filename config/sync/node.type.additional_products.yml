@@ -1,0 +1,18 @@
+uuid: 0d3d0b16-1099-4d37-bcc3-fc494bd87951
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Дополнительные товары'
+type: additional_products
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

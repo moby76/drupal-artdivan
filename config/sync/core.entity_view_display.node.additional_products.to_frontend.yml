@@ -1,0 +1,239 @@
+uuid: a39b1e8c-9ede-43af-bc79-ad795cb7391f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.to_frontend
+    - field.field.node.additional_products.field_additional_prouct_image
+    - field.field.node.additional_products.field_price
+    - field.field.node.additional_products.field_suitable_for
+    - node.type.additional_products
+  module:
+    - display_builder
+    - layout_builder
+    - media
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - user
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_3'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: selects
+                source:
+                  value:
+                    - '12'
+                    - '12'
+                    - '12'
+              col_sm:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_md:
+                source_id: selects
+                source:
+                  value:
+                    - '6'
+                    - '3'
+                    - '3'
+              col_lg:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_xl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_xxl:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_offset:
+                source_id: selects
+                source:
+                  value:
+                    - ''
+                    - ''
+                    - ''
+              col_1_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_2_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              col_3_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+            slots:
+              col_1_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:additional_products:title'
+                      'field:node:additional_products:title':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:additional_products:title'
+                              source:
+                                type: string
+                                settings:
+                                  link_to_entity: false
+                                third_party_settings: {  }
+                    node_id: f9e7487cc5a68ec4
+                    third_party_settings:
+                      styles:
+                        selected:
+                          typography: small
+                        extra: ''
+              col_2_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:additional_products:field_additional_prouct_image'
+                      'field:node:additional_products:field_additional_prouct_image':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:additional_products:field_additional_prouct_image'
+                              source:
+                                type: media_thumbnail
+                                settings:
+                                  image_style: thumbnail_70_70
+                                  image_link: ''
+                                  image_loading:
+                                    attribute: lazy
+                                third_party_settings:
+                                  field_label:
+                                    label_value: ''
+                                    label_class: ''
+                                    label_tag: ''
+                                  nomarkup:
+                                    separator: '|'
+                                    referenced_entity: ''
+                                    enabled: 0
+                              node_id: ''
+                              third_party_settings: ''
+                              _weight: '0'
+                    node_id: 80c63415ad84c392
+              col_3_content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:additional_products:field_price'
+                      'field:node:additional_products:field_price':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:additional_products:field_price'
+                              source:
+                                type: number_integer
+                                label: above
+                                settings:
+                                  thousand_separator: ''
+                                  prefix_suffix: true
+                                third_party_settings: {  }
+                                weight: 102
+                                region: content
+                    node_id: f119fd98e4675e8a
+                    third_party_settings:
+                      styles:
+                        selected:
+                          typography: small
+                        extra: ''
+            third_party_settings: ''
+            node_id: ''
+        node_id: fdbff7358ae01235
+id: node.additional_products.to_frontend
+targetEntityType: node
+bundle: additional_products
+mode: to_frontend
+content:
+  field_additional_prouct_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_link_display: true
+  field_suitable_for: true

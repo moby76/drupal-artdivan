@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 name: 'Основные элементы комплектов мебели'
 vid: main_elements
-description: null
+description: 'Используется для подбора тканей при формировании заявки'
 weight: 6
 new_revision: false
