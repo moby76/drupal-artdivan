@@ -17,7 +17,7 @@ ui_styles_entity_status_unpublished: {  }
 preset_accent_color: neutral
 preset_focus_color: gin
 enable_darkmode: '1'
-classic_toolbar: new
+classic_toolbar: horizontal
 secondary_toolbar_frontend: true
 high_contrast_mode: false
 accent_color: ''

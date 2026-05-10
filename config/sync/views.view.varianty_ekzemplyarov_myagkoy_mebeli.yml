@@ -1209,6 +1209,7 @@ display:
               source: {  }
               node_id: 4bf47cdd5ec1d03d
         ui_styles: {  }
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

@@ -1,0 +1,23 @@
+uuid: 522967e5-bd11-4256-ba85-716201944372
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_min
+    - node.type.additional_products
+id: node.additional_products.field_price_min
+field_name: field_price_min
+entity_type: node
+bundle: additional_products
+label: 'Цена минимальная'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

@@ -47,7 +47,7 @@ third_party_settings:
               gutters_horizontal:
                 source_id: select
                 source:
-                  value: gx-1
+                  value: ''
               gutters_vertical:
                 source_id: select
                 source:
@@ -175,20 +175,20 @@ third_party_settings:
                                             source_id: icon_renderable
                                             source:
                                               value:
-                                                target_id: 'bootstrap:layout-wtf'
+                                                target_id: 'bootstrap:diagram-2-fill'
                                                 settings:
                                                   bootstrap:
-                                                    size: 22px
+                                                    size: 32px
                                                     color: ''
                                                     alt: ''
-                                                icon_id: 'bootstrap:layout-wtf'
+                                                icon_id: 'bootstrap:diagram-2-fill'
                                                 icon_settings:
                                                   bootstrap:
-                                                    size: 22px
+                                                    size: 32px
                                                     color: ''
                                                     alt: ''
                                               saved_values:
-                                                size: 22px
+                                                size: 32px
                                                 color: ''
                                                 alt: ''
                                             node_id: 8fe1679735097554
@@ -199,7 +199,7 @@ third_party_settings:
                                           -
                                             source_id: textfield
                                             source:
-                                              value: Комплектация
+                                              value: 'Варианты комплектации зкземпляра'
                                             node_id: 1d91947cd830cf7c
                                             third_party_settings:
                                               styles:
@@ -216,6 +216,7 @@ third_party_settings:
                                       flex_flex: d-inline-flex
                                       flex_direction: flex-row
                                       flex_justify_content: justify-content-center
+                                      flex_align_items: align-items-center
                                     extra: ''
                     node_id: bec54ed38c5cf1a8
                     third_party_settings:
@@ -255,7 +256,7 @@ third_party_settings:
                           gutters_horizontal:
                             source_id: select
                             source:
-                              value: gx-1
+                              value: gx-0
                           gutters_vertical:
                             source_id: select
                             source:

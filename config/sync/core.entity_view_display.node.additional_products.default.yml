@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.node.additional_products.field_additional_prouct_image
     - field.field.node.additional_products.field_price
+    - field.field.node.additional_products.field_price_max
+    - field.field.node.additional_products.field_price_min
     - field.field.node.additional_products.field_suitable_for
     - node.type.additional_products
   module:
@@ -31,6 +33,24 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_price_max:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_price_min:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
     region: content
   field_suitable_for:
     type: entity_reference_label

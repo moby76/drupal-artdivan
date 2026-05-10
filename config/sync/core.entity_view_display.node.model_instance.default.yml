@@ -632,7 +632,7 @@ third_party_settings:
         source_id: component
         source:
           component:
-            component_id: 'ui_suite_bootstrap:grid_row_3'
+            component_id: 'ui_suite_bootstrap:grid_row_2'
             variant_id: null
             props:
               attributes:
@@ -658,7 +658,7 @@ third_party_settings:
               gutters_horizontal:
                 source_id: select
                 source:
-                  value: gx-1
+                  value: gx-3
               gutters_vertical:
                 source_id: select
                 source:
@@ -669,26 +669,22 @@ third_party_settings:
                   value:
                     - '12'
                     - '12'
-                    - '12'
               col_sm:
                 source_id: selects
                 source:
                   value:
                     - ''
                     - ''
-                    - ''
               col_md:
                 source_id: selects
                 source:
                   value:
-                    - '3'
                     - '6'
-                    - '3'
+                    - '6'
               col_lg:
                 source_id: selects
                 source:
                   value:
-                    - ''
                     - ''
                     - ''
               col_xl:
@@ -697,19 +693,16 @@ third_party_settings:
                   value:
                     - ''
                     - ''
-                    - ''
               col_xxl:
                 source_id: selects
                 source:
                   value:
                     - ''
                     - ''
-                    - ''
               col_offset:
                 source_id: selects
                 source:
                   value:
-                    - ''
                     - ''
                     - ''
               col_1_attributes:
@@ -720,14 +713,8 @@ third_party_settings:
                 source_id: attributes
                 source:
                   value: ''
-              col_3_attributes:
-                source_id: attributes
-                source:
-                  value: ''
             slots:
               col_1_content:
-                add_more_button: ''
-              col_2_content:
                 add_more_button: ''
                 sources:
                   -
@@ -744,8 +731,24 @@ third_party_settings:
                                 settings: {  }
                                 third_party_settings: {  }
                     node_id: c332a7f31c34931b
-              col_3_content:
+              col_2_content:
                 add_more_button: ''
+                sources:
+                  -
+                    source_id: textfield
+                    source:
+                      value: 'Здесь будет блок с альтернативными размерами и ценой'
+                    node_id: d1788fadd5a40713
+            third_party_settings: ''
+            node_id: ''
+        node_id: 444a8167fb19a131
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
                 sources:
                   -
                     source_id: entity_field
@@ -761,9 +764,7 @@ third_party_settings:
                                 settings: {  }
                                 third_party_settings: {  }
                     node_id: 49e541f908dc571c
-            third_party_settings: ''
-            node_id: ''
-        node_id: 1389154abeb4170c
+        node_id: 5dac008a5ee06b21
 id: node.model_instance.default
 targetEntityType: node
 bundle: model_instance

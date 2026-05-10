@@ -108,7 +108,7 @@ third_party_settings:
               col_2_attributes:
                 source_id: attributes
                 source:
-                  value: 'class="bg-white p-1"'
+                  value: 'class="bg-white p-1 border border-1 border-secondary-subtle rounded rounded-1"'
             slots:
               col_1_content:
                 add_more_button: ''

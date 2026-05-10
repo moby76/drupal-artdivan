@@ -1,0 +1,23 @@
+uuid: f01b580d-6c67-4193-94fa-5834cff3f8b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_max
+    - node.type.additional_products
+id: node.additional_products.field_price_max
+field_name: field_price_max
+entity_type: node
+bundle: additional_products
+label: 'цена максимальная'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ' '
+  suffix: ' руб.'
+field_type: integer

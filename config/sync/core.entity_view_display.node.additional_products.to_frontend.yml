@@ -6,12 +6,14 @@ dependencies:
     - core.entity_view_mode.node.to_frontend
     - field.field.node.additional_products.field_additional_prouct_image
     - field.field.node.additional_products.field_price
+    - field.field.node.additional_products.field_price_max
+    - field.field.node.additional_products.field_price_min
     - field.field.node.additional_products.field_suitable_for
     - node.type.additional_products
   module:
     - display_builder
     - layout_builder
-    - media
+    - photoswipe
     - ui_patterns
     - ui_patterns_field_formatters
     - user
@@ -28,184 +30,286 @@ third_party_settings:
         source_id: component
         source:
           component:
-            component_id: 'ui_suite_bootstrap:grid_row_3'
-            variant_id: null
-            props:
-              attributes:
-                source_id: attributes
-                source:
-                  value: ''
-              container:
-                source_id: select
-                source:
-                  value: ''
-              container_attributes:
-                source_id: attributes
-                source:
-                  value: ''
-              container_wrapper_attributes:
-                source_id: attributes
-                source:
-                  value: ''
-              gutters:
-                source_id: select
-                source:
-                  value: ''
-              gutters_horizontal:
-                source_id: select
-                source:
-                  value: ''
-              gutters_vertical:
-                source_id: select
-                source:
-                  value: ''
-              col_xs:
-                source_id: selects
-                source:
-                  value:
-                    - '12'
-                    - '12'
-                    - '12'
-              col_sm:
-                source_id: selects
-                source:
-                  value:
-                    - ''
-                    - ''
-                    - ''
-              col_md:
-                source_id: selects
-                source:
-                  value:
-                    - '6'
-                    - '3'
-                    - '3'
-              col_lg:
-                source_id: selects
-                source:
-                  value:
-                    - ''
-                    - ''
-                    - ''
-              col_xl:
-                source_id: selects
-                source:
-                  value:
-                    - ''
-                    - ''
-                    - ''
-              col_xxl:
-                source_id: selects
-                source:
-                  value:
-                    - ''
-                    - ''
-                    - ''
-              col_offset:
-                source_id: selects
-                source:
-                  value:
-                    - ''
-                    - ''
-                    - ''
-              col_1_attributes:
-                source_id: attributes
-                source:
-                  value: ''
-              col_2_attributes:
-                source_id: attributes
-                source:
-                  value: ''
-              col_3_attributes:
-                source_id: attributes
-                source:
-                  value: ''
+            component_id: 'ui_suite_bootstrap:grid_row_1'
             slots:
               col_1_content:
-                add_more_button: ''
                 sources:
                   -
-                    source_id: entity_field
+                    source_id: component
                     source:
-                      derivable_context: 'field:node:additional_products:title'
-                      'field:node:additional_products:title':
-                        value:
-                          sources:
-                            -
-                              source_id: 'field_formatter:node:additional_products:title'
-                              source:
-                                type: string
-                                settings:
-                                  link_to_entity: false
-                                third_party_settings: {  }
-                    node_id: f9e7487cc5a68ec4
-                    third_party_settings:
-                      styles:
-                        selected:
-                          typography: small
-                        extra: ''
-              col_2_content:
-                add_more_button: ''
-                sources:
-                  -
-                    source_id: entity_field
-                    source:
-                      derivable_context: 'field:node:additional_products:field_additional_prouct_image'
-                      'field:node:additional_products:field_additional_prouct_image':
-                        value:
-                          sources:
-                            -
-                              source_id: 'field_formatter:node:additional_products:field_additional_prouct_image'
-                              source:
-                                type: media_thumbnail
-                                settings:
-                                  image_style: thumbnail_70_70
-                                  image_link: ''
-                                  image_loading:
-                                    attribute: lazy
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:additional_products:title'
+                                  'field:node:additional_products:title':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:additional_products:title'
+                                          source:
+                                            type: string
+                                            settings:
+                                              link_to_entity: false
+                                            third_party_settings: {  }
+                                node_id: f9e7487cc5a68ec4
                                 third_party_settings:
-                                  field_label:
-                                    label_value: ''
-                                    label_class: ''
-                                    label_tag: ''
-                                  nomarkup:
-                                    separator: '|'
-                                    referenced_entity: ''
-                                    enabled: 0
-                              node_id: ''
-                              third_party_settings: ''
-                              _weight: '0'
-                    node_id: 80c63415ad84c392
-              col_3_content:
-                add_more_button: ''
-                sources:
-                  -
-                    source_id: entity_field
-                    source:
-                      derivable_context: 'field:node:additional_products:field_price'
-                      'field:node:additional_products:field_price':
-                        value:
-                          sources:
-                            -
-                              source_id: 'field_formatter:node:additional_products:field_price'
-                              source:
-                                type: number_integer
-                                label: above
-                                settings:
-                                  thousand_separator: ''
-                                  prefix_suffix: true
-                                third_party_settings: {  }
-                                weight: 102
-                                region: content
-                    node_id: f119fd98e4675e8a
+                                  styles:
+                                    selected:
+                                      typography: small
+                                      text_text_truncate: text-truncate
+                                    extra: ''
+                    node_id: 54ad81506d4fea58
                     third_party_settings:
                       styles:
                         selected:
-                          typography: small
-                        extra: ''
-            third_party_settings: ''
-            node_id: ''
-        node_id: fdbff7358ae01235
+                          borders_border: border-bottom
+                          borders_border_width: border-1
+                          borders_border_color: border-secondary-subtle
+                        extra: 'mb-2 py-1'
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_2'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: selects
+                            source:
+                              value:
+                                - '12'
+                                - '12'
+                          col_sm:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_md:
+                            source_id: selects
+                            source:
+                              value:
+                                - '6'
+                                - '6'
+                          col_lg:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_xl:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_xxl:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_offset:
+                            source_id: selects
+                            source:
+                              value:
+                                - ''
+                                - ''
+                          col_1_attributes:
+                            source_id: attributes
+                            source:
+                              value: 'class="bg-white p-1 border border-1 border-secondary-subtle rounded rounded-1"'
+                          col_2_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          col_1_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:additional_products:field_additional_prouct_image'
+                                  'field:node:additional_products:field_additional_prouct_image':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:additional_products:field_additional_prouct_image'
+                                          source:
+                                            type: photoswipe_field_formatter
+                                            settings:
+                                              photoswipe_thumbnail_style: thumbnail_50_50
+                                              photoswipe_thumbnail_style_first: medium
+                                              photoswipe_image_style: large
+                                              photoswipe_reference_image_field: field_media_image
+                                              photoswipe_view_mode: _custom
+                                              image_loading:
+                                                attribute: lazy
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 80c63415ad84c392
+                                third_party_settings:
+                                  styles:
+                                    selected:
+                                      colors_background_color: bg-light
+                                    extra: ''
+                          col_2_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: component
+                                source:
+                                  component:
+                                    component_id: 'ui_suite_bootstrap:grid_row_1'
+                                    slots:
+                                      col_1_content:
+                                        sources:
+                                          -
+                                            source_id: component
+                                            source:
+                                              component:
+                                                component_id: 'ui_suite_bootstrap:grid_row_1'
+                                                slots:
+                                                  col_1_content:
+                                                    sources:
+                                                      -
+                                                        source_id: entity_field
+                                                        source:
+                                                          derivable_context: 'field:node:additional_products:field_price_min'
+                                                          'field:node:additional_products:field_price_min':
+                                                            value:
+                                                              sources:
+                                                                -
+                                                                  source_id: 'field_formatter:node:additional_products:field_price_min'
+                                                                  source:
+                                                                    type: number_integer
+                                                                    settings: {  }
+                                                                    third_party_settings: {  }
+                                                        node_id: f017fc6382973e6f
+                                            node_id: 3bc0bba4828d3946
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  typography: small
+                                                  colors_color: text-light
+                                                  text_font_weight: fw-medium
+                                                  text_text_alignment: text-center
+                                                extra: ''
+                                          -
+                                            source_id: component
+                                            source:
+                                              component:
+                                                component_id: 'ui_suite_bootstrap:grid_row_1'
+                                                slots:
+                                                  col_1_content:
+                                                    sources:
+                                                      -
+                                                        source_id: textfield
+                                                        source:
+                                                          value: '-'
+                                                        node_id: 798f9ab593895d64
+                                            node_id: 32ead5a2e89bd559
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  colors_color: text-light
+                                                  text_font_weight: fw-medium
+                                                  text_text_alignment: text-center
+                                                extra: ''
+                                          -
+                                            source_id: component
+                                            source:
+                                              component:
+                                                component_id: 'ui_suite_bootstrap:grid_row_1'
+                                                slots:
+                                                  col_1_content:
+                                                    sources:
+                                                      -
+                                                        source_id: entity_field
+                                                        source:
+                                                          derivable_context: 'field:node:additional_products:field_price_max'
+                                                          'field:node:additional_products:field_price_max':
+                                                            value:
+                                                              sources:
+                                                                -
+                                                                  source_id: 'field_formatter:node:additional_products:field_price_max'
+                                                                  source:
+                                                                    type: number_integer
+                                                                    settings: {  }
+                                                                    third_party_settings: {  }
+                                                        node_id: e2ac9fcb07c0c1a7
+                                            node_id: fef2d69c61b15b9b
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  typography: small
+                                                  colors_color: text-light
+                                                  text_font_weight: fw-medium
+                                                  text_text_alignment: text-center
+                                                extra: ''
+                                node_id: b63f714bb9b32473
+                                third_party_settings:
+                                  styles:
+                                    selected: {  }
+                                    extra: px-2
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 5f8756aadc9ec72b
+        node_id: 378aba25baf59cb3
+        third_party_settings:
+          styles:
+            selected:
+              borders_border: border
+              borders_border_width: border-1
+              borders_border_color: border-light
+              borders_border_opacity: border-opacity-50
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-1
+            extra: 'my-2 mx-0 pb-2 px-2'
 id: node.additional_products.to_frontend
 targetEntityType: node
 bundle: additional_products
@@ -236,4 +340,6 @@ content:
     region: content
 hidden:
   entity_link_display: true
+  field_price_max: true
+  field_price_min: true
   field_suitable_for: true

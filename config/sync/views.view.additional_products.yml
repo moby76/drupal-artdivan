@@ -10,7 +10,11 @@ dependencies:
   module:
     - node
     - taxonomy
+    - ui_patterns
+    - ui_patterns_views
     - user
+  theme:
+    - ui_suite_bootstrap
 id: additional_products
 label: 'Дополнительные товары'
 module: views
@@ -285,10 +289,9 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: some
+        type: none
         options:
           offset: 0
-          items_per_page: 5
       exposed_form:
         type: basic
         options:
@@ -443,8 +446,94 @@ display:
     position: 1
     display_options:
       style:
-        type: default
-        options: {  }
+        type: ui_patterns
+        options:
+          uses_fields: false
+          ui_patterns:
+            ui_patterns:
+              component_id: 'ui_suite_bootstrap:grid_row'
+              variant_id: null
+              props:
+                attributes:
+                  source_id: attributes
+                  source:
+                    value: ''
+                container:
+                  source_id: select
+                  source:
+                    value: ''
+                container_attributes:
+                  source_id: attributes
+                  source:
+                    value: ''
+                container_wrapper_attributes:
+                  source_id: attributes
+                  source:
+                    value: ''
+                gutters:
+                  source_id: select
+                  source:
+                    value: ''
+                gutters_horizontal:
+                  source_id: select
+                  source:
+                    value: gx-3
+                gutters_vertical:
+                  source_id: select
+                  source:
+                    value: ''
+                row_cols:
+                  source_id: select
+                  source:
+                    value: ''
+                col_xs:
+                  source_id: select
+                  source:
+                    value: '6'
+                col_sm:
+                  source_id: select
+                  source:
+                    value: '6'
+                col_md:
+                  source_id: select
+                  source:
+                    value: '4'
+                col_lg:
+                  source_id: select
+                  source:
+                    value: '4'
+                col_xl:
+                  source_id: select
+                  source:
+                    value: '3'
+                col_xxl:
+                  source_id: select
+                  source:
+                    value: '3'
+                col_offset:
+                  source_id: select
+                  source:
+                    value: ''
+                col_attributes:
+                  source_id: attributes
+                  source:
+                    value: ''
+              slots:
+                content:
+                  sources:
+                    -
+                      source_id: view_rows
+                      source:
+                        ui_patterns_views_field: ''
+                      _weight: '0'
+                      third_party_settings: ''
+                      node_id: ''
+                      _remove:
+                        dropdown_actions:
+                          - Remove
+                  add_more_button: ''
+              third_party_settings: ''
+              node_id: ''
       row:
         type: 'entity:node'
         options:
@@ -454,7 +543,210 @@ display:
         style: false
         row: false
       display_extenders:
-        display_builder: {  }
+        display_builder:
+          profile: default
+          sources:
+            -
+              source_id: view_header
+              source: {  }
+              node_id: 43c2c0b762e2f517
+            -
+              source_id: view_exposed
+              source: {  }
+              node_id: 6fd6930861d872e3
+            -
+              source_id: view_attachment_before
+              source: {  }
+              node_id: dfaca9651576de6c
+            -
+              source_id: component
+              source:
+                component:
+                  component_id: 'ui_suite_bootstrap:grid_row_1'
+                  slots:
+                    col_1_content:
+                      sources:
+                        -
+                          source_id: component
+                          source:
+                            component:
+                              component_id: 'ui_suite_bootstrap:grid_row'
+                              variant_id: null
+                              props:
+                                attributes:
+                                  source_id: attributes
+                                  source:
+                                    value: ''
+                                container:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                container_attributes:
+                                  source_id: attributes
+                                  source:
+                                    value: ''
+                                container_wrapper_attributes:
+                                  source_id: attributes
+                                  source:
+                                    value: ''
+                                gutters:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                gutters_horizontal:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                gutters_vertical:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                row_cols:
+                                  source_id: select
+                                  source:
+                                    value: auto
+                                col_xs:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                col_sm:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                col_md:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                col_lg:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                col_xl:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                col_xxl:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                col_offset:
+                                  source_id: select
+                                  source:
+                                    value: ''
+                                col_attributes:
+                                  source_id: attributes
+                                  source:
+                                    value: ''
+                              slots:
+                                content:
+                                  add_more_button: ''
+                                  sources:
+                                    -
+                                      source_id: icon_renderable
+                                      source:
+                                        value:
+                                          target_id: 'bootstrap:node-plus-fill'
+                                          settings:
+                                            bootstrap:
+                                              size: 26px
+                                              color: ''
+                                              alt: ''
+                                          icon_id: 'bootstrap:node-plus-fill'
+                                          icon_settings:
+                                            bootstrap:
+                                              size: 26px
+                                              color: ''
+                                              alt: ''
+                                        saved_values:
+                                          size: 26px
+                                          color: ''
+                                          alt: ''
+                                      node_id: 356ac07cfe73948f
+                                    -
+                                      source_id: token
+                                      source:
+                                        value: 'Эти товары также подходят для экземпляра [current-page:title]'
+                                      node_id: c12df67b73cfff56
+                                      third_party_settings:
+                                        styles:
+                                          selected:
+                                            text_text_truncate: text-truncate
+                                          extra: ''
+                              third_party_settings: ''
+                              node_id: ''
+                          node_id: d52066129076fe62
+                          third_party_settings:
+                            styles:
+                              selected:
+                                display_small: d-sm-flex
+                                flex_flex: d-inline-flex
+                                flex_direction: flex-row
+                                flex_justify_content: justify-content-center
+                                flex_align_items: align-items-center
+                              extra: ''
+                        -
+                          source_id: component
+                          source:
+                            component:
+                              component_id: 'ui_suite_bootstrap:grid_row_1'
+                              slots:
+                                col_1_content:
+                                  sources: {  }
+                          node_id: 3b681570a922e1f6
+                          third_party_settings:
+                            styles:
+                              selected:
+                                borders_border: border-bottom
+                                borders_border_width: border-1
+                                borders_border_color: border-light
+                                display_small: d-sm-flex
+                                flex_flex: d-inline-flex
+                                flex_direction: flex-row
+                                flex_justify_content: justify-content-center
+                              extra: pb-2
+                        -
+                          source_id: component
+                          source:
+                            component:
+                              component_id: 'ui_suite_bootstrap:grid_row_1'
+                              slots:
+                                col_1_content:
+                                  sources:
+                                    -
+                                      source_id: view_rows
+                                      source: {  }
+                                      node_id: 3db49841be6f35e1
+                          node_id: 81da3969424c3cc7
+              node_id: 4f2491328c93c0bc
+              third_party_settings:
+                styles:
+                  selected:
+                    colors_background_color: text-bg-dark
+                    borders_border: border
+                    shadows: shadow
+                    borders_border_radius: rounded
+                    borders_border_radius_width: rounded-2
+                  extra: 'my-1 py-2 px-2'
+            -
+              source_id: view_pager
+              source: {  }
+              node_id: 3d8a3d588e27f645
+            -
+              source_id: view_attachment_after
+              source: {  }
+              node_id: e123f4ff07bcf8a0
+            -
+              source_id: view_more
+              source: {  }
+              node_id: 8e0120649deea52f
+            -
+              source_id: view_footer
+              source: {  }
+              node_id: 35bd8a0cd0f80fa5
+            -
+              source_id: view_feed_icons
+              source: {  }
+              node_id: 548af3cac1fc1d75
         ui_styles: {  }
     cache_metadata:
       max-age: -1
