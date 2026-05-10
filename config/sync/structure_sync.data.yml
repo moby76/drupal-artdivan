@@ -1022,6 +1022,36 @@ taxonomies:
       uuid: 24a1f3f4-8cd5-4309-8827-fc4ba2e4c942
     -
       vid: media_folders_folder
+      tid: '198'
+      langcode: en
+      name: 'Бескаркасная мебель'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '191'
+      uuid: 520fd862-c61b-486c-9537-1956f7d88be3
+    -
+      vid: media_folders_folder
+      tid: '195'
+      langcode: en
+      name: 'Валики универсальные'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '191'
+      uuid: bce44547-104f-49b9-8c97-0876a03dc70e
+    -
+      vid: media_folders_folder
+      tid: '191'
+      langcode: en
+      name: 'Дополнительные товары'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 9f3fb281-a47c-40c7-9385-59f6f16a580e
+    -
+      vid: media_folders_folder
       tid: '140'
       langcode: en
       name: Кровати
@@ -1090,6 +1120,56 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: 23401934-e17d-44c9-81be-d45a9c230c3b
+    -
+      vid: media_folders_folder
+      tid: '197'
+      langcode: en
+      name: Поддержки
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '191'
+      uuid: 1cf838b9-147c-4a9d-98d9-424441db32c9
+    -
+      vid: media_folders_folder
+      tid: '196'
+      langcode: en
+      name: 'Подлокотники накладные'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '191'
+      uuid: a4194b3e-b39b-4712-8e24-066b5ec42b67
+    -
+      vid: media_folders_folder
+      tid: '194'
+      langcode: en
+      name: Подушки
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '191'
+      uuid: 3af8765d-99ad-477c-9bcc-596c736305d0
+    -
+      vid: media_folders_folder
+      tid: '193'
+      langcode: en
+      name: Пуфики
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '191'
+      uuid: 0fa4609b-09e1-4b00-9324-c7f51851d5d5
+    -
+      vid: media_folders_folder
+      tid: '192'
+      langcode: en
+      name: 'Столики приставные'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '191'
+      uuid: 79770bb0-4561-426c-bc5c-1b1200fc5315
     -
       vid: media_folders_folder
       tid: '184'
