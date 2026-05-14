@@ -1,0 +1,45 @@
+uuid: d23d02ae-dadc-4eb9-ad6b-f6a839211608
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.possible_sizes_for_ordering_set.field_from_base_price
+    - field.field.paragraph.possible_sizes_for_ordering_set.field_possible_width
+    - field.field.paragraph.possible_sizes_for_ordering_set.field_sleeping_place_decomposed
+    - field.field.paragraph.possible_sizes_for_ordering_set.field_sleeping_place_folded
+    - paragraphs.paragraphs_type.possible_sizes_for_ordering_set
+id: paragraph.possible_sizes_for_ordering_set.default
+targetEntityType: paragraph
+bundle: possible_sizes_for_ordering_set
+mode: default
+content:
+  field_from_base_price:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_possible_width:
+    type: number
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_sleeping_place_decomposed:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_sleeping_place_folded:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

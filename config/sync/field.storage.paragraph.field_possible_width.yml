@@ -1,0 +1,20 @@
+uuid: d038dbaf-0536-44d7-8143-26e183821265
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_possible_width
+field_name: field_possible_width
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

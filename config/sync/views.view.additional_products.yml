@@ -691,26 +691,6 @@ display:
                               component_id: 'ui_suite_bootstrap:grid_row_1'
                               slots:
                                 col_1_content:
-                                  sources: {  }
-                          node_id: 3b681570a922e1f6
-                          third_party_settings:
-                            styles:
-                              selected:
-                                borders_border: border-bottom
-                                borders_border_width: border-1
-                                borders_border_color: border-light
-                                display_small: d-sm-flex
-                                flex_flex: d-inline-flex
-                                flex_direction: flex-row
-                                flex_justify_content: justify-content-center
-                              extra: pb-2
-                        -
-                          source_id: component
-                          source:
-                            component:
-                              component_id: 'ui_suite_bootstrap:grid_row_1'
-                              slots:
-                                col_1_content:
                                   sources:
                                     -
                                       source_id: view_rows

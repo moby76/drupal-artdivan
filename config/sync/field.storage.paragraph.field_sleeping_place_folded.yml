@@ -1,0 +1,20 @@
+uuid: d5098a2d-3b1b-48ff-8b30-32ca8d90f018
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_sleeping_place_folded
+field_name: field_sleeping_place_folded
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

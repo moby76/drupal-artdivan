@@ -1,0 +1,10 @@
+uuid: 3049988c-5daa-4e96-a65c-42d76692d6d9
+langcode: en
+status: true
+dependencies: {  }
+id: possible_sizes_for_ordering_set
+label: 'Возможные размеры для заказа комплекта'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

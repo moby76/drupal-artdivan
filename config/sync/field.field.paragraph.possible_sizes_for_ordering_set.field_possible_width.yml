@@ -1,0 +1,23 @@
+uuid: 2626857b-6928-4d35-827f-63687002b763
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_possible_width
+    - paragraphs.paragraphs_type.possible_sizes_for_ordering_set
+id: paragraph.possible_sizes_for_ordering_set.field_possible_width
+field_name: field_possible_width
+entity_type: paragraph
+bundle: possible_sizes_for_ordering_set
+label: Ширина
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' см'
+field_type: integer

@@ -1,0 +1,42 @@
+uuid: 85c44e21-d605-437d-bdf8-10c61b1a907e
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_from_base_price
+field_name: field_from_base_price
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '10'
+      label: '+ 10% к стоимости'
+    -
+      value: 15_k_stoimosti
+      label: '+ 15% к стоимости'
+    -
+      value: 20_k_stoimosti
+      label: '+ 20% к стоимости'
+    -
+      value: 10_ot_stoimosti
+      label: '- 10% от стоимости'
+    -
+      value: 15_ot_stoimosti
+      label: '- 15% от стоимости'
+    -
+      value: 20_ot_stoimosti
+      label: '- 20% от стоимости'
+    -
+      value: bez_izmeneniy
+      label: 'Без изменений'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
