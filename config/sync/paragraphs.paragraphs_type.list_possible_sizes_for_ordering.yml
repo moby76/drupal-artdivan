@@ -1,0 +1,10 @@
+uuid: 9b246774-b780-470e-9168-f34784a4e136
+langcode: en
+status: true
+dependencies: {  }
+id: list_possible_sizes_for_ordering
+label: 'Список возможных размеров для заказа'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

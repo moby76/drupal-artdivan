@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.paragraph.possible_sizes_for_ordering_set.field_from_base_price
     - field.field.paragraph.possible_sizes_for_ordering_set.field_possible_width
-    - field.field.paragraph.possible_sizes_for_ordering_set.field_sleeping_place_decomposed
     - field.field.paragraph.possible_sizes_for_ordering_set.field_sleeping_place_folded
     - paragraphs.paragraphs_type.possible_sizes_for_ordering_set
 id: paragraph.possible_sizes_for_ordering_set.default
@@ -15,30 +14,21 @@ mode: default
 content:
   field_from_base_price:
     type: options_select
-    weight: 3
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_possible_width:
-    type: number
+    type: options_select
     weight: 0
     region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-  field_sleeping_place_decomposed:
-    type: number
-    weight: 2
-    region: content
-    settings:
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_sleeping_place_folded:
-    type: number
+    type: options_select
     weight: 1
     region: content
-    settings:
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

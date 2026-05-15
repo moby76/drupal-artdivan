@@ -1,0 +1,61 @@
+uuid: 987cf3dc-8464-4c08-bf2f-86d86a4b73d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_possible_sizes_for_ordering.field_possible_dimensions_paragr
+    - paragraphs.paragraphs_type.list_possible_sizes_for_ordering
+  module:
+    - display_builder
+    - entity_reference_revisions
+    - ui_patterns
+    - ui_patterns_field_formatters
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:paragraph:list_possible_sizes_for_ordering:field_possible_dimensions_paragr'
+                      'field:paragraph:list_possible_sizes_for_ordering:field_possible_dimensions_paragr':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:paragraph:list_possible_sizes_for_ordering:field_possible_dimensions_paragr'
+                              source:
+                                type: entity_reference_revisions_entity_view
+                                label: above
+                                settings:
+                                  view_mode: default
+                                  link: ''
+                                third_party_settings: {  }
+                                weight: 0
+                                region: content
+                    node_id: 4cdd0c128c4392d0
+        node_id: 591be2f5f888e8f0
+id: paragraph.list_possible_sizes_for_ordering.default
+targetEntityType: paragraph
+bundle: list_possible_sizes_for_ordering
+mode: default
+content:
+  field_possible_dimensions_paragr:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

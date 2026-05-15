@@ -1,16 +1,16 @@
-uuid: d038dbaf-0536-44d7-8143-26e183821265
+uuid: aa1ae27f-7468-4001-aa6e-e8c7c75917c5
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+    - taxonomy
 id: paragraph.field_possible_width
 field_name: field_possible_width
 entity_type: paragraph
-type: integer
+type: entity_reference
 settings:
-  unsigned: false
-  size: normal
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

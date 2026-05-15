@@ -1,23 +1,29 @@
-uuid: 497edf6c-70c5-4cbb-8668-2c687ee2f5e5
+uuid: f83ce2b1-6a38-41ac-ab0b-32d4a3cf7d1d
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_sleeping_place_folded
     - paragraphs.paragraphs_type.possible_sizes_for_ordering_set
+    - taxonomy.vocabulary.dimensions
 id: paragraph.possible_sizes_for_ordering_set.field_sleeping_place_folded
 field_name: field_sleeping_place_folded
 entity_type: paragraph
 bundle: possible_sizes_for_ordering_set
-label: 'Спальное место(слож.)'
+label: 'Спальное место'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  min: null
-  max: null
-  prefix: ''
-  suffix: ' см'
-field_type: integer
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dimensions: dimensions
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

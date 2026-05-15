@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.paragraph.possible_sizes_for_ordering_set.field_from_base_price
     - field.field.paragraph.possible_sizes_for_ordering_set.field_possible_width
-    - field.field.paragraph.possible_sizes_for_ordering_set.field_sleeping_place_decomposed
     - field.field.paragraph.possible_sizes_for_ordering_set.field_sleeping_place_folded
     - paragraphs.paragraphs_type.possible_sizes_for_ordering_set
   module:
@@ -31,46 +30,44 @@ third_party_settings:
                     source_id: component
                     source:
                       component:
-                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        component_id: 'ui_suite_bootstrap:grid_row_2'
                         slots:
+                          col_2_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:paragraph:possible_sizes_for_ordering_set:field_possible_width'
+                                  'field:paragraph:possible_sizes_for_ordering_set:field_possible_width':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:paragraph:possible_sizes_for_ordering_set:field_possible_width'
+                                          source:
+                                            type: entity_reference_label
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                            settings:
+                                              link: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 17052a0045f181be
                           col_1_content:
                             sources:
                               -
-                                source_id: component
+                                source_id: textfield
                                 source:
-                                  component:
-                                    component_id: 'ui_suite_bootstrap:grid_row_2'
-                                    slots:
-                                      col_2_content:
-                                        sources:
-                                          -
-                                            source_id: entity_field
-                                            source:
-                                              derivable_context: 'field:paragraph:possible_sizes_for_ordering_set:field_possible_width'
-                                              'field:paragraph:possible_sizes_for_ordering_set:field_possible_width':
-                                                value:
-                                                  sources:
-                                                    -
-                                                      source_id: 'field_formatter:paragraph:possible_sizes_for_ordering_set:field_possible_width'
-                                                      source:
-                                                        type: number_integer
-                                                        label: above
-                                                        settings:
-                                                          thousand_separator: ''
-                                                          prefix_suffix: true
-                                                        third_party_settings: {  }
-                                                        weight: 0
-                                                        region: content
-                                            node_id: a05f234c602fa99f
-                                      col_1_content:
-                                        sources:
-                                          -
-                                            source_id: textfield
-                                            source:
-                                              value: Ширина
-                                            node_id: ae3e18fcc377f62f
-                                node_id: b0bf8cc410002b1b
-                    node_id: cfe6202569c3ee07
+                                  value: Ширина(общая)
+                                node_id: ae3e18fcc377f62f
+                    node_id: b0bf8cc410002b1b
                   -
                     source_id: component
                     source:
@@ -82,7 +79,7 @@ third_party_settings:
                               -
                                 source_id: textfield
                                 source:
-                                  value: 'Спальное место(слож.)'
+                                  value: 'Спальное место'
                                 node_id: 080ed6324c8823da
                           col_2_content:
                             sources:
@@ -96,51 +93,23 @@ third_party_settings:
                                         -
                                           source_id: 'field_formatter:paragraph:possible_sizes_for_ordering_set:field_sleeping_place_folded'
                                           source:
-                                            type: number_integer
-                                            label: above
+                                            type: entity_reference_label
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
                                             settings:
-                                              thousand_separator: ''
-                                              prefix_suffix: true
-                                            third_party_settings: {  }
-                                            weight: 1
-                                            region: content
-                                node_id: 2db36c5ca56a2c0a
+                                              link: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: af22bd7fbd77210d
                     node_id: aa376d94ed5b90a6
-                  -
-                    source_id: component
-                    source:
-                      component:
-                        component_id: 'ui_suite_bootstrap:grid_row_2'
-                        slots:
-                          col_2_content:
-                            sources:
-                              -
-                                source_id: entity_field
-                                source:
-                                  derivable_context: 'field:paragraph:possible_sizes_for_ordering_set:field_sleeping_place_decomposed'
-                                  'field:paragraph:possible_sizes_for_ordering_set:field_sleeping_place_decomposed':
-                                    value:
-                                      sources:
-                                        -
-                                          source_id: 'field_formatter:paragraph:possible_sizes_for_ordering_set:field_sleeping_place_decomposed'
-                                          source:
-                                            type: number_integer
-                                            label: above
-                                            settings:
-                                              thousand_separator: ''
-                                              prefix_suffix: true
-                                            third_party_settings: {  }
-                                            weight: 2
-                                            region: content
-                                node_id: 5e2a8dafb6558860
-                          col_1_content:
-                            sources:
-                              -
-                                source_id: textfield
-                                source:
-                                  value: 'Спальное место(разлож.)'
-                                node_id: 3982bb2da53607a4
-                    node_id: 66e7134f498b2571
                   -
                     source_id: component
                     source:
@@ -160,20 +129,27 @@ third_party_settings:
                                           source_id: 'field_formatter:paragraph:possible_sizes_for_ordering_set:field_from_base_price'
                                           source:
                                             type: list_default
-                                            label: above
-                                            settings: {  }
-                                            third_party_settings: {  }
-                                            weight: 3
-                                            region: content
-                                node_id: 43861a1f367ad42e
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: c7fa7a1acd1d565a
                           col_1_content:
                             sources:
                               -
                                 source_id: textfield
                                 source:
-                                  value: Стоимость
-                                node_id: 217c135eb3d8412e
-                    node_id: 5f8e20aff6d9808d
+                                  value: 'Ориентировочная стоимость'
+                                node_id: 21d0d3047e922dd3
+                    node_id: b07518f2f077f8aa
         node_id: c421f965693517b2
 id: paragraph.possible_sizes_for_ordering_set.default
 targetEntityType: paragraph
@@ -188,30 +164,19 @@ content:
     weight: 3
     region: content
   field_possible_width:
-    type: number_integer
+    type: entity_reference_label
     label: above
     settings:
-      thousand_separator: ''
-      prefix_suffix: true
+      link: true
     third_party_settings: {  }
-    weight: 0
-    region: content
-  field_sleeping_place_decomposed:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 2
+    weight: 4
     region: content
   field_sleeping_place_folded:
-    type: number_integer
+    type: entity_reference_label
     label: above
     settings:
-      thousand_separator: ''
-      prefix_suffix: true
+      link: true
     third_party_settings: {  }
-    weight: 1
+    weight: 5
     region: content
 hidden: {  }

@@ -1,16 +1,16 @@
-uuid: d5098a2d-3b1b-48ff-8b30-32ca8d90f018
+uuid: 798c456f-8c04-432a-bb2d-3171f47b7ff7
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+    - taxonomy
 id: paragraph.field_sleeping_place_folded
 field_name: field_sleeping_place_folded
 entity_type: paragraph
-type: integer
+type: entity_reference
 settings:
-  unsigned: false
-  size: normal
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

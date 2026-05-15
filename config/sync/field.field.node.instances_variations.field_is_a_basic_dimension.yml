@@ -1,0 +1,21 @@
+uuid: d0d96f4d-57a6-4024-95c6-5e87b9f94996
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_a_basic_dimension
+    - node.type.instances_variations
+id: node.instances_variations.field_is_a_basic_dimension
+field_name: field_is_a_basic_dimension
+entity_type: node
+bundle: instances_variations
+label: 'Это стандартный размер'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Да, это вариация стандартного размера'
+  off_label: 'Нет, это вариация с нестандартным размером'
+field_type: boolean

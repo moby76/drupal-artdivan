@@ -12,6 +12,12 @@ type: list_string
 settings:
   allowed_values:
     -
+      value: 3_k_stoimosti
+      label: '+ 3% к стоимости'
+    -
+      value: 5_k_stoimosti
+      label: '+ 5% к стоимости'
+    -
       value: '10'
       label: '+ 10% к стоимости'
     -

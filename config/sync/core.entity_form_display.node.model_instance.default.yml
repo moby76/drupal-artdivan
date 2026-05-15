@@ -12,7 +12,9 @@ dependencies:
     - field.field.node.model_instance.field_instance_description
     - field.field.node.model_instance.field_instance_main_image
     - field.field.node.model_instance.field_is_modular_set
+    - field.field.node.model_instance.field_is_possible_order_dimensio
     - field.field.node.model_instance.field_model
+    - field.field.node.model_instance.field_possible_dimensions
     - field.field.node.model_instance.field_tags
     - field.field.node.model_instance.field_three_dimensional_image
     - field.field.node.model_instance.field_variations
@@ -25,7 +27,6 @@ dependencies:
     - paragraphs
     - path
     - text
-    - viewsreference
 id: node.model_instance.default
 targetEntityType: node
 bundle: model_instance
@@ -37,12 +38,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_additional_products:
-    type: viewsreference_select
-    weight: 19
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_complectation:
     type: paragraphs
     weight: 15
@@ -50,15 +45,17 @@ content:
     settings:
       title: Paragraph
       title_plural: Paragraphs
-      edit_mode: open
+      edit_mode: closed
       closed_mode: summary
       autocollapse: none
       closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: instance_complectation
       features:
+        add_above: '0'
         collapse_edit_all: collapse_edit_all
+        convert: '0'
         duplicate: duplicate
     third_party_settings: {  }
   field_configuration:
@@ -111,11 +108,37 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
+  field_is_possible_order_dimensio:
+    type: options_buttons
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_model:
     type: options_select
     weight: 8
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_possible_dimensions:
+    type: paragraphs
+    weight: 19
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: list_possible_sizes_for_ordering
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
     third_party_settings: {  }
   field_tags:
     type: autocomplete_deluxe
@@ -144,12 +167,6 @@ content:
       show_navigation: 1
       show_search: 1
       form_mode: {  }
-    third_party_settings: {  }
-  field_variations:
-    type: viewsreference_select
-    weight: 18
-    region: content
-    settings: {  }
     third_party_settings: {  }
   field_version:
     type: options_select
@@ -212,3 +229,5 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_additional_products: true
+  field_variations: true

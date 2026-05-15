@@ -1,0 +1,112 @@
+uuid: 95d07024-497e-476c-92c3-31b2f9b33146
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_possible_dimensions_paragr
+    - paragraphs.paragraphs_type.list_possible_sizes_for_ordering
+    - paragraphs.paragraphs_type.possible_sizes_for_ordering_set
+  module:
+    - entity_reference_revisions
+id: paragraph.list_possible_sizes_for_ordering.field_possible_dimensions_paragr
+field_name: field_possible_dimensions_paragr
+entity_type: paragraph
+bundle: list_possible_sizes_for_ordering
+label: 'Возможные размеры для заказа'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      possible_sizes_for_ordering_set: possible_sizes_for_ordering_set
+    negate: 0
+    target_bundles_drag_drop:
+      additional_info_field:
+        weight: 30
+        enabled: false
+      assembly:
+        weight: 31
+        enabled: false
+      choise_of_instance:
+        weight: 32
+        enabled: false
+      customer_details:
+        weight: 33
+        enabled: false
+      delivery:
+        weight: 34
+        enabled: false
+      installment:
+        weight: 35
+        enabled: false
+      instance_complectation:
+        weight: 36
+        enabled: false
+      list_of_selected_beds:
+        weight: 37
+        enabled: false
+      list_of_selected_fabrics:
+        weight: 38
+        enabled: false
+      list_of_selected_furniture_sets:
+        weight: 39
+        enabled: false
+      list_of_selected_goods:
+        weight: 40
+        enabled: false
+      list_of_selected_moduls:
+        weight: 41
+        enabled: false
+      list_possible_sizes_for_ordering:
+        weight: 29
+        enabled: false
+      opisanie_zayavki:
+        weight: 42
+        enabled: false
+      organization_details_form:
+        weight: 43
+        enabled: false
+      other_goods:
+        weight: 44
+        enabled: false
+      payment:
+        weight: 45
+        enabled: false
+      possible_sizes_for_ordering_set:
+        weight: 46
+        enabled: true
+      secondary_elements_selection:
+        weight: 47
+        enabled: false
+      selected_items_cost:
+        weight: 48
+        enabled: false
+      seller:
+        weight: 49
+        enabled: false
+      separate_set_of_bed:
+        weight: 50
+        enabled: false
+      separate_set_of_module:
+        weight: 51
+        enabled: false
+      separate_set_of_upholstered_furn:
+        weight: 52
+        enabled: false
+      service:
+        weight: 53
+        enabled: false
+      total_amount:
+        weight: 54
+        enabled: false
+      trading_operation_type:
+        weight: 55
+        enabled: false
+      vybrat_tkan_dlya_elementov:
+        weight: 56
+        enabled: false
+field_type: entity_reference_revisions

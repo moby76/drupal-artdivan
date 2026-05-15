@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.instances_variations.body
     - field.field.node.instances_variations.field_fabric_price_category
     - field.field.node.instances_variations.field_instance_dimension
+    - field.field.node.instances_variations.field_is_a_basic_dimension
     - field.field.node.instances_variations.field_parent_instance
     - field.field.node.instances_variations.field_variation_price
     - node.type.instances_variations
@@ -32,7 +33,9 @@ content:
     weight: 100
     region: content
 hidden:
+  entity_link_display: true
   field_fabric_price_category: true
   field_instance_dimension: true
+  field_is_a_basic_dimension: true
   field_parent_instance: true
   field_variation_price: true

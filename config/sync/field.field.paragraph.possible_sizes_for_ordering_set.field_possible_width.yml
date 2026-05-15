@@ -1,23 +1,29 @@
-uuid: 2626857b-6928-4d35-827f-63687002b763
+uuid: e73af9f6-0e59-4cde-a80d-a2b2a2b4a2f5
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_possible_width
     - paragraphs.paragraphs_type.possible_sizes_for_ordering_set
+    - taxonomy.vocabulary.dimensions
 id: paragraph.possible_sizes_for_ordering_set.field_possible_width
 field_name: field_possible_width
 entity_type: paragraph
 bundle: possible_sizes_for_ordering_set
-label: Ширина
+label: Ширина(общая)
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  min: null
-  max: null
-  prefix: ''
-  suffix: ' см'
-field_type: integer
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dimensions: dimensions
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

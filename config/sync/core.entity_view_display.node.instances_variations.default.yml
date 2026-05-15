@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.instances_variations.body
     - field.field.node.instances_variations.field_fabric_price_category
     - field.field.node.instances_variations.field_instance_dimension
+    - field.field.node.instances_variations.field_is_a_basic_dimension
     - field.field.node.instances_variations.field_parent_instance
     - field.field.node.instances_variations.field_variation_price
     - node.type.instances_variations
@@ -40,6 +41,16 @@ content:
     third_party_settings: {  }
     weight: 104
     region: content
+  field_is_a_basic_dimension:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
   field_parent_instance:
     type: entity_reference_label
     label: above
@@ -62,4 +73,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  entity_link_display: true

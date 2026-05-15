@@ -12,7 +12,9 @@ dependencies:
     - field.field.node.model_instance.field_instance_description
     - field.field.node.model_instance.field_instance_main_image
     - field.field.node.model_instance.field_is_modular_set
+    - field.field.node.model_instance.field_is_possible_order_dimensio
     - field.field.node.model_instance.field_model
+    - field.field.node.model_instance.field_possible_dimensions
     - field.field.node.model_instance.field_tags
     - field.field.node.model_instance.field_three_dimensional_image
     - field.field.node.model_instance.field_variations
@@ -735,10 +737,193 @@ third_party_settings:
                 add_more_button: ''
                 sources:
                   -
-                    source_id: textfield
+                    source_id: component
                     source:
-                      value: 'Здесь будет блок с альтернативными размерами и ценой'
-                    node_id: d1788fadd5a40713
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          row_cols:
+                            source_id: select
+                            source:
+                              value: auto
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                        slots:
+                          content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: icon_renderable
+                                source:
+                                  value:
+                                    target_id: 'bootstrap:arrows-expand-vertical'
+                                    settings:
+                                      bootstrap:
+                                        size: 32px
+                                        color: ''
+                                        alt: ''
+                                    icon_id: 'bootstrap:arrows-expand-vertical'
+                                    icon_settings:
+                                      bootstrap:
+                                        size: 32px
+                                        color: ''
+                                        alt: ''
+                                  saved_values:
+                                    size: 32px
+                                    color: ''
+                                    alt: ''
+                                node_id: 8029cd2acd22eb97
+                              -
+                                source_id: icon_renderable
+                                source:
+                                  value:
+                                    target_id: 'bootstrap:rulers'
+                                    settings:
+                                      bootstrap:
+                                        size: 32px
+                                        color: ''
+                                        alt: ''
+                                    icon_id: 'bootstrap:rulers'
+                                    icon_settings:
+                                      bootstrap:
+                                        size: 32px
+                                        color: ''
+                                        alt: ''
+                                  saved_values:
+                                    size: 32px
+                                    color: ''
+                                    alt: ''
+                                node_id: 35e4c04b01fa6efb
+                              -
+                                source_id: icon_renderable
+                                source:
+                                  value:
+                                    target_id: 'bootstrap:arrows-collapse-vertical'
+                                    settings:
+                                      bootstrap:
+                                        size: 32px
+                                        color: ''
+                                        alt: ''
+                                    icon_id: 'bootstrap:arrows-collapse-vertical'
+                                    icon_settings:
+                                      bootstrap:
+                                        size: 32px
+                                        color: ''
+                                        alt: ''
+                                  saved_values:
+                                    size: 32px
+                                    color: ''
+                                    alt: ''
+                                node_id: bcda5aff982a60c4
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: 6ba41eb1e01300ff
+                    third_party_settings:
+                      styles:
+                        selected:
+                          display_all: d-flex
+                          flex_direction: flex-row
+                          flex_justify_content: justify-content-center
+                        extra: ''
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        slots:
+                          col_1_content:
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:model_instance:field_is_possible_order_dimensio'
+                                  'field:node:model_instance:field_is_possible_order_dimensio':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:model_instance:field_is_possible_order_dimensio'
+                                          source:
+                                            type: boolean
+                                            settings:
+                                              format: default
+                                              format_custom_false: ''
+                                              format_custom_true: ''
+                                            third_party_settings: {  }
+                                node_id: 4f0b6ac4fe57e603
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:model_instance:field_possible_dimensions'
+                                  'field:node:model_instance:field_possible_dimensions':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:model_instance:field_possible_dimensions'
+                                          source:
+                                            type: entity_reference_revisions_entity_view
+                                            settings: {  }
+                                            third_party_settings: {  }
+                                node_id: 8710c5eab3520072
+                    node_id: e6d10e290500f620
             third_party_settings: ''
             node_id: ''
         node_id: 444a8167fb19a131
@@ -867,6 +1052,16 @@ content:
     third_party_settings: {  }
     weight: 8
     region: content
+  field_is_possible_order_dimensio:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 17
+    region: content
   field_model:
     type: entity_reference_label
     label: above
@@ -874,6 +1069,15 @@ content:
       link: true
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_possible_dimensions:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 16
     region: content
   field_tags:
     type: entity_reference_label
