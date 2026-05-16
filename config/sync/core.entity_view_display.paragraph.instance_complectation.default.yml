@@ -175,13 +175,13 @@ third_party_settings:
                                             source_id: icon_renderable
                                             source:
                                               value:
-                                                target_id: 'bootstrap:diagram-2-fill'
+                                                target_id: 'bootstrap:diagram-3-fill'
                                                 settings:
                                                   bootstrap:
                                                     size: 32px
                                                     color: ''
                                                     alt: ''
-                                                icon_id: 'bootstrap:diagram-2-fill'
+                                                icon_id: 'bootstrap:diagram-3-fill'
                                                 icon_settings:
                                                   bootstrap:
                                                     size: 32px

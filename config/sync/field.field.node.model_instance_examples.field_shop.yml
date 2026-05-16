@@ -1,0 +1,29 @@
+uuid: 9369ac31-86c0-4bbb-9bd7-b74892d47cb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shop
+    - node.type.model_instance_examples
+    - node.type.point_of_sale
+id: node.model_instance_examples.field_shop
+field_name: field_shop
+entity_type: node
+bundle: model_instance_examples
+label: Магазин
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      point_of_sale: point_of_sale
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

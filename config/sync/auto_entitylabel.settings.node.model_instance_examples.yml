@@ -1,0 +1,10 @@
+status: 1
+pattern: '[node:field_instance] [node:field_main_fabric]'
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.model_instance_examples
+new_content_behavior: 0

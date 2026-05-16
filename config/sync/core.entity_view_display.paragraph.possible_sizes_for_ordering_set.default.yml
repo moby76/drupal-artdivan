@@ -23,8 +23,71 @@ third_party_settings:
         source:
           component:
             component_id: 'ui_suite_bootstrap:grid_row_1'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: select
+                source:
+                  value: '12'
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
             slots:
               col_1_content:
+                add_more_button: ''
                 sources:
                   -
                     source_id: component
@@ -68,6 +131,13 @@ third_party_settings:
                                   value: Ширина(общая)
                                 node_id: ae3e18fcc377f62f
                     node_id: b0bf8cc410002b1b
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border-bottom
+                          borders_border_width: border-1
+                          borders_border_color: border-secondary-subtle
+                        extra: 'my-1 mb-2 py-1'
                   -
                     source_id: component
                     source:
@@ -110,6 +180,13 @@ third_party_settings:
                                           _weight: '0'
                                 node_id: af22bd7fbd77210d
                     node_id: aa376d94ed5b90a6
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border-bottom
+                          borders_border_width: border-1
+                          borders_border_color: border-secondary-subtle
+                        extra: 'my-1 mb-2 py-1'
                   -
                     source_id: component
                     source:
@@ -150,7 +227,26 @@ third_party_settings:
                                   value: 'Ориентировочная стоимость'
                                 node_id: 21d0d3047e922dd3
                     node_id: b07518f2f077f8aa
+                    third_party_settings:
+                      styles:
+                        selected:
+                          borders_border: border-bottom
+                          borders_border_width: border-1
+                          borders_border_color: border-secondary-subtle
+                        extra: 'my-1 mb-2 py-1'
+            third_party_settings: ''
+            node_id: ''
         node_id: c421f965693517b2
+        third_party_settings:
+          styles:
+            selected:
+              typography: small
+              borders_border: border
+              borders_border_width: border-1
+              borders_border_color: border-secondary-subtle
+              borders_border_radius: rounded
+              borders_border_radius_width: rounded-2
+            extra: 'my-1 mb-2 py-1 mx-1 px-2'
 id: paragraph.possible_sizes_for_ordering_set.default
 targetEntityType: paragraph
 bundle: possible_sizes_for_ordering_set

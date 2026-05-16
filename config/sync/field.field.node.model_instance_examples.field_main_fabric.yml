@@ -1,0 +1,29 @@
+uuid: 3d5ebfa7-05e4-4ead-b78b-52951a84f862
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_fabric
+    - node.type.model_instance_examples
+    - taxonomy.vocabulary.fabric_collections
+id: node.model_instance_examples.field_main_fabric
+field_name: field_main_fabric
+entity_type: node
+bundle: model_instance_examples
+label: 'Основная ткань'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      fabric_collections: fabric_collections
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

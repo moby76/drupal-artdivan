@@ -1,0 +1,135 @@
+uuid: 835bc8a5-2f8f-4c47-b494-f4d676d34f6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.model_instance_examples.field_availability
+    - field.field.node.model_instance_examples.field_in_sale_price
+    - field.field.node.model_instance_examples.field_instance
+    - field.field.node.model_instance_examples.field_is_possible_to_order
+    - field.field.node.model_instance_examples.field_last_price
+    - field.field.node.model_instance_examples.field_main_fabric
+    - field.field.node.model_instance_examples.field_main_image
+    - field.field.node.model_instance_examples.field_sample_images
+    - field.field.node.model_instance_examples.field_shop
+    - node.type.model_instance_examples
+  module:
+    - media_folders
+    - path
+id: node.model_instance_examples.default
+targetEntityType: node
+bundle: model_instance_examples
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_availability:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_in_sale_price:
+    type: number
+    weight: 13
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_instance:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_is_possible_to_order:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_last_price:
+    type: number
+    weight: 12
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_main_fabric:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_main_image:
+    type: media_folders_widget
+    weight: 7
+    region: content
+    settings:
+      view_type: list
+      view_order: date-desc
+      show_navigation: 1
+      show_search: 1
+      form_mode: {  }
+    third_party_settings: {  }
+  field_sample_images:
+    type: media_folders_widget
+    weight: 8
+    region: content
+    settings:
+      view_type: list
+      view_order: date-desc
+      show_navigation: 1
+      show_search: 1
+      form_mode: {  }
+    third_party_settings: {  }
+  field_shop:
+    type: options_select
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true

@@ -1,0 +1,23 @@
+uuid: 0fb93bb3-7fdb-4819-83ee-45d068cb6ab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_in_sale_price
+    - node.type.model_instance_examples
+id: node.model_instance_examples.field_in_sale_price
+field_name: field_in_sale_price
+entity_type: node
+bundle: model_instance_examples
+label: 'Цена в продаже'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' руб.'
+field_type: integer

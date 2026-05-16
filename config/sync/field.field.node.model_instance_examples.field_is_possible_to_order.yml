@@ -1,0 +1,21 @@
+uuid: 337dd86b-f54c-4f16-81ee-696cd9ddb2be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_possible_to_order
+    - node.type.model_instance_examples
+id: node.model_instance_examples.field_is_possible_to_order
+field_name: field_is_possible_to_order
+entity_type: node
+bundle: model_instance_examples
+label: 'Возможность заказать'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Можно заказать'
+  off_label: 'Недоступно для заказа'
+field_type: boolean
