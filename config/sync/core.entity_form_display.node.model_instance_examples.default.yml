@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.model_instance_examples.field_shop
     - node.type.model_instance_examples
   module:
+    - conditional_fields
     - media_folders
     - path
 id: node.model_instance_examples.default
@@ -28,11 +29,10 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_availability:
-    type: boolean_checkbox
+    type: options_buttons
     weight: 9
     region: content
-    settings:
-      display_label: true
+    settings: {  }
     third_party_settings: {  }
   field_in_sale_price:
     type: number
@@ -40,7 +40,26 @@ content:
     region: content
     settings:
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        4963bf89-bc0d-45fe-af82-f6a81d07ea4b:
+          entity_type: node
+          bundle: model_instance_examples
+          dependee: field_availability
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '1'
+            effect: show
+            effect_options: {  }
+            selector: ''
   field_instance:
     type: options_select
     weight: 5
@@ -48,19 +67,56 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_is_possible_to_order:
-    type: boolean_checkbox
+    type: options_buttons
     weight: 11
     region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        8a587947-403f-4b50-8dba-fd389f240f81:
+          entity_type: node
+          bundle: model_instance_examples
+          dependee: field_availability
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '0'
+            effect: show
+            effect_options: {  }
+            selector: ''
   field_last_price:
     type: number
     weight: 12
     region: content
     settings:
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        7ca40b78-11db-40c4-9a4e-d1313db84a8b:
+          entity_type: node
+          bundle: model_instance_examples
+          dependee: field_availability
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '0'
+            effect: show
+            effect_options: {  }
+            selector: ''
   field_main_fabric:
     type: entity_reference_autocomplete
     weight: 6
@@ -98,7 +154,26 @@ content:
     weight: 10
     region: content
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        85f9fa39-adba-4642-83c4-b9eac348514e:
+          entity_type: node
+          bundle: model_instance_examples
+          dependee: field_availability
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: '1'
+            effect: show
+            effect_options: {  }
+            selector: ''
   path:
     type: path
     weight: 3

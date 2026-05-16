@@ -1,0 +1,262 @@
+uuid: 3c768d10-3e30-40ba-864b-e427722a06d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.to_frontend
+    - field.field.node.model_instance_examples.field_availability
+    - field.field.node.model_instance_examples.field_in_sale_price
+    - field.field.node.model_instance_examples.field_instance
+    - field.field.node.model_instance_examples.field_is_possible_to_order
+    - field.field.node.model_instance_examples.field_last_price
+    - field.field.node.model_instance_examples.field_main_fabric
+    - field.field.node.model_instance_examples.field_main_image
+    - field.field.node.model_instance_examples.field_sample_images
+    - field.field.node.model_instance_examples.field_shop
+    - node.type.model_instance_examples
+  module:
+    - display_builder
+    - layout_builder
+    - ui_patterns
+    - ui_patterns_field_formatters
+    - user
+  theme:
+    - ui_suite_bootstrap
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  display_builder:
+    profile: default
+    sources:
+      -
+        source_id: component
+        source:
+          component:
+            component_id: 'ui_suite_bootstrap:grid_row_1'
+            slots:
+              col_1_content:
+                sources:
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance_examples:title'
+                      'field:node:model_instance_examples:title':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance_examples:title'
+                              source:
+                                type: string
+                                settings:
+                                  link_to_entity: false
+                                third_party_settings: {  }
+                    node_id: 3d67e73702110fb8
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance_examples:field_main_image'
+                      'field:node:model_instance_examples:field_main_image':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance_examples:field_main_image'
+                              source:
+                                type: entity_reference_entity_view
+                                label: above
+                                settings:
+                                  view_mode: default
+                                  link: false
+                                third_party_settings: {  }
+                                weight: 102
+                                region: content
+                    node_id: 00bb4af14a9c4e94
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance_examples:field_availability'
+                      'field:node:model_instance_examples:field_availability':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance_examples:field_availability'
+                              source:
+                                type: boolean
+                                label: above
+                                settings:
+                                  format: default
+                                  format_custom_false: ''
+                                  format_custom_true: ''
+                                third_party_settings: {  }
+                                weight: 104
+                                region: content
+                    node_id: 4bab16ceee2797a2
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance_examples:field_shop'
+                      'field:node:model_instance_examples:field_shop':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance_examples:field_shop'
+                              source:
+                                type: entity_reference_label
+                                label: above
+                                settings:
+                                  link: true
+                                third_party_settings: {  }
+                                weight: 105
+                                region: content
+                    node_id: 0f66de85acf14416
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance_examples:field_is_possible_to_order'
+                      'field:node:model_instance_examples:field_is_possible_to_order':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance_examples:field_is_possible_to_order'
+                              source:
+                                type: boolean
+                                label: above
+                                settings:
+                                  format: default
+                                  format_custom_false: ''
+                                  format_custom_true: ''
+                                third_party_settings: {  }
+                                weight: 106
+                                region: content
+                    node_id: 38e022b796558997
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance_examples:field_in_sale_price'
+                      'field:node:model_instance_examples:field_in_sale_price':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance_examples:field_in_sale_price'
+                              source:
+                                type: number_integer
+                                label: above
+                                settings:
+                                  thousand_separator: ''
+                                  prefix_suffix: true
+                                third_party_settings: {  }
+                                weight: 108
+                                region: content
+                    node_id: 8d2d7866e2042988
+                  -
+                    source_id: entity_field
+                    source:
+                      derivable_context: 'field:node:model_instance_examples:field_last_price'
+                      'field:node:model_instance_examples:field_last_price':
+                        value:
+                          sources:
+                            -
+                              source_id: 'field_formatter:node:model_instance_examples:field_last_price'
+                              source:
+                                type: number_integer
+                                label: above
+                                settings:
+                                  thousand_separator: ''
+                                  prefix_suffix: true
+                                third_party_settings: {  }
+                                weight: 107
+                                region: content
+                    node_id: 9c7941cf8e9f6c24
+        node_id: 18052361f445cc84
+id: node.model_instance_examples.to_frontend
+targetEntityType: node
+bundle: model_instance_examples
+mode: to_frontend
+content:
+  field_availability:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_in_sale_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_instance:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_is_possible_to_order:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_last_price:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_main_fabric:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_main_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_sample_images:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_shop:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_link_display: true
