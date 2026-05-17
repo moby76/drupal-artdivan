@@ -8,14 +8,14 @@ effects:
   f3bc1d59-3251-4aff-8512-7a9c87cd96a6:
     uuid: f3bc1d59-3251-4aff-8512-7a9c87cd96a6
     id: image_scale
-    weight: 1
+    weight: -10
     data:
       width: null
       height: 200
-      upscale: false
+      upscale: true
   b990eeac-1c96-471c-9b98-33c8baf1fca1:
     uuid: b990eeac-1c96-471c-9b98-33c8baf1fca1
     id: image_convert_avif
-    weight: 3
+    weight: -8
     data:
       extension: webp

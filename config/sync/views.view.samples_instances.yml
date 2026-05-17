@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.card
     - field.storage.node.field_availability
     - field.storage.node.field_instance
     - field.storage.node.field_is_possible_to_order
@@ -13,7 +14,11 @@ dependencies:
   module:
     - media
     - node
+    - ui_patterns
+    - ui_patterns_views
     - user
+  theme:
+    - ui_suite_bootstrap
 id: samples_instances
 label: 'Примеры экземпляров'
 module: views
@@ -513,9 +518,107 @@ display:
           value:
             model_instance_examples: model_instance_examples
       style:
-        type: default
+        type: ui_patterns
+        options:
+          uses_fields: false
+          ui_patterns:
+            ui_patterns:
+              component_id: 'ui_suite_bootstrap:grid_row'
+              variant_id: null
+              props:
+                attributes:
+                  source_id: ui_styles_attributes
+                  source:
+                    styles:
+                      selected:
+                        borders_border: border
+                        borders_border_width: border-1
+                        borders_border_color: border-primary
+                    extra: ''
+                container:
+                  source_id: select
+                  source:
+                    value: container
+                container_attributes:
+                  source_id: attributes
+                  source:
+                    value: ''
+                container_wrapper_attributes:
+                  source_id: attributes
+                  source:
+                    value: ''
+                gutters:
+                  source_id: select
+                  source:
+                    value: g-3
+                gutters_horizontal:
+                  source_id: select
+                  source:
+                    value: ''
+                gutters_vertical:
+                  source_id: select
+                  source:
+                    value: ''
+                row_cols:
+                  source_id: select
+                  source:
+                    value: auto
+                col_xs:
+                  source_id: select
+                  source:
+                    value: '12'
+                col_sm:
+                  source_id: select
+                  source:
+                    value: '6'
+                col_md:
+                  source_id: select
+                  source:
+                    value: '4'
+                col_lg:
+                  source_id: select
+                  source:
+                    value: '3'
+                col_xl:
+                  source_id: select
+                  source:
+                    value: ''
+                col_xxl:
+                  source_id: select
+                  source:
+                    value: ''
+                col_offset:
+                  source_id: select
+                  source:
+                    value: ''
+                col_attributes:
+                  source_id: ui_styles_attributes
+                  source:
+                    styles:
+                      selected:
+                        spacing_margin_bottom: mb-4
+                    extra: ''
+              slots:
+                content:
+                  sources:
+                    -
+                      source_id: view_rows
+                      source:
+                        ui_patterns_views_field: ''
+                      _weight: '0'
+                      third_party_settings: ''
+                      node_id: ''
+                      _remove:
+                        dropdown_actions:
+                          - Remove
+                  add_more_button: ''
+              third_party_settings: ''
+              node_id: ''
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: card
       query:
         type: views_query
         options:
@@ -557,7 +660,51 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        display_builder:
+          profile: default
+          sources:
+            -
+              source_id: view_header
+              source: {  }
+              node_id: fa1713524e498f6b
+            -
+              source_id: view_exposed
+              source: {  }
+              node_id: fc876bfc04ef5faf
+            -
+              source_id: view_attachment_before
+              source: {  }
+              node_id: f3bfb9359aa30de3
+            -
+              source_id: view_rows
+              source: {  }
+              node_id: 954f649fd11a725e
+              third_party_settings:
+                styles:
+                  selected: {  }
+                  extra: ''
+            -
+              source_id: view_pager
+              source: {  }
+              node_id: 65bea30b342195ab
+            -
+              source_id: view_attachment_after
+              source: {  }
+              node_id: 55870e3a3e25a927
+            -
+              source_id: view_more
+              source: {  }
+              node_id: d201374867c61d69
+            -
+              source_id: view_footer
+              source: {  }
+              node_id: b14a42a746427ece
+            -
+              source_id: view_feed_icons
+              source: {  }
+              node_id: 32523e84aea20bc7
+        ui_styles: {  }
     cache_metadata:
       max-age: -1
       contexts:
