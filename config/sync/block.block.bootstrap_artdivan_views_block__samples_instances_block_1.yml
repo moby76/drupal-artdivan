@@ -8,6 +8,11 @@ dependencies:
     - views
   theme:
     - bootstrap_artdivan
+third_party_settings:
+  ui_styles:
+    title:
+      selected:
+        text_text_alignment: text-center
 id: bootstrap_artdivan_views_block__samples_instances_block_1
 theme: bootstrap_artdivan
 region: content

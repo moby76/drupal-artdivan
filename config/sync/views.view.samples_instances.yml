@@ -529,20 +529,16 @@ display:
                 attributes:
                   source_id: ui_styles_attributes
                   source:
-                    styles:
-                      selected:
-                        borders_border: border
-                        borders_border_width: border-1
-                        borders_border_color: border-primary
+                    styles: {  }
                     extra: ''
                 container:
                   source_id: select
                   source:
-                    value: ''
+                    value: container-xxl
                 container_attributes:
                   source_id: attributes
                   source:
-                    value: ''
+                    value: 'class="gx-0"'
                 container_wrapper_attributes:
                   source_id: attributes
                   source:
@@ -550,7 +546,7 @@ display:
                 gutters:
                   source_id: select
                   source:
-                    value: g-3
+                    value: g-2
                 gutters_horizontal:
                   source_id: select
                   source:
@@ -582,11 +578,11 @@ display:
                 col_xl:
                   source_id: select
                   source:
-                    value: ''
+                    value: '3'
                 col_xxl:
                   source_id: select
                   source:
-                    value: ''
+                    value: '3'
                 col_offset:
                   source_id: select
                   source:

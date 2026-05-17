@@ -17,7 +17,7 @@ dependencies:
   module:
     - display_builder
     - layout_builder
-    - media
+    - photoswipe
     - ui_patterns
     - ui_patterns_field_formatters
     - user
@@ -35,10 +35,45 @@ third_party_settings:
         source:
           component:
             component_id: 'ui_suite_bootstrap:card'
+            variant_id:
+              source_id: select
+              source:
+                value: ''
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              image_position:
+                source_id: select
+                source:
+                  value: ''
+              header_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              footer_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              row_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="g-0"'
+              image_col_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="col-md-4"'
+              content_col_attributes:
+                source_id: attributes
+                source:
+                  value: 'class="col-md-8"'
             slots:
               image:
+                add_more_button: ''
                 sources: {  }
               header:
+                add_more_button: ''
                 sources:
                   -
                     source_id: entity_field
@@ -55,7 +90,137 @@ third_party_settings:
                                   link_to_entity: false
                                 third_party_settings: {  }
                     node_id: e33f2f204ba61802
+                    third_party_settings:
+                      styles:
+                        selected:
+                          text_text_wrapping: text-nowrap
+                          text_text_word_break: text-break
+                          visibility: visible
+                          overflow_horizontal: overflow-x-auto
+                        extra: pb-1
+              content:
+                add_more_button: ''
+                sources:
+                  -
+                    source_id: component
+                    source:
+                      component:
+                        component_id: 'ui_suite_bootstrap:grid_row_1'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: '12'
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: 'class="d-flex justify-content-center"'
+                        slots:
+                          col_1_content:
+                            add_more_button: ''
+                            sources:
+                              -
+                                source_id: entity_field
+                                source:
+                                  derivable_context: 'field:node:model_instance_examples:field_main_image'
+                                  'field:node:model_instance_examples:field_main_image':
+                                    value:
+                                      sources:
+                                        -
+                                          source_id: 'field_formatter:node:model_instance_examples:field_main_image'
+                                          source:
+                                            type: photoswipe_field_formatter
+                                            settings:
+                                              photoswipe_thumbnail_style: '220_130'
+                                              photoswipe_thumbnail_style_first: '220_130'
+                                              photoswipe_image_style: ''
+                                              photoswipe_reference_image_field: field_media_image
+                                              photoswipe_view_mode: _custom
+                                              image_loading:
+                                                attribute: lazy
+                                            third_party_settings:
+                                              field_label:
+                                                label_value: ''
+                                                label_class: ''
+                                                label_tag: ''
+                                              nomarkup:
+                                                separator: '|'
+                                                referenced_entity: ''
+                                                enabled: 0
+                                          node_id: ''
+                                          third_party_settings: ''
+                                          _weight: '0'
+                                node_id: 860316d92e1f4208
+                                third_party_settings:
+                                  styles:
+                                    selected: {  }
+                                    extra: ''
+                        third_party_settings: ''
+                        node_id: ''
+                    node_id: a1734550b5f362ca
+                    third_party_settings:
+                      styles:
+                        selected:
+                          colors_background_color: bg-light
+                          borders_border: border
+                          borders_border_radius: rounded
+                          borders_border_radius_width: rounded-1
+                        extra: 'mx-1 py-2'
               footer:
+                add_more_button: ''
                 sources:
                   -
                     source_id: component
@@ -369,128 +534,14 @@ third_party_settings:
                         third_party_settings: ''
                         node_id: ''
                     node_id: d8d91c2874f6dc05
-              content:
-                sources:
-                  -
-                    source_id: component
-                    source:
-                      component:
-                        component_id: 'ui_suite_bootstrap:grid_row_1'
-                        variant_id: null
-                        props:
-                          attributes:
-                            source_id: attributes
-                            source:
-                              value: ''
-                          container:
-                            source_id: select
-                            source:
-                              value: ''
-                          container_attributes:
-                            source_id: attributes
-                            source:
-                              value: ''
-                          container_wrapper_attributes:
-                            source_id: attributes
-                            source:
-                              value: ''
-                          gutters:
-                            source_id: select
-                            source:
-                              value: ''
-                          gutters_horizontal:
-                            source_id: select
-                            source:
-                              value: ''
-                          gutters_vertical:
-                            source_id: select
-                            source:
-                              value: ''
-                          col_xs:
-                            source_id: select
-                            source:
-                              value: '12'
-                          col_sm:
-                            source_id: select
-                            source:
-                              value: ''
-                          col_md:
-                            source_id: select
-                            source:
-                              value: ''
-                          col_lg:
-                            source_id: select
-                            source:
-                              value: ''
-                          col_xl:
-                            source_id: select
-                            source:
-                              value: ''
-                          col_xxl:
-                            source_id: select
-                            source:
-                              value: ''
-                          col_offset:
-                            source_id: select
-                            source:
-                              value: ''
-                          col_attributes:
-                            source_id: attributes
-                            source:
-                              value: 'class="d-flex justify-content-center"'
-                        slots:
-                          col_1_content:
-                            add_more_button: ''
-                            sources:
-                              -
-                                source_id: entity_field
-                                source:
-                                  derivable_context: 'field:node:model_instance_examples:field_main_image'
-                                  'field:node:model_instance_examples:field_main_image':
-                                    value:
-                                      sources:
-                                        -
-                                          source_id: 'field_formatter:node:model_instance_examples:field_main_image'
-                                          source:
-                                            type: media_thumbnail
-                                            settings:
-                                              image_style: '220_130'
-                                              image_link: ''
-                                              image_loading:
-                                                attribute: lazy
-                                            third_party_settings:
-                                              field_label:
-                                                label_value: ''
-                                                label_class: ''
-                                                label_tag: ''
-                                              nomarkup:
-                                                separator: '|'
-                                                referenced_entity: ''
-                                                enabled: 0
-                                          node_id: ''
-                                          third_party_settings: ''
-                                          _weight: '0'
-                                node_id: 860316d92e1f4208
-                                third_party_settings:
-                                  styles:
-                                    selected: {  }
-                                    extra: ''
-                        third_party_settings: ''
-                        node_id: ''
-                    node_id: a1734550b5f362ca
-                    third_party_settings:
-                      styles:
-                        selected:
-                          colors_background_color: bg-light
-                          borders_border: border
-                          borders_border_radius: rounded
-                          borders_border_radius_width: rounded-1
-                        extra: 'mx-1 py-2'
+            third_party_settings: ''
+            node_id: ''
         node_id: e33f49f39697a19d
         third_party_settings:
           styles:
             selected:
               colors_background_color: text-bg-dark
+              shadows: shadow
             extra: ''
 id: node.model_instance_examples.card
 targetEntityType: node
