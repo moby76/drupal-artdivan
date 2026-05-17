@@ -538,7 +538,7 @@ display:
                 container:
                   source_id: select
                   source:
-                    value: container
+                    value: ''
                 container_attributes:
                   source_id: attributes
                   source:
@@ -594,9 +594,7 @@ display:
                 col_attributes:
                   source_id: ui_styles_attributes
                   source:
-                    styles:
-                      selected:
-                        spacing_margin_bottom: mb-4
+                    styles: {  }
                     extra: ''
               slots:
                 content:

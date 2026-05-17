@@ -1,0 +1,15 @@
+uuid: 0a999839-04ef-477e-a9c4-f1c070a92042
+langcode: en
+status: true
+dependencies: {  }
+name: '220_130'
+label: '220*130'
+effects:
+  6eb42905-7c88-44b4-a0bd-72b9a90bb357:
+    uuid: 6eb42905-7c88-44b4-a0bd-72b9a90bb357
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 130
+      upscale: true
