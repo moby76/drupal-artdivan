@@ -137,7 +137,7 @@ third_party_settings:
                           borders_border: border-bottom
                           borders_border_width: border-1
                           borders_border_color: border-secondary-subtle
-                        extra: 'my-1 mb-2 py-1'
+                        extra: 'my-1 mb-1 py-1'
                   -
                     source_id: component
                     source:
@@ -186,7 +186,7 @@ third_party_settings:
                           borders_border: border-bottom
                           borders_border_width: border-1
                           borders_border_color: border-secondary-subtle
-                        extra: 'my-1 mb-2 py-1'
+                        extra: 'my-1 mb-1 py-1'
                   -
                     source_id: component
                     source:
@@ -233,7 +233,7 @@ third_party_settings:
                           borders_border: border-bottom
                           borders_border_width: border-1
                           borders_border_color: border-secondary-subtle
-                        extra: 'my-1 mb-2 py-1'
+                        extra: 'my-1 mb-1 py-1'
             third_party_settings: ''
             node_id: ''
         node_id: c421f965693517b2

@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.samples_instances
   module:
+    - ui_styles
     - views
   theme:
     - bootstrap_artdivan
@@ -21,10 +22,10 @@ provider: null
 plugin: 'views_block:samples_instances-block_1'
 settings:
   id: 'views_block:samples_instances-block_1'
-  label: ''
+  label: Образцы
   label_display: visible
   provider: views
   context_mapping: {  }
-  views_label: ''
+  views_label: Образцы
   items_per_page: null
 visibility: {  }

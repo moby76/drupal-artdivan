@@ -741,8 +741,71 @@ third_party_settings:
                     source:
                       component:
                         component_id: 'ui_suite_bootstrap:grid_row_1'
+                        variant_id: null
+                        props:
+                          attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container:
+                            source_id: select
+                            source:
+                              value: ''
+                          container_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          container_wrapper_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
+                          gutters:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_horizontal:
+                            source_id: select
+                            source:
+                              value: ''
+                          gutters_vertical:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xs:
+                            source_id: select
+                            source:
+                              value: '12'
+                          col_sm:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_md:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_lg:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_xxl:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_offset:
+                            source_id: select
+                            source:
+                              value: ''
+                          col_attributes:
+                            source_id: attributes
+                            source:
+                              value: ''
                         slots:
                           col_1_content:
+                            add_more_button: ''
                             sources:
                               -
                                 source_id: component
@@ -841,26 +904,10 @@ third_party_settings:
                                                 alt: ''
                                             node_id: 8029cd2acd22eb97
                                           -
-                                            source_id: icon_renderable
+                                            source_id: textfield
                                             source:
-                                              value:
-                                                target_id: 'bootstrap:rulers'
-                                                settings:
-                                                  bootstrap:
-                                                    size: 30px
-                                                    color: ''
-                                                    alt: ''
-                                                icon_id: 'bootstrap:rulers'
-                                                icon_settings:
-                                                  bootstrap:
-                                                    size: 30px
-                                                    color: ''
-                                                    alt: ''
-                                              saved_values:
-                                                size: 30px
-                                                color: ''
-                                                alt: ''
-                                            node_id: 35e4c04b01fa6efb
+                                              value: 'Размеры под заказ'
+                                            node_id: 21047e9728a3a079
                                           -
                                             source_id: icon_renderable
                                             source:
@@ -882,11 +929,6 @@ third_party_settings:
                                                 color: ''
                                                 alt: ''
                                             node_id: bcda5aff982a60c4
-                                          -
-                                            source_id: textfield
-                                            source:
-                                              value: 'Размеры под заказ'
-                                            node_id: 21047e9728a3a079
                                     third_party_settings: ''
                                     node_id: ''
                                 node_id: 6ba41eb1e01300ff
@@ -901,36 +943,64 @@ third_party_settings:
                                       flex_justify_content: justify-content-center
                                     extra: 'pb-2 mb-1'
                               -
-                                source_id: entity_field
+                                source_id: component
                                 source:
-                                  derivable_context: 'field:node:model_instance:field_is_possible_order_dimensio'
-                                  'field:node:model_instance:field_is_possible_order_dimensio':
-                                    value:
-                                      sources:
-                                        -
-                                          source_id: 'field_formatter:node:model_instance:field_is_possible_order_dimensio'
-                                          source:
-                                            type: boolean
-                                            settings:
-                                              format: default
-                                              format_custom_false: ''
-                                              format_custom_true: ''
-                                            third_party_settings: {  }
-                                node_id: 4f0b6ac4fe57e603
-                              -
-                                source_id: entity_field
-                                source:
-                                  derivable_context: 'field:node:model_instance:field_possible_dimensions'
-                                  'field:node:model_instance:field_possible_dimensions':
-                                    value:
-                                      sources:
-                                        -
-                                          source_id: 'field_formatter:node:model_instance:field_possible_dimensions'
-                                          source:
-                                            type: entity_reference_revisions_entity_view
-                                            settings: {  }
-                                            third_party_settings: {  }
-                                node_id: 8710c5eab3520072
+                                  component:
+                                    component_id: 'ui_suite_bootstrap:grid_row_1'
+                                    slots:
+                                      col_1_content:
+                                        sources:
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:node:model_instance:field_is_possible_order_dimensio'
+                                              'field:node:model_instance:field_is_possible_order_dimensio':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:node:model_instance:field_is_possible_order_dimensio'
+                                                      source:
+                                                        type: boolean
+                                                        settings:
+                                                          format: default
+                                                          format_custom_false: ''
+                                                          format_custom_true: ''
+                                                        third_party_settings: {  }
+                                            node_id: 4f0b6ac4fe57e603
+                                            third_party_settings:
+                                              styles:
+                                                selected:
+                                                  text_text_alignment: text-center
+                                                  colors_background_color: bg-warning
+                                                  colors_background_opacity: bg-opacity-10
+                                                  borders_border: border
+                                                  borders_border_color: border-warning
+                                                  borders_border_opacity: border-opacity-25
+                                                  shadows: shadow
+                                                  borders_border_radius: rounded
+                                                  borders_border_radius_width: rounded-2
+                                                extra: my-1
+                                          -
+                                            source_id: entity_field
+                                            source:
+                                              derivable_context: 'field:node:model_instance:field_possible_dimensions'
+                                              'field:node:model_instance:field_possible_dimensions':
+                                                value:
+                                                  sources:
+                                                    -
+                                                      source_id: 'field_formatter:node:model_instance:field_possible_dimensions'
+                                                      source:
+                                                        type: entity_reference_revisions_entity_view
+                                                        settings: {  }
+                                                        third_party_settings: {  }
+                                            node_id: 8710c5eab3520072
+                                node_id: 8797f47593e3dbe0
+                                third_party_settings:
+                                  styles:
+                                    selected: {  }
+                                    extra: px-2
+                        third_party_settings: ''
+                        node_id: ''
                     node_id: e6d10e290500f620
                     third_party_settings:
                       styles:

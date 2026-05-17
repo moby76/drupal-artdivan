@@ -12774,3 +12774,7 @@ textarea.form-control-lg {
   background: #000000cf;
     /* border-radius: 0.5rem; */
 }
+
+.possible-sizes-container{
+  height: 225px;
+}

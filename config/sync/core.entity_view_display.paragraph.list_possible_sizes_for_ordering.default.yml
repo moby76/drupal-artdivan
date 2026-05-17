@@ -21,8 +21,71 @@ third_party_settings:
         source:
           component:
             component_id: 'ui_suite_bootstrap:grid_row_1'
+            variant_id: null
+            props:
+              attributes:
+                source_id: attributes
+                source:
+                  value: 'class="possible-sizes-container"'
+              container:
+                source_id: select
+                source:
+                  value: ''
+              container_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              container_wrapper_attributes:
+                source_id: attributes
+                source:
+                  value: ''
+              gutters:
+                source_id: select
+                source:
+                  value: ''
+              gutters_horizontal:
+                source_id: select
+                source:
+                  value: ''
+              gutters_vertical:
+                source_id: select
+                source:
+                  value: ''
+              col_xs:
+                source_id: select
+                source:
+                  value: '12'
+              col_sm:
+                source_id: select
+                source:
+                  value: ''
+              col_md:
+                source_id: select
+                source:
+                  value: ''
+              col_lg:
+                source_id: select
+                source:
+                  value: ''
+              col_xl:
+                source_id: select
+                source:
+                  value: ''
+              col_xxl:
+                source_id: select
+                source:
+                  value: ''
+              col_offset:
+                source_id: select
+                source:
+                  value: ''
+              col_attributes:
+                source_id: attributes
+                source:
+                  value: ''
             slots:
               col_1_content:
+                add_more_button: ''
                 sources:
                   -
                     source_id: entity_field
@@ -43,7 +106,20 @@ third_party_settings:
                                 weight: 0
                                 region: content
                     node_id: 4cdd0c128c4392d0
+                    third_party_settings:
+                      styles:
+                        selected:
+                          position_position: position-relative
+                        extra: ''
+            third_party_settings: ''
+            node_id: ''
         node_id: 591be2f5f888e8f0
+        third_party_settings:
+          styles:
+            selected:
+              position_position: position-relative
+              overflow: overflow-auto
+            extra: ''
 id: paragraph.list_possible_sizes_for_ordering.default
 targetEntityType: paragraph
 bundle: list_possible_sizes_for_ordering
