@@ -76,6 +76,7 @@ module:
   photoswipe: 0
   print_this_page: 0
   project_browser: 0
+  responsive_image: 0
   search: 0
   serial: 0
   serialization: 0
