@@ -1,0 +1,9 @@
+uuid: 0bab5b0a-6dfe-4756-9381-773e8f3be490
+langcode: en
+status: true
+dependencies: {  }
+name: 'Диапазоны изменения стоимости'
+vid: price_change_ranges
+description: null
+weight: 0
+new_revision: false

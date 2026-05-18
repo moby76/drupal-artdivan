@@ -9,7 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.possible_sizes_for_ordering_set
   module:
     - display_builder
-    - options
     - ui_patterns
     - ui_patterns_field_formatters
   theme:
@@ -205,7 +204,7 @@ third_party_settings:
                                         -
                                           source_id: 'field_formatter:paragraph:possible_sizes_for_ordering_set:field_from_base_price'
                                           source:
-                                            type: list_default
+                                            type: entity_reference_label
                                             third_party_settings:
                                               field_label:
                                                 label_value: ''
@@ -215,10 +214,12 @@ third_party_settings:
                                                 separator: '|'
                                                 referenced_entity: ''
                                                 enabled: 0
+                                            settings:
+                                              link: 0
                                           node_id: ''
                                           third_party_settings: ''
                                           _weight: '0'
-                                node_id: c7fa7a1acd1d565a
+                                node_id: cbd2c58792669097
                           col_1_content:
                             sources:
                               -
@@ -253,11 +254,12 @@ bundle: possible_sizes_for_ordering_set
 mode: default
 content:
   field_from_base_price:
-    type: list_default
+    type: entity_reference_label
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 6
     region: content
   field_possible_width:
     type: entity_reference_label

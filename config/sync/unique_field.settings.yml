@@ -106,3 +106,7 @@ unique_field_taxonomy:
     fields: {  }
     scope: vocabulary
     comp: each
+  price_change_ranges:
+    fields: {  }
+    scope: vocabulary
+    comp: each

@@ -1,12 +1,11 @@
-uuid: bdae49ad-f0ad-4070-ad5b-d721957c9d0d
+uuid: bf75f3c3-c8e6-4a88-9c2d-3f18a626a7fb
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_from_base_price
     - paragraphs.paragraphs_type.possible_sizes_for_ordering_set
-  module:
-    - options
+    - taxonomy.vocabulary.price_change_ranges
 id: paragraph.possible_sizes_for_ordering_set.field_from_base_price
 field_name: field_from_base_price
 entity_type: paragraph
@@ -17,5 +16,14 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      price_change_ranges: price_change_ranges
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
