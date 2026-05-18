@@ -27,6 +27,7 @@ dependencies:
     - paragraphs
     - path
     - text
+    - viewsreference
 id: node.model_instance.default
 targetEntityType: node
 bundle: model_instance
@@ -35,6 +36,12 @@ content:
   created:
     type: datetime_timestamp
     weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_additional_products:
+    type: viewsreference_select
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -168,6 +175,12 @@ content:
       show_search: 1
       form_mode: {  }
     third_party_settings: {  }
+  field_variations:
+    type: viewsreference_select
+    weight: 21
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_version:
     type: options_select
     weight: 9
@@ -229,5 +242,3 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  field_additional_products: true
-  field_variations: true
